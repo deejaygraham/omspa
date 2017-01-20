@@ -8,7 +8,7 @@ layout: default
 # Patt#31. &quot;Gatekeeper-Request-Resource&quot; Pattern // interaction patterns 
 
 
- ![Strpat00000036.gif](/Strpat00000036.gif) 
+ ![Strpat00000036.gif](./Strpat00000036.gif) 
 
 # Typical object interactions 
 
@@ -30,11 +30,11 @@ layout: default
 
 # Combinations 
 
-*  [Patt#2.](/2-actor-participant-pattern-transaction-patterns.html) &quot;Actor-Participant&quot; (participant = gatekeeper)
-*  [Patt#3.](/3-participant-transaction-pattern-transaction-patterns.html) &quot;Participant-Transaction&quot; (participant = gatekeeper)
-*  [Patt#5.](/5-specific-item-transaction-pattern-transaction-patterns.html) &quot;Specific Item - Transaction&quot; (specific item = resource).
-*  [Interaction patterns](/interaction-patterns.html) 
-*  [Patterns for building object models](/patterns-for-building-object-models.html) 
+*  [Patt#2.](./2-actor-participant-pattern-transaction-patterns.html) &quot;Actor-Participant&quot; (participant = gatekeeper)
+*  [Patt#3.](./3-participant-transaction-pattern-transaction-patterns.html) &quot;Participant-Transaction&quot; (participant = gatekeeper)
+*  [Patt#5.](./5-specific-item-transaction-pattern-transaction-patterns.html) &quot;Specific Item - Transaction&quot; (specific item = resource).
+*  [Interaction patterns](./interaction-patterns.html) 
+*  [Patterns for building object models](./patterns-for-building-object-models.html) 
 
 
 

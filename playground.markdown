@@ -5,9 +5,9 @@ layout: default
 
 
 
-Playground ![Strpat00000000.gif](/Strpat00000000.gif) 
+Playground ![Strpat00000000.gif](./Strpat00000000.gif) 
 
- ![Strpat00000001.gif](/Strpat00000001.gif) 
+ ![Strpat00000001.gif](./Strpat00000001.gif) 
 
 Playground is an object-model whiteboard for analysts and domain experts
 

@@ -8,7 +8,7 @@ layout: default
 # Patt#30. &quot;Caller - Dispatcher - Caller Back&quot; Pattern // interaction patterns 
 
 
- ![Strpat00000035.gif](/Strpat00000035.gif) 
+ ![Strpat00000035.gif](./Strpat00000035.gif) 
 
 # Typical object interactions 
 
@@ -30,7 +30,7 @@ layout: default
 * Superimpose upon three (or more) interacting pattern players.
 
 
-*  [Interaction patterns](/interaction-patterns.html) 
-*  [Patterns for building object models](/patterns-for-building-object-models.html) 
+*  [Interaction patterns](./interaction-patterns.html) 
+*  [Patterns for building object models](./patterns-for-building-object-models.html) 
 
 

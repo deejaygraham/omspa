@@ -18,8 +18,8 @@ Developers test against classes and scenarios; an independent test organization 
 scenarios for its testing, too.
 
 In this section, you'll find scenario strategies, presented in these categories:
-*  [the basics](/the-basics-(scenarios).html) 
-*  [descriptions](/description-(scenarios).html) 
-*  [what to consider and challenge](/what-to-consider-and-challenge-(scenarios).html) 
-*  [Strategies for building object models](/strategies-for-building-object-models.html) 
+*  [the basics](./the-basics-(scenarios).html) 
+*  [descriptions](./description-(scenarios).html) 
+*  [what to consider and challenge](./what-to-consider-and-challenge-(scenarios).html) 
+*  [Strategies for building object models](./strategies-for-building-object-models.html) 
 

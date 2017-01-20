@@ -7,7 +7,7 @@ layout: default
 
 Object Intl., Inc.
 
- ![Strpat00000002.gif](/Strpat00000002.gif) 
+ ![Strpat00000002.gif](./Strpat00000002.gif) 
 
 Education - Tools - Consulting
 
