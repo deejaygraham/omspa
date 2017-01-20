@@ -30,7 +30,7 @@ layout: default
 * Superimpose upon three (or more) interacting pattern players.
 
 
-*  [Interaction patterns](/interaction-patterns) 
-*  [Patterns for building object models](/patterns-for-building-object-models) 
+*  [Interaction patterns](/interaction-patterns.html) 
+*  [Patterns for building object models](/patterns-for-building-object-models.html) 
 
 

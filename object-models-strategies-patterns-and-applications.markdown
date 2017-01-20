@@ -23,7 +23,7 @@ responsibilities and interactions
  ![Strpat20000001.gif](/Strpat20000001.gif) Over 350 figures, a &quot;visual feast&quot; of practical illustrations, examples that you
 can use for building your own object models
 
- ![Strpat20000001.gif](/Strpat20000001.gif) Shareware on diskette. [Playground](/playground) is an object model
+ ![Strpat20000001.gif](/Strpat20000001.gif) Shareware on diskette. [Playground](/playground.html) is an object model
 whiteboard for domain experts and analysts. Use it (at no charge) while reading this book,
 for a true hands-on learning experience.
 

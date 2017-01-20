@@ -37,8 +37,8 @@ layout: default
 # Note 
 
 * This approach keeps lookup object simpler.
-*  [Interaction patterns](/interaction-patterns) 
-*  [Patterns for building object models](/patterns-for-building-object-models) 
+*  [Interaction patterns](/interaction-patterns.html) 
+*  [Patterns for building object models](/patterns-for-building-object-models.html) 
 
 
 

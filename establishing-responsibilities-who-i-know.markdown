@@ -23,9 +23,9 @@ categories:
 * what to consider and challenge.
 
 
-*  [Fundamentals (who I know)](/fundamentals-(who-i-know)) 
-*  [Pattern players (who I know)](/pattern-players-(who-i-know)) 
-*  [Model components -- HI, DM (who I know)](/model-components-hi-dm-(who-i-know)) 
-*  [What to consider and challenge (who I know)](/what-to-consider-and-challenge-(who-i-know)) 
-*  [Strategies for building object models](/strategies-for-building-object-models) 
+*  [Fundamentals (who I know)](/fundamentals-(who-i-know).html) 
+*  [Pattern players (who I know)](/pattern-players-(who-i-know).html) 
+*  [Model components -- HI, DM (who I know)](/model-components-hi-dm-(who-i-know).html) 
+*  [What to consider and challenge (who I know)](/what-to-consider-and-challenge-(who-i-know).html) 
+*  [Strategies for building object models](/strategies-for-building-object-models.html) 
 
