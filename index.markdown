@@ -6,8 +6,11 @@ layout: default
 # Strategies and Patterns Handbook: Hypertext Edition
 
 ## Version 2.1
+
 ### Peter Coad
+
 #### with David North and Mark Mayfield
+
 
 &copy; 1997 Object International, Inc. All rights reserved. [www.pcoad.com](http://www.pcoad.com)
 
@@ -24,5 +27,6 @@ The book includes &quot;getting started&quot; shareware, called [Playground](./p
 * [List of strategies](./list-of-strategies.html)
 * [List of patterns](./list-of-patterns.html)
 * [A helpful path for getting started](./a-helpful-path-for-getting-started.html)
+
 
 &copy; 1997 Object International, Inc. All rights reserved.
