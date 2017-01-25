@@ -40,6 +40,8 @@ table {
 body {
 	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
 	margin: 2em;
+	font-size: 1.5em;
+	line-height: 1.2em;
 }
 
 .container {
