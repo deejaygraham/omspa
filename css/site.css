@@ -53,6 +53,10 @@ h1, h1, h3, h4, h5, h6 {
 	font-weight: 900;
 }
 
+h1 {
+	margin-bottom: 2em;
+}
+
 .footer {
 	border-top: 1px dotted #eee;
 	margin-top: 2em;
