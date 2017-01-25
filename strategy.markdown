@@ -14,6 +14,8 @@ categories (four major activities):
 * establishing responsibilities
 * working out dynamics with scenarios.
 
+
 A few other strategies fit into one of two smaller categories:
+
 * activities and model components
 * discovering new strategies and patterns.
