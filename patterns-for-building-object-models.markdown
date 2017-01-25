@@ -8,9 +8,12 @@ layout: default
 This major section presents [patterns](./pattern-(for-object-models).html) organized into
 various pattern families. First you'll encounter the:
 
+
 [The fundamental pattern](./the-fundamental-pattern.html)
 
+
 Then:
+
 
 * [Transaction patterns](./transaction-patterns.html)
 * [Aggregate patterns](./aggregate-patterns.html)

@@ -9,6 +9,7 @@ This handbook presents strategies and patterns, ready-to-apply practical advice 
 building effective object models. These strategies and patterns span these major
 categories:
 
+
 * [Strategies](./strategy.html) for building object models
 * Activities and model components - Establishing responsibilities
 * Identifying purpose and features - Working out dynamics with scenarios
