@@ -39,10 +39,11 @@ table {
 
 body {
 	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+	margin: 2em;
 }
 
 .container {
-		margin: 2em;
+
 }
 
 h1, h1, h3, h4, h5, h6 {
@@ -51,5 +52,6 @@ h1, h1, h3, h4, h5, h6 {
 }
 
 .footer {
-	margin-bottom: 2em;
+	border-top: 1px dotted #eee;
+	margin-top: 2em;
 }
