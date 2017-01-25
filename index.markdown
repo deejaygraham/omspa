@@ -27,6 +27,3 @@ The book includes &quot;getting started&quot; shareware, called [Playground](./p
 * [List of strategies](./list-of-strategies.html)
 * [List of patterns](./list-of-patterns.html)
 * [A helpful path for getting started](./a-helpful-path-for-getting-started.html)
-
-
-&copy; 1997 Object International, Inc. All rights reserved.
