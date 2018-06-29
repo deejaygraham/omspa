@@ -3,11 +3,9 @@ title: Playground
 layout: default
 ---
 
+# Playground 
 
-
-Playground ![Strpat00000000.gif](./Strpat00000000.gif) 
-
- ![Strpat00000001.gif](./Strpat00000001.gif) 
+![Strpat00000000.gif](./img/Strpat00000000.gif) 
 
 Playground is an object-model whiteboard for analysts and domain experts
 
@@ -25,7 +23,7 @@ preferences.
 Requirements. 32-bit Windows (Win32s, Win95, WinNT on Intel platform), 8 MB RAM,
 5 MB disk space. Max recommended model size: 25 classes.
 
-Tech supportfor Playground is provided by e-mail (playground@oi.com) or regular
+Tech support for Playground is provided by e-mail (playground@oi.com) or regular
 mail only.
 
 Try it out for free. Use Playground for free, for personal study or in the
