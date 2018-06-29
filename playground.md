@@ -3,9 +3,9 @@ title: Playground
 layout: default
 ---
 
-# Playground 
+# ![icon](./img/Strpat00000000.gif) Playground 
 
-![Strpat00000000.gif](./img/Strpat00000000.gif) 
+![screenshot](./img/Strpat00000001.gif) 
 
 Playground is an object-model whiteboard for analysts and domain experts
 
