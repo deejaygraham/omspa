@@ -8,7 +8,7 @@ layout: default
 # Patt#29. &quot;Sender-Lookup-Receiver&quot; Pattern // interaction patterns 
 
 
- ![Strpat00000034.gif](./Strpat00000034.gif) 
+ ![Strpat00000034.gif](./img/Strpat00000034.gif) 
 
 # Typical object interactions 
 
@@ -37,8 +37,8 @@ layout: default
 # Note 
 
 * This approach keeps lookup object simpler.
-*  [Interaction patterns](./interaction-patterns.html) 
-*  [Patterns for building object models](./patterns-for-building-object-models.html) 
+*  [Interaction patterns](./interaction-patterns.md) 
+*  [Patterns for building object models](./patterns-for-building-object-models.md) 
 
 
 
