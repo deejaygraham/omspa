@@ -2,14 +2,10 @@
 title: Where to put a service (what I do)
 layout: default
 ---
+# Where to put a service (what I do)
 
 
-
-Where to put a service (what I do)
-
-
-*Str#101. &quot;Placing Services&quot; Strategy // establishing responsibilities
-/ what I do (where to put) 
+*Str#101. &quot;Placing Services&quot; Strategy // establishing responsibilities / what I do (where to put) 
 
  Use the key principles for placing a service. 
 

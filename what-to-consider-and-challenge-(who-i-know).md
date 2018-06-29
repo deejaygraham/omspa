@@ -2,11 +2,7 @@
 title: What to consider and challenge (who I know)
 layout: default
 ---
-
-
-
-What to consider and challenge (who I know)
-
+# What to consider and challenge (who I know)
 
 *Str#80a. &quot;ABC&quot; Strategy // establishing responsibilities / who I know
 (consider and challenge) 

@@ -2,10 +2,7 @@
 title: What to consider and challenge: gen-spec with attributes (what I know)
 layout: default
 ---
-
-
-
-What to consider and challenge: gen-spec with attributes (what I know)
+# What to consider and challenge: gen-spec with attributes (what I know)
 
 
 *Str#67. &quot;Common Attributes&quot; Strategy // establishing responsibilities
