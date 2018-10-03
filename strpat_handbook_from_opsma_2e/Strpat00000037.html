@@ -1,0 +1,46 @@
+<html>
+
+<head>
+<title>Model components -- HI, DM (who I know)</title>
+</head>
+
+<body>
+<b>
+
+<p>Model components -- HI, DM (who I know) </p>
+
+<p></b><i>Str#79. &quot;Establish HI Object Connections&quot; Strategy // establishing
+responsibilities / who I know (model components) </p>
+
+<p></i>- For a window or report, include an object connection (expressed as an attribute)
+to: the contents of the window, the objects it knows directly, to get the content it needs
+to do its job (note that a window can use those objects to get to other objects,
+indirectly). </p>
+
+<p><i>Str#79a. &quot;Establish HI-PD Object Connections&quot; Strategy // establishing
+responsibilities / who I know (model components) </p>
+
+<p></i>- For a window, show &quot;who I know&quot; in text: </p>
+
+<p>(a) A problem-domain container, to ask for a list </p>
+
+<p>(b) An object (or objects) selected from a list </p>
+
+<p>- For a PD object who needs to notify a window: </p>
+
+<p>. Inherit the attribute &quot;subscribers&quot; and the service &quot;publish&quot; --
+from a PDObject class -- and notify your subscribers when a change occurs (up to each
+subscriber to decide what to do from there). </p>
+
+<p><i>Str#80. &quot;Establish DM Object Connections&quot; Strategy // establishing
+responsibilities / who I know (model components) </p>
+
+<p></i>- For a data management object, include an object connection (expressed as an
+attribute) to the problem-domain objects (all of the objects in some problem-domain class)
+that it is responsible for. </p>
+
+<p><a HREF="Strpat00000034.html">Establishing responsibilities / who I know</a> </p>
+
+<p><a HREF="Strpat00000015.html">Strategies for building object models</a> </p>
+</body>
+</html>
