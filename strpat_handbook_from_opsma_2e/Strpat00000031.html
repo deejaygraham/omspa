@@ -1,7 +1,7 @@
 <html>
 
 <head>
-<title>What to consider and challenge (what I know): values</title>
+<title>What to consider and challenge (what I know): values</title><link href="style.css" rel="stylesheet" type="text/css" media="all">
 </head>
 
 <body>
@@ -12,7 +12,7 @@
 <p></b><i>Strategy #60. &quot;Closely Related Values as One&quot; Strategy // establishing
 responsibilities / what I know (consider and challenge) </p>
 
-<p></i>- A collection of closely related values, commonly referred to as one? </p>
+<p>- A collection of closely related values, commonly referred to as one? </p>
 
 <p>- Use one attribute (e.g., name) and describe its parts in text. </p>
 
@@ -20,10 +20,10 @@ responsibilities / what I know (consider and challenge) </p>
 &quot;name consists of title, first name, middle initial, last name (and if applicable,
 maiden name.)&quot; </p>
 
-<p><i>Strategy #61. &quot;Yes/No Attribute&quot; Strategy // establishing responsibilities /
+<div class="strategy"><i>Strategy #61. &quot;Yes/No Attribute&quot; Strategy // establishing responsibilities /
 what I know (consider and challenge) </p>
 
-<p></i>- Attribute has values &quot;yes or no?&quot; </p>
+<p>- Attribute has values &quot;yes or no?&quot; </p>
 
 <p>. The attribute name itself may be a value for some other attribute name </p>
 
@@ -31,10 +31,10 @@ what I know (consider and challenge) </p>
 
 <p>. Why bother: added detail now, added ease of change in the future. </p>
 
-<p><i>Strategy #62. &quot;Values Over Time&quot; Strategy // establishing responsibilities /
+<div class="strategy"><i>Strategy #62. &quot;Values Over Time&quot; Strategy // establishing responsibilities /
 what I know (consider and challenge) </p>
 
-<p></i>- An attribute value that varies over time, and you need to know that variation? </p>
+<p>- An attribute value that varies over time, and you need to know that variation? </p>
 
 <p>- Add an additional object, with an effective date and value. </p>
 
@@ -42,10 +42,10 @@ what I know (consider and challenge) </p>
 over different time periods, then add price objects, ones that know effective date and
 price, and do things like &quot;is applicable for date&quot; and &quot;get price.&quot; </p>
 
-<p><i>Strategy #62a. &quot;You? Me? Or Something Between Us?&quot; Strategy // establishing
+<div class="strategy"><i>Strategy #62a. &quot;You? Me? Or Something Between Us?&quot; Strategy // establishing
 responsibilities / what I know (consider and challenge) </p>
 
-<p></i>- For each attribute, ask: </p>
+<p>- For each attribute, ask: </p>
 
 <p>. Does it describe me? (If so, add it to the corresponding class.) </p>
 
@@ -73,20 +73,20 @@ transaction object called something like &quot;Access Authorization.&quot; </p>
 
 <p>. . . Looks like this: User -- Access Authorization -- System </p>
 
-<p><i>Strategy #63. &quot;Embedded Meaning in a Number&quot; Strategy // establishing
+<div class="strategy"><i>Strategy #63. &quot;Embedded Meaning in a Number&quot; Strategy // establishing
 responsibilities / what I know (consider and challenge) </p>
 
-<p></i>- Attribute is a number, with encoded meanings? </p>
+<p>- Attribute is a number, with encoded meanings? </p>
 
 <p>- Add an attribute for each meaning. </p>
 
 <p>- Most often, include a number attribute, too (a sequence number, no longer a source of
 encoded meaning). </p>
 
-<p><i>Strategy #64. &quot;Attribute with Repeating Values&quot; Strategy // establishing
+<div class="strategy"><i>Strategy #64. &quot;Attribute with Repeating Values&quot; Strategy // establishing
 responsibilities / what I know (consider and challenge) </p>
 
-<p></i>- An attribute that may have a number of values? </p>
+<p>- An attribute that may have a number of values? </p>
 
 <p>- Add a new class to your model. Add an object connection. Look for additional
 attributes that may apply. </p>
@@ -99,10 +99,10 @@ future change gracefully. </p>
 <p>- Example: Item with the attribute UPCs (universal product codes). Add a UPC class. Add
 an object connection between an item and its UPCs. </p>
 
-<p><i>Strategy #65. &quot;Attribute Value Granularity&quot; Strategy // establishing
+<div class="strategy"><i>Strategy #65. &quot;Attribute Value Granularity&quot; Strategy // establishing
 responsibilities / what I know (consider and challenge) </p>
 
-<p></i>- Check the granularity for each attribute that applies across a collection: </p>
+<p>- Check the granularity for each attribute that applies across a collection: </p>
 
 <p>. Does the same value apply across the entire collection? </p>
 
@@ -111,10 +111,10 @@ have its own value. </p>
 
 <p>- Example: rental (checkout date and time), rental line item (return date and time). </p>
 
-<p><i>Strategy #66. &quot;Calculable Result&quot; Strategy // establishing responsibilities /
+<div class="strategy"><i>Strategy #66. &quot;Calculable Result&quot; Strategy // establishing responsibilities /
 what I know (consider and challenge) </p>
 
-<p></i>- An attribute for holding a calculable result? At first, don't show it in the
+<p>- An attribute for holding a calculable result? At first, don't show it in the
 object model. </p>
 
 <p>- At some point, you may want to add the attribute. Here's how: </p>

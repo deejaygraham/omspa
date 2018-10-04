@@ -1,7 +1,7 @@
 <html>
 
 <head>
-<title>What to consider and challenge (who I know)</title>
+<title>What to consider and challenge (who I know)</title><link href="style.css" rel="stylesheet" type="text/css" media="all">
 </head>
 
 <body>
@@ -12,7 +12,7 @@
 <p></b><i>Strategy #80a. &quot;ABC&quot; Strategy // establishing responsibilities / who I know
 (consider and challenge) </p>
 
-<p></i>- Consider: </p>
+<p>- Consider: </p>
 
 <p>A -- B -- C </p>
 
@@ -23,10 +23,10 @@ a B is not present. </p>
 
 <p>. No, otherwise. </p>
 
-<p><i>Strategy #80b. &quot;Double 1's&quot; Strategy // establishing responsibilities / who I
+<div class="strategy"><i>Strategy #80b. &quot;Double 1's&quot; Strategy // establishing responsibilities / who I
 know (consider and challenge) </p>
 
-<p></i>- For object connections that have double 1's: </p>
+<p>- For object connections that have double 1's: </p>
 
 <p>---------- </p>
 
@@ -41,10 +41,10 @@ complexity. </p>
 
 <p>- Reason to keep apart: finer-grained partitioning, more resiliency to change. </p>
 
-<p><i>Strategy #80c. &quot;Double n's&quot; Strategy // establishing responsibilities / who I
+<div class="strategy"><i>Strategy #80c. &quot;Double n's&quot; Strategy // establishing responsibilities / who I
 know (consider and challenge) </p>
 
-<p></i>- For object connections that have double n's: </p>
+<p>- For object connections that have double n's: </p>
 
 <p>---------- or ----------- or ----------- </p>
 
@@ -59,10 +59,10 @@ know (consider and challenge) </p>
 <p>- The point here is not to obliterate double n's, but rather to use the occasion to
 look for a missing transaction object. </p>
 
-<p><i>Strategy #80d. &quot;Relationships Between Objects in the Same Class&quot; Strategy //
+<div class="strategy"><i>Strategy #80d. &quot;Relationships Between Objects in the Same Class&quot; Strategy //
 establishing responsibilities / who I know (consider and challenge) </p>
 
-<p></i>- At times, one object in a class needs to know other objects in a class. </p>
+<p>- At times, one object in a class needs to know other objects in a class. </p>
 
 <p>- One choice: add an object connection -- and an attribute, naming that connection.
 Works well if you don't need to know anything else about that relationship, or its history
@@ -72,30 +72,30 @@ over time. </p>
 going on between those objects. This could even be abstracted into a new pattern, called
 &quot;Thing - Thing Relationship.&quot; </p>
 
-<p><i>Strategy #81. &quot;Common Object Connection&quot; Strategy // establishing
+<div class="strategy"><i>Strategy #81. &quot;Common Object Connection&quot; Strategy // establishing
 responsibilities / who I know (consider and challenge) </p>
 
-<p></i>- Common object connection? Add a generalization class, if it is indeed a
+<p>- Common object connection? Add a generalization class, if it is indeed a
 generalization. </p>
 
-<p><i>Strategy #82. &quot;Uncommon Object Connection&quot; Strategy // establishing
+<div class="strategy"><i>Strategy #82. &quot;Uncommon Object Connection&quot; Strategy // establishing
 responsibilities / who I know (consider and challenge) </p>
 
-<p></i>- Object connection that applies only to certain objects in a class? Connect to
+<p>- Object connection that applies only to certain objects in a class? Connect to
 objects in a specialization class, instead. </p>
 
-<p><i>Strategy #83. &quot;One Object with Special Meaning&quot; Strategy // establishing
+<div class="strategy"><i>Strategy #83. &quot;One Object with Special Meaning&quot; Strategy // establishing
 responsibilities / who I know (consider and challenge) </p>
 
-<p></i>- Many potential object connections, with one that is &quot;the current one&quot;
+<p>- Many potential object connections, with one that is &quot;the current one&quot;
 or some other special meaning? </p>
 
 <p>- Add an attribute like &quot;current &amp;ltconnecting class name&gt;.&quot; </p>
 
-<p><i>Strategy #84. &quot;Object Connection with Multiple Meanings&quot; Strategy //
+<div class="strategy"><i>Strategy #84. &quot;Object Connection with Multiple Meanings&quot; Strategy //
 establishing responsibilities / who I know (consider and challenge) </p>
 
-<p></i>- What if you have an object connection with multiple meanings? </p>
+<p>- What if you have an object connection with multiple meanings? </p>
 
 <p>. Add a transaction object, an &quot;event remembered&quot; about each meaning being
 established. </p>
@@ -103,10 +103,10 @@ established. </p>
 <p>. Or: add attributes to the participating object that needs to know those
 meanings--along with the object connection. </p>
 
-<p><i>Strategy #85. &quot;An Object with No Connections&quot; Strategy // establishing
+<div class="strategy"><i>Strategy #85. &quot;An Object with No Connections&quot; Strategy // establishing
 responsibilities / who I know (consider and challenge) </p>
 
-<p></i>- An object with no object connections? </p>
+<p>- An object with no object connections? </p>
 
 <p>. Consider who it needs to know to answer queries. Anything needed? </p>
 
