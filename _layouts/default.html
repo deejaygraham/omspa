@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }}</title>
-    <link href="./css/site.css" rel="stylesheet">
+    <link href="./css/bulma.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
-      {{ content }}
-    </div>
-    <div class="footer">
-      &copy; 1997 Object International, Inc. All rights reserved.
-    </div>  
+    <section class="section">
+		<div class="container">
+{{ content }}
+		</div>
+	</section>
+    <footer class="footer">
+		<div class="content has-text-centered">
+			<p>&copy; 1997 Object International, Inc. All rights reserved.</p>
+		</div>
+    </footer>  
   </body>
 </html>
