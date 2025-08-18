@@ -1,4 +1,4 @@
-export default function(config) => {
+export default function(config) {
 	return {
 		markdownTemplateEngine: 'njk',
 		dataTemplateEngine: 'njk',
@@ -7,5 +7,5 @@ export default function(config) => {
 			input: 'src',
 			output: '_site',
 		},
-	};
-};
+	}
+}
