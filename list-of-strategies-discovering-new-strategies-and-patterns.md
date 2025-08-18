@@ -1,5 +1,5 @@
 ---
-title: List of strategies: Discovering new strategies and patterns
+title: List of strategies - Discovering new strategies and patterns
 layout: default
 ---
 
