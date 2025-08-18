@@ -1,6 +1,6 @@
 ---
 title: #10. &quot;Specific Item - Line Item&quot; Pattern // transaction patterns
-layout: default
+layout: layout.html
 ---
 
 
