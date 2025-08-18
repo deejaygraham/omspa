@@ -1,5 +1,5 @@
 ---
-title: What to consider and challenge: gen-spec with attributes (what I know)
+title: What to consider and challenge - gen-spec with attributes (what I know)
 layout: default
 ---
 # What to consider and challenge: gen-spec with attributes (what I know)
