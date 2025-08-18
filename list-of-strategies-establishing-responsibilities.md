@@ -1,5 +1,5 @@
 ---
-title: List of strategies: Establishing responsibilities
+title: List of strategies - Establishing responsibilities
 layout: default
 ---
 
