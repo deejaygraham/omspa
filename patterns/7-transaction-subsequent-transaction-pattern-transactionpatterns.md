@@ -1,6 +1,5 @@
 ---
-title: #7. &quot;Transaction - Subsequent Transaction&quot; Pattern // transaction
-patterns
+title: #7. &quot;Transaction - Subsequent Transaction&quot; Pattern // transaction patterns
 layout: default
 ---
 
