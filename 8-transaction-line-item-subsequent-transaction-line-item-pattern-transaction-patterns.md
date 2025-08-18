@@ -1,13 +1,9 @@
 ---
-title: #8. &quot;Transaction Line Item - Subsequent Transaction Line Item&quot; Pattern //
-transaction patterns
+title: #8. &quot;Transaction Line Item - Subsequent Transaction Line Item&quot; Pattern // transaction patterns
 layout: default
 ---
 
-
-
-# Patt#8. &quot;Transaction Line Item - Subsequent Transaction Line Item&quot; Pattern //
-transaction patterns 
+# Patt#8. &quot;Transaction Line Item - Subsequent Transaction Line Item&quot; Pattern // transaction patterns 
 
  
 
