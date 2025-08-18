@@ -4,13 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="">
+    <title>{{ page.title }}</title>
   </head>
   <body>
     <header>
-      
+      <h1>{{ page.title }}</h1>      
     </header>
     <main>
-      
+      <section class="section">
+		    <div class="container">{{ content }}</div>
+	    </section>
     </main>
+    <footer class="footer">
+		  <div class="content has-text-centered">
+			  <p>&copy; 1997 Object International, Inc. All rights reserved.</p>
+		  </div>
+    </footer>  
   </body>
 </html>
