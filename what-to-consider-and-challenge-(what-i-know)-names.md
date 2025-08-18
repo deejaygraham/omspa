@@ -1,5 +1,5 @@
 ---
-title: What to consider and challenge (what I know): names
+title: What to consider and challenge (what I know) - names
 layout: default
 ---
 
