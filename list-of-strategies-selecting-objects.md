@@ -1,5 +1,5 @@
 ---
-title: List of strategies: Selecting Objects
+title: List of strategies - Selecting Objects
 layout: default
 ---
 
