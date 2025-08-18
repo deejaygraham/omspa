@@ -1,0 +1,112 @@
+<html>
+
+<head>
+<title>What to consider and challenge (what I do): gen-spec with services</title><link href="style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+<b>
+
+<p>What to consider and challenge (what I do): gen-spec with services </p>
+
+<p></b><i>Strategy #120. &quot;Common Services&quot; Strategy // establishing responsibilities /
+what I do (consider and challenge) </p>
+
+<p>- Classes with common services? </p>
+
+<p>. If the services have the same name and meaning, and if you can find a generalization-
+specialization that makes good sense, then add a generalization class and factor out
+whatever commonality you discovered. </p>
+
+<p>. If the service name is the same, yet the details of the service are different, then
+show the service name in both the generalization and the specialization. </p>
+
+<div class="strategy"><i>Strategy #121. &quot;Partially Applicable Service&quot; Strategy // establishing
+responsibilities / what I do (consider and challenge) </p>
+
+<p>- Do you have a service that applies only to certain objects in a class? </p>
+
+<p>- Do you have a service that applies only to certain kinds of objects? </p>
+
+<p>- Do you have a service which tests for what kind it is, and then acts accordingly? </p>
+
+<p>- If so, factor out the specialized service into a specialization class. </p>
+
+<div class="strategy"><i>Strategy #122. &quot;Meaningful Gen-Spec&quot; Strategy // establishing responsibilities /
+what I do (consider and challenge) </p>
+
+<p>- What if &quot;specialization is a kind of generalization&quot; doesn't make
+sense? Get rid of that gen-spec. </p>
+
+<p>- Insist upon domain-based generalization-specialization, for understandability and
+greater likelihood of factoring which facilitates reuse. </p>
+
+<p>- Exception: generalization class is from another team, insufficiently factored out,
+yet you must use it as-is. In that case, mark aspects of a new specialization with
+&quot;does not apply.&quot; </p>
+
+<p>. Precede an inherited but unneeded attribute name with an &quot;x.&quot; </p>
+
+<p>. Precede an inherited but unneeded object connection (expressed in text) with an
+&quot;x.&quot; </p>
+
+<p>. Precede an inherited but unneeded service name with an &quot;x.&quot; </p>
+
+<div class="strategy"><i>Strategy #123. &quot;Specialization Redundancies&quot; Strategy // establishing
+responsibilities / what I do (consider and challenge) </p>
+
+<p>- An entire specialization level with an attribute or service name repeated
+throughout? </p>
+
+<p>. If there is a variation in the descriptions behind the repeated name, that's fine. </p>
+
+<p>. Yet if the attribute or service is indeed the same for each specialization, move it
+to a generalization. </p>
+
+<div class="strategy"><i>Strategy #124. &quot;No Level of Empty Specializations&quot; Strategy // establishing
+responsibilities / what I do (consider and challenge) </p>
+
+<p>- An entire level of specializations -- without attributes, object connections, or
+services? </p>
+
+<p>- What's happened: a graphical enumeration of values (not a very efficient
+representation of an enumeration of values). </p>
+
+<p>- What to do: replace all of those empty specializations with an attribute in the
+generalization class, plus a description that includes an enumeration of values. </p>
+
+<div class="strategy"><i>Strategy #125. &quot;Abundant Specializations&quot; Strategy // establishing
+responsibilities / what I do (consider and challenge) </p>
+
+<p>- Where to begin? </p>
+
+<p>. Divide and conquer: model a simple one; model a complex one. </p>
+
+<p>. Model an initial gen-spec, showing &quot;what's the same, what's different.&quot; </p>
+
+<p>. Then work on additional specializations, based upon &quot;what I know, who I know,
+what I do.&quot; </p>
+
+<p>- An incredible number of specializations, and you aren't sure which to apply? </p>
+
+<p>. Consider the system's responsibilities. </p>
+
+<p>. Model generalization-specialization based upon what the system knows and does
+regarding its specializations. </p>
+
+<p>. Use gen-spec to capture similarity and differences in system responsibility (not as a
+classification system of all classification systems). </p>
+
+<p>- Lots of specializations, resulting from multiple inheritance? </p>
+
+<p>. Use the <a HREF="Strpat00000060.html">actor-participant pattern</a>, to express an
+actor and the many ways it acts as a participant. </p>
+
+<p>. Example: person (actor) and participant (customer, cashier, head cashier, order
+clerk). </p>
+
+<p><a HREF="Strpat00000039.html">Establishing responsibilities / what I do</a> </p>
+
+<p><a HREF="Strpat00000015.html">Strategies for building object models</a> </p>
+</body>
+</html>

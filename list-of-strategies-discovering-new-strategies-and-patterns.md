@@ -1,0 +1,18 @@
+---
+title: List of strategies: Discovering new strategies and patterns
+layout: default
+---
+
+
+
+# List of strategies: Discovering new strategies and patterns 
+
+*  [#142.](./discovering-new-strategies-and-patterns.html) Discovering New Strategies
+*  [#143.](./discovering-new-strategies-and-patterns.html) Refining Strategies
+*  [#144.](./discovering-new-strategies-and-patterns.html) Describing Strategies
+*  [#145.](./discovering-new-strategies-and-patterns.html) Discovering New Patterns
+*  [#146.](./discovering-new-strategies-and-patterns.html) Naming New Patterns
+*  [#147.](./discovering-new-strategies-and-patterns.html) Refining Patterns
+*  [#148.](./discovering-new-strategies-and-patterns.html) Describing Patterns
+
+
