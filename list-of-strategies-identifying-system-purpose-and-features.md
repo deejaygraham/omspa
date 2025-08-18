@@ -1,5 +1,5 @@
 ---
-title: List of strategies: Identifying system purpose and features
+title: List of strategies - Identifying system purpose and features
 layout: default
 ---
 
