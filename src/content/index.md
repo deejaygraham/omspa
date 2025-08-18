@@ -1,6 +1,5 @@
 ---
 title: Contents
-permalink: index.html
 ---
 # Strategies and Patterns Handbook: Hypertext Edition
 
