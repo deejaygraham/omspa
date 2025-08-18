@@ -1,0 +1,174 @@
+<html>
+
+<head>
+<title>What to consider and challenge (scenarios)</title><link href="./css/style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+<b>
+
+<p>What to consider and challenge (scenarios) </p>
+
+<p></b><i>Strategy #132. &quot;Don't Ask 'What Kind?'&quot; Strategy // working out dynamics
+with scenarios (consider and challenge) </p>
+
+<p>- Don't ask &quot;What kind of object are you?&quot;--and then follow-up with a
+second message, telling that object what you want it to do. </p>
+
+<p>- Just say &quot;do it&quot; -- and let it get the job done. </p>
+
+<p>- If you discover that the receiving object needs a case statement, then specialize the
+classes of those objects, so an object already knows what kind it is. Then send one
+message and let that object do its thing. </p>
+
+<div class="strategy"><i>Strategy #132a. &quot;More Than 'Get A Value'&quot; Strategy // working out dynamics with
+scenarios (consider and challenge) </p>
+
+<p>- Don't send &quot;get value&quot; without first considering: </p>
+
+<p>. What question do I really want answered? </p>
+
+<p>. What calculation result do I need? </p>
+
+<p>. Can I pass an argument to that object and have it do something useful for me? </p>
+
+<p>- Why: this strategy helps you distribute both attributes and services, using
+problem-domain classes as a more stable, more understandable organizational framework. </p>
+
+<div class="strategy"><i>Strategy #133. &quot;Search then Interact&quot; Strategy // working out dynamics with
+scenarios (consider and challenge) </p>
+
+<p>- If you need to traverse multiple object connections in search for an object you
+want to interact with: </p>
+
+<p>. search for it </p>
+
+<p>. then interact with it. </p>
+
+<p>- Reason: simpler objects in between. </p>
+
+<div class="strategy"><i>Strategy #134. &quot;Act, Rather than Poll&quot; Strategy // working out dynamics with
+scenarios (consider and challenge) </p>
+
+<p>- For each object that recognizes that something needs to be done, let it initiate
+that work. </p>
+
+<p>- Don't let a manager poll that object, asking for a status change. Reason: no need for
+that extra managing activity (adds complexity, weakens encapsulation). </p>
+
+<div class="strategy"><i>Strategy #135. &quot;Get Values Only When You Need Them&quot; Strategy // working out
+dynamics with scenarios (consider and challenge) </p>
+
+<p>- Pass an object as a parameter. Get values from that object only at the point you
+are ready to use those values. </p>
+
+<p>- Why: better encapsulation; better localization of interface details. </p>
+
+<div class="strategy"><i>Strategy #136. &quot;Take Extra Work Out of the Loop&quot; Strategy // working out
+dynamics with scenarios (consider and challenge) </p>
+
+<p>- Check each loop within a scenario. Pull work outside of a loop, whenever you can.
+</p>
+
+<p>- Why: easier to understand (and ultimately, better performance). </p>
+
+<div class="strategy"><i>Strategy #137. &quot;Consistent Object Model and Scenario Views&quot; Strategy // working
+out dynamics with scenarios (consider and challenge) </p>
+
+<p>- Services in a scenario view should correspond with services in the object model. </p>
+
+<p>. Note: some services in a scenario view are not normally shown in a object model,
+namely: get, set, add, remove, delete, and create. </p>
+
+<p>- An object in a scenario view needs to know 'to whom to send a message&quot; -- either
+directly (an object connection in an object model) or indirectly (passed as a parameter to
+a specific service). </p>
+
+<div class="strategy"><i>Strategy #138. &quot;Reduce Interactions&quot; Strategy // working out dynamics with
+scenarios (consider and challenge) </p>
+
+<p>- Look at interactions that require a lot of messaging--or interactions that
+require going through many &quot;middle men&quot; to get what you want done, done. </p>
+
+<p>- Consider adding object connections to reduce traffic--and simplify your model. </p>
+
+<p>- Consider the cost: the extra overhead of establishing and maintaining additional
+object connections. </p>
+
+<div class="strategy"><i>Strategy #139. &quot;Reduce Cascading Messages&quot; Strategy // working out dynamics with
+scenarios (consider and challenge) </p>
+
+<p>- If you send a message to an object, and it sends a message to its collection of
+objects, whose objects in turn sends a message to its collection of objects: send the
+message directly to the last object in the cascading message sequence (you might need to
+add another object connection, so you know to whom to send the message). </p>
+
+<p>- Why: fewer messages makes it easier to understand (and more efficient to implement,
+too). </p>
+
+<p>- (If the object connections continually change, check out the dynamics of those object
+connections with scenarios. Then, apply this strategy only if you can keep the object
+connections in-sync. Sometimes, a few extra object interactions might be simpler after
+all.) </p>
+
+<div class="strategy"><i>Strategy #139a. &quot;Watch Out For Double Dipping&quot; Strategy // working out dynamics
+with scenarios (consider and challenge) </p>
+
+<p>- Watch out for this shape: </p>
+
+<p>---n---&gt; </p>
+
+<p>---n---&gt; </p>
+
+<p>- Likely problem: </p>
+
+<p>---n---&gt; qualify </p>
+
+<p>---n---&gt; do the qualified action </p>
+
+<p>- Better approach: </p>
+
+<p>---n---&gt; do it (qualify myself -- and if qualified, take action) </p>
+
+<p>- In this way, an object, once it qualifies itself, simply carries out the appropriate
+action. </p>
+
+<p>. Benefits: reduced object interactions; simpler interface (1 service, rather than 2);
+stronger cohesion (from decreased distance between recognition and action); better overall
+performance. </p>
+
+<p>- Related strategy: Strategy #132 &quot;Don't Ask Why&quot; </p>
+
+<div class="strategy"><i>Strategy #140. &quot;Object Creation and Deletion&quot; Strategy // working out dynamics
+with scenarios (consider and challenge) </p>
+
+<p>- Look at scenarios that create (and initialize) and delete the objects you work
+with. </p>
+
+<p>- Ask, &quot;Who is responsible for creating (and initializing) that object? Who is
+responsible for deleting it?&quot; </p>
+
+<div class="strategy"><i>Strategy #141. &quot;Responsive Data Acquisition and Control Objects&quot; Strategy //
+working out dynamics with scenarios (consider and challenge) </p>
+
+<p>- If data acquisition and control are done by one actual object, then model them
+with one object. </p>
+
+<p>- Otherwise: </p>
+
+<p>. For each control object: </p>
+
+<p>. . Add a collection of data acquisition objects. </p>
+
+<p>. . The control object takes care of itself -- and behavior across the collection. </p>
+
+<p>. For each data acquisition object: </p>
+
+<p>. . Each data acquisition object takes care of itself, as much it can do with what it
+knows (for example, reading values and detecting something from those values). </p>
+
+<p><a HREF="Strpat00000050.html">Working out dynamics with scenarios</a> </p>
+
+<p><a HREF="Strpat00000015.html">Strategies for building object models</a> </p>
+</body>
+</html>

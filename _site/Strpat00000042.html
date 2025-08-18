@@ -1,0 +1,55 @@
+<html>
+
+<head>
+<title>Model components--HI, DM (what I do)</title><link href="./css/style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+<b>
+
+<p>Model components--HI, DM, SI (what I do) </p>
+
+<p></b><i>Strategy #99. &quot;Establish HI Services&quot; Strategy // establishing
+responsibilities / what I do (model component) </p>
+
+<p>- For a window: include the actions for that window, actions that can be carried
+out by an object that window knows. For a report: &quot;generate&quot; is a good service. </p>
+
+<p>- Add action-initiating services. Let the PD objects do all the real work. (Why: so you
+can change the HI objects and not lose application smarts.) </p>
+
+<p>- Examples: activate, commit, delete, initiate, log, total, save, send, terminate. </p>
+
+<div class="strategy"><i>Strategy #100. &quot;Establish DM Services&quot; Strategy // establishing responsibilities
+/ what I do (model component) </p>
+
+<p>- For data management objects, include these services: search, save, load. </p>
+
+<div class="strategy"><i>Strategy #100a. &quot;Add System Interaction (SI) Responsibilities&quot; Strategy //
+establishing responsibilities / what I do </p>
+
+<p>- Include a &quot;logical&quot; representation, expressing the role the other
+system plays, in the problem domain component. Typical services: actions that name the
+desired result. Example: AuthorizationSystem, with an &quot;authorize&quot; service. </p>
+
+<p>- Include a &quot;physical&quot; representation, expressing the interaction details, in
+the SI component. Typical services: logon, connect, exchange, disconnect, logoff. Example:
+AuthorizationSystemSI, with &quot;logon, sendRequest, receiveResponse, logoff&quot;
+services. </p>
+
+<p>- Consider various activation paths, too. </p>
+
+<p>. On demand by a user: HI to PD to SI. </p>
+
+<p>. On demand from another system: SI to PD to SI. </p>
+
+<p>. On a schedule: PD to SI. </p>
+
+<p>. Or by &quot;sneaker net:&quot; such interaction is outside the scope of your object
+model; no SI object needed for this. </p>
+
+<p><a HREF="Strpat00000039.html">Establishing responsibilities / what I do</a> </p>
+
+<p><a HREF="Strpat00000015.html">Strategies for building object models</a> </p>
+</body>
+</html>

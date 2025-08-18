@@ -1,0 +1,138 @@
+<html>
+
+<head>
+<title>Selecting objects -- model components</title><link href="./css/style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+<b>
+
+<p>Selecting objects -- model components </p>
+
+<p></b><i>Strategy #25. &quot;Object-Model Components as a Guide&quot; Strategy // selecting
+objects (model components) </p>
+
+<p>- Use object-model components as a working outline for organizing your search for
+objects. </p>
+
+<p>. PD: problem domain </p>
+
+<p>. HI: human interaction . DM: data management </p>
+
+<p>. SI: system interaction </p>
+
+<p>. (and NT: not this time). </p>
+
+<div class="strategy"><i>Strategy #26. &quot;Feature, PD Objects, HI Objects&quot; Strategy // selecting objects
+(model components) </p>
+
+<p>- Tabulate: feature, corresponding problem-domain objects, corresponding human
+interaction objects. </p>
+
+<p>- Why: identify objects--and sort out who needs to collaborate with whom. </p>
+
+<div class="strategy"><i>Strategy #27. &quot;Select Windows: A First Cut&quot; Strategy // selecting objects (model
+components) </p>
+
+<p>- Add windows for each problem-domain object that you are working with. </p>
+
+<p>- If an object has line items, model both with a single window. </p>
+
+<div class="strategy"><i>Strategy #28. &quot;Select Logon Window&quot; Strategy // selecting objects (model
+components) </p>
+
+<p>- Add a logon window--if the system needs to know who is using the system, for
+access control and accountability. </p>
+
+<p>- Examples: cashier logon window, customer logon window, order clerk logon window--or
+simply a logon window. </p>
+
+<div class="strategy"><i>Strategy #29. &quot;Select Setup Windows&quot; Strategy // selecting objects (model
+components) </p>
+
+<p>- Add system setup windows. </p>
+
+<p>. Create and initialize the objects you need, to get the system ready to go. </p>
+
+<p>. Add system administration services for adding users and privileges. </p>
+
+<p>- Add activate and deactivate actions. </p>
+
+<p>. Do this for whatever human interaction might be needed for activating or deactivating
+an interacting system or device. </p>
+
+<p>. Put the actions with a window that knows objects that can carry those actions out. </p>
+
+<p>- Note: Don't include data entry &quot;nuts and bolts,&quot; such as screen, monitor
+keyboard, mouse, magnetic-stripe reader, and the like. </p>
+
+<div class="strategy"><i>Strategy #30. &quot;Select Core Windows&quot; Strategy // selecting objects (model
+components) </p>
+
+<p>- Consider who (audience) needs what (content), and why (purpose). </p>
+
+<p>- Add &quot;conducting business&quot; windows. </p>
+
+<p>. Include transaction windows. Examples: sale window, session window, payment window. </p>
+
+<p>- Add &quot;analyzing business results&quot; windows. </p>
+
+<p>- Consider combination windows, when content is closely related in time. </p>
+
+<p>. Examples: a transaction and its line items; a sale and payment window. </p>
+
+<div class="strategy"><i>Strategy #30a. &quot;Select HI Windows for PD Transactions&quot; Strategy // selecting
+objects (model components) </p>
+
+<p>- For each PD transaction object: </p>
+
+<p>. add an HI list window and an HI detail window. </p>
+
+<p>- Example: Registration (PD); RegistrationsWindow (HI), RegistrationDetailWindow (HI). </p>
+
+<div class="strategy"><i>Strategy #31. &quot;Select Reports&quot; Strategy // selecting objects (model components) </p>
+
+<p>- Put together key summaries and specialized outputs, meeting specific legal or
+business needs. </p>
+
+<p>- Look carefully at who (audience) needs what (content), and why (purpose). </p>
+
+<p>- Don't include every ad hoc query that someone might eventually ask; don't include
+outdated batch reports. </p>
+
+<div class="strategy"><i>Strategy #32. &quot;Select DM Objects&quot; Strategy // selecting objects (model
+components) </p>
+
+<p>- Add a DM object for each problem-domain class of objects that you want to be
+persistent--stored between program invocations. </p>
+
+<p>- Why: use data management (DM) objects to encapsulate search and storage mechanisms
+across all of the objects within a problem-domain class. </p>
+
+<p>- Examples: cashier DM, sale DM, sale line item DM, item DM. </p>
+
+<div class="strategy"><i>Strategy #33. &quot;Select Interacting Systems or Devices&quot; Strategy // selecting
+objects (model components) </p>
+
+<p>- Select it. </p>
+
+<p>. Look for other systems and pieces of equipment that your system must interact with. </p>
+
+<p>. Look for interacting systems; look for devices needing data acquisition and control.
+(Skip display or printing &quot;nuts and bolts.&quot;) </p>
+
+<p>- Examples: aileron, avionics system, controller, diverter, elevator, radar, rudder,
+sensor, scanner. </p>
+
+<p>- Model it. </p>
+
+<p>. With a problem-domain object, and </p>
+
+<p>. With a corresponding system-interaction (SI) object, encapsulating low-level
+communication detail. </p>
+
+<p><a HREF="Strpat00000018.html">Selecting objects</a> </p>
+
+<p><a HREF="Strpat00000015.html">Strategies for building object models</a> </p>
+</body>
+</html>
