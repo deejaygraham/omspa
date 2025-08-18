@@ -37,13 +37,13 @@ jobs:
         with:
           node-version: lts/*
 
-      #- name: Install dependencies
-      #  run: |
-      #    npm ci
+      - name: Install dependencies
+        run: |
+          npm ci
           
-      #- name: Build
-      #  run: |
-      #    npm run build
+      - name: Build
+        run: |
+          npm run build
           
       - name: Setup Github Pages
         uses: actions/configure-pages@v5
