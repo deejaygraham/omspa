@@ -1,6 +1,6 @@
 ---
 title: #1. &quot;Collection-Worker&quot; Pattern // the fundamental pattern
-layout: default
+layout: layout.html
 ---
 
 # Patt#1. &quot;Collection-Worker&quot; Pattern 
