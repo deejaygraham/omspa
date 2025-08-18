@@ -3,8 +3,6 @@ title: List of Strategies: Activities and model components
 layout: default
 ---
 
-
-
 # List of strategies: Activities and model components 
 
 *  [#1.](./guiding-the-effort-with-major-activities-and-components.html) Four Major Activities, Four Major Components
@@ -14,5 +12,3 @@ layout: default
 *  [#1d.](./guiding-the-effort-with-major-activities-and-components.html) Invest an Hour
 *  [#1e.](./guiding-the-effort-with-major-activities-and-components.html) Consider the Domain First; Artifacts After That
 *  [#1f.](./guiding-the-effort-with-major-activities-and-components.html) Extract Useful Content From An Existing Data Model
-
-
