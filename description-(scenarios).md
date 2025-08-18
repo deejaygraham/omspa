@@ -1,6 +1,6 @@
 ---
 title: Description (scenarios)
-layout: default
+layout: layout.html
 ---
 
 
