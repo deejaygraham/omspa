@@ -1,6 +1,6 @@
 ---
 title: Working out dynamics with scenarios
-layout: default
+layout: layout.html
 ---
 # Working out dynamics with scenarios
 
