@@ -1,0 +1,12 @@
+body {
+
+	padding: 2em;
+	font-family: helvetica, arial, sans-serif;
+}
+
+.strategy {
+	
+	border: 1px solid #666;
+	padding: 1em;
+	margin: 1em 0 2em 0;
+}
