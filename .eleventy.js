@@ -7,9 +7,9 @@ export default function(config) {
 		dataTemplateEngine: 'njk',
 		htmlTemplateEngine: 'njk',
 		dir: {
-			input: 'src',
-			includes: "_includes",
-      		layouts: "_includes/layouts",
+			input: 'src/content',
+			includes: "../_includes",
+      		layouts: "../_includes/layouts",
 			output: '_site',
 		},
 	}
