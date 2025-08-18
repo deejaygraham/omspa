@@ -1,5 +1,5 @@
 ---
-title: List of Strategies: Activities and model components
+title: List of Strategies - Activities and model components
 layout: default
 ---
 
