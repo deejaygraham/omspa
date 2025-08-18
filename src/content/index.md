@@ -26,5 +26,3 @@ started&quot; shareware, called [Playground](Strpat00000009.html).
 * [List of strategies](Strpat00000001.html)
 * [List of patterns](Strpat00000055.html)
 * [A helpful path for getting started](Strpat00000014.html)
-
-&copy; 1997 Object International, Inc. All rights reserved.
