@@ -1,5 +1,5 @@
 ---
-title: List of strategies: Working out dynamics with scenarios
+title: List of strategies - Working out dynamics with scenarios
 layout: default
 ---
 
