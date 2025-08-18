@@ -1,5 +1,5 @@
 ---
-title: Object Models: Strategies, Patterns, and Applications
+title: Object Models - Strategies, Patterns, and Applications
 layout: default
 ---
 # Object Models: Strategies, Patterns, and Applications
