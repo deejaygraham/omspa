@@ -1,1 +1,1 @@
-Omspa
+More modern markup version of the online version of one of my favourite books: "Object Models: Strategies, Patterns, and Applications" by Peter Coad, David North and Mark Mayfield from 1997. This uses the original html passed to me by Peter Coad himself. No copyright infringement is intended but hosted here since the original site and links featured in the original have gone away.
