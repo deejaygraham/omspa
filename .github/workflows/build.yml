@@ -44,14 +44,14 @@ jobs:
       - name: Install Playwright browsers
         run: |
           npx playwright install chromium
-          
-      - name: Run tests
-        run: |
-          npm test
 
-      - name: Build
+      - name: Build site
         run: |
           npm run build
+
+      - name: Run tests
+        run: |
+          npx playwright test
           
       - name: Setup Github Pages
         uses: actions/configure-pages@v5
