@@ -43,7 +43,7 @@ jobs:
 
       - name: Install Playwright browsers
         run: |
-          npx playwright install chromium
+          npx playwright install --with-deps chromium
 
       - name: Build site
         run: |
