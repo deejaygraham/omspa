@@ -1,0 +1,47 @@
+
+          **
+List of strategies: Selecting objects
+**
+Str#13. Select Actors
+Str#14. Select Participants
+Str#15. Select Places
+Str#16. Select Tangible Things
+Str#17. Select Transactions
+Str#18. Select Associates
+Str#19. Select Items and Specific Items
+Str#19a. Separate Definition from Usage
+Str#20. Select Interacting Systems and Devices
+Str#20a. Add Outbound/Inbound Request
+Str#21. Select Collections of Objects
+Str#22. Select Container Objects
+Str#23. Select a Collection
+Str#24. Select the Smallest Applicable Collection
+Str#25. Object-Model Components as a Guide
+Str#26. Feature, PD Objects, HI Objects
+Str#27. Select Windows: A First Cut
+Str#28. Select Logon Window
+Str#29. Select Setup Windows
+Str#30. Select Core Windows
+Str#30a. Select HI Windows for PD Transactions
+Str#31. Select Reports
+Str#32. Select DM Objects
+Str#33. Select Interacting Systems or Devices
+Str#34. Select Kinds of Objects
+Str#34a. Fits within a Specialization Class -- Forever
+Str#35. Select Corresponding Objects from Analogous Systems
+Str#36. Select and Reuse an Analogous Class
+Str#37. Select and Reuse a Group of Interacting Objects
+Str#38. Use the Domain Vocabulary
+Str#39. The Domain Terms and Add-Ons
+Str#40. Always Look for a Better Class Name
+Str#41. Consistent Class Name Format
+Str#42. System Responsibility
+Str#43. Duplicate Responsibilities
+Str#44. Reengineer with Objects
+Str#45. Useful Questions
+Str#46. More Than a Report
+Str#47. Way to Know
+Str#48. No Objects Mimicking What a Human Does
+Str#49. Different Human Interaction
+
+        

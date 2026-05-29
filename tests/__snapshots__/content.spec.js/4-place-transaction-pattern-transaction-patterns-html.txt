@@ -1,0 +1,34 @@
+
+          _
+Patt#4. "Place-Transaction" Pattern // transaction patterns
+
+_
+Typical object interactions
+- howMany --> calcForMe
+- howMuch --> calcForMe
+- calcOverTransactions --> calcForMe
+- rankTransactions --> rateMe
+Examples
+- Place: airport, assembly-line, airport, bank, clinic, depot, garage, geographic entity, hangar, hospital, manufacturing site, plant, region, sales outlet, service center, shelf, station, store, warehouse, zone.
+- Transaction: agreement, assignment, authorization, contract, delivery, deposit, incident, inquiry, order, payment, problem, report, purchase, refund, registration, rental, reservation, sale, shift, shipment, subscription, time charge, title, withdrawal.
+Combinations
+Patt#3. "Participant-Transaction"
+Patt#5. "Specific Item - Transaction"
+Patt#6. "Transaction - Transaction Line Item"
+Patt#7. "Transaction - Subsequent Transaction".
+- Also, using "place" as a container:
+Patt#14. "Container-Content"
+Patt#15. "Container - Container Line Item."
+Related strategies:
+Str#15. "Select Places" Strategy
+Str#17. "Select Transactions" Strategy
+Str#53. "Establish Place Attributes" Strategy
+Str#54. "Establish Transaction Attributes" Strategy
+Str#75. "Establish Place Object Connections" Strategy
+Str#76. "Establish Transaction Object Connections" Strategy
+Str#95. "Establish Place Services" Strategy
+Str#96. "Establish Transaction Services" Strategy
+Transaction patterns
+Patterns for building object models
+
+        

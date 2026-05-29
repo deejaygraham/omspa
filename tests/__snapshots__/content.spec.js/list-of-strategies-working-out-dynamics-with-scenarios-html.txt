@@ -1,0 +1,23 @@
+
+          **
+List of strategies: Working out dynamics with scenarios
+**
+Str#127. Select Key Scenarios
+Str#128. Where to Begin a Scenario
+Str#129. Act It Out
+Str#130. Two-Pass Scenario Development
+Str#131. Describe Scenarios with a Scenario View
+Str#132. Don't Ask 'What Kind?'
+Str#132a. More Than 'Get A Value'
+Str#133. Search then Interact
+Str#134. Act, Rather than Poll
+Str#135. Get Values Only When You Need Them
+Str#136. Take Extra Work Out of the Loop
+Str#137. Consistent Object Model and Scenario Views
+Str#138. Reduce Interactions
+Str#139. Reduce Cascading Messages
+Str#139a. Watch Out For Double Dipping
+Str#140. Object Creation and Deletion
+Str#141. Responsive Data Acquisition and Control Objects
+
+        

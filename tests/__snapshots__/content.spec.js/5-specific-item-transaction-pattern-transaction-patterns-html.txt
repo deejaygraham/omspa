@@ -1,0 +1,31 @@
+
+          _
+Patt#5. "Specific Item - Transaction" Pattern // transaction patterns
+
+_
+Typical object interactions
+- howMany --> calcForMe
+- howMuch --> calcForMe
+- calcOverTransactions --&gtcalcForMe
+- rankTransactions --> rateMe
+Examples
+- Specific item: specific aircraft, specific container, specific ship, specific register, specific vehicle.
+- Transaction: agreement, assignment, authorization, contract, delivery, deposit, incident, inquiry, order, payment, problem, report, purchase, refund, registration, rental, reservation, sale, shift, shipment, subscription, time charge, title, withdrawal.
+Combinations
+Patt#3. "Participant-Transaction"
+Patt#4. "Place-Transaction"
+Patt#5. "Specific Item - Transaction"
+Patt#6. "Transaction - Transaction Line Item"
+Patt#7. "Transaction - Subsequent Transaction".
+- Also, using "specific item" as a container:
+Patt#14. "Container-Content"
+Patt#15. "Container - Container Line Item."
+Related strategies:
+Str#17. "Select Transactions" Strategy
+Str#54. "Establish Transaction Attributes" Strategy
+Str#76. "Establish Transaction Object Connections" Strategy
+Str#96. "Establish Transaction Services" Strategy
+Transaction patterns
+Patterns for building object models
+
+        

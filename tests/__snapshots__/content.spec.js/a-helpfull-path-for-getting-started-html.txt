@@ -1,0 +1,53 @@
+
+          **
+A helpful path for getting started
+**
+Here is a helpful path for getting started with the strategies and patterns in this handbook.
+Activities and Model Components
+Str#1. "Four Major Activities, Four Major Components" Strategy
+Str#1a. "Build an Initial Object Model, then Proceed Feature-by-Feature" Strategy
+Identifying Purpose and Features
+Str#2. "System Purpose" Strategy
+Str#6. "Four Kinds of Features" Strategy
+Selecting Objects
+Str#13. "Select Actors" Strategy
+Str#14. "Select Participants" Strategy
+Str#15. "Select Places" Strategy
+Str#16. "Select Tangible Things" Strategy
+Str#17. "Select Transactions" Strategy
+Str#19. "Select Items and Specific Items" Strategy
+Str#30a. "Select HI Windows for PD Transactions" Strategy
+Str#32. "Select DM Objects" Strategy
+Establishing Responsibilities / what I know
+Str#50. "Select Attributes from Actual Ones" Strategy
+Str#57. "Establish HI Attributes" Strategy
+Establishing Responsibilities / who I know
+Str#72. "Establish PD Object Connections" Strategy
+Str#79a. "Establish HI-PD Object Connections" Strategy
+Str#80. "Establish DM Object Connections" Strategy
+Str#80a. "ABC" Strategy
+Establishing Responsibilities / what I do
+Str#87. "Put the Services with the Attributes They Work On" Strategy
+Str#88. "Why, Why, Why" Strategy
+Str#89. "Basic Services" Strategy
+Str#90. "Service as a Question" Strategy
+Str#91. "Service as a Verb" Strategy
+Str#86. "Do It Myself" Strategy
+Str#99. "Establish HI Services" Strategy
+Str#100. "Establish DM Services" Strategy
+Working Out Dynamics with Scenarios
+Str#127. "Select Key Scenarios" Strategy
+Str#128. "Where to Begin a Scenario" Strategy
+Str#129. "Act It Out" Strategy
+Using Transaction Patterns
+Patt#2. "Actor-Participant" Pattern
+Patt#3. "Participant-Transaction" Pattern
+Patt#4. "Place-Transaction" Pattern
+Patt#6. "Transaction - Transaction Line Item" Pattern
+Patt#9. "Item - Line Item" Pattern
+Patt#10. "Specific Item - Line Item" Pattern
+Patt#11. "Item - Specific Item" Pattern
+Using Aggregate Patterns
+Patt#14. "Container-Content" Pattern
+
+        

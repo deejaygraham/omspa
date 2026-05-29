@@ -1,0 +1,25 @@
+
+          _
+Patt#9. "Item - Line Item" Pattern // transaction patterns
+
+_
+Typical object interactions
+- howMany --> getQuantity
+- calcOverLineItems --> calcForMe
+- rankLineItems --> rateMe
+Examples
+- (with transaction line items) item - order line item; item - payment line item; item - rental line item; item - sale line item; item - shipment line item (with container line items) item - bin line item; item - warehouse line item.
+Combinations
+Patt#6. "Transaction - Transaction Line Item"
+Patt#8. "Transaction Line Item - Subsequent Transaction Line Item"
+Patt#15. "Container - Container Line Item."
+Related strategies:
+Str#16. "Select Tangible Things" Strategy
+Str#19. "Select Items and Specific Items" Strategy
+Str#55. "Establish Item and Specific Item Attributes" Strategy
+Str#77. "Establish Item and Specific Item Object Connections" Strategy
+Str#97. "Establish Item & Specific Item Services" Strategy
+Transaction patterns
+Patterns for building object models
+
+        

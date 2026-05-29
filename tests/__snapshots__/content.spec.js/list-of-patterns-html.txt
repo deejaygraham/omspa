@@ -1,0 +1,44 @@
+
+          **
+List of patterns
+**
+The fundamental pattern
+Patt#1. Collection-Worker
+Transaction patterns
+Patt#2. Actor-Participant
+Patt#3. Participant-Transaction
+Patt#4. Place-Transaction
+Patt#5. Specific Item - Transaction
+Patt#6. Transaction - Transaction Line Item
+Patt#7. Transaction - Subsequent Transaction
+Patt#8. Transaction Line Item - Subsequent Transaction Line Item
+Patt#9. Item - Line Item
+Patt#10. Specific Item - Line Item
+Patt#11. Item - Specific Item
+Patt#12. Associate - Other Associate
+Patt#13. Specific Item - Hierarchical Item
+Aggregate patterns
+Patt#14. Container-Content
+Patt#15. Container - Container Line Item
+Patt#16. Group-Member
+Patt#17. Assembly-Part
+Patt#18. Compound Part - Part
+Patt#19. Packet - Packet Component
+Plan patterns
+Patt#20. Plan-Step
+Patt#21. Plan - Plan Execution
+Patt#22. Step - Step Execution
+Patt#23. Plan Execution - Step Execution
+Patt#24. Plan - Plan Version
+Interaction patterns
+Patt#25. Peer-Peer
+Patt#26. Proxy - Specific Item
+Patt#27. Publisher-Subscriber
+Patt#28. Sender - Pass Through - Receiver
+Patt#29. Sender-Lookup-Receiver
+Patt#30. Caller - Dispatcher - Caller Back
+Patt#31. Gatekeeper-Request-Resource
+Patterns for building object models
+List of strategies
+
+        

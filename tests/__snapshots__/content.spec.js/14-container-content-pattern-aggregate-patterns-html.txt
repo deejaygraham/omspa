@@ -1,0 +1,32 @@
+
+          _
+Patt#14. "Container-Content" Pattern // aggregate patterns
+
+_
+Typical object interactions
+- howMany --> calcForMe
+- howMuch --> calcForMe
+- calcOverContents --> calcForMe
+- rankContent --> rateMe
+Examples
+- Containers: airport, aircraft, aisle, bank, bin, building, cabinet, folder, garage, hangar, hospital, locker, room, safe, store, warehouse.
+- Container - content: aircraft-cargo; aircraft-passenger; building-room; catalog - catalog item; store-item; warehouse - loading dock.
+Combinations
+Patt#14. "Container-Content" (again)
+Patt#15. "Container - Container Line Item"
+Patt#16. "Group-Member"
+Patt#17. "Assembly-Part."
+- Also, when "container" or "content" is a participant, place, or specific item:
+Patt#2. "Actor-Participant"
+Patt#3. "Participant-Transaction"
+Patt#4. "Place-Transaction"
+Patt#5. "Specific Item - Transaction"
+Patt#10. "Specific Item - Line Item"
+Patt#11. "Item - Specific Item."
+Related strategies:
+Str#22. "Select Container Objects" Strategy
+Str#103. "Service in the Smallest Applicable Container" Strategy
+Aggregate patterns
+Patterns for building object models
+
+        

@@ -1,0 +1,21 @@
+
+          _
+Patt#20. "Plan-Step" Pattern // plan patterns
+
+_
+Typical object interactions
+- estimateDuration --> getEstimatedDuration
+- gatherNeededResources --> getNeededResources
+- calcOverSteps --> calcForMe
+- rankSteps --> rateMe
+Examples
+- Plan: project plan, battle plan, cooking recipe, batch job, procedure
+- Plan-step: project plan - task, battle plan - tactical steps, recipe - recipe steps, job - job step, procedure - procedure step
+Combinations
+Patt#21. "Plan - Plan Execution"
+Patt#22. "Step - Step Execution"
+Patt#24. "Plan - Plan Version."
+Plan patterns
+Patterns for building object models
+
+        

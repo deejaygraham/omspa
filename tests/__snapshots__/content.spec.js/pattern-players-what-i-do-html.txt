@@ -1,0 +1,42 @@
+
+          **
+Pattern players (what I do)
+**
+Str#94. "Establish Actor and Participant Services" Strategy // establishing responsibilities / what I do (pattern players)
+- For an actor or participant, include: calculate for me, rate me, is &ltvalue>.
+- For an actor as a collection, include: how many, how much, rank participants, calculate over participants (plus services to enforce business rules across that collection).
+- For a participant as a collection, include: how many, how much, rank transactions, calculate over transactions (plus services to enforce business rules across that collection).
+Related patterns:
+Patt#2. "Actor-Participant"
+Patt#3. "Participant-Transaction"
+Str#95. "Establish Place Services" Strategy // establishing responsibilities / what I do (pattern players)
+- For a place, include: calculate for me, rate me, is &ltvalue>.
+- For a place as a collection, include: how many, how much, rank transactions, rank contents, rank container line items, calculate over transactions, calculate over contents, calculate over container line items (plus services to enforce business rules across that collection).
+Related pattern: Patt#4._4_Place_Transaction_Pattern_transaction_patterns "Place-Transaction"
+Str#96. "Establish Transaction Services" Strategy // establishing responsibilities / what I do (pattern players)
+- For a transaction, include: calculate for me, rate me, is &ltvalue>.
+- For a transaction as a collection, include: how many, how much, rank transaction line items, rank subsequent transactions, calculate over transaction line items, calculate over subsequent transactions (plus services to enforce business rules across that collection).
+- For line items, include: calculate for me, rate me.
+Related patterns:
+Patt#3. "Participant-Transaction"
+Patt#4. "Place-Transaction"
+Patt#5. "Specific Item - Transaction"
+Patt#6. "Transaction - Transaction Line Item"
+Patt#7. "Transaction - Subsequent Transaction"
+Patt#8. "Transaction Line Item - Subsequent Transaction Line Item"
+Str#97. "Establish Item & Specific Item Services" Strategy // establishing responsibilities / what I do (pattern players)
+- For an item or a specific item, include: calculate for me, rate me, is &ltvalue>.
+- For an item as a collection, include: how many, how much, rank, calculate over specific items (plus services to enforce business rules across that collection).
+- For a specific item as a collection, include: how many, how much, rank line items, calculate over line items, (plus services to enforce business rules across that collection).
+Related patterns:
+Patt#9. "Item - Line Item"
+Patt#10. "Specific Item - Line Item"
+Patt#11. "Item - Specific Item"
+Str#98. "Establish Interacting System or Device Services" Strategy // establishing responsibilities / what I do (pattern players)
+- For an interacting system or device, include: activate, monitor (maintain), report, deactivate (plus calculate for me, rate me, is &ltvalue>).
+- For an interacting system or device as a collection, include: how many, how much, rank parts, calculate over parts.
+- Add a corresponding object in the system interaction (SI) component, to isolate specific interaction needs (examples: connect, logon, query, logoff, disconnect).
+Establishing responsibilities / what I do
+Strategies for building object models
+
+        

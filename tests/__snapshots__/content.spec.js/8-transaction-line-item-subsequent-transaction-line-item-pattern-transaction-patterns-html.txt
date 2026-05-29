@@ -1,0 +1,26 @@
+
+          _
+Patt#8. "Transaction Line Item - Subsequent Transaction Line Item" Pattern // transaction patterns
+
+_
+Typical object interactions
+- howMany --> calcForMe
+- howMuch --> calcForMe
+- calcOverSubsequentLineItems --> calcForMe
+- rankTransactions --> rateMe
+Examples
+- Transaction line items: agreement, assignment, authorization, contract, delivery, deposit, incident, inquiry, order, payment, problem report, purchase, refund, registration, rental, reservation, sale, shift, shipment, subscription, time charge, title, withdrawal.
+- Transaction line item - subsequent transaction line item: order line item - shipment line item; reservation line item - rental line item; shipment line item - delivery line item.
+Combinations
+Patt#6. "Transaction - Transaction Line Item"
+Patt#9. "Item - Line Item"
+Patt#10. "Specific Item - Line Item."
+Related strategies:
+Str#17. "Select Transactions" Strategy
+Str#54. "Establish Transaction Attributes" Strategy
+Str#76. "Establish Transaction Object Connections" Strategy
+Str#96. "Establish Transaction Services" Strategy
+Transaction patterns
+Patterns for building object models
+
+        

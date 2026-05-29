@@ -1,0 +1,16 @@
+
+          **
+Interaction patterns
+**
+Interaction patterns are patterns of how objects work with each other. Overlay these patterns on players in other patterns.
+The interaction patterns are:
+Patt#25. "Peer-Peer" Pattern
+Patt#26. "Proxy - Specific Item" Pattern
+Patt#27. "Publisher-Subscriber" Pattern
+Patt#28. "Sender - Pass Through - Receiver" Pattern
+Patt#29. "Sender-Lookup-Receiver" Pattern
+Patt#30. "Caller - Dispatcher - Caller Back" Pattern
+Patt#31. "Gatekeeper-Request-Resource" Pattern
+Patterns for building object models
+
+        

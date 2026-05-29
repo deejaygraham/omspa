@@ -1,0 +1,19 @@
+
+          _
+Patt#26. "Proxy - Specific Item" Pattern // interaction patterns
+
+_
+Typical object interactions
+- forwardRequest --> executeRequest
+Examples
+- object - cached object.
+Combinations
+Patt#10. "Specific Item - Line Item"
+Patt#11. "Item - Specific Item."
+- Superimpose "specific item" on any pattern player, adding a proxy to it.
+Notes
+- You know the proxy. It does no work of its own. It passes all work to its corresponding specific item.
+Interaction patterns
+Patterns for building object models
+
+        

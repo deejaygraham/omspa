@@ -1,0 +1,16 @@
+
+          _
+Patt#22. "Step - Step Execution" Pattern // plan patterns
+
+_
+Typical object interactions
+- calcAvgDuration --> calcDuration
+Examples
+- tactic - tactic execution, recipe step - recipe step execution, job step - job step execution, procedure step - procedure step execution.
+Combinations
+Patt#20. "Plan-Step"
+Patt#23. "Plan Execution - Step Execution."
+Plan patterns
+Patterns for building object models
+
+        

@@ -1,0 +1,21 @@
+
+          _
+Patt#18. "Compound Part - Part" Pattern // aggregate patterns
+
+_
+Typical object interactions
+- howMany --> calcForMe
+- calcOverParts --> calcForMe
+- rankParts --> rateMe
+Examples
+- compound part - part; electronic assembly - electronic part; hardware assembly - hardware part.
+Combinations
+Patt#17. "Assembly-Part"
+Also, when "compound part" or "part" is treated as a specific item:
+Patt#5. "Specific Item - Transaction"
+Patt#10. "Specific Item - Line Item"
+Patt#11. "Item - Specific Item."
+Aggregate patterns
+Patterns for building object models
+
+        

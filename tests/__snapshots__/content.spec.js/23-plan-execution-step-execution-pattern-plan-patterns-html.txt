@@ -1,0 +1,18 @@
+
+          _
+Patt#23. "Plan Execution - Step Execution" Pattern // plan patterns
+
+_
+Typical object interactions
+- calcDuration --> calcDuration
+- isComplete --> isComplete
+- buildExecutionStep --> create
+Examples
+- battle execution - tactics execution, recipe execution - recipe step execution, job execution - job step execution, procedure execution - procedure step execution
+Combinations
+Patt#20. "Plan-Step"
+Patt#21. "Plan - Plan Execution."
+Plan patterns
+Patterns for building object models
+
+        

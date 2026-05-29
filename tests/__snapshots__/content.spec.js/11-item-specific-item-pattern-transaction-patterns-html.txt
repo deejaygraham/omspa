@@ -1,0 +1,26 @@
+
+          _
+Patt#11. "Item - Specific Item" Pattern // transaction patterns
+
+_
+Typical object interactions
+- howMany --> calcForMe
+- checkStatus --> isStatusValue
+- calcOverSpecificItems --> calcForMe
+- rankSpecificItems --> rateMe
+- getDefaultValue <-- getCustomElseDefault
+Examples
+- aircraft - specific aircraft; loan description - specific loan; job description - specific job; video description - videotape; price category - item - specific item (pattern, applied twice); tax category - item - specific item (pattern, applied twice).
+Combinations
+Patt#5. "Specific Item - Transaction"
+Patt#9. "Item - Line Item."
+Related strategies:
+Str#16. "Select Tangible Things" Strategy
+Str#19. "Select Items and Specific Items" Strategy
+Str#55. "Establish Item and Specific Item Attributes" Strategy
+Str#77. "Establish Item and Specific Item Object Connections" Strategy
+Str#97. "Establish Item & Specific Item Services" Strategy
+Transaction patterns
+Patterns for building object models
+
+        

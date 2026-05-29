@@ -1,0 +1,23 @@
+
+          **
+Transaction Patterns
+**
+Transaction patterns are those patterns that have a transaction player -- or have players that commonly play with a transaction player.
+The transaction patterns are:
+Patt#2. Actor-Participant
+Patt#3. Participant-Transaction
+Patt#4. Place-Transaction
+Patt#5. Specific Item - Transaction
+Patt#6. Transaction - Transaction Line Item
+Patt#7. Transaction - Subsequent Transaction
+Patt#8. Transaction Line Item - Subsequent Transaction Line Item
+Patt#9. Item - Line Item
+Patt#10. Specific Item - Line Item
+Patt#11. Item - Specific Item
+Patt#12. Associate - Other Associate
+Patt#13. Specific Item - Hierarchical Item.
+Here's an overview of transaction patterns, illustrating how they can interconnect with one another:
+
+Patterns for building object models
+
+        

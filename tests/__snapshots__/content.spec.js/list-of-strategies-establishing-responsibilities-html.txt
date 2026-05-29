@@ -1,0 +1,95 @@
+
+          **
+List of strategies: Establishing responsibilities
+**
+Str#50. Select Attributes from Actual Ones
+Str#51. Establish Usual Attributes
+Str#52. Establish Actor and Participant Attributes
+Str#53. Establish Place Attributes
+Str#54. Establish Transaction Attributes
+Str#54a. Transaction Times
+Str#54b. An Attribute? Or Something More?
+Str#55. Establish Item and Specific Item Attributes
+Str#56. Establish Interacting System and Device Attributes
+Str#57. Establish HI Attributes
+Str#58. Describe Attributes with a Template
+Str#59. Describe Real-Time Attributes
+Str#60. Closely Related Values as One
+Str#61. Yes/No Attribute
+Str#62. Values Over Time
+Str#62a. You? Me? Or Something Between Us?
+Str#63. Embedded Meaning in a Number
+Str#64. Attribute with Repeating Values
+Str#65. Attribute Value Granularity
+Str#66. Calculable Result
+Str#67. Common Attributes
+Str#67a. Collapse Whole-Part When Same Attributes Apply
+Str#68. Partially Applicable Attribute
+Str#69. No Attributes
+Str#70. Embedded Value in an Attribute Name
+Str#71. Type Attribute
+Str#72. Establish PD Object Connections
+Str#73. Show Who I Know
+Str#73a. Whole-Part and Existence Dependency: Two Distinct Issues
+Str#74. Establish Actor and Participant Object Connections
+Str#75. Establish Place Object Connections
+Str#76. Establish Transaction Object Connections
+Str#77. Establish Item and Specific Item Object Connections
+Str#78. Establish Interacting System or Device Object Connections
+Str#79. Establish HI Object Connections
+Str#79a. Establish HI-PD Object Connections
+Str#80. Establish DM Object Connections
+Str#80a. ABC
+Str#80b. Double 1's
+Str#80c. Double n's
+Str#80d. Relationships Between Objects in the Same Class
+Str#81. Common Object Connection
+Str#82. Uncommon Object Connection
+Str#83. One Object with Special Meaning
+Str#84. Object Connection with Multiple Meanings
+Str#85. An Object with No Connections
+Str#86. Do It Myself
+Str#87. Put Services with the Attributes They Work On
+Str#88. Why, Why, Why
+Str#89. Basic Services
+Str#90. Service as a Question
+Str#91. Service as a Verb
+Str#92. What Can I Do for You
+Str#93. Question, Calculation, Selection
+Str#94. Establish Actor and Participant Services
+Str#95. Establish Place Services
+Str#96. Establish Transaction Services
+Str#97. Establish Item & Specific Item Services
+Str#98. Establish Interacting System or Device Services
+Str#99. Establish HI Services
+Str#100. Establish DM Services
+Str#100a. Add System Interaction (SI) Responsibilities
+Str#101. Placing Services
+Str#102. Service across a Collection
+Str#103. Service in the Smallest Applicable Container
+Str#104. Worker in a Collection
+Str#105. Programmable Action
+Str#106. Real Time: Timeliness
+Str#107. Real Time: Dynamic Internal Structure
+Str#108. Real Time: Reactiveness
+Str#109. Real Time: State-Dependency
+Str#110. Real Time: Concurrency
+Str#111. Real Time: Multiple Device Abstractions
+Str#112. Real Time: Distribution
+Str#113. Batch Up Immediate Results
+Str#114. Traveling Object
+Str#115. Sender, Intermediary, Receiver
+Str#116. Describe Services with a Template
+Str#117. Describe Real-Time Services
+Str#118. Watch Out for Control Objects and Data Objects
+Str#119. Watch Out for Excessive Behavior
+Str#119a. Watch Out for 'Workaholic - Data Holder'
+Str#120. Common Services
+Str#121. Partially Applicable Service
+Str#122. Meaningful Gen-Spec
+Str#123. Specialization Redundancies
+Str#124. No Level of Empty Specializations
+Str#125. Abundant Specializations
+Str#126. Class Name in a Service Name
+
+        

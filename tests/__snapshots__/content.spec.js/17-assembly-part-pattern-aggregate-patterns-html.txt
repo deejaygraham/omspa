@@ -1,0 +1,26 @@
+
+          _
+Patt#17. "Assembly-Part" Pattern // aggregate patterns
+
+_
+Typical object interactions
+- monitor --> monitor
+- acceptReport <-- report
+- calcOverParts --> calcForMe
+- rankParts --> rateMe
+Examples
+- aircraft-engine; engine - engine part.
+Combinations
+Patt#17. "Assembly-Part" (again)
+Patt#14. "Container-Content"
+Patt#16. "Group-Member"
+Patt#18. "Compound Part - Part."
+- Also, when "assembly" or "part" is a specific item:
+Patt#5. "Specific Item - Transaction"
+Patt#10. "Specific Item - Line Item"
+Patt#11. "Item - Specific Item."
+Related strategy: Str#21. "Select Collections of Objects" Strategy
+Aggregate patterns
+Patterns for building object models
+
+        

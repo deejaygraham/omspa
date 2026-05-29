@@ -1,0 +1,13 @@
+
+          **
+List of strategies: Discovering new strategies and patterns
+**
+Str#142. Discovering New Strategies
+Str#143. Refining Strategies
+Str#144. Describing Strategies
+Str#145. Discovering New Patterns
+Str#146. Naming New Patterns
+Str#147. Refining Patterns
+Str#148. Describing Patterns
+
+        

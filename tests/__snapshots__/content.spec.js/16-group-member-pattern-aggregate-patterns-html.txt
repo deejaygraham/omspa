@@ -1,0 +1,27 @@
+
+          _
+Patt#16. "Group-Member" Pattern // aggregate patterns
+
+_
+Typical object interactions
+- howMany --> calcForMe
+- calcOverMembers --> calcForMe
+- rankMembers --> rateMe
+Examples
+- company-employee; team - team member.
+Combinations
+Patt#16. "Group-Member" (again)
+Patt#14. "Container-Content"
+Patt#17. "Assembly-Part."
+- Also, when "group" or "member" is a participant, place, or specific item:
+Patt#2. "Actor-Participant"
+Patt#3. "Participant-Transaction"
+Patt#4. "Place-Transaction"
+Patt#5. "Specific Item - Transaction"
+Patt#10. "Specific Item - Line Item"
+Patt#11. "Item - Specific Item."
+Related strategy: Str#37. "Select and Reuse a Group of Interacting Objects" Strategy
+Aggregate patterns
+Patterns for building object models
+
+        

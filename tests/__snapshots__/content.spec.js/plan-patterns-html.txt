@@ -1,0 +1,15 @@
+
+          **
+Plan patterns
+**
+The plan patterns are:
+Patt#20. "Plan-Step" Pattern
+Patt#21. "Plan - Plan Execution" Pattern
+Patt#22. "Step - Step Execution" Pattern
+Patt#23. "Plan Execution - Step Execution" Pattern
+Patt#24. "Plan - Plan Version" Pattern
+Here's an overview of the plan patterns:
+
+Patterns for building object models
+
+        

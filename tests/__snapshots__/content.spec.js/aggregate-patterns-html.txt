@@ -1,0 +1,17 @@
+
+          **
+Aggregate patterns
+**
+The aggregate patterns are:
+Patt#14. Container-Content
+Patt#15. Container - Container Line Item
+Patt#16. Group-Member
+Patt#17. Assembly-Part
+Patt#18. Compound Part - Part
+Patt#19. Packet - Packet Component
+These patterns interconnect with other patterns, sometimes with the help of the "associate - other associate" transaction pattern.
+Here's an overview of aggregate patterns:
+
+Patterns for building object models
+
+        

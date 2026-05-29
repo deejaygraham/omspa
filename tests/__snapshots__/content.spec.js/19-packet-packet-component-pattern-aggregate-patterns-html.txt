@@ -1,0 +1,19 @@
+
+          _
+Patt#19. "Packet - Packet Component" Pattern // aggregate patterns
+
+_
+Typical object interactions
+- disassemble --> create
+- assemble --> getValue
+Examples
+- record-field, message-token, telemetry packet - telemetry component
+Combinations
+- When a "packet component" is treated as a specific item:
+Patt#5. "Specific Item - Transaction"
+Patt#10. "Specific Item - Line Item"
+Patt#11. "Item - Specific Item."
+Aggregate patterns
+Patterns for building object models
+
+        

@@ -1,0 +1,16 @@
+
+          _
+Patt#13. "Specific Item - Hierarchical Item" Pattern // transaction patterns
+
+_
+Typical object interactions
+- howMany --> calcForMe
+- calcOverItems --> calcForMe
+Examples
+- account - account description hierarchy; merchandise - merchandise description hierarchy; organization - organization description hierarchy.
+Combinations
+Patt#11. "Item - Specific Item."
+Transaction patterns
+Patterns for building object models
+
+        

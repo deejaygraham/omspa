@@ -1,0 +1,29 @@
+
+          _
+Patt#15. "Container - Container Line Item" Pattern // aggregate patterns
+
+_
+Typical object interactions
+- howMany --> calcForMe
+- calcOverLineItems --> calcForMe
+- rankLineItems --> rateMe
+Examples
+- aircraft - aircraft line item; bin - bin line item; warehouse - warehouse line item.
+Combinations
+Patt#9. "Item - Line Item"
+Patt#10. "Specific Item - Line Item."
+- Also, when "container" is a participant, place, or specific item:
+Patt#2. "Actor-Participant"
+Patt#3. "Participant-Transaction"
+Patt#4. "Place-Transaction"
+Patt#5. "Specific Item - Transaction"
+Patt#11. "Item - Specific Item."
+Notes
+- When working with containers within containers, apply this pattern to the smallest container in that domain, within your system's responsibilities.
+Related strategies:
+Str#22. "Select Container Objects" Strategy
+Str#103. "Service in the Smallest Applicable Container" Strategy
+Aggregate patterns
+Patterns for building object models
+
+        

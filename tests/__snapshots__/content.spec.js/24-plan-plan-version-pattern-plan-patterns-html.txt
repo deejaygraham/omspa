@@ -1,0 +1,18 @@
+
+          _
+Patt#24. "Plan - Plan Version" Pattern // plan patterns
+
+_
+Typical object interactions
+- howMany --> calcForMe
+- rank --> rateMe
+- buildVersion --> create
+Examples
+- any plan and one or more versions of that plan
+Combinations
+Patt#20. "Plan-Step"
+Patt#21. "Plan - Plan Execution."
+Plan patterns
+Patterns for building object models
+
+        

@@ -1,0 +1,8 @@
+
+          **
+The fundamental pattern
+**
+This pattern is the fundamental object-model pattern. It's the template that all other patterns follow.
+Patt#1. "Collection-Worker" // the fundamental pattern
+
+        

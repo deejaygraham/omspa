@@ -1,0 +1,17 @@
+
+          _
+Patt#27. "Publisher-Subscriber" Pattern // interaction patterns
+
+_
+Typical object interactions
+- notifySubscribers --> receiveNotification (which, in turn, invokes executeAction)
+Examples
+- problem-domain object, human-interaction object, data-management object, system-interaction object
+- model-document; model-view
+- "subsystem one" object - "subsystem two" object.
+Combinations
+- Superimpose on a problem-domain pattern player (publisher) and its respective human-interaction, data-management, and system-interaction pattern players (subscribers).
+Interaction patterns
+Patterns for building object models
+
+        

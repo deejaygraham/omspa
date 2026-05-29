@@ -1,0 +1,13 @@
+
+          **
+List of strategies: Activities and model components
+**
+Str#1. Four Major Activities, Four Major Components
+Str#1a. Build an Initial Object Model, then Proceed Feature-by-Feature
+Str#1b. Use Feature Milestones
+Str#1c. Take Multiple Paths
+Str#1d. Invest an Hour
+Str#1e. Consider the Domain First; Artifacts After That
+Str#1f. Extract Useful Content From An Existing Data Model
+
+        
