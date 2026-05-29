@@ -11,6 +11,7 @@ module.exports = function(eleventyConfig) {
       data: "_data",
       output: "_site"
     },
+    pathPrefix: "/omspa/",
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
     templateFormats: ["md", "njk"]
