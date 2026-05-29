@@ -1,7 +1,9 @@
 const MarkdownIt = require("markdown-it");
+const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary("md", new MarkdownIt({ html: true }));
+  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
   eleventyConfig.addPassthroughCopy({ "src/img": "img" });
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
 
