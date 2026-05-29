@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import fs from 'fs';
 import path from 'path';
 
 const siteDir = path.resolve(process.cwd(), '_site');
