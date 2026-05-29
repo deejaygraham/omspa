@@ -1,0 +1,104 @@
+<html>
+
+<head>
+<title>Selecting objects--what to consider and challenge</title>
+</head>
+
+<body>
+<b>
+
+<p>Selecting objects--what to consider and challenge </p>
+
+<p></b><i>Str#42. &quot;System Responsibility&quot; Strategy // selecting objects
+(consider and challenge) </p>
+
+<p></i>- Is the object something that your system is responsible to know or do anything
+about? </p>
+
+<p>- If not, put it in the &quot;not this time&quot; model component. </p>
+
+<p><i>Str#43. &quot;Duplicate Responsibilities&quot; Strategy // selecting objects
+(consider and challenge) </p>
+
+<p></i>- Is this object just a duplication of another object? Are the names different, yet
+identical responsibilities? </p>
+
+<p>- Such duplications arise over time in large organizations and on large systems. </p>
+
+<p>- When this happens, seek a common name (get help from dictionaries, a thesaurus, and
+domain-specific books and articles). </p>
+
+<p><i>Str#44. &quot;Reengineer with Objects&quot; Strategy // selecting objects (consider
+and challenge) </p>
+
+<p></i>- Look for objects (and repeating instances of a pattern) that are likely to have
+the same responsibilities--and actually reflect an organizational boundary or previous
+system boundary. </p>
+
+<p>- Model the objects once--for a simpler object model. Make recommendations for
+reengineering the organization, too. </p>
+
+<p><i>Str#45. &quot;Useful Questions&quot; Strategy // selecting objects (consider and
+challenge) </p>
+
+<p></i>- What useful questions could you ask this object, if you include it in your object
+model? </p>
+
+<p>- Examples: How many over interval? How much over interval? How good are you? </p>
+
+<p><i>Str#46. &quot;More Than a Report&quot; Strategy // selecting objects (consider and
+challenge) </p>
+
+<p></i>- Is that report simply a human interaction object, just a view of problem-domain
+values and calculation results? Or does it embody something about which the system needs
+to know and do something through time? </p>
+
+<p>- Add to your object model, when your system is responsible for both producing and
+remembering the content expressed in that report. </p>
+
+<p><i>Str#47. &quot;Way to Know&quot; Strategy // selecting objects (consider and
+challenge) </p>
+
+<p></i>- You need a way to know each object--and its attribute values. </p>
+
+<p>- If you have no way to know an object, either find a way to know about it or put the
+object in the &quot;not this time&quot; model component. </p>
+
+<p>- Example: customer. You must have a way to know about customer objects; otherwise, put
+customer in the &quot;not this time&quot; model component. </p>
+
+<p><i>Str#48. &quot;No Objects Mimicking What a Human Does&quot; Strategy // selecting
+objects (consider and challenge) </p>
+
+<p></i>- Don't let an object mimic what a person does (unless you are building a
+simulation system). Otherwise, that object will end up as a controller, a function blob. </p>
+
+<p>- Reasons why: </p>
+
+<p>. The controller ends up with functionality that's better done by other objects
+themselves (lower cohesion for all). </p>
+
+<p>. The controller makes messaging more complicated (higher coupling for all). </p>
+
+<p>. The overly busy controller is harder to develop. </p>
+
+<p>. The overly busy controller is minding everyone else's state-dependent
+responsibilities. </p>
+
+<p><i>Str#49. &quot;Different Human Interaction&quot; Strategy // selecting objects
+(consider and challenge) </p>
+
+<p></i>- Consider how your model would change if you used a very different
+human-interaction style (for example, using a heads-up display and voice commands). </p>
+
+<p>- Would any of your problem-domain objects change? If so, pay close attention to those
+objects. Separate presentation from what's really going on in the problem domain. </p>
+
+<p>- Examples: vertical-speed indicator (human interaction) and vertical-speed gyro
+(problem domain), traffic light (human interaction) and traffic lane (problem domain). </p>
+
+<p><a HREF="Strpat00000018.html">Selecting objects</a> </p>
+
+<p><a HREF="Strpat00000015.html">Strategies for building object models</a> </p>
+</body>
+</html>
