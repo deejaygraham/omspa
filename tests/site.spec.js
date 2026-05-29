@@ -4,36 +4,64 @@ import path from 'path';
 
 const siteDir = path.resolve(process.cwd(), '_site');
 
+function normalizeHref(href) {
+  return href?.replace(/^\/omspa\//, '').split('#')[0];
+}
+
 test('build output exists', async () => {
   expect(fs.existsSync(path.join(siteDir, 'index.html'))).toBeTruthy();
-  const htmlPages = fs.readdirSync(siteDir).filter((name) => name.endsWith('.html') && name !== 'index.html');
-  expect(htmlPages.length).toBeGreaterThan(0);
+  expect(fs.existsSync(path.join(siteDir, 'list-of-strategies.html'))).toBeTruthy();
+  expect(fs.existsSync(path.join(siteDir, 'list-of-patterns.html'))).toBeTruthy();
 });
 
-test('homepage renders with handbook title', async ({ page }) => {
-  await page.goto('/');
-  await expect(page).toHaveTitle(/Contents|Strategies and Patterns Handbook/i);
-  await expect(page.locator('h1').first()).toContainText('Strategies and Patterns Handbook');
-  await expect(page.locator('a', { hasText: 'List of strategies' })).toBeVisible();
+test('single strategy page renders correctly', async ({ page }) => {
+  await page.goto('/discovering-new-strategies-and-patterns.html');
+  await expect(page).toHaveTitle(/Discovering new strategies and patterns/i);
+  await expect(page.locator('main')).toContainText('Discovering new strategies and patterns');
+  await expect(page.locator('a', { hasText: 'Strategies for building object models' })).toBeVisible();
 });
 
-test('sample article page loads and has an internal link', async ({ page }) => {
-  await page.goto('/');
-  const sampleLink = page.locator('a', { hasText: 'List of strategies' }).first();
-  await expect(sampleLink).toHaveCount(1);
-
-  const href = await sampleLink.getAttribute('href');
-  expect(href).toMatch(/\.html$/);
-  expect(fs.existsSync(path.join(siteDir, href?.replace(/^\//, '') ?? ''))).toBeTruthy();
-
-  await page.goto(href || '/');
-  await expect(page.locator('body')).toContainText('List of strategies');
-  await expect(page.locator('a', { hasText: /Activities and Model Components/ })).toBeVisible();
+test('single pattern page renders correctly', async ({ page }) => {
+  await page.goto('/patterns-for-building-object-models.html');
+  await expect(page).toHaveTitle(/Patterns for building object models/i);
+  await expect(page.locator('main h1')).toContainText(/Patterns for building object models/i);
+  await expect(page.locator('a', { hasText: 'List of patterns' })).toBeVisible();
 });
 
-test('image assets are accessible from the built site', async ({ page }) => {
-  await page.goto('/');
-  const image = page.locator('img[src^="/img/"]');
-  await expect(image).toHaveCount(1);
-  await expect(image.first()).toBeVisible();
+test('list-of-strategies page contains valid strategy links', async ({ page }) => {
+  await page.goto('/list-of-strategies.html');
+  const hrefs = await page.locator('a[href^="/"]').evaluateAll((els) =>
+    [...new Set(els.map((el) => el.getAttribute('href')).filter(Boolean))]
+  );
+
+  const htmlHrefs = hrefs
+    .map((href) => normalizeHref(href))
+    .filter((href) => href && href.endsWith('.html') && href !== '');
+
+  expect(htmlHrefs.length).toBeGreaterThan(20);
+  htmlHrefs.forEach((href) => {
+    expect(fs.existsSync(path.join(siteDir, href))).toBeTruthy();
+  });
+
+  await expect(page.locator('text=Activities and Model Components').first()).toBeVisible();
+  await expect(page.locator('text=Discovering new strategies and patterns').first()).toBeVisible();
+});
+
+test('list-of-patterns page contains valid pattern links', async ({ page }) => {
+  await page.goto('/list-of-patterns.html');
+  const hrefs = await page.locator('a[href^="/"]').evaluateAll((els) =>
+    [...new Set(els.map((el) => el.getAttribute('href')).filter(Boolean))]
+  );
+
+  const htmlHrefs = hrefs
+    .map((href) => normalizeHref(href))
+    .filter((href) => href && href.endsWith('.html') && href !== '');
+
+  expect(htmlHrefs.length).toBeGreaterThan(10);
+  htmlHrefs.forEach((href) => {
+    expect(fs.existsSync(path.join(siteDir, href))).toBeTruthy();
+  });
+
+  await expect(page.locator('text=Patt#1.')).toBeVisible();
+  await expect(page.locator('text=Patterns for building object models')).toBeVisible();
 });
