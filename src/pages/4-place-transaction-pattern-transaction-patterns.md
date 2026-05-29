@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: '#4. "Place-Transaction" Pattern // transaction patterns'
-permalink: '/4-place-transaction-pattern-transaction-patterns.html'
 ---
 
 _

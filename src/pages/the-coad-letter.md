@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'The Coad Letter'
-permalink: '/the-coad-letter.html'
 ---
 
 **

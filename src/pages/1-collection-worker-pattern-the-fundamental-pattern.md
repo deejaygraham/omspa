@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: '#1. "Collection-Worker" Pattern // the fundamental pattern'
-permalink: '/1-collection-worker-pattern-the-fundamental-pattern.html'
 ---
 
 _

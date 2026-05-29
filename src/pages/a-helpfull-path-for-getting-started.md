@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'A helpfull path for getting started'
-permalink: '/a-helpfull-path-for-getting-started.html'
 ---
 
 **

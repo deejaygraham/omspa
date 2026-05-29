@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Selecting objects--analogies'
-permalink: '/selecting-objects-analogies.html'
 ---
 
 **

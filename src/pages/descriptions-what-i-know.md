@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Descriptions (what I know)'
-permalink: '/descriptions-what-i-know.html'
 ---
 
 **

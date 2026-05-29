@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: '#25. "Peer-Peer" Pattern // interaction patterns'
-permalink: '/25-peer-peer-pattern-interaction-patterns.html'
 ---
 
 _

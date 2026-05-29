@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'What to consider and challenge (who I know)'
-permalink: '/what-to-consider-and-challenge-who-i-know.html'
 ---
 
 **

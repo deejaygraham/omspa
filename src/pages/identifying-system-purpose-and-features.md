@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Identifying system purpose and features'
-permalink: '/identifying-system-purpose-and-features.html'
 ---
 
 **

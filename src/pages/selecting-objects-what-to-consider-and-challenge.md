@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Selecting objects--what to consider and challenge'
-permalink: '/selecting-objects-what-to-consider-and-challenge.html'
 ---
 
 **

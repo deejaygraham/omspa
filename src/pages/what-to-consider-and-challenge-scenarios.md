@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'What to consider and challenge (scenarios)'
-permalink: '/what-to-consider-and-challenge-scenarios.html'
 ---
 
 **

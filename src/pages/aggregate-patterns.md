@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Aggregate patterns'
-permalink: '/aggregate-patterns.html'
 ---
 
 **

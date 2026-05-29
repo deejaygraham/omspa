@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'List of strategies: Selecting Objects'
-permalink: '/list-of-strategies-selecting-objects.html'
 ---
 
 **

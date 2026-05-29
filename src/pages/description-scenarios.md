@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Description (scenarios)'
-permalink: '/description-scenarios.html'
 ---
 
 **

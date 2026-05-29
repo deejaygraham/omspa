@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Overview'
-permalink: '/overview.html'
 ---
 
 **

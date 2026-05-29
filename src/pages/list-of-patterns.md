@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'List of Patterns'
-permalink: '/list-of-patterns.html'
 ---
 
 **

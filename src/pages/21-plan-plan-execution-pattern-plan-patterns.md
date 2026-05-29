@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: '#21. "Plan - Plan Execution" Pattern // plan patterns'
-permalink: '/21-plan-plan-execution-pattern-plan-patterns.html'
 ---
 
 _

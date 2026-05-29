@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'The fundamental pattern'
-permalink: '/the-fundamental-pattern.html'
 ---
 
 **

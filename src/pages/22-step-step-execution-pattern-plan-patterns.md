@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: '#22. "Step - Step Execution" Pattern // plan patterns'
-permalink: '/22-step-step-execution-pattern-plan-patterns.html'
 ---
 
 _

@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'List of strategies: Establishing responsibilities'
-permalink: '/list-of-strategies-establishing-responsibilities.html'
 ---
 
 **

@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: '#19. "Packet - Packet Component" Pattern // aggregate patterns'
-permalink: '/19-packet-packet-component-pattern-aggregate-patterns.html'
 ---
 
 _

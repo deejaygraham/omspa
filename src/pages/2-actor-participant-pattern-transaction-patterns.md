@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: '#2. "Actor-Participant" Pattern // transaction patterns'
-permalink: '/2-actor-participant-pattern-transaction-patterns.html'
 ---
 
 _

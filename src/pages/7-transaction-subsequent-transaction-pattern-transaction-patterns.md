@@ -1,8 +1,6 @@
 ---
-layout: base.njk
 title: '#7. "Transaction - Subsequent Transaction" Pattern // transaction
 patterns'
-permalink: '/7-transaction-subsequent-transaction-pattern-transaction-patterns.html'
 ---
 
 _

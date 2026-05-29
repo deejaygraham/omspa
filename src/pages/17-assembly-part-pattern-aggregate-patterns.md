@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: '#17. "Assembly-Part" Pattern // aggregate patterns'
-permalink: '/17-assembly-part-pattern-aggregate-patterns.html'
 ---
 
 _

@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'List of Strategies: Activities and model components'
-permalink: '/list-of-strategies-activities-and-model-components.html'
 ---
 
 **

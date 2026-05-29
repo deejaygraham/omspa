@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Guiding the effort with major activities and components'
-permalink: '/guiding-the-effort-with-major-activities-and-components.html'
 ---
 
 **

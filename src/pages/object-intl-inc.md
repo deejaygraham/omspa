@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Object Intl., Inc.'
-permalink: '/object-intl-inc.html'
 ---
 
 **

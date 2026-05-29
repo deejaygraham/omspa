@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Selecting objects -- model components'
-permalink: '/selecting-objects-model-components.html'
 ---
 
 **

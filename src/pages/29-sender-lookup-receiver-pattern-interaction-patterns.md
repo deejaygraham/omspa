@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: '#29. "Sender-Lookup-Receiver" Pattern // interaction patterns'
-permalink: '/29-sender-lookup-receiver-pattern-interaction-patterns.html'
 ---
 
 _

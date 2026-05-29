@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: '#31. "Gatekeeper-Request-Resource" Pattern // device patterns'
-permalink: '/31-gatekeeper-request-resource-pattern-device-patterns.html'
 ---
 
 _

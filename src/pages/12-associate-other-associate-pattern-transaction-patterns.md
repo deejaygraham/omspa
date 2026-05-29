@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: '#12. "Associate - Other Associate" Pattern // transaction patterns'
-permalink: '/12-associate-other-associate-pattern-transaction-patterns.html'
 ---
 
 _

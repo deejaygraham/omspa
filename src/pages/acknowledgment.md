@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Acknowledgment'
-permalink: '/acknowledgment.html'
 ---
 
 **

@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: '#16. "Group-Member" Pattern // aggregate patterns'
-permalink: '/16-group-member-pattern-aggregate-patterns.html'
 ---
 
 _

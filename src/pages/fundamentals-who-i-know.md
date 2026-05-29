@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Fundamentals (who I know)'
-permalink: '/fundamentals-who-i-know.html'
 ---
 
 **

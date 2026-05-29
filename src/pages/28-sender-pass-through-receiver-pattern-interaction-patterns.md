@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: '#28. "Sender - Pass Through - Receiver" Pattern // interaction patterns'
-permalink: '/28-sender-pass-through-receiver-pattern-interaction-patterns.html'
 ---
 
 _

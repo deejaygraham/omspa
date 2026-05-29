@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'List of Strategies'
-permalink: '/list-of-strategies.html'
 ---
 
 **

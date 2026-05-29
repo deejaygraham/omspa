@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Pattern players (what I know)'
-permalink: '/pattern-players-what-i-know.html'
 ---
 
 **

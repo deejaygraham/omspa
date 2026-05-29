@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Real-time (what I do)'
-permalink: '/real-time-what-i-do.html'
 ---
 
 **

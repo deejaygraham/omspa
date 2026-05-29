@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Selecting objects'
-permalink: '/selecting-objects.html'
 ---
 
 **

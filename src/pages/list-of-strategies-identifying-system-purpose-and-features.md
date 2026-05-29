@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'List of strategies: Identifying system purpose and features'
-permalink: '/list-of-strategies-identifying-system-purpose-and-features.html'
 ---
 
 **

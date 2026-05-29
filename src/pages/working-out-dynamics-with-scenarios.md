@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Working out dynamics with scenarios'
-permalink: '/working-out-dynamics-with-scenarios.html'
 ---
 
 **

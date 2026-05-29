@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Model components -- HI, DM (who I know)'
-permalink: '/model-components-hi-dm-who-i-know.html'
 ---
 
 **

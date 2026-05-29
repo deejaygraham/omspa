@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'The basics (scenarios)'
-permalink: '/the-basics-scenarios.html'
 ---
 
 **

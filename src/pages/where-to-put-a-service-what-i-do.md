@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Where to put a service (what I do)'
-permalink: '/where-to-put-a-service-what-i-do.html'
 ---
 
 **

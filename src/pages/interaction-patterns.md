@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Interaction patterns'
-permalink: '/interaction-patterns.html'
 ---
 
 **

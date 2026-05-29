@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Establishing responsibilities / what I do'
-permalink: '/establishing-responsibilities-what-i-do.html'
 ---
 
 **

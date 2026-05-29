@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'What to consider and challenge (what I do): responsibilities'
-permalink: '/what-to-consider-and-challenge-what-i-do-responsibilities.html'
 ---
 
 **

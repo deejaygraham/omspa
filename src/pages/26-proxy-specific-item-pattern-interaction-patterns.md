@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: '#26. "Proxy - Specific Item" Pattern // interaction patterns'
-permalink: '/26-proxy-specific-item-pattern-interaction-patterns.html'
 ---
 
 _

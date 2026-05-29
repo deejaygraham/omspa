@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Playground'
-permalink: '/playground.html'
 ---
 
 **Playground ![Strpat00000000.gif](/img/Strpat00000000.gif)

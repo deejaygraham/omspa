@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Object Models: Strategies, Patterns, and Applications'
-permalink: '/object-models-strategies-patterns-and-applications.html'
 ---
 
 **

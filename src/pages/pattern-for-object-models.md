@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'pattern (for object models)'
-permalink: '/pattern-for-object-models.html'
 ---
 
 # pattern (for object models)

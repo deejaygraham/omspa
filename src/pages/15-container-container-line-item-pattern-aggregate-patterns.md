@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: '#15. "Container - Container Line Item" Pattern // aggregate patterns'
-permalink: '/15-container-container-line-item-pattern-aggregate-patterns.html'
 ---
 
 _

@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: '#24. "Plan - Plan Version" Pattern // plan patterns'
-permalink: '/24-plan-plan-version-pattern-plan-patterns.html'
 ---
 
 _

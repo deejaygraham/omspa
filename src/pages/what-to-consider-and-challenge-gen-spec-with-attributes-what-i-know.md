@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'What to consider and challenge: gen-spec with attributes (what I know)'
-permalink: '/what-to-consider-and-challenge-gen-spec-with-attributes-what-i-know.html'
 ---
 
 **
