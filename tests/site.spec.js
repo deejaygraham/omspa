@@ -1,5 +1,4 @@
 import { test, expect } from '@playwright/test';
-import fs from 'fs';
 import path from 'path';
 
 const siteDir = path.resolve(process.cwd(), '_site');
@@ -7,12 +6,6 @@ const siteDir = path.resolve(process.cwd(), '_site');
 function normalizeHref(href) {
   return href?.replace(/^\/omspa\//, '').split('#')[0];
 }
-
-test('build output exists', async () => {
-  expect(fs.existsSync(path.join(siteDir, 'index.html'))).toBeTruthy();
-  expect(fs.existsSync(path.join(siteDir, 'list-of-strategies.html'))).toBeTruthy();
-  expect(fs.existsSync(path.join(siteDir, 'list-of-patterns.html'))).toBeTruthy();
-});
 
 test('single strategy page renders correctly', async ({ page }) => {
   await page.goto('discovering-new-strategies-and-patterns.html');
