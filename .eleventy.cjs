@@ -7,6 +7,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addGlobalData("buildDate", () => new Date().toUTCString());
   eleventyConfig.addPassthroughCopy({ "src/img": "img" });
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
+  eleventyConfig.addPassthroughCopy({ "original/strpat_handbook_from_opsma_2e": "original" });
 
   return {
     dir: {
