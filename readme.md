@@ -11,7 +11,7 @@ This was converted from the original html passed to me by Peter Coad himself. No
 - `scripts/convert-html-to-md.js` converted the old HTML pages into Markdown.
 - `_site/` is the default Eleventy output directory.
 
-The site was ported to build using 11ty and Bulma.
+The site was ported to build using 11ty and Bulma. Live version is [https://deejaygraham.github.io/omspa/](https://deejaygraham.github.io/omspa/)
 
 ## Usage
 
