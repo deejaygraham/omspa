@@ -3,7 +3,7 @@
 This repo is a more modern markup version of the online version of one of my favourite books: "Object Models: Strategies, Patterns, and Applications" by Peter Coad, David North and Mark Mayfield from 1997. 
 This was converted from the original html passed to me by Peter Coad himself. No copyright infringement is intended but hosted here since the original site and links featured in the original have gone away.
 
-## CHanges
+## Changes
 
 - permalinks were updated to be more friendly.
 - `src/` contains all Markdown source, Eleventy templates, layout assets.
