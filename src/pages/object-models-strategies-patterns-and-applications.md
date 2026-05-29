@@ -14,4 +14,4 @@ Prentice Hall, 1997. ISBN 0-13-840177-9.
 * Over 350 figures, a "visual feast" of practical illustrations, examples that you can use for building your own object models
 * Shareware on diskette. [Playground](/playground.html) is an object model whiteboard for domain experts and analysts. Use it (at no charge) while reading this book, for a true hands-on learning experience.
 
-For more information, including how to order, visit [http://www.oi.com/om-book.html}(http://www.oi.com/om-book.html).
+For more information, including how to order, visit [http://www.oi.com/om-book.html](http://www.oi.com/om-book.html).
