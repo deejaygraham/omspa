@@ -1,0 +1,73 @@
+---
+layout: base.njk
+title: 'What to consider and challenge: gen-spec with attributes (what I know)'
+permalink: '/what-to-consider-and-challenge-gen-spec-with-attributes-what-i-know.html'
+---
+
+**
+
+What to consider and challenge: gen-spec with attributes (what I know)
+
+**
+
+_Str#67. "Common Attributes" Strategy // establishing responsibilities / what I know (consider and challenge)_
+
+\- Classes with common attributes?
+
+\- If the attributes have the same name and meaning, and if you can find a generalization-specialization that makes good sense, then add a generalization class and factor out the commonality.
+
+_Str#67a. "Collapse Whole-Part When Same Attributes Apply" Strategy // establishing responsibilities / what I know (consider and challenge)_
+
+\- When you find a whole-part -- and the same attributes apply to the whole and the part:
+
+. Collapse the whole and part into "class with objects" symbol.
+
+. Add a whole-part object connection to that one symbol.
+
+. Add "super" and "sub" attributes, showing that each object knows the objects above it and below it.
+
+. Why: Fewer symbols. Less redundancy. And more resilient to change.
+
+. Example: Company - Division - Section - Team Collapse to "Organization" or "OrgUnit."
+
+_Str#68. "Partially Applicable Attribute" Strategy // establishing responsibilities / what I know (consider and challenge)_
+
+\- Attribute that applies only to certain objects in a class?
+
+\- Do you have an attribute which applies only to certain kinds of objects?
+
+\- Do you have an attribute that may have the value "not applicable"?
+
+\- If so, factor out the specialized attribute into a specialization class.
+
+_Str#69. "No Attributes" Strategy // establishing responsibilities / what I know (consider and challenge)_
+
+\- An object with no attributes? When this happens, one of two things is going on.
+
+. Either it's a narrow "need to know" and just one object in that class.
+
+. . Check: there really is just one object in that class.
+
+. . Check: attributes really could apply, yet all potential attributes are outside of the system's responsibilities.
+
+. . Fine!
+
+. Or it's got object connections (an attribute, show graphically). That's fine!
+
+. Or it's a nasty "function blob," with services better done by other objects themselves.
+
+. . Centralized control is troublesome; here's why:
+
+. . . It fails to use problem domain classes to partition both attributes and services.
+
+. . . Encapsulation goes down (higher coupling and weaker cohesion).
+
+. . Here's what to do about it.
+
+. . . Get rid of the "function blob."
+
+. . . Applying the "what I do" strategies as a guide, put each service in the object that the old function blob was acting on.
+
+[Establishing responsibilities / what I know](/establishing-responsibilities-what-i-know.html)
+
+[Strategies for building object models](/strategies-for-building-object-models.html)

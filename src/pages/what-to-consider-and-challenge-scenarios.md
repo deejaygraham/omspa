@@ -1,0 +1,133 @@
+---
+layout: base.njk
+title: 'What to consider and challenge (scenarios)'
+permalink: '/what-to-consider-and-challenge-scenarios.html'
+---
+
+**
+
+What to consider and challenge (scenarios)
+
+**
+
+_Str#132. "Don't Ask 'What Kind?'" Strategy // working out dynamics with scenarios (consider and challenge)_
+
+\- Don't ask "What kind of object are you?"--and then follow-up with a second message, telling that object what you want it to do.
+
+\- Just say "do it" -- and let it get the job done.
+
+\- If you discover that the receiving object needs a case statement, then specialize the classes of those objects, so an object already knows what kind it is. Then send one message and let that object do its thing.
+
+_Str#132a. "More Than 'Get A Value'" Strategy // working out dynamics with scenarios (consider and challenge)_
+
+\- Don't send "get value" without first considering:
+
+. What question do I really want answered?
+
+. What calculation result do I need?
+
+. Can I pass an argument to that object and have it do something useful for me?
+
+\- Why: this strategy helps you distribute both attributes and services, using problem-domain classes as a more stable, more understandable organizational framework.
+
+_Str#133. "Search then Interact" Strategy // working out dynamics with scenarios (consider and challenge)_
+
+\- If you need to traverse multiple object connections in search for an object you want to interact with:
+
+. search for it
+
+. then interact with it.
+
+\- Reason: simpler objects in between.
+
+_Str#134. "Act, Rather than Poll" Strategy // working out dynamics with scenarios (consider and challenge)_
+
+\- For each object that recognizes that something needs to be done, let it initiate that work.
+
+\- Don't let a manager poll that object, asking for a status change. Reason: no need for that extra managing activity (adds complexity, weakens encapsulation).
+
+_Str#135. "Get Values Only When You Need Them" Strategy // working out dynamics with scenarios (consider and challenge)_
+
+\- Pass an object as a parameter. Get values from that object only at the point you are ready to use those values.
+
+\- Why: better encapsulation; better localization of interface details.
+
+_Str#136. "Take Extra Work Out of the Loop" Strategy // working out dynamics with scenarios (consider and challenge)_
+
+\- Check each loop within a scenario. Pull work outside of a loop, whenever you can.
+
+\- Why: easier to understand (and ultimately, better performance).
+
+_Str#137. "Consistent Object Model and Scenario Views" Strategy // working out dynamics with scenarios (consider and challenge)_
+
+\- Services in a scenario view should correspond with services in the object model.
+
+. Note: some services in a scenario view are not normally shown in a object model, namely: get, set, add, remove, delete, and create.
+
+\- An object in a scenario view needs to know 'to whom to send a message" -- either directly (an object connection in an object model) or indirectly (passed as a parameter to a specific service).
+
+_Str#138. "Reduce Interactions" Strategy // working out dynamics with scenarios (consider and challenge)_
+
+\- Look at interactions that require a lot of messaging--or interactions that require going through many "middle men" to get what you want done, done.
+
+\- Consider adding object connections to reduce traffic--and simplify your model.
+
+\- Consider the cost: the extra overhead of establishing and maintaining additional object connections.
+
+_Str#139. "Reduce Cascading Messages" Strategy // working out dynamics with scenarios (consider and challenge)_
+
+\- If you send a message to an object, and it sends a message to its collection of objects, whose objects in turn sends a message to its collection of objects: send the message directly to the last object in the cascading message sequence (you might need to add another object connection, so you know to whom to send the message).
+
+\- Why: fewer messages makes it easier to understand (and more efficient to implement, too).
+
+\- (If the object connections continually change, check out the dynamics of those object connections with scenarios. Then, apply this strategy only if you can keep the object connections in-sync. Sometimes, a few extra object interactions might be simpler after all.)
+
+_Str#139a. "Watch Out For Double Dipping" Strategy // working out dynamics with scenarios (consider and challenge)_
+
+\- Watch out for this shape:
+
+\---n--->
+
+\---n--->
+
+\- Likely problem:
+
+\---n---> qualify
+
+\---n---> do the qualified action
+
+\- Better approach:
+
+\---n---> do it (qualify myself -- and if qualified, take action)
+
+\- In this way, an object, once it qualifies itself, simply carries out the appropriate action.
+
+. Benefits: reduced object interactions; simpler interface (1 service, rather than 2); stronger cohesion (from decreased distance between recognition and action); better overall performance.
+
+\- Related strategy: Str#132 "Don't Ask Why"
+
+_Str#140. "Object Creation and Deletion" Strategy // working out dynamics with scenarios (consider and challenge)_
+
+\- Look at scenarios that create (and initialize) and delete the objects you work with.
+
+\- Ask, "Who is responsible for creating (and initializing) that object? Who is responsible for deleting it?"
+
+_Str#141. "Responsive Data Acquisition and Control Objects" Strategy // working out dynamics with scenarios (consider and challenge)_
+
+\- If data acquisition and control are done by one actual object, then model them with one object.
+
+\- Otherwise:
+
+. For each control object:
+
+. . Add a collection of data acquisition objects.
+
+. . The control object takes care of itself -- and behavior across the collection.
+
+. For each data acquisition object:
+
+. . Each data acquisition object takes care of itself, as much it can do with what it knows (for example, reading values and detecting something from those values).
+
+[Working out dynamics with scenarios](/working-out-dynamics-with-scenarios.html)
+
+[Strategies for building object models](/strategies-for-building-object-models.html)
