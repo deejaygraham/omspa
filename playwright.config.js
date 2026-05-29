@@ -8,7 +8,7 @@ export default defineConfig({
   },
   use: {
     headless: true,
-    baseURL: 'http://127.0.0.1:8080',
+    baseURL: 'http://127.0.0.1:8080/omspa/',
     actionTimeout: 10_000,
     trace: 'retain-on-failure'
   },
