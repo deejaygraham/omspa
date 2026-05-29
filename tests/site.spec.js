@@ -15,21 +15,21 @@ test('build output exists', async () => {
 });
 
 test('single strategy page renders correctly', async ({ page }) => {
-  await page.goto('/discovering-new-strategies-and-patterns.html');
+  await page.goto('discovering-new-strategies-and-patterns.html');
   await expect(page).toHaveTitle(/Discovering new strategies and patterns/i);
   await expect(page.locator('main')).toContainText('Discovering new strategies and patterns');
   await expect(page.locator('a', { hasText: 'Strategies for building object models' })).toBeVisible();
 });
 
 test('single pattern page renders correctly', async ({ page }) => {
-  await page.goto('/patterns-for-building-object-models.html');
+  await page.goto('patterns-for-building-object-models.html');
   await expect(page).toHaveTitle(/Patterns for building object models/i);
   await expect(page.locator('main h1')).toContainText(/Patterns for building object models/i);
   await expect(page.locator('a', { hasText: 'List of patterns' })).toBeVisible();
 });
 
 test('list-of-strategies page contains valid strategy links', async ({ page }) => {
-  await page.goto('/list-of-strategies.html');
+  await page.goto('list-of-strategies.html');
   const hrefs = await page.locator('a[href^="/"]').evaluateAll((els) =>
     [...new Set(els.map((el) => el.getAttribute('href')).filter(Boolean))]
   );
@@ -48,7 +48,7 @@ test('list-of-strategies page contains valid strategy links', async ({ page }) =
 });
 
 test('list-of-patterns page contains valid pattern links', async ({ page }) => {
-  await page.goto('/list-of-patterns.html');
+  await page.goto('list-of-patterns.html');
   const hrefs = await page.locator('a[href^="/"]').evaluateAll((els) =>
     [...new Set(els.map((el) => el.getAttribute('href')).filter(Boolean))]
   );
