@@ -2,7 +2,8 @@ const MarkdownIt = require("markdown-it");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary("md", new MarkdownIt({ html: true }));
-  eleventyConfig.addPassthroughCopy("img");
+  eleventyConfig.addPassthroughCopy({ "src/img": "img" });
+  eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
 
   return {
     dir: {
