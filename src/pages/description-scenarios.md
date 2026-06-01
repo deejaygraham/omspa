@@ -2,11 +2,7 @@
 title: 'Description (scenarios)'
 ---
 
-**
-
-Description (scenarios)
-
-**
+## Description (scenarios)
 
 _Str#131. "Describe Scenarios with a Scenario View" Strategy // working out dynamics with scenarios_
 
