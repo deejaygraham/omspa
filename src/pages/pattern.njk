@@ -3,7 +3,7 @@ pagination:
   data: patterns
   size: 1
   alias: pattern
-permalink: "/{{ pattern.number }}-{{ pattern.name | slug }}-pattern-{{ pattern.tags[0] | slug }}.html"
+permalink: "/pattern/{{ pattern.id | lower | replace('#', '-') }}.html"
 eleventyComputed:
   title: '#{{ pattern.number }}. "{{ pattern.name }}" Pattern // {{ pattern.tags[0] }}'
 ---
