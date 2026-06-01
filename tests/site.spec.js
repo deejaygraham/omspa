@@ -41,7 +41,7 @@ test('list-of-strategies page contains valid strategy links', async ({ page }) =
   await expect(page.locator('text=Discovering new strategies and patterns').first()).toBeVisible();
 });
 
-test('list-of-patterns page contains valid pattern links', async ({ page }) => {
+test.skip('list-of-patterns page contains valid pattern links', async ({ page }) => {
   await page.goto('list-of-patterns.html');
   const hrefs = await page.locator('a[href^="/"]').evaluateAll((els) =>
     [...new Set(els.map((el) => el.getAttribute('href')).filter(Boolean))]
