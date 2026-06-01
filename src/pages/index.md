@@ -28,3 +28,5 @@ This handbook is based upon a chapter in the new book, [Object Models: Strategie
 [A helpful path for getting started](/a-helpfull-path-for-getting-started.html)
 
 (c) 1997 Object International, Inc. All rights reserved.
+
+[Original hyper-text version](/original/index.htm)
