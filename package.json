@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "eleventy --config .eleventy.cjs",
+    "build": "eleventy --config .eleventy.cjs && pagefind --site _site",
     "start": "eleventy --config .eleventy.cjs --serve",
     "convert": "node scripts/convert-html-to-md.js",
     "test": "npm run build && playwright test",
@@ -17,6 +17,7 @@
     "glob": "^10.4.1",
     "jsdom": "^22.1.0",
     "markdown-it": "^13.0.1",
+    "pagefind": "^1.5.2",
     "turndown": "^7.1.1"
   }
 }
