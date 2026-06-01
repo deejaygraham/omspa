@@ -41,14 +41,14 @@ jobs:
         run: |
           npm ci
 
-      - name: Install Playwright browsers
-        run: |
-          npx playwright install --with-deps chromium
-
       - name: Build site
         run: |
           npm run build
 
+      - name: Install Playwright browsers
+        run: |
+          npx playwright install --with-deps chromium
+          
       - name: Run tests
         run: |
           npx playwright test
