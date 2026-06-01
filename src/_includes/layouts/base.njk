@@ -6,6 +6,8 @@
     <title>{{ title or "Strategies and Patterns Handbook" }}</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
     <link rel="stylesheet" href="/assets/styles.css" />
+    <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+    <script src="/pagefind/pagefind-ui.js"></script>
     <script type="module">
       import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
       mermaid.initialize({ startOnLoad: true });
@@ -15,14 +17,17 @@
     <section class="section">
       <div class="container">
         <header class="content has-text-centered">
-          <h1 class="title is-3"><a href="/">Strategies and Patterns Handbook</a></h1>
+          <h1 class="title is-3"><a href="./">Strategies and Patterns Handbook</a></h1>
+          <div id="search"></div>
+          <script>
+            window.addEventListener('DOMContentLoaded', () =>
+              new PagefindUI({ element: '#search', showSubResults: true }));
+          </script>
         </header>
 
-        <main class="content">
+        <main class="content" data-pagefind-body>
           {{ content | safe }}
         </main>
-
-        <hr />
 
         <footer class="content has-text-centered">
           <p>Converted from the <a href="/original/index.htm" target="_blank" >original 1997 hypertext edition</a>. &copy; 1997 Object International, Inc. All rights reserved.</p>
