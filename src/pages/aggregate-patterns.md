@@ -2,11 +2,8 @@
 title: 'Aggregate patterns'
 ---
 
-**
+## Aggregate patterns
 
-Aggregate patterns
-
-**
 
 The aggregate patterns are:
 
