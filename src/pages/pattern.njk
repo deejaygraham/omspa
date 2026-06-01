@@ -12,7 +12,7 @@ eleventyComputed:
 
 <p><img src="{{ ('/img/' + pattern.image) | url }}" alt="{{ pattern.image }}"></p>
 
-{% if pattern.typicalInteractions %}
+{% if pattern.typicalInteractions.length %}
 <h3>Typical object interactions</h3>
 <ul>
 {% for item in pattern.typicalInteractions %}
@@ -21,7 +21,7 @@ eleventyComputed:
 </ul>
 {% endif %}
 
-{% if pattern.examples %}
+{% if pattern.examples.length %}
 <h3>Examples</h3>
 <ul>
 {% for item in pattern.examples %}
@@ -30,7 +30,7 @@ eleventyComputed:
 </ul>
 {% endif %}
 
-{% if pattern.combinations %}
+{% if pattern.combinations.length %}
 <h3>Combinations</h3>
 <ul>
 {% for combo in pattern.combinations %}
@@ -39,7 +39,7 @@ eleventyComputed:
 </ul>
 {% endif %}
 
-{% if pattern.relatedStrategies %}
+{% if pattern.relatedStrategies.length %}
 <h3>Related strategies:</h3>
 <ul>
 {% for strategy in pattern.relatedStrategies %}
