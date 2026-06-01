@@ -2,11 +2,8 @@
 title: 'Descriptions (what I do)'
 ---
 
-**
+## Descriptions (what I do)
 
-Descriptions (what I do)
-
-**
 
 _Str#116. "Describe Services with a Template" Strategy // establishing responsibilities / what I do (descriptions)_
 
