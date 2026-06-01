@@ -1,0 +1,29 @@
+---
+permalink: /strategy/index.html
+eleventyComputed:
+  title: 'List of Strategies'
+---
+
+{% set categories = [
+  { tag: "activities and model components",        label: "Activities and Model Components" },
+  { tag: "identifying purpose and features",       label: "Identifying system purpose and features" },
+  { tag: "selecting objects",                      label: "Selecting objects" },
+  { tag: "establishing responsibilities",          label: "Establishing responsibilities" },
+  { tag: "working out dynamics with scenarios",    label: "Working out dynamics with scenarios" },
+  { tag: "discovery",                              label: "Discovering new strategies and patterns" }
+] %}
+
+{% for cat in categories %}
+<h2>{{ cat.label }}</h2>
+
+<ul>
+{% for strategy in strategies %}
+{% if strategy.tags[0] == cat.tag %}
+<ul><a href="/strategy/{{ strategy.id | lower | replace('#', '-') }}.html">{{ strategy.id }}.</a> {{ strategy.name }}</ul>
+{% endif %}
+{% endfor %}
+</ul>
+
+{% endfor %}
+
+<p><a href="/list-of-patterns.html">List of patterns</a></p>
