@@ -21,10 +21,8 @@ This handbook is based upon a chapter in the new book, [Object Models: Strategie
 
 [Patterns for building object models](/patterns-for-building-object-models.html)
 
-[List of strategies](/list-of-strategies.html)
+[List of strategies](/strategy/index.html)
 
-[List of patterns](/list-of-patterns.html)
+[List of patterns](/pattern/index.html)
 
 [A helpful path for getting started](/a-helpfull-path-for-getting-started.html)
-
-(c) 1997 Object International, Inc. All rights reserved.
