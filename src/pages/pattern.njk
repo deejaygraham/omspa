@@ -12,25 +12,25 @@ eleventyComputed:
 
 <p><img src="{{ ('/img/' + pattern.image) | url }}" alt="{{ pattern.image }}"></p>
 
-<p><strong>Typical object interactions</strong></p>
+<h3>Typical object interactions</h3>
 
 {% for item in pattern.typicalInteractions %}
 <p>\- {{ item }}</p>
 {% endfor %}
 
-<p><strong>Examples</strong></p>
+<h3>Examples</h3>
 
 {% for item in pattern.examples %}
 <p>\- {{ item }}</p>
 {% endfor %}
 
-<p><strong>Combinations</strong></p>
+<h3>Combinations</h3>
 
 {% for combo in pattern.combinations %}
 <p><a href="{{ ('/' + combo.slug + '.html') | url }}">{{ combo.id }}.</a> &quot;{{ combo.name }}&quot;</p>
 {% endfor %}
 
-<p>Related strategies:</p>
+<h3>Related strategies:</h3>
 
 {% for strategy in pattern.relatedStrategies %}
 <p><a href="{{ ('/' + strategy.slug + '.html') | url }}">{{ strategy.id }}.</a> &quot;{{ strategy.name }}&quot; Strategy</p>
