@@ -2,11 +2,8 @@
 title: 'Establishing responsibilities / what I know'
 ---
 
-**
+## Establishing responsibilities / what I know
 
-Establishing responsibilities / what I know
-
-**
 
 Attributes represent "what I know."
 
