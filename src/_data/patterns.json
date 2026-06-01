@@ -1,0 +1,1425 @@
+[
+  {
+    "number": 1,
+    "id": "Patt#1",
+    "name": "Collection-Worker",
+    "tags": [
+      "the fundamental pattern"
+    ],
+    "image": "Strpat00000003.gif",
+    "typicalInteractions": [
+      "howMany --> calcForMe - howMuch --> calcForMe",
+      "calcOverWorkers -->calcForMe",
+      "rankWorkers -->rateMe"
+    ],
+    "examples": [],
+    "combinations": [],
+    "relatedStrategies": []
+  },
+  {
+    "number": 2,
+    "id": "Patt#2",
+    "name": "Actor-Participant",
+    "tags": [
+      "transaction patterns"
+    ],
+    "image": "Strpat00000005.gif",
+    "typicalInteractions": [
+      "howMany --> calcForMe",
+      "howMuch --> calcForMe",
+      "calcOverParticipants --> calcForMe",
+      "rankParticipants --> rateMe",
+      "getName< -- getName",
+      "getAddress <-- getAddress"
+    ],
+    "examples": [
+      "Actor: person, organization (agency, company, corporation, foundation)",
+      "Participant: agent, applicant, buyer, cashier, clerk, client, civilian, customer, dealer, delegate, distributor, donor, employee, investor, manufacturer, member, officer, official, order clerk, owner, participant, policy holder, professional, prospect, recipient, retailer, sales clerk, sales rep, shipper, student, subscriber, supervisor, supplier, suspect, teacher, wholesaler, worker",
+      "Additional examples: anything used for different missions, such as aircraft-civilian mission, aircraft-military mission."
+    ],
+    "combinations": [
+      {
+        "id": "Patt#3",
+        "slug": "3-participant-transaction-pattern-transaction-patterns",
+        "name": "Participant-Transaction"
+      },
+      {
+        "id": "Patt#2",
+        "slug": "2-actor-participant-pattern-transaction-patterns",
+        "name": "Actor-Participant"
+      }
+    ],
+    "relatedStrategies": [
+      {
+        "id": "Str#13",
+        "slug": "selecting-objects-pattern-players",
+        "name": "Select Actors"
+      },
+      {
+        "id": "Str#14",
+        "slug": "selecting-objects-pattern-players",
+        "name": "Select Participants"
+      },
+      {
+        "id": "Str#52",
+        "slug": "pattern-players-what-i-know",
+        "name": "Establish Actor and Participant Attributes"
+      },
+      {
+        "id": "Str#74",
+        "slug": "pattern-players-who-i-know",
+        "name": "Establish Actor and Participant Object Connections"
+      },
+      {
+        "id": "Str#94",
+        "slug": "pattern-players-what-i-do",
+        "name": "Establish Actor and Participant Services"
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "id": "Patt#3",
+    "name": "Participant-Transaction",
+    "tags": [
+      "transaction patterns"
+    ],
+    "image": "Strpat00000006.gif",
+    "typicalInteractions": [
+      "howMany --> calcForMe",
+      "howMuch --> calcForMe",
+      "calcOverTransactions --> calcForMe",
+      "rankTransactions --> rateMe"
+    ],
+    "examples": [
+      "Participant: agent, applicant, buyer, cashier, clerk, client, civilian, customer, dealer, delegate, distributor, donor, employee, investor, manufacturer, member, officer, official, order clerk, owner, participant, policy holder, professional, prospect, recipient, retailer, sales clerk, sales rep, shipper, student, subscriber, supervisor, supplier, suspect, teacher, wholesaler, worker.",
+      "Transaction: agreement, assignment, authorization, contract, delivery, deposit, incident, inquiry, order, payment, problem, report, purchase, refund, registration, rental, reservation, sale, shift, shipment, subscription, time charge, title, withdrawal."
+    ],
+    "combinations": [
+      {
+        "id": "Patt#2",
+        "slug": "2-actor-participant-pattern-transaction-patterns",
+        "name": "Actor-Participant"
+      },
+      {
+        "id": "Patt#3",
+        "slug": "3-participant-transaction-pattern-transaction-patterns",
+        "name": "PatternParticipant-Transaction"
+      },
+      {
+        "id": "Patt#4",
+        "slug": "4-place-transaction-pattern-transaction-patterns",
+        "name": "Place-Transaction"
+      },
+      {
+        "id": "Patt#5",
+        "slug": "5-specific-item-transaction-pattern-transaction-patterns",
+        "name": "Specific Item - Transaction"
+      },
+      {
+        "id": "Patt#6",
+        "slug": "6-transaction-transaction-line-item-pattern-transaction-patterns",
+        "name": "Transaction - Transaction Line Item"
+      },
+      {
+        "id": "Patt#7",
+        "slug": "7-transaction-subsequent-transaction-pattern-transaction-patterns",
+        "name": "Transaction - Subsequent Transaction."
+      }
+    ],
+    "relatedStrategies": [
+      {
+        "id": "Str#14",
+        "slug": "selecting-objects-pattern-players",
+        "name": "Select Participants"
+      },
+      {
+        "id": "Str#17",
+        "slug": "selecting-objects-pattern-players",
+        "name": "Select Transactions"
+      },
+      {
+        "id": "Str#34",
+        "slug": "selecting-objects-kinds-of-objects",
+        "name": "Select Kinds of Objects"
+      },
+      {
+        "id": "Str#52",
+        "slug": "pattern-players-what-i-know",
+        "name": "Establish Actor and Participant Attributes"
+      },
+      {
+        "id": "Str#54",
+        "slug": "pattern-players-what-i-know",
+        "name": "Establish Transaction Attributes"
+      },
+      {
+        "id": "Str#74",
+        "slug": "pattern-players-who-i-know",
+        "name": "Establish Actor and Participant Object Connections"
+      },
+      {
+        "id": "Str#76",
+        "slug": "pattern-players-who-i-know",
+        "name": "Establish Transaction Object Connections"
+      },
+      {
+        "id": "Str#94",
+        "slug": "pattern-players-what-i-do",
+        "name": "Establish Actor and Participant Services"
+      },
+      {
+        "id": "Str#96",
+        "slug": "pattern-players-what-i-do",
+        "name": "Establish Transaction Services"
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "id": "Patt#4",
+    "name": "Place-Transaction",
+    "tags": [
+      "transaction patterns"
+    ],
+    "image": "Strpat00000007.gif",
+    "typicalInteractions": [
+      "howMany --> calcForMe",
+      "howMuch --> calcForMe",
+      "calcOverTransactions --> calcForMe",
+      "rankTransactions --> rateMe"
+    ],
+    "examples": [
+      "Place: airport, assembly-line, airport, bank, clinic, depot, garage, geographic entity, hangar, hospital, manufacturing site, plant, region, sales outlet, service center, shelf, station, store, warehouse, zone.",
+      "Transaction: agreement, assignment, authorization, contract, delivery, deposit, incident, inquiry, order, payment, problem, report, purchase, refund, registration, rental, reservation, sale, shift, shipment, subscription, time charge, title, withdrawal."
+    ],
+    "combinations": [
+      {
+        "id": "Patt#3",
+        "slug": "3-participant-transaction-pattern-transaction-patterns",
+        "name": "Participant-Transaction"
+      },
+      {
+        "id": "Patt#5",
+        "slug": "5-specific-item-transaction-pattern-transaction-patterns",
+        "name": "Specific Item - Transaction"
+      },
+      {
+        "id": "Patt#6",
+        "slug": "6-transaction-transaction-line-item-pattern-transaction-patterns",
+        "name": "Transaction - Transaction Line Item"
+      },
+      {
+        "id": "Patt#7",
+        "slug": "7-transaction-subsequent-transaction-pattern-transaction-patterns",
+        "name": "Transaction - Subsequent Transaction"
+      },
+      {
+        "id": "Patt#14",
+        "slug": "14-container-content-pattern-aggregate-patterns",
+        "name": "Container-Content"
+      },
+      {
+        "id": "Patt#15",
+        "slug": "15-container-container-line-item-pattern-aggregate-patterns",
+        "name": "Container - Container Line Item."
+      }
+    ],
+    "relatedStrategies": [
+      {
+        "id": "Str#15",
+        "slug": "selecting-objects-pattern-players",
+        "name": "Select Places"
+      },
+      {
+        "id": "Str#17",
+        "slug": "selecting-objects-pattern-players",
+        "name": "Select Transactions"
+      },
+      {
+        "id": "Str#53",
+        "slug": "pattern-players-what-i-know",
+        "name": "Establish Place Attributes"
+      },
+      {
+        "id": "Str#54",
+        "slug": "pattern-players-what-i-know",
+        "name": "Establish Transaction Attributes"
+      },
+      {
+        "id": "Str#75",
+        "slug": "pattern-players-who-i-know",
+        "name": "Establish Place Object Connections"
+      },
+      {
+        "id": "Str#76",
+        "slug": "pattern-players-who-i-know",
+        "name": "Establish Transaction Object Connections"
+      },
+      {
+        "id": "Str#95",
+        "slug": "pattern-players-what-i-do",
+        "name": "Establish Place Services"
+      },
+      {
+        "id": "Str#96",
+        "slug": "pattern-players-what-i-do",
+        "name": "Establish Transaction Services"
+      }
+    ]
+  },
+  {
+    "number": 5,
+    "id": "Patt#5",
+    "name": "Specific Item - Transaction",
+    "tags": [
+      "transaction patterns"
+    ],
+    "image": "Strpat00000008.gif",
+    "typicalInteractions": [
+      "howMany --> calcForMe",
+      "howMuch --> calcForMe",
+      "calcOverTransactions -->calcForMe",
+      "rankTransactions --> rateMe"
+    ],
+    "examples": [
+      "Specific item: specific aircraft, specific container, specific ship, specific register, specific vehicle.",
+      "Transaction: agreement, assignment, authorization, contract, delivery, deposit, incident, inquiry, order, payment, problem, report, purchase, refund, registration, rental, reservation, sale, shift, shipment, subscription, time charge, title, withdrawal."
+    ],
+    "combinations": [
+      {
+        "id": "Patt#3",
+        "slug": "3-participant-transaction-pattern-transaction-patterns",
+        "name": "Participant-Transaction"
+      },
+      {
+        "id": "Patt#4",
+        "slug": "4-place-transaction-pattern-transaction-patterns",
+        "name": "Place-Transaction"
+      },
+      {
+        "id": "Patt#5",
+        "slug": "5-specific-item-transaction-pattern-transaction-patterns",
+        "name": "Specific Item - Transaction"
+      },
+      {
+        "id": "Patt#6",
+        "slug": "6-transaction-transaction-line-item-pattern-transaction-patterns",
+        "name": "Transaction - Transaction Line Item"
+      },
+      {
+        "id": "Patt#7",
+        "slug": "7-transaction-subsequent-transaction-pattern-transaction-patterns",
+        "name": "Transaction - Subsequent Transaction"
+      },
+      {
+        "id": "Patt#14",
+        "slug": "14-container-content-pattern-aggregate-patterns",
+        "name": "Container-Content"
+      },
+      {
+        "id": "Patt#15",
+        "slug": "15-container-container-line-item-pattern-aggregate-patterns",
+        "name": "Container - Container Line Item."
+      }
+    ],
+    "relatedStrategies": [
+      {
+        "id": "Str#17",
+        "slug": "selecting-objects-pattern-players",
+        "name": "Select Transactions"
+      },
+      {
+        "id": "Str#54",
+        "slug": "pattern-players-what-i-know",
+        "name": "Establish Transaction Attributes"
+      },
+      {
+        "id": "Str#76",
+        "slug": "pattern-players-who-i-know",
+        "name": "Establish Transaction Object Connections"
+      },
+      {
+        "id": "Str#96",
+        "slug": "pattern-players-what-i-do",
+        "name": "Establish Transaction Services"
+      }
+    ]
+  },
+  {
+    "number": 6,
+    "id": "Patt#6",
+    "name": "Transaction - Transaction Line Item",
+    "tags": [
+      "transaction patterns"
+    ],
+    "image": "Strpat00000009.gif",
+    "typicalInteractions": [
+      "howManyOverInterval --> calcForMe",
+      "howMuchOverInterval --> calcForMe",
+      "calcOverLineItems --> calcForMe",
+      "rankLineItems --> rateMe"
+    ],
+    "examples": [
+      "Transaction: agreement, assignment, authorization, contract, delivery, deposit, incident, inquiry, order, payment, problem, report, purchase, refund, registration, rental, reservation, sale, shift, shipment, subscription, time charge, title, withdrawal.",
+      "Transaction - transaction line item: deposit - deposit line item; order - order line item; payment - payment line item; rental - rental line item; sale - sale line item; shipment - shipment line item; withdrawal - withdrawal line item."
+    ],
+    "combinations": [
+      {
+        "id": "Patt#3",
+        "slug": "3-participant-transaction-pattern-transaction-patterns",
+        "name": "Participant-Transaction"
+      },
+      {
+        "id": "Patt#4",
+        "slug": "4-place-transaction-pattern-transaction-patterns",
+        "name": "Place-Transaction"
+      },
+      {
+        "id": "Patt#5",
+        "slug": "5-specific-item-transaction-pattern-transaction-patterns",
+        "name": "Specific Item - Transaction"
+      },
+      {
+        "id": "Patt#7",
+        "slug": "7-transaction-subsequent-transaction-pattern-transaction-patterns",
+        "name": "Transaction - Subsequent Transaction"
+      },
+      {
+        "id": "Patt#8",
+        "slug": "8-transaction-line-item-subsequent-transaction-line-item-pattern-transaction-patterns",
+        "name": "Transaction Line Item - Subsequent Transaction Line Item"
+      },
+      {
+        "id": "Patt#9",
+        "slug": "9-item-line-item-pattern-transaction-patterns",
+        "name": "Item - Line Item"
+      },
+      {
+        "id": "Patt#10",
+        "slug": "10-specific-item-line-item-pattern-transaction-patterns",
+        "name": "Specific Item - Line Item."
+      }
+    ],
+    "relatedStrategies": [
+      {
+        "id": "Str#17",
+        "slug": "selecting-objects-pattern-players",
+        "name": "Select Transactions"
+      },
+      {
+        "id": "Str#54",
+        "slug": "pattern-players-what-i-know",
+        "name": "Establish Transaction Attributes"
+      },
+      {
+        "id": "Str#76",
+        "slug": "pattern-players-who-i-know",
+        "name": "Establish Transaction Object Connections"
+      },
+      {
+        "id": "Str#96",
+        "slug": "pattern-players-what-i-do",
+        "name": "Establish Transaction Services"
+      }
+    ]
+  },
+  {
+    "number": 7,
+    "id": "Patt#7",
+    "name": "Transaction - Subsequent Transaction",
+    "tags": [
+      "transaction patterns"
+    ],
+    "image": "Strpat00000010.gif",
+    "typicalInteractions": [
+      "howMany --> calcForMe",
+      "howMuch --> calcForMe",
+      "calcOverSubsequentTransactions --> calcForMe",
+      "rankSubsequentTransactions --> rateMe"
+    ],
+    "examples": [
+      "Transaction: agreement, assignment, authorization, contract, delivery, deposit, incident, inquiry, order, payment, problem, report, purchase, refund, registration, rental, reservation, sale, shift, shipment, subscription, time charge, title, withdrawal.",
+      "Transaction - subsequent transaction: application-issue; intermediate result - final result; order-shipment; purchase-payment; reservation-sale; traffic citation - payment."
+    ],
+    "combinations": [
+      {
+        "id": "Patt#3",
+        "slug": "3-participant-transaction-pattern-transaction-patterns",
+        "name": "Participant-Transaction"
+      },
+      {
+        "id": "Patt#4",
+        "slug": "4-place-transaction-pattern-transaction-patterns",
+        "name": "Place-Transaction"
+      },
+      {
+        "id": "Patt#5",
+        "slug": "5-specific-item-transaction-pattern-transaction-patterns",
+        "name": "Specific Item - Transaction"
+      },
+      {
+        "id": "Patt#6",
+        "slug": "6-transaction-transaction-line-item-pattern-transaction-patterns",
+        "name": "Transaction - Transaction Line Item."
+      }
+    ],
+    "relatedStrategies": [
+      {
+        "id": "Str#17",
+        "slug": "selecting-objects-pattern-players",
+        "name": "Select Transactions"
+      },
+      {
+        "id": "Str#54",
+        "slug": "pattern-players-what-i-know",
+        "name": "Establish Transaction Attributes"
+      },
+      {
+        "id": "Str#76",
+        "slug": "pattern-players-who-i-know",
+        "name": "Establish Transaction Object Connections"
+      },
+      {
+        "id": "Str#96",
+        "slug": "pattern-players-what-i-do",
+        "name": "Establish Transaction Services"
+      }
+    ]
+  },
+  {
+    "number": 8,
+    "id": "Patt#8",
+    "name": "Transaction Line Item - Subsequent Transaction Line Item",
+    "tags": [
+      "transaction patterns"
+    ],
+    "image": "Strpat00000011.gif",
+    "typicalInteractions": [
+      "howMany --> calcForMe",
+      "howMuch --> calcForMe",
+      "calcOverSubsequentLineItems --> calcForMe",
+      "rankTransactions --> rateMe"
+    ],
+    "examples": [
+      "Transaction line items: agreement, assignment, authorization, contract, delivery, deposit, incident, inquiry, order, payment, problem report, purchase, refund, registration, rental, reservation, sale, shift, shipment, subscription, time charge, title, withdrawal.",
+      "Transaction line item - subsequent transaction line item: order line item - shipment line item; reservation line item - rental line item; shipment line item - delivery line item."
+    ],
+    "combinations": [
+      {
+        "id": "Patt#6",
+        "slug": "6-transaction-transaction-line-item-pattern-transaction-patterns",
+        "name": "Transaction - Transaction Line Item"
+      },
+      {
+        "id": "Patt#9",
+        "slug": "9-item-line-item-pattern-transaction-patterns",
+        "name": "Item - Line Item"
+      },
+      {
+        "id": "Patt#10",
+        "slug": "10-specific-item-line-item-pattern-transaction-patterns",
+        "name": "Specific Item - Line Item."
+      }
+    ],
+    "relatedStrategies": [
+      {
+        "id": "Str#17",
+        "slug": "selecting-objects-pattern-players",
+        "name": "Select Transactions"
+      },
+      {
+        "id": "Str#54",
+        "slug": "pattern-players-what-i-know",
+        "name": "Establish Transaction Attributes"
+      },
+      {
+        "id": "Str#76",
+        "slug": "pattern-players-who-i-know",
+        "name": "Establish Transaction Object Connections"
+      },
+      {
+        "id": "Str#96",
+        "slug": "pattern-players-what-i-do",
+        "name": "Establish Transaction Services"
+      }
+    ]
+  },
+  {
+    "number": 9,
+    "id": "Patt#9",
+    "name": "Item - Line Item",
+    "tags": [
+      "transaction patterns"
+    ],
+    "image": "Strpat00000012.gif",
+    "typicalInteractions": [
+      "howMany --> getQuantity",
+      "calcOverLineItems --> calcForMe",
+      "rankLineItems --> rateMe"
+    ],
+    "examples": [
+      "(with transaction line items) item - order line item; item - payment line item; item - rental line item; item - sale line item; item - shipment line item (with container line items) item - bin line item; item - warehouse line item."
+    ],
+    "combinations": [
+      {
+        "id": "Patt#6",
+        "slug": "6-transaction-transaction-line-item-pattern-transaction-patterns",
+        "name": "Transaction - Transaction Line Item"
+      },
+      {
+        "id": "Patt#8",
+        "slug": "8-transaction-line-item-subsequent-transaction-line-item-pattern-transaction-patterns",
+        "name": "Transaction Line Item - Subsequent Transaction Line Item"
+      },
+      {
+        "id": "Patt#15",
+        "slug": "15-container-container-line-item-pattern-aggregate-patterns",
+        "name": "Container - Container Line Item."
+      }
+    ],
+    "relatedStrategies": [
+      {
+        "id": "Str#16",
+        "slug": "selecting-objects-pattern-players",
+        "name": "Select Tangible Things"
+      },
+      {
+        "id": "Str#19",
+        "slug": "selecting-objects-pattern-players",
+        "name": "Select Items and Specific Items"
+      },
+      {
+        "id": "Str#55",
+        "slug": "pattern-players-what-i-know",
+        "name": "Establish Item and Specific Item Attributes"
+      },
+      {
+        "id": "Str#77",
+        "slug": "pattern-players-who-i-know",
+        "name": "Establish Item and Specific Item Object Connections"
+      },
+      {
+        "id": "Str#97",
+        "slug": "pattern-players-what-i-do",
+        "name": "Establish Item & Specific Item Services"
+      }
+    ]
+  },
+  {
+    "number": 10,
+    "id": "Patt#10",
+    "name": "Specific Item - Line Item",
+    "tags": [
+      "transaction patterns"
+    ],
+    "image": "Strpat00000013.gif",
+    "typicalInteractions": [
+      "howMany --> calcForMe",
+      "calcOverLineItems --> calcForMe",
+      "rankLineItems --> rateMe",
+      "checkStatus --> isStatusValue"
+    ],
+    "examples": [
+      "specific aircraft - line item; specific vehicle - line item; videotape - rental line item."
+    ],
+    "combinations": [
+      {
+        "id": "Patt#6",
+        "slug": "6-transaction-transaction-line-item-pattern-transaction-patterns",
+        "name": "Transaction - Transaction Line Item"
+      },
+      {
+        "id": "Patt#8",
+        "slug": "8-transaction-line-item-subsequent-transaction-line-item-pattern-transaction-patterns",
+        "name": "Transaction Line Item - Subsequent Transaction Line Item."
+      }
+    ],
+    "relatedStrategies": [
+      {
+        "id": "Str#19",
+        "slug": "selecting-objects-pattern-players",
+        "name": "Select Items and Specific Items"
+      },
+      {
+        "id": "Str#55",
+        "slug": "pattern-players-what-i-know",
+        "name": "Establish Item and Specific Item Attributes"
+      },
+      {
+        "id": "Str#77",
+        "slug": "pattern-players-who-i-know",
+        "name": "Establish Item and Specific Item Object Connections"
+      },
+      {
+        "id": "Str#97",
+        "slug": "pattern-players-what-i-do",
+        "name": "Establish Item & Specific Item Services"
+      }
+    ]
+  },
+  {
+    "number": 11,
+    "id": "Patt#11",
+    "name": "Item - Specific Item",
+    "tags": [
+      "transaction patterns"
+    ],
+    "image": "Strpat00000014.gif",
+    "typicalInteractions": [
+      "howMany --> calcForMe",
+      "checkStatus --> isStatusValue",
+      "calcOverSpecificItems --> calcForMe",
+      "rankSpecificItems --> rateMe",
+      "getDefaultValue <-- getCustomElseDefault"
+    ],
+    "examples": [
+      "aircraft - specific aircraft; loan description - specific loan; job description - specific job; video description - videotape; price category - item - specific item (pattern, applied twice); tax category - item - specific item (pattern, applied twice)."
+    ],
+    "combinations": [
+      {
+        "id": "Patt#5",
+        "slug": "5-specific-item-transaction-pattern-transaction-patterns",
+        "name": "Specific Item - Transaction"
+      },
+      {
+        "id": "Patt#9",
+        "slug": "9-item-line-item-pattern-transaction-patterns",
+        "name": "Item - Line Item."
+      }
+    ],
+    "relatedStrategies": [
+      {
+        "id": "Str#16",
+        "slug": "selecting-objects-pattern-players",
+        "name": "Select Tangible Things"
+      },
+      {
+        "id": "Str#19",
+        "slug": "selecting-objects-pattern-players",
+        "name": "Select Items and Specific Items"
+      },
+      {
+        "id": "Str#55",
+        "slug": "pattern-players-what-i-know",
+        "name": "Establish Item and Specific Item Attributes"
+      },
+      {
+        "id": "Str#77",
+        "slug": "pattern-players-who-i-know",
+        "name": "Establish Item and Specific Item Object Connections"
+      },
+      {
+        "id": "Str#97",
+        "slug": "pattern-players-what-i-do",
+        "name": "Establish Item & Specific Item Services"
+      }
+    ]
+  },
+  {
+    "number": 12,
+    "id": "Patt#12",
+    "name": "Associate - Other Associate",
+    "tags": [
+      "transaction patterns"
+    ],
+    "image": "Strpat00000015.gif",
+    "typicalInteractions": [
+      "howMany --> calcForMe",
+      "calcOverOtherAssociates --> calcForMe",
+      "rankOtherAssociates --> rateMe"
+    ],
+    "examples": [
+      "aileron-gyro; aircraft-runway; building-sensor; driver-vehicle; loading dock - order; order-tote; truck - loading dock."
+    ],
+    "combinations": [],
+    "relatedStrategies": []
+  },
+  {
+    "number": 13,
+    "id": "Patt#13",
+    "name": "Specific Item - Hierarchical Item",
+    "tags": [
+      "transaction patterns"
+    ],
+    "image": "Strpat00000016.gif",
+    "typicalInteractions": [
+      "howMany --> calcForMe",
+      "calcOverItems --> calcForMe"
+    ],
+    "examples": [
+      "account - account description hierarchy; merchandise - merchandise description hierarchy; organization - organization description hierarchy."
+    ],
+    "combinations": [
+      {
+        "id": "Patt#11",
+        "slug": "11-item-specific-item-pattern-transaction-patterns",
+        "name": "Item - Specific Item."
+      }
+    ],
+    "relatedStrategies": []
+  },
+  {
+    "number": 14,
+    "id": "Patt#14",
+    "name": "Container-Content",
+    "tags": [
+      "aggregate patterns"
+    ],
+    "image": "Strpat00000018.gif",
+    "typicalInteractions": [
+      "howMany --> calcForMe",
+      "howMuch --> calcForMe",
+      "calcOverContents --> calcForMe",
+      "rankContent --> rateMe"
+    ],
+    "examples": [
+      "Containers: airport, aircraft, aisle, bank, bin, building, cabinet, folder, garage, hangar, hospital, locker, room, safe, store, warehouse.",
+      "Container - content: aircraft-cargo; aircraft-passenger; building-room; catalog - catalog item; store-item; warehouse - loading dock."
+    ],
+    "combinations": [
+      {
+        "id": "Patt#14",
+        "slug": "14-container-content-pattern-aggregate-patterns",
+        "name": "Container-Content"
+      },
+      {
+        "id": "Patt#15",
+        "slug": "15-container-container-line-item-pattern-aggregate-patterns",
+        "name": "Container - Container Line Item"
+      },
+      {
+        "id": "Patt#16",
+        "slug": "16-group-member-pattern-aggregate-patterns",
+        "name": "Group-Member"
+      },
+      {
+        "id": "Patt#17",
+        "slug": "17-assembly-part-pattern-aggregate-patterns",
+        "name": "Assembly-Part."
+      },
+      {
+        "id": "Patt#2",
+        "slug": "2-actor-participant-pattern-transaction-patterns",
+        "name": "Actor-Participant"
+      },
+      {
+        "id": "Patt#3",
+        "slug": "3-participant-transaction-pattern-transaction-patterns",
+        "name": "Participant-Transaction"
+      },
+      {
+        "id": "Patt#4",
+        "slug": "4-place-transaction-pattern-transaction-patterns",
+        "name": "Place-Transaction"
+      },
+      {
+        "id": "Patt#5",
+        "slug": "5-specific-item-transaction-pattern-transaction-patterns",
+        "name": "Specific Item - Transaction"
+      },
+      {
+        "id": "Patt#10",
+        "slug": "10-specific-item-line-item-pattern-transaction-patterns",
+        "name": "Specific Item - Line Item"
+      },
+      {
+        "id": "Patt#11",
+        "slug": "11-item-specific-item-pattern-transaction-patterns",
+        "name": "Item - Specific Item."
+      }
+    ],
+    "relatedStrategies": [
+      {
+        "id": "Str#22",
+        "slug": "selecting-objects-pattern-players",
+        "name": "Select Container Objects"
+      },
+      {
+        "id": "Str#103",
+        "slug": "where-to-put-a-service-what-i-do",
+        "name": "Service in the Smallest Applicable Container"
+      }
+    ]
+  },
+  {
+    "number": 15,
+    "id": "Patt#15",
+    "name": "Container - Container Line Item",
+    "tags": [
+      "aggregate patterns"
+    ],
+    "image": "Strpat00000019.gif",
+    "typicalInteractions": [
+      "howMany --> calcForMe",
+      "calcOverLineItems --> calcForMe",
+      "rankLineItems --> rateMe"
+    ],
+    "examples": [
+      "aircraft - aircraft line item; bin - bin line item; warehouse - warehouse line item."
+    ],
+    "combinations": [
+      {
+        "id": "Patt#9",
+        "slug": "9-item-line-item-pattern-transaction-patterns",
+        "name": "Item - Line Item"
+      },
+      {
+        "id": "Patt#10",
+        "slug": "10-specific-item-line-item-pattern-transaction-patterns",
+        "name": "Specific Item - Line Item."
+      },
+      {
+        "id": "Patt#2",
+        "slug": "2-actor-participant-pattern-transaction-patterns",
+        "name": "Actor-Participant"
+      },
+      {
+        "id": "Patt#3",
+        "slug": "3-participant-transaction-pattern-transaction-patterns",
+        "name": "Participant-Transaction"
+      },
+      {
+        "id": "Patt#4",
+        "slug": "4-place-transaction-pattern-transaction-patterns",
+        "name": "Place-Transaction"
+      },
+      {
+        "id": "Patt#5",
+        "slug": "5-specific-item-transaction-pattern-transaction-patterns",
+        "name": "Specific Item - Transaction"
+      },
+      {
+        "id": "Patt#11",
+        "slug": "11-item-specific-item-pattern-transaction-patterns",
+        "name": "Item - Specific Item."
+      }
+    ],
+    "relatedStrategies": [
+      {
+        "id": "Str#22",
+        "slug": "selecting-objects-pattern-players",
+        "name": "Select Container Objects"
+      },
+      {
+        "id": "Str#103",
+        "slug": "where-to-put-a-service-what-i-do",
+        "name": "Service in the Smallest Applicable Container"
+      }
+    ]
+  },
+  {
+    "number": 16,
+    "id": "Patt#16",
+    "name": "Group-Member",
+    "tags": [
+      "aggregate patterns"
+    ],
+    "image": "Strpat00000020.gif",
+    "typicalInteractions": [
+      "howMany --> calcForMe",
+      "calcOverMembers --> calcForMe",
+      "rankMembers --> rateMe"
+    ],
+    "examples": [
+      "company-employee; team - team member."
+    ],
+    "combinations": [
+      {
+        "id": "Patt#16",
+        "slug": "16-group-member-pattern-aggregate-patterns",
+        "name": "Group-Member"
+      },
+      {
+        "id": "Patt#14",
+        "slug": "14-container-content-pattern-aggregate-patterns",
+        "name": "Container-Content"
+      },
+      {
+        "id": "Patt#17",
+        "slug": "17-assembly-part-pattern-aggregate-patterns",
+        "name": "Assembly-Part."
+      },
+      {
+        "id": "Patt#2",
+        "slug": "2-actor-participant-pattern-transaction-patterns",
+        "name": "Actor-Participant"
+      },
+      {
+        "id": "Patt#3",
+        "slug": "3-participant-transaction-pattern-transaction-patterns",
+        "name": "Participant-Transaction"
+      },
+      {
+        "id": "Patt#4",
+        "slug": "4-place-transaction-pattern-transaction-patterns",
+        "name": "Place-Transaction"
+      },
+      {
+        "id": "Patt#5",
+        "slug": "5-specific-item-transaction-pattern-transaction-patterns",
+        "name": "Specific Item - Transaction"
+      },
+      {
+        "id": "Patt#10",
+        "slug": "10-specific-item-line-item-pattern-transaction-patterns",
+        "name": "Specific Item - Line Item"
+      },
+      {
+        "id": "Patt#11",
+        "slug": "11-item-specific-item-pattern-transaction-patterns",
+        "name": "Item - Specific Item."
+      }
+    ],
+    "relatedStrategies": []
+  },
+  {
+    "number": 17,
+    "id": "Patt#17",
+    "name": "Assembly-Part",
+    "tags": [
+      "aggregate patterns"
+    ],
+    "image": "Strpat00000021.gif",
+    "typicalInteractions": [
+      "monitor --> monitor",
+      "acceptReport <-- report",
+      "calcOverParts --> calcForMe",
+      "rankParts --> rateMe"
+    ],
+    "examples": [
+      "aircraft-engine; engine - engine part."
+    ],
+    "combinations": [
+      {
+        "id": "Patt#17",
+        "slug": "17-assembly-part-pattern-aggregate-patterns",
+        "name": "Assembly-Part"
+      },
+      {
+        "id": "Patt#14",
+        "slug": "14-container-content-pattern-aggregate-patterns",
+        "name": "Container-Content"
+      },
+      {
+        "id": "Patt#16",
+        "slug": "16-group-member-pattern-aggregate-patterns",
+        "name": "Group-Member"
+      },
+      {
+        "id": "Patt#18",
+        "slug": "18-compound-part-part-pattern-aggregate-patterns",
+        "name": "Compound Part - Part."
+      },
+      {
+        "id": "Patt#5",
+        "slug": "5-specific-item-transaction-pattern-transaction-patterns",
+        "name": "Specific Item - Transaction"
+      },
+      {
+        "id": "Patt#10",
+        "slug": "10-specific-item-line-item-pattern-transaction-patterns",
+        "name": "Specific Item - Line Item"
+      },
+      {
+        "id": "Patt#11",
+        "slug": "11-item-specific-item-pattern-transaction-patterns",
+        "name": "Item - Specific Item."
+      }
+    ],
+    "relatedStrategies": []
+  },
+  {
+    "number": 18,
+    "id": "Patt#18",
+    "name": "Compound Part - Part",
+    "tags": [
+      "aggregate patterns"
+    ],
+    "image": "Strpat00000022.gif",
+    "typicalInteractions": [
+      "howMany --> calcForMe",
+      "calcOverParts --> calcForMe",
+      "rankParts --> rateMe"
+    ],
+    "examples": [
+      "compound part - part; electronic assembly - electronic part; hardware assembly - hardware part."
+    ],
+    "combinations": [
+      {
+        "id": "Patt#17",
+        "slug": "17-assembly-part-pattern-aggregate-patterns",
+        "name": "Assembly-Part"
+      },
+      {
+        "id": "Patt#5",
+        "slug": "5-specific-item-transaction-pattern-transaction-patterns",
+        "name": "Specific Item - Transaction"
+      },
+      {
+        "id": "Patt#10",
+        "slug": "10-specific-item-line-item-pattern-transaction-patterns",
+        "name": "Specific Item - Line Item"
+      },
+      {
+        "id": "Patt#11",
+        "slug": "11-item-specific-item-pattern-transaction-patterns",
+        "name": "Item - Specific Item."
+      }
+    ],
+    "relatedStrategies": []
+  },
+  {
+    "number": 19,
+    "id": "Patt#19",
+    "name": "Packet - Packet Component",
+    "tags": [
+      "aggregate patterns"
+    ],
+    "image": "Strpat00000023.gif",
+    "typicalInteractions": [
+      "disassemble --> create",
+      "assemble --> getValue"
+    ],
+    "examples": [
+      "record-field, message-token, telemetry packet - telemetry component"
+    ],
+    "combinations": [
+      {
+        "id": "Patt#5",
+        "slug": "5-specific-item-transaction-pattern-transaction-patterns",
+        "name": "Specific Item - Transaction"
+      },
+      {
+        "id": "Patt#10",
+        "slug": "10-specific-item-line-item-pattern-transaction-patterns",
+        "name": "Specific Item - Line Item"
+      },
+      {
+        "id": "Patt#11",
+        "slug": "11-item-specific-item-pattern-transaction-patterns",
+        "name": "Item - Specific Item."
+      }
+    ],
+    "relatedStrategies": []
+  },
+  {
+    "number": 20,
+    "id": "Patt#20",
+    "name": "Plan-Step",
+    "tags": [
+      "plan patterns"
+    ],
+    "image": "Strpat00000025.gif",
+    "typicalInteractions": [
+      "estimateDuration --> getEstimatedDuration",
+      "gatherNeededResources --> getNeededResources",
+      "calcOverSteps --> calcForMe",
+      "rankSteps --> rateMe"
+    ],
+    "examples": [
+      "Plan: project plan, battle plan, cooking recipe, batch job, procedure",
+      "Plan-step: project plan - task, battle plan - tactical steps, recipe - recipe steps, job - job step, procedure - procedure step"
+    ],
+    "combinations": [
+      {
+        "id": "Patt#21",
+        "slug": "21-plan-plan-execution-pattern-plan-patterns",
+        "name": "Plan - Plan Execution"
+      },
+      {
+        "id": "Patt#22",
+        "slug": "22-step-step-execution-pattern-plan-patterns",
+        "name": "Step - Step Execution"
+      },
+      {
+        "id": "Patt#24",
+        "slug": "24-plan-plan-version-pattern-plan-patterns",
+        "name": "Plan - Plan Version."
+      }
+    ],
+    "relatedStrategies": []
+  },
+  {
+    "number": 21,
+    "id": "Patt#21",
+    "name": "Plan - Plan Execution",
+    "tags": [
+      "plan patterns"
+    ],
+    "image": "Strpat00000026.gif",
+    "typicalInteractions": [
+      "calcAvgDuration --> calcDuration",
+      "buildExecutionPlan --> create"
+    ],
+    "examples": [
+      "battle plan - battle execution, recipe - recipe execution, job - job execution, procedure - procedure execution."
+    ],
+    "combinations": [
+      {
+        "id": "Patt#20",
+        "slug": "20-plan-step-pattern-plan-patterns",
+        "name": "Plan-Step"
+      },
+      {
+        "id": "Patt#23",
+        "slug": "23-plan-execution-step-execution-pattern-plan-patterns",
+        "name": "Plan Execution - Step Execution"
+      },
+      {
+        "id": "Patt#24",
+        "slug": "24-plan-plan-version-pattern-plan-patterns",
+        "name": "Plan - Plan Version."
+      }
+    ],
+    "relatedStrategies": []
+  },
+  {
+    "number": 22,
+    "id": "Patt#22",
+    "name": "Step - Step Execution",
+    "tags": [
+      "plan patterns"
+    ],
+    "image": "Strpat00000027.gif",
+    "typicalInteractions": [
+      "calcAvgDuration --> calcDuration"
+    ],
+    "examples": [
+      "tactic - tactic execution, recipe step - recipe step execution, job step - job step execution, procedure step - procedure step execution."
+    ],
+    "combinations": [
+      {
+        "id": "Patt#20",
+        "slug": "20-plan-step-pattern-plan-patterns",
+        "name": "Plan-Step"
+      },
+      {
+        "id": "Patt#23",
+        "slug": "23-plan-execution-step-execution-pattern-plan-patterns",
+        "name": "Plan Execution - Step Execution."
+      }
+    ],
+    "relatedStrategies": []
+  },
+  {
+    "number": 23,
+    "id": "Patt#23",
+    "name": "Plan Execution - Step Execution",
+    "tags": [
+      "plan patterns"
+    ],
+    "image": "Strpat00000028.gif",
+    "typicalInteractions": [
+      "calcDuration --> calcDuration",
+      "isComplete --> isComplete",
+      "buildExecutionStep --> create"
+    ],
+    "examples": [
+      "battle execution - tactics execution, recipe execution - recipe step execution, job execution - job step execution, procedure execution - procedure step execution"
+    ],
+    "combinations": [
+      {
+        "id": "Patt#20",
+        "slug": "20-plan-step-pattern-plan-patterns",
+        "name": "Plan-Step"
+      },
+      {
+        "id": "Patt#21",
+        "slug": "21-plan-plan-execution-pattern-plan-patterns",
+        "name": "Plan - Plan Execution."
+      }
+    ],
+    "relatedStrategies": []
+  },
+  {
+    "number": 24,
+    "id": "Patt#24",
+    "name": "Plan - Plan Version",
+    "tags": [
+      "plan patterns"
+    ],
+    "image": "Strpat00000029.gif",
+    "typicalInteractions": [
+      "howMany --> calcForMe",
+      "rank --> rateMe",
+      "buildVersion --> create"
+    ],
+    "examples": [
+      "any plan and one or more versions of that plan"
+    ],
+    "combinations": [
+      {
+        "id": "Patt#20",
+        "slug": "20-plan-step-pattern-plan-patterns",
+        "name": "Plan-Step"
+      },
+      {
+        "id": "Patt#21",
+        "slug": "21-plan-plan-execution-pattern-plan-patterns",
+        "name": "Plan - Plan Execution."
+      }
+    ],
+    "relatedStrategies": []
+  },
+  {
+    "number": 25,
+    "id": "Patt#25",
+    "name": "Peer-Peer",
+    "tags": [
+      "interaction patterns"
+    ],
+    "image": "Strpat00000030.gif",
+    "typicalInteractions": [
+      "calcOverPeers --> calcForMe",
+      "rankPeers--> rateMe"
+    ],
+    "examples": [
+      "flight path - crossing flight path; lane - crossing lane; sector-sector (airspace volumes in air traffic control)."
+    ],
+    "combinations": [],
+    "relatedStrategies": []
+  },
+  {
+    "number": 26,
+    "id": "Patt#26",
+    "name": "Proxy - Specific Item",
+    "tags": [
+      "interaction patterns"
+    ],
+    "image": "Strpat00000031.gif",
+    "typicalInteractions": [
+      "forwardRequest --> executeRequest"
+    ],
+    "examples": [
+      "object - cached object."
+    ],
+    "combinations": [
+      {
+        "id": "Patt#10",
+        "slug": "10-specific-item-line-item-pattern-transaction-patterns",
+        "name": "Specific Item - Line Item"
+      },
+      {
+        "id": "Patt#11",
+        "slug": "11-item-specific-item-pattern-transaction-patterns",
+        "name": "Item - Specific Item."
+      }
+    ],
+    "relatedStrategies": []
+  },
+  {
+    "number": 27,
+    "id": "Patt#27",
+    "name": "Publisher-Subscriber",
+    "tags": [
+      "interaction patterns"
+    ],
+    "image": "Strpat00000032.gif",
+    "typicalInteractions": [
+      "notifySubscribers --> receiveNotification (which, in turn, invokes executeAction)"
+    ],
+    "examples": [
+      "problem-domain object, human-interaction object, data-management object, system-interaction object",
+      "model-document; model-view",
+      "\"subsystem one\" object - \"subsystem two\" object."
+    ],
+    "combinations": [],
+    "relatedStrategies": []
+  },
+  {
+    "number": 28,
+    "id": "Patt#28",
+    "name": "Sender - Pass Through - Receiver",
+    "tags": [
+      "interaction patterns"
+    ],
+    "image": "Strpat00000033.gif",
+    "typicalInteractions": [
+      "sender.invokeReceiver --> passThrough.invokeReceiver --> receiver.executeRequest"
+    ],
+    "examples": [
+      "saleLineItem.qualForDiscount --> sale.qualForDiscount --> customer. qualForDiscount"
+    ],
+    "combinations": [],
+    "relatedStrategies": []
+  },
+  {
+    "number": 29,
+    "id": "Patt#29",
+    "name": "Sender-Lookup-Receiver",
+    "tags": [
+      "interaction patterns"
+    ],
+    "image": "Strpat00000034.gif",
+    "typicalInteractions": [
+      "sender.selectNextReceiver --> lookup.selectReceiver, followed by . . .",
+      "sender.invokeReceiver --> receiver.executeRequest"
+    ],
+    "examples": [
+      "saleAnalysisWindow.lookupLineItem --> sale.lookupLineItem, followed by . . .",
+      "saleAnalysisWindow.calcLineItemProfit --> sale.calcProfit"
+    ],
+    "combinations": [],
+    "relatedStrategies": []
+  },
+  {
+    "number": 30,
+    "id": "Patt#30",
+    "name": "Caller - Dispatcher - Caller Back",
+    "tags": [
+      "interaction patterns"
+    ],
+    "image": "Strpat00000035.gif",
+    "typicalInteractions": [
+      "caller.requestCallBack --> dispatcher.selectCallerBack --> rateMe, followed by . . .",
+      "dispatcher.activateCallerBack --> callerBack.makeCallBack --> caller.receiveCallBack"
+    ],
+    "examples": [
+      "customer - taxi dispatcher - taxi (in a simulation system)",
+      "inbound call - call back server - call back unit",
+      "requester - job shop - contractor (in a simulation system)."
+    ],
+    "combinations": [],
+    "relatedStrategies": []
+  },
+  {
+    "number": 31,
+    "id": "Patt#31",
+    "name": "Gatekeeper-Request-Resource",
+    "tags": [
+      "device patterns"
+    ],
+    "image": "Strpat00000036.gif",
+    "typicalInteractions": [
+      "for gatekeeper and request",
+      "- addRequest --> create",
+      "- selectRequest --> rateMe",
+      "- rankRequests --> rateMe",
+      "for gatekeeper and resource",
+      "- sendRequestToResource --> executeRequest",
+      "- selectResource --> rateMe"
+    ],
+    "examples": [
+      "comm line gatekeeper - comm line request - comm line."
+    ],
+    "combinations": [
+      {
+        "id": "Patt#2",
+        "slug": "2-actor-participant-pattern-transaction-patterns",
+        "name": "Actor-Participant"
+      },
+      {
+        "id": "Patt#3",
+        "slug": "3-participant-transaction-pattern-transaction-patterns",
+        "name": "Participant-Transaction"
+      },
+      {
+        "id": "Patt#5",
+        "slug": "5-specific-item-transaction-pattern-transaction-patterns",
+        "name": "Specific Item - Transaction"
+      }
+    ],
+    "relatedStrategies": []
+  }
+]

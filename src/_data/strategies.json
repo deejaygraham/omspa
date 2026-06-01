@@ -1,0 +1,2685 @@
+[
+  {
+    "id": "Str#1",
+    "name": "Four Major Activities, Four Major Components",
+    "tags": [
+      "activities and model components"
+    ],
+    "slug": "guiding-the-effort-with-major-activities-and-components",
+    "content": [
+      "Organize your work around four major activities, within four major components:",
+      "Four major activities:",
+      "Standard: Identify purpose and features, select objects, establish responsibilities, work out dynamics with scenarios.",
+      "Variation 1: You may find it helpful to focus on working out dynamics with scenarios, establishing responsibilities along the way. This is especially suitable for real-time applications.",
+      "Variation 2: You may find it helpful to select transaction, aggregate, and plan objects, then use the corresponding patterns to guide you through selecting additional objects, establishing responsibilities, and working out dynamics with scenarios.",
+      "Four major components:",
+      "Standard: Problem domain, human interaction, data management, system interaction.",
+      "Variation 1: You may find it helpful to begin with human interaction, followed by problem domain, data management, and system interaction. This is especially suitable when your domain experts want to talk in terms of human interaction from the very start.",
+      "Variation 2: You may find it helpful to begin with problem domain and system interaction, followed by human interaction and data management. This is especially suitable for real-time applications, when your domain experts are keenly interested in the data acquisition and control aspects of the system under consideration."
+    ]
+  },
+  {
+    "id": "Str#1a",
+    "name": "Build an Initial Object Model, then Proceed Feature-by-Feature",
+    "tags": [
+      "activities and model components"
+    ],
+    "slug": "guiding-the-effort-with-major-activities-and-components",
+    "content": [
+      "Here is a very helpful path for building object models.",
+      "Identify purpose and features.",
+      "Purpose statement. Prioritized list of features.",
+      "Build an initial object model, working with domain experts.",
+      "Select initial objects (using strategies; include participants, transactions, places, items, specific items).",
+      "Establish initial responsibilities (using strategy #86 and the stereotypical responsibilities expressed by object-model patterns).",
+      "Work out dynamics with scenarios, feature-by-feature.",
+      "Develop a scenario view for the feature.",
+      "Add objects and responsibilities that you need for the scenario."
+    ]
+  },
+  {
+    "id": "Str#1b",
+    "name": "Use Feature Milestones",
+    "tags": [
+      "activities and model components"
+    ],
+    "slug": "guiding-the-effort-with-major-activities-and-components",
+    "content": [
+      "Use your prioritized features list to plan, build, and measure.",
+      "Early in the development effort, use your prioritized features list day-by-day, while developing an initial object model and scenario views (one scenario view for each feature).",
+      "For the rest of the development effort, use your prioritized features list to plan, build, and measure what you produce -- namely, the frequent, tangible, working results.",
+      "Some notes:",
+      "How frequent is \"frequent\"?",
+      ". Each week, each month, or each quarter -- depends upon the size of the project and the amount of added effort required to make working results available to others.",
+      "Why use features milestones -- and measure features completed, using frequent, tangible, working results?",
+      "In two words: risk reduction.",
+      "How do you estimate percent completion?",
+      "Take the features list, assign a weight to each feature (based upon level of difficulty, relative number of lines of code, and level of skill of the person who will do the work), and then make your estimates.",
+      "Your estimates will improve over time, as you deliver more and more tangible results along the way."
+    ]
+  },
+  {
+    "id": "Str#1c",
+    "name": "Take Multiple Paths",
+    "tags": [
+      "activities and model components"
+    ],
+    "slug": "guiding-the-effort-with-major-activities-and-components",
+    "content": [
+      "For each outcome, consider multiple paths for reaching that goal. Travel down one of those paths. When your progress slows somewhat, move to another path, for awhile.",
+      "\"All features, all classes, then the top ten classes\"",
+      "features -> classes -> top 10 classes -> responsibilities, scenarios for the top 10",
+      "\"One feature at a time\"",
+      "feature -> small object model -> scenario view",
+      "\"Key players first\"",
+      "1-2 participants + 1-2 transactions + line items, items -> responsibilities, scenarios",
+      "\"Key transactions first\"",
+      "transaction - subsequent transaction - subsequent transaction -> participants, line items, items -> attributes, services"
+    ]
+  },
+  {
+    "id": "Str#1d",
+    "name": "Invest an Hour",
+    "tags": [
+      "activities and model components"
+    ],
+    "slug": "guiding-the-effort-with-major-activities-and-components",
+    "content": [
+      "Rather than philosophize endlessly, invest an hour in each of several different ways of modeling a particularly challenging area. Compare your results -- and decide which way to go (based upon actual results, rather than the outcome of a multiweek debate)."
+    ]
+  },
+  {
+    "id": "Str#1e",
+    "name": "Consider the Domain First, Artifacts After That",
+    "tags": [
+      "activities and model components"
+    ],
+    "slug": "guiding-the-effort-with-major-activities-and-components",
+    "content": [
+      "Build an object model with a domain expert first. Then add-in content that you can extract from artifacts (existing data models, source code, whatever).",
+      "Reason why: you need the benefit of the former (fresh insights, new ideas) to help you grapple with the latter (what to include, what to exclude)."
+    ]
+  },
+  {
+    "id": "Str#1f",
+    "name": "Extract Useful Content From An Existing Data Model",
+    "tags": [
+      "activities and model components"
+    ],
+    "slug": "guiding-the-effort-with-major-activities-and-components",
+    "content": [
+      "Yes, it can be done.",
+      "Best practice: build an initial object model with a domain expert first. Then use that model to help you filter out the classes and attributes (in an previous data model) that are no longer needed. Why: the added domain understanding will help you do a better job leaving unneeded things behind, rather than dragging everything from the past along with you once again.",
+      "For the entities:",
+      "List them. Delete correlation tables. Delete (or revise) names that do not fit the problem domain vocabulary (words that a domain expert uses and understands). Collapse supertypes-subtypes that do not express domain-based generalization-specialization.",
+      "Then, when you work on attributes:",
+      "List them. Delete (or revise) names that do not fit the problem domain vocabulary (words that a domain expert uses and understands). Delete flags, indicators, sequence numbers, and unique keys -- nearly all of which are simply leftover implementation mechanisms from a previous system."
+    ]
+  },
+  {
+    "id": "Str#2",
+    "name": "System Purpose",
+    "tags": [
+      "identifying purpose and features"
+    ],
+    "slug": "identifying-system-purpose-and-features",
+    "content": [
+      "Develop an overall purpose statement in 25 words or less. Why this system? Why now?",
+      "Keep the overall goal, the critical success factor, always before you.",
+      "\"To support, to help, to facilitate, . . .\""
+    ]
+  },
+  {
+    "id": "Str#3",
+    "name": "Field Trips, Pictures, and Examples",
+    "tags": [
+      "identifying purpose and features"
+    ],
+    "slug": "identifying-system-purpose-and-features",
+    "content": [
+      "Work with domain experts, ones well-versed in the business.",
+      "Ask for a guided tour; ask for a picture; ask for lots of examples."
+    ]
+  },
+  {
+    "id": "Str#3a",
+    "name": "Multiple Learning Sources",
+    "tags": [
+      "identifying purpose and features"
+    ],
+    "slug": "identifying-system-purpose-and-features",
+    "content": [
+      "Read about it; try out software for it; listen to domain experts!"
+    ]
+  },
+  {
+    "id": "Str#3b",
+    "name": "Build A Glossary",
+    "tags": [
+      "identifying purpose and features"
+    ],
+    "slug": "identifying-system-purpose-and-features",
+    "content": [
+      "Are you finding that people terms differently? Perhaps using different words to convey the same meaning? Or giving different meanings to the same word? Not a surprise!",
+      "Recommendation: build a glossary using a three-column spreadsheet (term, dictionary definition, project definition)."
+    ]
+  },
+  {
+    "id": "Str#4",
+    "name": "Identify Major Sources of Stress",
+    "tags": [
+      "identifying purpose and features"
+    ],
+    "slug": "identifying-system-purpose-and-features",
+    "content": [
+      "Ask people about the most pressing problems that they face each day. \"What stresses you out the most? What frightens you the most? What's the worst thing that could happen to you while your boss is watching?\"",
+      "Look for ways to eliminate or reduce the impact of those problems."
+    ]
+  },
+  {
+    "id": "Str#5",
+    "name": "Develop a Features List",
+    "tags": [
+      "identifying purpose and features"
+    ],
+    "slug": "identifying-system-purpose-and-features",
+    "content": [
+      "Build a list of features.",
+      "Think through each feature: the feature, who it's for, and why it's important.",
+      "Use qualifiers to narrow the scope of the purpose and features statements.",
+      "Prioritize your features list.",
+      "Use the features list for planning and building frequent, tangible, working results."
+    ]
+  },
+  {
+    "id": "Str#6",
+    "name": "Four Kinds of Features",
+    "tags": [
+      "identifying purpose and features"
+    ],
+    "slug": "identifying-system-purpose-and-features",
+    "content": [
+      "Be certain to include features that cover the following:",
+      "Log important information.",
+      "Conduct business.",
+      "Analyze business results.",
+      "Interact with other systems."
+    ]
+  },
+  {
+    "id": "Str#6a",
+    "name": "Add Features, Inspired by Patterns",
+    "tags": [
+      "identifying purpose and features"
+    ],
+    "slug": "identifying-system-purpose-and-features",
+    "content": [
+      "Add features inspired by the stereotypical responsibilities of a participant (in Patt#3, Participant-Transaction), transaction (in Patt#6, Transaction - Transaction Line Item), and place (in Patt#4, Place-Transaction).",
+      "Examples: assess the performance of a participant (how many, how much), calculate the total of a transaction, assess the performance of a place (how many, how much)."
+    ]
+  },
+  {
+    "id": "Str#6b",
+    "name": "Organize and Prioritize Features",
+    "tags": [
+      "identifying purpose and features"
+    ],
+    "slug": "identifying-system-purpose-and-features",
+    "content": [
+      "Organize the features into \"feature categories\" (also known as \"use cases\").",
+      "Example: maintaining employee info; assigning employees; assessing employee performance",
+      "Prioritize the features.",
+      "Identify the prioritization criteria. For example: normal sequence of business usage; greatest risk; customer interest; management interest; ease of implementation."
+    ]
+  },
+  {
+    "id": "Str#7",
+    "name": "Calculation Results and Decision Points",
+    "tags": [
+      "identifying purpose and features"
+    ],
+    "slug": "identifying-system-purpose-and-features",
+    "content": [
+      "Add features that deliver calculation results.",
+      "Add features that support decision points."
+    ]
+  },
+  {
+    "id": "Str#8",
+    "name": "Best and Worst Features",
+    "tags": [
+      "identifying purpose and features"
+    ],
+    "slug": "identifying-system-purpose-and-features",
+    "content": [
+      "Ask users:",
+      "What are the best features of the current system? Of competitive systems?",
+      "What are the worst problems of the current system? Of competitive systems?",
+      "What are the unneeded features of the current system? Of competitive systems?"
+    ]
+  },
+  {
+    "id": "Str#9",
+    "name": "Top 10",
+    "tags": [
+      "identifying purpose and features"
+    ],
+    "slug": "identifying-system-purpose-and-features",
+    "content": [
+      "Build a list of features.",
+      "When you face an abundance of features (or classes, attributes, services), go after the top 10.",
+      "Why: avoid being overwhelmed by a sea of low-level details."
+    ]
+  },
+  {
+    "id": "Str#10",
+    "name": "Now and Later",
+    "tags": [
+      "identifying purpose and features"
+    ],
+    "slug": "identifying-system-purpose-and-features",
+    "content": [
+      "Consider current capabilities--and anticipated future capabilities.",
+      "Ask, \"How is it done now? How will it be done later, with the new system?\"",
+      "Look at things that people do to objects now, and consider features you can add (your automated objects might be able to do those actions to themselves)."
+    ]
+  },
+  {
+    "id": "Str#11",
+    "name": "Reengineer on the Boundaries",
+    "tags": [
+      "identifying purpose and features"
+    ],
+    "slug": "identifying-system-purpose-and-features",
+    "content": [
+      "Look at each organization or automated system boundary.",
+      "Look for duplicate efforts on each side of such a boundary.",
+      "Model the capability one time--and encourage some reengineering improvements for the organization."
+    ]
+  },
+  {
+    "id": "Str#12",
+    "name": "Smarter Devices",
+    "tags": [
+      "identifying purpose and features"
+    ],
+    "slug": "identifying-system-purpose-and-features",
+    "content": [
+      "Look for opportunities to use smarter devices, simplifying your object model and reducing software development schedule and costs.",
+      "When building an object model in a field with rapidly changing data acquisition and control technology, be sure to take a systems perspective, spanning both hardware and software."
+    ]
+  },
+  {
+    "id": "Str#13",
+    "name": "Select Actors",
+    "tags": [
+      "selecting objects",
+      "pattern players"
+    ],
+    "slug": "selecting-objects-pattern-players",
+    "content": [
+      "Look for actors: people and organizations that act as participants within the system under consideration.",
+      "Examples: person, organization (agency, company, corporation, foundation)."
+    ]
+  },
+  {
+    "id": "Str#14",
+    "name": "Select Participants",
+    "tags": [
+      "selecting objects",
+      "pattern players"
+    ],
+    "slug": "selecting-objects-pattern-players",
+    "content": [
+      "Analyze how each actor participates, in ways that might be of interest to the system under consideration.",
+      "Why. Each actor participates in one or more ways through time. It's the same actor, just different ways of participating. People talk about wearing \"different hats\" during the day. That's exactly what such participation is all about.",
+      "Examples: agent, applicant, buyer, cashier, clerk, client, civilian, customer, dealer, delegate, distributor, donor, employee, investor, manufacturer, member, officer, official, order clerk, owner, participant, policy holder, professional, prospect, recipient, retailer, sales clerk, sales rep, shipper, student, subscriber, supervisor, supplier, suspect, teacher, wholesaler, worker."
+    ]
+  },
+  {
+    "id": "Str#15",
+    "name": "Select Places",
+    "tags": [
+      "selecting objects",
+      "pattern players"
+    ],
+    "slug": "selecting-objects-pattern-players",
+    "content": [
+      "Look for places where things come to rest, places that contain other objects.",
+      "Examples: airport, assembly-line, bank, clinic, depot, garage, geographic entity, hangar, hospital, manufacturing site, plant, region, sales outlet, service center, shelf, station, store, warehouse, zone."
+    ]
+  },
+  {
+    "id": "Str#16",
+    "name": "Select Tangible Things",
+    "tags": [
+      "selecting objects",
+      "pattern players"
+    ],
+    "slug": "selecting-objects-pattern-players",
+    "content": [
+      "Look for tangible objects, ones used in the problem domain.",
+      "Take a walk through the business. Select objects from the tangible ones around you.",
+      "Examples: account, cash box, cash drawer, item, plan, procedure, product, schedule, scheduled event."
+    ]
+  },
+  {
+    "id": "Str#17",
+    "name": "Select Transactions",
+    "tags": [
+      "selecting objects",
+      "pattern players"
+    ],
+    "slug": "selecting-objects-pattern-players",
+    "content": [
+      "Look for transactions, \"events remembered,\" events that the system must remember through time. A transaction is a moment in time (for example, a sale) or an interval of time (for example, a rental).",
+      "Look for an entry in a historical record or log, an entry that must be maintained. Why? To answer questions or to perform assessments.",
+      "Examples: agreement, assignment, authorization, contract, delivery, deposit, incident, inquiry, order, payment, problem report, purchase, refund, registration, rental, reservation, sale, shift, shipment, subscription, time charge, title, withdrawal.",
+      "Note: Nearly all transactions consist of a number of transaction line items.",
+      "Note: Where do these transactions come from? The possibilities are:",
+      "A window (the event logged is based upon human interaction at some point in time)",
+      "Another object, monitoring for a significant event, then logging that such an event occurred",
+      "Another system, one that your system can interact with regarding events it logs."
+    ]
+  },
+  {
+    "id": "Str#18",
+    "name": "Select Associates",
+    "tags": [
+      "selecting objects",
+      "pattern players"
+    ],
+    "slug": "selecting-objects-pattern-players",
+    "content": [
+      "Look for associates, objects that need to know each other, yet:",
+      "have no need to capture information or provide services about that association",
+      "have no need for history about that association.",
+      "Most often, this strategy applies to the interaction of objects, whose actual objects are closely related.",
+      "Examples: aileron-gyro; aircraft-runway; building-sensor; driver-vehicle, loading dock - order; order-tote; truck - loading dock."
+    ]
+  },
+  {
+    "id": "Str#19",
+    "name": "Select Items and Specific Items",
+    "tags": [
+      "selecting objects",
+      "pattern players"
+    ],
+    "slug": "selecting-objects-pattern-players",
+    "content": [
+      "Look for items, descriptive objects with values that apply to some number of specific items and actions that apply across those specific items.",
+      "Examples: aircraft - specific aircraft, loan description - specific loan, job description - specific job, video description - videotape, price category item - specific item, tax category item - specific item."
+    ]
+  },
+  {
+    "id": "Str#19a",
+    "name": "Separate Definition from Usage",
+    "tags": [
+      "selecting objects",
+      "pattern players"
+    ],
+    "slug": "selecting-objects-pattern-players",
+    "content": [
+      "When you need to define something (standard parts of a plan, standard parts of a schedule, standard descriptions of a product) and then use it in some way ( a specific plan, a specific schedule for today, a specific thing you are putting together), -- include both description classes (each object is like a catalog entry) and usage classes (each object keeps track of things that are happening this special time) in your object model.",
+      "This is an example of [Patt#9 \"Item - Specific Item,\"](/9-item-line-item-pattern-transaction-patterns.html) repeatedly applied."
+    ]
+  },
+  {
+    "id": "Str#20",
+    "name": "Select Interacting Systems and Devices",
+    "tags": [
+      "selecting objects",
+      "pattern players"
+    ],
+    "slug": "selecting-objects-pattern-players",
+    "content": [
+      "Look for other systems, ones that your system is responsible for interacting with.",
+      "(Real-time systems) Look for devices, ones that your system needs for data acquisition and control.",
+      "Add it to the PD component. Example: sensor.",
+      "Add a companion SI class to the system interaction component. Example: SensorSI. (SI objects encapsulate the specific communication needs for interacting with another system or device.)"
+    ]
+  },
+  {
+    "id": "Str#20a",
+    "name": "Add Outbound/Inbound Request",
+    "tags": [
+      "selecting objects",
+      "pattern players"
+    ],
+    "slug": "selecting-objects-pattern-players",
+    "content": [
+      "Yes, add both PD and SI objects, separating logical and physical system interaction needs.",
+      "For the PD side, add an OutboundRequest object (to keep track of a sending object and the request number -- so you can handle an outbound asynchronous request correctly).",
+      "Also for the PD side, add an InboundRequest object (to parse and route inbound a command from another systems -- and keep track of to whom to return the results of the request.)"
+    ]
+  },
+  {
+    "id": "Str#21",
+    "name": "Select Collections of Objects",
+    "tags": [
+      "selecting objects",
+      "pattern players"
+    ],
+    "slug": "selecting-objects-pattern-players",
+    "content": [
+      "Look at each object as a worker in a collection. Name the collections.",
+      "Look at each object as a collection with workers. Name the workers.",
+      "Examples:",
+      "Collections of participants: company, department, group, organization, squad, team.",
+      "Collections of places: airport, campus, store chain.",
+      "Collections of things: assembly, batch, collection, list, log, queue, pool."
+    ]
+  },
+  {
+    "id": "Str#22",
+    "name": "Select Container Objects",
+    "tags": [
+      "selecting objects",
+      "pattern players"
+    ],
+    "slug": "selecting-objects-pattern-players",
+    "content": [
+      "Use a domain-based container, one that holds other objects.",
+      "Examples: airport, aircraft, aisle, bank, bin, building, cabinet, folder, garage, hangar, hospital, locker, room, safe, store, warehouse."
+    ]
+  },
+  {
+    "id": "Str#23",
+    "name": "Select a Collection",
+    "tags": [
+      "selecting objects",
+      "pattern players"
+    ],
+    "slug": "selecting-objects-pattern-players",
+    "content": [
+      "What if you need a collection of objects, yet such a collection has no special name?",
+      "Add a collection, using a plural form of the worker name. Example: authorization systems.",
+      "Add a collection, using the worker name, followed by the word \"collection\" or \"server.\" Example: authorization server.",
+      "Use the smallest domain collection within the system's responsibility, to express responsibility across that collection--expressing appropriate scope.",
+      "Examples: bin, aisle, warehouse; city, county, state, country; team, department, organization, company, industry."
+    ]
+  },
+  {
+    "id": "Str#25",
+    "name": "Object-Model Components as a Guide",
+    "tags": [
+      "selecting objects",
+      "model components"
+    ],
+    "slug": "selecting-objects-model-components",
+    "content": [
+      "Use object-model components as a working outline for organizing your search for objects.",
+      "PD: problem domain",
+      "HI: human interaction . DM: data management",
+      "SI: system interaction",
+      "(and NT: not this time)."
+    ]
+  },
+  {
+    "id": "Str#26",
+    "name": "Feature, PD Objects, HI Objects",
+    "tags": [
+      "selecting objects",
+      "model components"
+    ],
+    "slug": "selecting-objects-model-components",
+    "content": [
+      "Tabulate: feature, corresponding problem-domain objects, corresponding human interaction objects.",
+      "Why: identify objects--and sort out who needs to collaborate with whom."
+    ]
+  },
+  {
+    "id": "Str#27",
+    "name": "Select Windows: A First Cut",
+    "tags": [
+      "selecting objects",
+      "model components"
+    ],
+    "slug": "selecting-objects-model-components",
+    "content": [
+      "Add windows for each problem-domain object that you are working with.",
+      "If an object has line items, model both with a single window."
+    ]
+  },
+  {
+    "id": "Str#28",
+    "name": "Select Logon Window",
+    "tags": [
+      "selecting objects",
+      "model components"
+    ],
+    "slug": "selecting-objects-model-components",
+    "content": [
+      "Add a logon window--if the system needs to know who is using the system, for access control and accountability.",
+      "Examples: cashier logon window, customer logon window, order clerk logon window--or simply a logon window."
+    ]
+  },
+  {
+    "id": "Str#29",
+    "name": "Select Setup Windows",
+    "tags": [
+      "selecting objects",
+      "model components"
+    ],
+    "slug": "selecting-objects-model-components",
+    "content": [
+      "Add system setup windows.",
+      "Create and initialize the objects you need, to get the system ready to go.",
+      "Add system administration services for adding users and privileges.",
+      "Add activate and deactivate actions.",
+      "Do this for whatever human interaction might be needed for activating or deactivating an interacting system or device.",
+      "Put the actions with a window that knows objects that can carry those actions out.",
+      "Note: Don't include data entry \"nuts and bolts,\" such as screen, monitor keyboard, mouse, magnetic-stripe reader, and the like."
+    ]
+  },
+  {
+    "id": "Str#30",
+    "name": "Select Core Windows",
+    "tags": [
+      "selecting objects",
+      "model components"
+    ],
+    "slug": "selecting-objects-model-components",
+    "content": [
+      "Consider who (audience) needs what (content), and why (purpose).",
+      "Add \"conducting business\" windows.",
+      "Include transaction windows. Examples: sale window, session window, payment window.",
+      "Add \"analyzing business results\" windows.",
+      "Consider combination windows, when content is closely related in time.",
+      "Examples: a transaction and its line items; a sale and payment window."
+    ]
+  },
+  {
+    "id": "Str#30a",
+    "name": "Select HI Windows for PD Transactions",
+    "tags": [
+      "selecting objects",
+      "model components"
+    ],
+    "slug": "selecting-objects-model-components",
+    "content": [
+      "For each PD transaction object:",
+      "add an HI list window and an HI detail window.",
+      "Example: Registration (PD); RegistrationsWindow (HI), RegistrationDetailWindow (HI)."
+    ]
+  },
+  {
+    "id": "Str#31",
+    "name": "Select Reports",
+    "tags": [
+      "selecting objects",
+      "model components"
+    ],
+    "slug": "selecting-objects-model-components",
+    "content": [
+      "Put together key summaries and specialized outputs, meeting specific legal or business needs.",
+      "Look carefully at who (audience) needs what (content), and why (purpose).",
+      "Don't include every ad hoc query that someone might eventually ask; don't include outdated batch reports."
+    ]
+  },
+  {
+    "id": "Str#32",
+    "name": "Select DM Objects",
+    "tags": [
+      "selecting objects",
+      "model components"
+    ],
+    "slug": "selecting-objects-model-components",
+    "content": [
+      "Add a DM object for each problem-domain class of objects that you want to be persistent--stored between program invocations.",
+      "Why: use data management (DM) objects to encapsulate search and storage mechanisms across all of the objects within a problem-domain class.",
+      "Examples: cashier DM, sale DM, sale line item DM, item DM."
+    ]
+  },
+  {
+    "id": "Str#33",
+    "name": "Select Interacting Systems or Devices",
+    "tags": [
+      "selecting objects",
+      "model components"
+    ],
+    "slug": "selecting-objects-model-components",
+    "content": [
+      "Select it.",
+      "Look for other systems and pieces of equipment that your system must interact with.",
+      "Look for interacting systems; look for devices needing data acquisition and control. (Skip display or printing \"nuts and bolts.\")",
+      "Examples: aileron, avionics system, controller, diverter, elevator, radar, rudder, sensor, scanner.",
+      "Model it.",
+      "With a problem-domain object, and",
+      "With a corresponding system-interaction (SI) object, encapsulating low-level communication detail."
+    ]
+  },
+  {
+    "id": "Str#34",
+    "name": "Select Kinds of Objects",
+    "tags": [
+      "selecting objects",
+      "kinds of objects"
+    ],
+    "slug": "selecting-objects-kinds-of-objects",
+    "content": [
+      "Use generalization-specialization (gen-spec) to find additional classes.",
+      "Look at each class as a generalization. Name its specializations, ones that fit with system objectives.",
+      "Look at each specialization. Name its generalizations, ones that fit within system objectives.",
+      "Use gen-spec for domain-based reuse within an application; use configuration management for reuse across multiple applications, even multiple problem domains.",
+      "Use gen-spec to show domain-based \"what's the same, what's different,\" within an application.",
+      "Examples: equipment, kinds of equipment; participants, kinds of participants; transactions, kinds of transactions."
+    ]
+  },
+  {
+    "id": "Str#34a",
+    "name": "Fits within a Specialization Class -- Forever",
+    "tags": [
+      "selecting objects",
+      "kinds of objects"
+    ],
+    "slug": "selecting-objects-kinds-of-objects",
+    "content": [
+      "Use generalization-specialization (gen-spec) whenever you can classify an object as being within a specialization class -- and you know that it will stay in that class.",
+      "Otherwise, use Patt#3 \"Actor-Participant\" instead (referred to as \"composition, instead of inheritance\")."
+    ]
+  },
+  {
+    "id": "Str#35",
+    "name": "Select Corresponding Objects from Analogous Systems",
+    "tags": [
+      "selecting objects",
+      "analogies"
+    ],
+    "slug": "selecting-objects-analogies",
+    "content": [
+      "Look for a system with an analogous purpose.",
+      "Take your system's purpose -- and generalize it.",
+      ". For example, \"to rent videos\" becomes \"to rent.\"",
+      "Look for other problem domains in need of an analogous system.",
+      ". For example, car rental system (to rent cars), consulting services system (to rent",
+      ". talent), airline reservation system (to rent a seat).",
+      "Examine objects in each analogous system, looking for ones that might correspond by analogy to objects you need in your system.",
+      "Add the corresponding objects (grammatically, called \"metaphors\") to your object model."
+    ]
+  },
+  {
+    "id": "Str#36",
+    "name": "Select and Reuse an Analogous Class",
+    "tags": [
+      "selecting objects",
+      "reuse"
+    ],
+    "slug": "selecting-objects-reuse",
+    "content": [
+      "Look for a class that might apply.",
+      "Consider synonyms.",
+      "Consider a more general name, using \"is a kind of.\"",
+      "Consider metaphors (corresponding objects) within analogous systems (a system that has an analogous purpose).",
+      "Caution: Watch out for metaphors based on what people are doing. Focus on what people act on instead, letting those objects do those things to themselves. (Reason why: do otherwise, and you'll end up with controller objects and data objects, resulting in weaker cohesion and higher coupling.)"
+    ]
+  },
+  {
+    "id": "Str#37",
+    "name": "Select and Reuse a Group of Interacting Objects",
+    "tags": [
+      "selecting objects",
+      "reuse"
+    ],
+    "slug": "selecting-objects-reuse",
+    "content": [
+      "Reuse another instance of a pattern as is.",
+      "Reuse an instance of a pattern, specializing in one or more of its classes.",
+      "Reuse a pattern, by analogy."
+    ]
+  },
+  {
+    "id": "Str#38",
+    "name": "Use the Domain Vocabulary",
+    "tags": [
+      "selecting objects",
+      "names"
+    ],
+    "slug": "selecting-objects-names",
+    "content": [
+      "Use the domain vocabulary.",
+      "Encourage domain experts to eliminate names of things that aren't their own.",
+      "Don't put words in your domain expert's mouth.",
+      "Don't change the vocabulary unless the domain expert feels the need to do so.",
+      "Don't change the domain vocabulary--unless your domain experts choose to change their own vocabulary."
+    ]
+  },
+  {
+    "id": "Str#39",
+    "name": "Domain Terms and Add-Ons",
+    "tags": [
+      "selecting objects",
+      "names"
+    ],
+    "slug": "selecting-objects-names",
+    "content": [
+      "Use a domain name in the problem domain component.",
+      "Use the same name, with a suffix, in the other components.",
+      "Examples: customer, customer window, customer DM; altimeter, altimeter indicator, altimeter SI."
+    ]
+  },
+  {
+    "id": "Str#40",
+    "name": "Always Look for a Better Class Name",
+    "tags": [
+      "selecting objects",
+      "names"
+    ],
+    "slug": "selecting-objects-names",
+    "content": [
+      "Look for a better class name.",
+      "Consider synonyms.",
+      "Consider a more general name, using \"is a kind of.\"",
+      "Consider metaphors (corresponding objects) within analogous systems (a system that has an analogous purpose)."
+    ]
+  },
+  {
+    "id": "Str#41",
+    "name": "Consistent Class Name Format",
+    "tags": [
+      "selecting objects",
+      "names"
+    ],
+    "slug": "selecting-objects-names",
+    "content": [
+      "Use a name that describes an object in a class (usually that means a singular name).",
+      "If an object is a collection, use a singular domain name; the plural of its parts; or the part name plus \"collection\" or \"server.\"",
+      "In an object model, begin each class name with an uppercase letter (begin all other names with a lowercase letter)."
+    ]
+  },
+  {
+    "id": "Str#42",
+    "name": "System Responsibility",
+    "tags": [
+      "selecting objects",
+      "consider and challenge"
+    ],
+    "slug": "selecting-objects-what-to-consider-and-challenge",
+    "content": [
+      "Is the object something that your system is responsible to know or do anything about?",
+      "If not, put it in the \"not this time\" model component."
+    ]
+  },
+  {
+    "id": "Str#43",
+    "name": "Duplicate Responsibilities",
+    "tags": [
+      "selecting objects",
+      "consider and challenge"
+    ],
+    "slug": "selecting-objects-what-to-consider-and-challenge",
+    "content": [
+      "Is this object just a duplication of another object? Are the names different, yet identical responsibilities?",
+      "Such duplications arise over time in large organizations and on large systems.",
+      "When this happens, seek a common name (get help from dictionaries, a thesaurus, and domain-specific books and articles)."
+    ]
+  },
+  {
+    "id": "Str#44",
+    "name": "Reengineer with Objects",
+    "tags": [
+      "selecting objects",
+      "consider and challenge"
+    ],
+    "slug": "selecting-objects-what-to-consider-and-challenge",
+    "content": [
+      "Look for objects (and repeating instances of a pattern) that are likely to have the same responsibilities--and actually reflect an organizational boundary or previous system boundary.",
+      "Model the objects once--for a simpler object model. Make recommendations for reengineering the organization, too."
+    ]
+  },
+  {
+    "id": "Str#45",
+    "name": "Useful Questions",
+    "tags": [
+      "selecting objects",
+      "consider and challenge"
+    ],
+    "slug": "selecting-objects-what-to-consider-and-challenge",
+    "content": [
+      "What useful questions could you ask this object, if you include it in your object model?",
+      "Examples: How many over interval? How much over interval? How good are you?"
+    ]
+  },
+  {
+    "id": "Str#46",
+    "name": "More Than a Report",
+    "tags": [
+      "selecting objects",
+      "consider and challenge"
+    ],
+    "slug": "selecting-objects-what-to-consider-and-challenge",
+    "content": [
+      "Is that report simply a human interaction object, just a view of problem-domain values and calculation results? Or does it embody something about which the system needs to know and do something through time?",
+      "Add to your object model, when your system is responsible for both producing and remembering the content expressed in that report."
+    ]
+  },
+  {
+    "id": "Str#47",
+    "name": "Way to Know",
+    "tags": [
+      "selecting objects",
+      "consider and challenge"
+    ],
+    "slug": "selecting-objects-what-to-consider-and-challenge",
+    "content": [
+      "You need a way to know each object--and its attribute values.",
+      "If you have no way to know an object, either find a way to know about it or put the object in the \"not this time\" model component.",
+      "Example: customer. You must have a way to know about customer objects; otherwise, put customer in the \"not this time\" model component."
+    ]
+  },
+  {
+    "id": "Str#48",
+    "name": "No Objects Mimicking What a Human Does",
+    "tags": [
+      "selecting objects",
+      "consider and challenge"
+    ],
+    "slug": "selecting-objects-what-to-consider-and-challenge",
+    "content": [
+      "Don't let an object mimic what a person does (unless you are building a simulation system). Otherwise, that object will end up as a controller, a function blob.",
+      "Reasons why:",
+      "The controller ends up with functionality that's better done by other objects themselves (lower cohesion for all).",
+      "The controller makes messaging more complicated (higher coupling for all).",
+      "The overly busy controller is harder to develop.",
+      "The overly busy controller is minding everyone else's state-dependent responsibilities."
+    ]
+  },
+  {
+    "id": "Str#49",
+    "name": "Different Human Interaction",
+    "tags": [
+      "selecting objects",
+      "consider and challenge"
+    ],
+    "slug": "selecting-objects-what-to-consider-and-challenge",
+    "content": [
+      "Consider how your model would change if you used a very different human-interaction style (for example, using a heads-up display and voice commands).",
+      "Would any of your problem-domain objects change? If so, pay close attention to those objects. Separate presentation from what's really going on in the problem domain.",
+      "Examples: vertical-speed indicator (human interaction) and vertical-speed gyro (problem domain), traffic light (human interaction) and traffic lane (problem domain)."
+    ]
+  },
+  {
+    "id": "Str#50",
+    "name": "Select Attributes from Actual Ones",
+    "tags": [
+      "establishing responsibilities",
+      "what I know",
+      "fundamentals"
+    ],
+    "slug": "fundamentals-what-i-know",
+    "content": [
+      "This is an aspect of a software object coming to life: \"I know selective things that describe the actual object that I'm an abstraction of.\"",
+      "Select the attributes for your software objects, taken from the abundance of the attributes that could be used to describe a corresponding actual (real-world) object.",
+      "Consider attributes from a broad-sweeping perspective; then work your way into the specific ones you need. Look at attributes in general, in this domain, and ultimately just within this system's responsibilities."
+    ]
+  },
+  {
+    "id": "Str#51",
+    "name": "Establish Usual Attributes",
+    "tags": [
+      "establishing responsibilities",
+      "what I know",
+      "fundamentals"
+    ],
+    "slug": "fundamentals-what-i-know",
+    "content": [
+      "Include the attributes that come to mind when you first think about the object.",
+      "Criteria: the system needs to know a given attribute value; the system has some way to get that value.",
+      "Examples: number, name, address, date, time, operational state, phone, status, threshold, type."
+    ]
+  },
+  {
+    "id": "Str#52",
+    "name": "Establish Actor and Participant Attributes",
+    "tags": [
+      "establishing responsibilities",
+      "what I know",
+      "pattern players"
+    ],
+    "slug": "pattern-players-what-i-know",
+    "content": [
+      "For actor, consider: name, address, phone.",
+      "For participants, include: number, date and time (perhaps an ending date and time), password, authorization level."
+    ]
+  },
+  {
+    "id": "Str#53",
+    "name": "Establish Place Attributes",
+    "tags": [
+      "establishing responsibilities",
+      "what I know",
+      "pattern players"
+    ],
+    "slug": "pattern-players-what-i-know",
+    "content": [
+      "For location, include: number, name, address (perhaps latitude, longitude, altitude)."
+    ]
+  },
+  {
+    "id": "Str#54",
+    "name": "Establish Transaction Attributes",
+    "tags": [
+      "establishing responsibilities",
+      "what I know",
+      "pattern players"
+    ],
+    "slug": "pattern-players-what-i-know",
+    "content": [
+      "For transactions, include: number, date, time, status.",
+      "For line items, include: quantity (if it knows an item, rather than a specific item), status."
+    ]
+  },
+  {
+    "id": "Str#54a",
+    "name": "Transaction Times",
+    "tags": [
+      "establishing responsibilities",
+      "what I know"
+    ],
+    "slug": "pattern-players-what-i-know",
+    "content": [
+      "A transaction object corresponds to a moment in time (e.g., sale) or an interval of time (e.g., rental).",
+      "A moment in time (dateTime, dateTimeOfBirth, dateTimeOfManufacture, effectiveDateTime, plannedDateTime, actualDateTime)",
+      "An interval of time (interval, effectiveInterval, dateTime + duration)",
+      "An interval of time, expressed as a start/stop combination (dateTimeStart, dateTimeEnd; dateTimeIn, dateTimeOut; dateTimeOut, dateTimeBack; effectiveDateTime, expirationDateTime). Fine detail: the second attribute in these pairs belongs in a transaction line item, when different values may apply to each line item."
+    ]
+  },
+  {
+    "id": "Str#54b",
+    "name": "An Attribute? Or Something More?",
+    "tags": [
+      "establishing responsibilities",
+      "what I know"
+    ],
+    "slug": "pattern-players-what-i-know",
+    "content": [
+      "Is a person's hobby (or hobbies) just an attribute? Or something more?",
+      "Value. Just need a current value, based upon an enumeration of values? Add an attribute. Describe the enumeration of values in text. Example: Hobbyist, with a \"hobbies\" attribute",
+      "Standard Catalog Description. Need standard catalog descriptions you can choose from? Add a \"standard catalog description\" class with whatever descriptive attributes you need. Each \"standard catalog description\" object captures attribute values which may apply again and again. Example: Hobbyist -- Hobby (attributes: type, name, description)",
+      "History. Need history? Add a transaction object, to remember intervals of activity. Example: Hobbyist – Hobby Activity – Hobby"
+    ]
+  },
+  {
+    "id": "Str#55",
+    "name": "Establish Item and Specific Item Attributes",
+    "tags": [
+      "establishing responsibilities",
+      "what I know",
+      "pattern players"
+    ],
+    "slug": "pattern-players-what-i-know",
+    "content": [
+      "For items, include: name, description, dimensions, size, universal product code (UPC), weight.",
+      "For specific items, include: serial number, purchase date. (It might know a custom value, while an item might know a default value.)"
+    ]
+  },
+  {
+    "id": "Str#56",
+    "name": "Establish Interacting System and Device Attributes",
+    "tags": [
+      "establishing responsibilities",
+      "what I know",
+      "pattern players"
+    ],
+    "slug": "pattern-players-what-i-know",
+    "content": [
+      "For another system or device, include: number, name, operational state.",
+      "For its companion object, in the system interaction component, include: logon name, password, phone numbers, address."
+    ]
+  },
+  {
+    "id": "Str#57",
+    "name": "Establish HI Attributes",
+    "tags": [
+      "establishing responsibilities",
+      "what I know",
+      "model components"
+    ],
+    "slug": "model-components-hi-what-i-know",
+    "content": [
+      "For windows or reports, include: search fields, data entry fields, or both."
+    ]
+  },
+  {
+    "id": "Str#58",
+    "name": "Describe Attributes with a Template",
+    "tags": [
+      "establishing responsibilities",
+      "what I know",
+      "descriptions"
+    ],
+    "slug": "descriptions-what-i-know",
+    "content": [
+      "Describe each attribute, using a template as your guide.",
+      "description",
+      "legal values (range; limit; enumeration of values)",
+      "unit of measure",
+      "data type",
+      "tolerance",
+      "required (yes or no)",
+      "get/set constraints",
+      "how to get a default value from another source, in the event a custom value is not known",
+      "applicable states (for state-dependent attributes)",
+      "traceability codes (to a requesting document, if any)."
+    ]
+  },
+  {
+    "id": "Str#59",
+    "name": "Describe Real-Time Attributes",
+    "tags": [
+      "establishing responsibilities",
+      "what I know",
+      "descriptions"
+    ],
+    "slug": "descriptions-what-i-know",
+    "content": [
+      "For real-time, categorize each attribute as: state, state-dependent, or state-independent.",
+      "Examples:",
+      "state attributes: status, operational state",
+      "state-dependent attributes: value, reading",
+      "state-independent attributes: name, serial number."
+    ]
+  },
+  {
+    "id": "Str#60",
+    "name": "Closely Related Values as One",
+    "tags": [
+      "establishing responsibilities",
+      "what I know",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-what-i-know-values",
+    "content": [
+      "A collection of closely related values, commonly referred to as one?",
+      "Use one attribute (e.g., name) and describe its parts in text.",
+      "Example: name. In the description for that attribute, include something like \"name consists of title, first name, middle initial, last name (and if applicable, maiden name.)\""
+    ]
+  },
+  {
+    "id": "Str#61",
+    "name": "Yes/No Attribute",
+    "tags": [
+      "establishing responsibilities",
+      "what I know",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-what-i-know-values",
+    "content": [
+      "Attribute has values \"yes or no?\"",
+      "The attribute name itself may be a value for some other attribute name",
+      "Example: taxable (yes or no); change to tax status (taxable, tax-exempt, resale).",
+      "Why bother: added detail now, added ease of change in the future."
+    ]
+  },
+  {
+    "id": "Str#62",
+    "name": "Values Over Time",
+    "tags": [
+      "establishing responsibilities",
+      "what I know",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-what-i-know-values",
+    "content": [
+      "An attribute value that varies over time, and you need to know that variation?",
+      "Add an additional object, with an effective date and value.",
+      "Example: item and its price. If you need to keep track of multiple prices, applicable over different time periods, then add price objects, ones that know effective date and price, and do things like \"is applicable for date\" and \"get price.\""
+    ]
+  },
+  {
+    "id": "Str#62a",
+    "name": "You? Me? Or Something Between Us?",
+    "tags": [
+      "establishing responsibilities",
+      "what I know",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-what-i-know-values",
+    "content": [
+      "For each attribute, ask:",
+      "Does it describe me? (If so, add it to the corresponding class.)",
+      "Does it describe an object I know? (If so, add it to that other corresponding class.)",
+      "Does it describe something in-between us? (If so, add a transaction object in between, and add",
+      ". the attribute to that class.)",
+      "Example:",
+      "Consider a \"user.\"",
+      ". Q. Does \"password\" describe a user?",
+      ". A. Yes, in a single-system context.",
+      ". . Looks like this: User, with a password attribute",
+      ". No, in a multisystem context. In this case, a \"password\" describes neither a user nor a system. Instead, it describes something in-between them, a transaction object called something like \"Access Authorization.\"",
+      ". . Looks like this: User -- Access Authorization -- System"
+    ]
+  },
+  {
+    "id": "Str#63",
+    "name": "Embedded Meaning in a Number",
+    "tags": [
+      "establishing responsibilities",
+      "what I know",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-what-i-know-values",
+    "content": [
+      "Attribute is a number, with encoded meanings?",
+      "Add an attribute for each meaning.",
+      "Most often, include a number attribute, too (a sequence number, no longer a source of encoded meaning)."
+    ]
+  },
+  {
+    "id": "Str#64",
+    "name": "Attribute with Repeating Values",
+    "tags": [
+      "establishing responsibilities",
+      "what I know",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-what-i-know-values",
+    "content": [
+      "An attribute that may have a number of values?",
+      "Add a new class to your model. Add an object connection. Look for additional attributes that may apply.",
+      "Add a new class, even if it has only one attribute for now.",
+      "Why: make the most of problem-domain partitioning; pave the way for accommodating future change gracefully.",
+      "Example: Item with the attribute UPCs (universal product codes). Add a UPC class. Add an object connection between an item and its UPCs."
+    ]
+  },
+  {
+    "id": "Str#65",
+    "name": "Attribute Value Granularity",
+    "tags": [
+      "establishing responsibilities",
+      "what I know",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-what-i-know-values",
+    "content": [
+      "Check the granularity for each attribute that applies across a collection:",
+      "Does the same value apply across the entire collection?",
+      "If not, move the attribute to the worker class, so each object in the collection can have its own value.",
+      "Example: rental (checkout date and time), rental line item (return date and time)."
+    ]
+  },
+  {
+    "id": "Str#66",
+    "name": "Calculable Result",
+    "tags": [
+      "establishing responsibilities",
+      "what I know",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-what-i-know-values",
+    "content": [
+      "An attribute for holding a calculable result? At first, don't show it in the object model.",
+      "At some point, you may want to add the attribute. Here's how:",
+      "Add an explicit \"get <attribute>\" service for it.",
+      "Specify that service so it:",
+      ". checks for an attribute value -- and returns it, if it has one . . otherwise, invokes a calculate service, saves the result, and returns the result to the sender.",
+      "Add an explicit \"calculate <attribute>\" service, too--so you can tell the object to do the calculation you want it to do."
+    ]
+  },
+  {
+    "id": "Str#67",
+    "name": "Common Attributes",
+    "tags": [
+      "establishing responsibilities",
+      "what I know",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-gen-spec-with-attributes-what-i-know",
+    "content": [
+      "Classes with common attributes?",
+      "If the attributes have the same name and meaning, and if you can find a generalization-specialization that makes good sense, then add a generalization class and factor out the commonality."
+    ]
+  },
+  {
+    "id": "Str#67a",
+    "name": "Collapse Whole-Part When Same Attributes Apply",
+    "tags": [
+      "establishing responsibilities",
+      "what I know",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-gen-spec-with-attributes-what-i-know",
+    "content": [
+      "When you find a whole-part -- and the same attributes apply to the whole and the part:",
+      "Collapse the whole and part into \"class with objects\" symbol.",
+      "Add a whole-part object connection to that one symbol.",
+      "Add \"super\" and \"sub\" attributes, showing that each object knows the objects above it and below it.",
+      "Why: Fewer symbols. Less redundancy. And more resilient to change.",
+      "Example: Company - Division - Section - Team Collapse to \"Organization\" or \"OrgUnit.\""
+    ]
+  },
+  {
+    "id": "Str#68",
+    "name": "Partially Applicable Attribute",
+    "tags": [
+      "establishing responsibilities",
+      "what I know",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-gen-spec-with-attributes-what-i-know",
+    "content": [
+      "Attribute that applies only to certain objects in a class?",
+      "Do you have an attribute which applies only to certain kinds of objects?",
+      "Do you have an attribute that may have the value \"not applicable\"?",
+      "If so, factor out the specialized attribute into a specialization class."
+    ]
+  },
+  {
+    "id": "Str#69",
+    "name": "No Attributes",
+    "tags": [
+      "establishing responsibilities",
+      "what I know",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-gen-spec-with-attributes-what-i-know",
+    "content": [
+      "An object with no attributes? When this happens, one of two things is going on.",
+      "Either it's a narrow \"need to know\" and just one object in that class.",
+      ". Check: there really is just one object in that class.",
+      ". Check: attributes really could apply, yet all potential attributes are outside of the system's responsibilities.",
+      ". Fine!",
+      "Or it's got object connections (an attribute, show graphically). That's fine!",
+      "Or it's a nasty \"function blob,\" with services better done by other objects themselves.",
+      ". Centralized control is troublesome; here's why:",
+      ". . It fails to use problem domain classes to partition both attributes and services.",
+      ". . Encapsulation goes down (higher coupling and weaker cohesion).",
+      ". Here's what to do about it.",
+      ". . Get rid of the \"function blob.\"",
+      ". . Applying the \"what I do\" strategies as a guide, put each service in the object that the old function blob was acting on."
+    ]
+  },
+  {
+    "id": "Str#70",
+    "name": "Embedded Value in an Attribute Name",
+    "tags": [
+      "establishing responsibilities",
+      "what I know",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-what-i-know-names",
+    "content": [
+      "Attribute name includes the name of another object?",
+      "Add that object to your model. Let that object know its own attribute(s).",
+      "Note: an object connection, expressed in text rather than with graphics, names another object (as it should)."
+    ]
+  },
+  {
+    "id": "Str#71",
+    "name": "Type Attribute",
+    "tags": [
+      "establishing responsibilities",
+      "what I know",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-what-i-know-names",
+    "content": [
+      "Attribute expressing type, kind, or category?",
+      "If it's needed solely for display or report, that's fine.",
+      "If it's a redundant expression of what gen-spec already portrays, get rid of it (it's not needed).",
+      "If it's needed to decide what to do in a service, use gen-spec so that each object can just do its thing--without needing to determine \"what kind am I?\" before taking appropriate action. Why: take advantage of an opportunity to apply polymorphism--and, as a result, increase resiliency to change."
+    ]
+  },
+  {
+    "id": "Str#72",
+    "name": "Establish PD Object Connections",
+    "tags": [
+      "establishing responsibilities",
+      "who I know",
+      "fundamentals"
+    ],
+    "slug": "fundamentals-who-i-know",
+    "content": [
+      "This is an aspect of a software object coming to life: \"I know other objects, ones that are related to the actual object that I'm an abstraction of.\"",
+      "Select connecting objects to satisfy these two purposes:",
+      "To directly know \"to whom to send a message\" (within one or more scenarios).",
+      "To answer a query about objects that are directly related to it."
+    ]
+  },
+  {
+    "id": "Str#73",
+    "name": "Show Who I Know",
+    "tags": [
+      "establishing responsibilities",
+      "who I know",
+      "fundamentals"
+    ],
+    "slug": "fundamentals-who-i-know",
+    "content": [
+      "Show \"who I know\" graphically, with an object connection.",
+      "Include constraints, placed next to each object being constrained: 1 0-1 n 1-n . . <blank> ordered n \\[XOR A\\] 1 \\[OR B\\] 2 \\[C\\] ordered n all",
+      ". \"n\" is the same thing as \"0-n\" (it's just easier to write it as \"n\").",
+      ". A <blank> constraint indicates that an object has no need to know the other objects (this may occur, notably for a part in an aggregate).",
+      ". \"ordered n\" is an ordered collection of some number of connections . . \"\\[XOR A\\] 1\" indicates an exclusive or, pertaining to all object connections labeled with the same tag (in this example the tag is \"A\"). Place whatever constraint applies to the right of the brackets, e.g., \"\\[XOR A\\] 1.\"",
+      ". \"\\[OR B\\] 2\" indicates two connections, selected from the connections labeled \"B.\"",
+      ". \"\\[C\\] ordered n\" indicates an ordered collection of some number of connections (any connection from that object that is labeled \"C\").",
+      "Or show \"who I know\" in text, with an attribute.",
+      "Use this format whenever an object connection spans across model components -- or any other time that an object connection would be cumbersome, visually.",
+      "For a textual representation, use this format:",
+      ". \"<class name, beginning with a lowercase letter>\"",
+      ". Make it singular or plural, reflecting the number of objects that the object may know."
+    ]
+  },
+  {
+    "id": "Str#73a",
+    "name": "Whole-Part and Existence Dependency: Two Distinct Issues",
+    "tags": [
+      "establishing responsibilities",
+      "who I know",
+      "fundamentals"
+    ],
+    "slug": "fundamentals-who-i-know",
+    "content": [
+      "Whole-part object connections express: assembly-part or container-content or group-member.",
+      "Existence dependency shows: one object depends upon another, else it cannot exist. Show existence dependency with an object connection constraint of 1 or more.",
+      "These are two distinct issues. Whole-part does not imply existence dependency; the connection constraints of any object connection express existence dependency (if any)."
+    ]
+  },
+  {
+    "id": "Str#74",
+    "name": "Establish Actor and Participant Object Connections",
+    "tags": [
+      "establishing responsibilities",
+      "who I know",
+      "pattern players"
+    ],
+    "slug": "pattern-players-who-i-know",
+    "content": [
+      "For an actor, include an object connection to: its participants.",
+      "For a participant, include an object connection to: its actor, its transactions."
+    ]
+  },
+  {
+    "id": "Str#75",
+    "name": "Establish Place Object Connections",
+    "tags": [
+      "establishing responsibilities",
+      "who I know",
+      "pattern players"
+    ],
+    "slug": "pattern-players-who-i-know",
+    "content": [
+      "For a location, include object connections to objects which come to rest at a location . . . or are contained by a location.",
+      "For a location, include object connections to transaction objects, to show that location's participation in that transaction."
+    ]
+  },
+  {
+    "id": "Str#76",
+    "name": "Establish Transaction Object Connections",
+    "tags": [
+      "establishing responsibilities",
+      "who I know",
+      "pattern players"
+    ],
+    "slug": "pattern-players-who-i-know",
+    "content": [
+      "For a transaction, include object connections to: participants, transaction line items, a companion transaction, one that occurs at the same moment in time.",
+      "For a transaction line item, include object connections to: the transaction, a companion \"item description\" object, a subsequent transaction line item."
+    ]
+  },
+  {
+    "id": "Str#77",
+    "name": "Establish Item and Specific Item Object Connections",
+    "tags": [
+      "establishing responsibilities",
+      "who I know",
+      "pattern players"
+    ],
+    "slug": "pattern-players-who-i-know",
+    "content": [
+      "For an item, include object connections to: specific item, transaction line item (if specific item is not needed in the model), container line item (if specific item is not needed in the model).",
+      "For a specific item, include object connections to: item, transaction line item, container line item."
+    ]
+  },
+  {
+    "id": "Str#78",
+    "name": "Establish Interacting System or Device Object Connections",
+    "tags": [
+      "establishing responsibilities",
+      "who I know",
+      "pattern players"
+    ],
+    "slug": "pattern-players-who-i-know",
+    "content": [
+      "For an interacting system or device:",
+      "Include an object connection (expressed as attributes) between a PD object and is corresponding system interaction (SI) object."
+    ]
+  },
+  {
+    "id": "Str#79",
+    "name": "Establish HI Object Connections",
+    "tags": [
+      "establishing responsibilities",
+      "who I know",
+      "model components"
+    ],
+    "slug": "model-components-hi-dm-who-i-know",
+    "content": [
+      "For a window or report, include an object connection (expressed as an attribute) to: the contents of the window, the objects it knows directly, to get the content it needs to do its job (note that a window can use those objects to get to other objects, indirectly)."
+    ]
+  },
+  {
+    "id": "Str#79a",
+    "name": "Establish HI-PD Object Connections",
+    "tags": [
+      "establishing responsibilities",
+      "who I know",
+      "model components"
+    ],
+    "slug": "model-components-hi-dm-who-i-know",
+    "content": [
+      "For a window, show \"who I know\" in text:",
+      "For a PD object who needs to notify a window:",
+      "Inherit the attribute \"subscribers\" and the service \"publish\" -- from a PDObject class -- and notify your subscribers when a change occurs (up to each subscriber to decide what to do from there)."
+    ]
+  },
+  {
+    "id": "Str#80",
+    "name": "Establish DM Object Connections",
+    "tags": [
+      "establishing responsibilities",
+      "who I know",
+      "model components"
+    ],
+    "slug": "model-components-hi-dm-who-i-know",
+    "content": [
+      "For a data management object, include an object connection (expressed as an attribute) to the problem-domain objects (all of the objects in some problem-domain class) that it is responsible for."
+    ]
+  },
+  {
+    "id": "Str#80a",
+    "name": "ABC",
+    "tags": [
+      "establishing responsibilities",
+      "who I know",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-who-i-know",
+    "content": [
+      "Consider:",
+      "Do you need an object connection between A and C?",
+      "Yes, if an A and C can exist without a B, and you need to know that mapping even when a B is not present.",
+      "No, otherwise."
+    ]
+  },
+  {
+    "id": "Str#80b",
+    "name": "Double 1's",
+    "tags": [
+      "establishing responsibilities",
+      "who I know",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-who-i-know",
+    "content": [
+      "For object connections that have double 1's:",
+      "should you combine the participating objects?",
+      "Reason to combine: fewer symbols, fewer object interactions to deal with, easier to understand. This approach recognizes that effective communication is a must. Recommendation: follow this approach, unless the benefits listed below justify the added complexity.",
+      "Reason to keep apart: finer-grained partitioning, more resiliency to change."
+    ]
+  },
+  {
+    "id": "Str#80c",
+    "name": "Double n's",
+    "tags": [
+      "establishing responsibilities",
+      "who I know",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-who-i-know",
+    "content": [
+      "For object connections that have double n's:",
+      "check and see if a transaction object belongs in-between them.",
+      "Example:",
+      "Owner-Vehicle could become Owner-Purchase-Vehicle.",
+      "The point here is not to obliterate double n's, but rather to use the occasion to look for a missing transaction object."
+    ]
+  },
+  {
+    "id": "Str#80d",
+    "name": "Relationships Between Objects in the Same Class",
+    "tags": [
+      "establishing responsibilities",
+      "who I know",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-who-i-know",
+    "content": [
+      "At times, one object in a class needs to know other objects in a class.",
+      "One choice: add an object connection -- and an attribute, naming that connection. Works well if you don't need to know anything else about that relationship, or its history over time.",
+      "Another choice: add and connect another object, one that further describes what's going on between those objects. This could even be abstracted into a new pattern, called \"Thing - Thing Relationship.\""
+    ]
+  },
+  {
+    "id": "Str#81",
+    "name": "Common Object Connection",
+    "tags": [
+      "establishing responsibilities",
+      "who I know",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-who-i-know",
+    "content": [
+      "Common object connection? Add a generalization class, if it is indeed a generalization."
+    ]
+  },
+  {
+    "id": "Str#82",
+    "name": "Uncommon Object Connection",
+    "tags": [
+      "establishing responsibilities",
+      "who I know",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-who-i-know",
+    "content": [
+      "Object connection that applies only to certain objects in a class? Connect to objects in a specialization class, instead."
+    ]
+  },
+  {
+    "id": "Str#83",
+    "name": "One Object with Special Meaning",
+    "tags": [
+      "establishing responsibilities",
+      "who I know",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-who-i-know",
+    "content": [
+      "Many potential object connections, with one that is \"the current one\" or some other special meaning?",
+      "Add an attribute like \"current <connecting class name>.\""
+    ]
+  },
+  {
+    "id": "Str#84",
+    "name": "Object Connection with Multiple Meanings",
+    "tags": [
+      "establishing responsibilities",
+      "who I know",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-who-i-know",
+    "content": [
+      "What if you have an object connection with multiple meanings?",
+      "Add a transaction object, an \"event remembered\" about each meaning being established.",
+      "Or: add attributes to the participating object that needs to know those meanings--along with the object connection."
+    ]
+  },
+  {
+    "id": "Str#85",
+    "name": "An Object with No Connections",
+    "tags": [
+      "establishing responsibilities",
+      "who I know",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-who-i-know",
+    "content": [
+      "An object with no object connections?",
+      "Consider who it needs to know to answer queries. Anything needed?",
+      "Consider who it needs to know to get its services done. Anything needed?",
+      "Otherwise, it's okay (from a different domain, yet part of the system's responsibilities)."
+    ]
+  },
+  {
+    "id": "Str#86",
+    "name": "Do It Myself",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "fundamentals"
+    ],
+    "slug": "fundamentals-what-i-do",
+    "content": [
+      "This is an aspect of a software object coming to life: \"I do those things that are normally done to the actual object that I'm an abstraction of.\"",
+      "Here's why. \"Doing it myself\" encapsulates attributes with the services that work on those attributes. That results in lower coupling and stronger cohesion.",
+      "If you are building a simulation system, then a software object will mimic what an actual object does. In most systems, this is not so. Software objects do those things that the system is responsible to do with regard to that object."
+    ]
+  },
+  {
+    "id": "Str#87",
+    "name": "Put Services with the Attributes They Work On",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "fundamentals"
+    ],
+    "slug": "fundamentals-what-i-do",
+    "content": [
+      "Put the services with the attributes they work on.",
+      "The result? Sensor objects that monitor themselves, customer objects that qualify themselves, target objects that destroy themselves.",
+      "Why: better encapsulation, stronger cohesion, lower coupling, increased likelihood of reuse."
+    ]
+  },
+  {
+    "id": "Str#88",
+    "name": "Why, Why, Why",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "fundamentals"
+    ],
+    "slug": "fundamentals-what-i-do",
+    "content": [
+      "Add value by asking \"why, why, why?\"",
+      "Why, why, does the system need this object anyway?",
+      "What useful questions can it answer? What useful actions can it perform?",
+      "What is done to an actual object, something that this object could do itself?",
+      "The basic service, done by all, are not shown in an object model, except within specific scenario views that might use them.",
+      "The basics: get, set; add (a connecting object), remove (a connecting object); create (something a class does) and initialize, delete.",
+      "Note: attributes are private, by convention. In scenarios, use \"get <attribute name>\" and \"set <attribute name>\" services to access attribute values.",
+      "The basic DM services -- for data management objects -- are: search, load, and save."
+    ]
+  },
+  {
+    "id": "Str#90",
+    "name": "Service as a Question",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "fundamentals"
+    ],
+    "slug": "fundamentals-what-i-do",
+    "content": [
+      "Ask: what questions can an object answer?",
+      "Some good starting words to choose from: has <connecting object>, how many, how much, includes <connecting object>, is <status value>.",
+      "Why: stronger encapsulation, better partitioning of services; fewer objects that are mere data holders."
+    ]
+  },
+  {
+    "id": "Str#91",
+    "name": "Service as a Verb",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "fundamentals"
+    ],
+    "slug": "fundamentals-what-i-do",
+    "content": [
+      "Some good service name verbs to choose from:",
+      "activate (initialize, initiate, open, start)",
+      "answer (reply, respond)",
+      "assess (appraise, assay, evaluate, value)",
+      "calculate (compute, count, estimate, rate, tally)",
+      "deactivate (close, end, shut down, terminate)",
+      "determine (decide, figure out, observe, resolve)",
+      "find (get, look for, pinpoint)",
+      "measure (bound, gauge, limit)",
+      "monitor (conduct, direct, manage, observe, operate, supervise, watch)",
+      "qualify (characterize, differentiate, discriminate, distinguish, mark)",
+      "select (choose, cull, elect, opt for, pick).",
+      "Append \"over interval\" for services that apply to different time intervals."
+    ]
+  },
+  {
+    "id": "Str#92",
+    "name": "What Can I Do for You",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "fundamentals"
+    ],
+    "slug": "fundamentals-what-i-do",
+    "content": [
+      "Ask, \"What can I do for you, based on what I know?\"",
+      "Ask, \"What can I do for you, based on whom I know?\""
+    ]
+  },
+  {
+    "id": "Str#93",
+    "name": "Question, Calculation, Selection",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "fundamentals"
+    ],
+    "slug": "fundamentals-what-i-do",
+    "content": [
+      "For an object, consider:",
+      "What _questions_ can I answer?",
+      "What _calculations_ can I do? What ongoing monitoring could I do? What calculations across a collection could I make (letting each worker do its part)?",
+      "What _selections_ across a collection could I make (letting each worker do its part)?"
+    ]
+  },
+  {
+    "id": "Str#94",
+    "name": "Establish Actor and Participant Services",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "pattern players"
+    ],
+    "slug": "pattern-players-what-i-do",
+    "content": [
+      "For an actor or participant, include: calculate for me, rate me, is <value>.",
+      "For an actor as a collection, include: how many, how much, rank participants, calculate over participants (plus services to enforce business rules across that collection).",
+      "For a participant as a collection, include: how many, how much, rank transactions, calculate over transactions (plus services to enforce business rules across that collection)."
+    ]
+  },
+  {
+    "id": "Str#95",
+    "name": "Establish Place Services",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "pattern players"
+    ],
+    "slug": "pattern-players-what-i-do",
+    "content": [
+      "For a place, include: calculate for me, rate me, is <value>.",
+      "For a place as a collection, include: how many, how much, rank transactions, rank contents, rank container line items, calculate over transactions, calculate over contents, calculate over container line items (plus services to enforce business rules across that collection)."
+    ]
+  },
+  {
+    "id": "Str#96",
+    "name": "Establish Transaction Services",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "pattern players"
+    ],
+    "slug": "pattern-players-what-i-do",
+    "content": [
+      "For a transaction, include: calculate for me, rate me, is <value>.",
+      "For a transaction as a collection, include: how many, how much, rank transaction line items, rank subsequent transactions, calculate over transaction line items, calculate over subsequent transactions (plus services to enforce business rules across that collection).",
+      "For line items, include: calculate for me, rate me."
+    ]
+  },
+  {
+    "id": "Str#97",
+    "name": "Establish Item & Specific Item Services",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "pattern players"
+    ],
+    "slug": "pattern-players-what-i-do",
+    "content": [
+      "For an item or a specific item, include: calculate for me, rate me, is <value>.",
+      "For an item as a collection, include: how many, how much, rank, calculate over specific items (plus services to enforce business rules across that collection).",
+      "For a specific item as a collection, include: how many, how much, rank line items, calculate over line items, (plus services to enforce business rules across that collection)."
+    ]
+  },
+  {
+    "id": "Str#98",
+    "name": "Establish Interacting System or Device Services",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "pattern players"
+    ],
+    "slug": "pattern-players-what-i-do",
+    "content": [
+      "For an interacting system or device, include: activate, monitor (maintain), report, deactivate (plus calculate for me, rate me, is <value>).",
+      "For an interacting system or device as a collection, include: how many, how much, rank parts, calculate over parts.",
+      "Add a corresponding object in the system interaction (SI) component, to isolate specific interaction needs (examples: connect, logon, query, logoff, disconnect)."
+    ]
+  },
+  {
+    "id": "Str#99",
+    "name": "Establish HI Services",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "model component"
+    ],
+    "slug": "model-components-hi-dm-what-i-do",
+    "content": [
+      "For a window: include the actions for that window, actions that can be carried out by an object that window knows. For a report: \"generate\" is a good service.",
+      "Add action-initiating services. Let the PD objects do all the real work. (Why: so you can change the HI objects and not lose application smarts.)",
+      "Examples: activate, commit, delete, initiate, log, total, save, send, terminate."
+    ]
+  },
+  {
+    "id": "Str#100",
+    "name": "Establish DM Services",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "model component"
+    ],
+    "slug": "model-components-hi-dm-what-i-do",
+    "content": [
+      "For data management objects, include these services: search, save, load."
+    ]
+  },
+  {
+    "id": "Str#100a",
+    "name": "Add System Interaction (SI) Responsibilities",
+    "tags": [
+      "establishing responsibilities",
+      "what I do"
+    ],
+    "slug": "model-components-hi-dm-what-i-do",
+    "content": [
+      "Include a \"logical\" representation, expressing the role the other system plays, in the problem domain component. Typical services: actions that name the desired result. Example: AuthorizationSystem, with an \"authorize\" service.",
+      "Include a \"physical\" representation, expressing the interaction details, in the SI component. Typical services: logon, connect, exchange, disconnect, logoff. Example: AuthorizationSystemSI, with \"logon, sendRequest, receiveResponse, logoff\" services.",
+      "Consider various activation paths, too.",
+      "On demand by a user: HI to PD to SI.",
+      "On demand from another system: SI to PD to SI.",
+      "On a schedule: PD to SI.",
+      "Or by \"sneaker net:\" such interaction is outside the scope of your object model; no SI object needed for this."
+    ]
+  },
+  {
+    "id": "Str#101",
+    "name": "Placing Services",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "where to put"
+    ],
+    "slug": "where-to-put-a-service-what-i-do",
+    "content": [
+      "Use the key principles for placing a service.",
+      "act on something in the domain -> the object does it itself",
+      "collection-worker pattern",
+      ". collection object works on its own attributes",
+      ". collection object asks workers to do something useful (rarely just \"get a value for me\")",
+      "encapsulation (more than a value holder; it acts upon what it knows)",
+      "generally useful in subsequent reuse",
+      "messaging simplicity (more understandable, more efficient)."
+    ]
+  },
+  {
+    "id": "Str#102",
+    "name": "Service across a Collection",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "where to put"
+    ],
+    "slug": "where-to-put-a-service-what-i-do",
+    "content": [
+      "Service across a collection of objects?",
+      "Add a service to a collection object, an object that knows and does things across that collection.",
+      "Let each worker within a collection do its fair share--as much as it can, based upon what it knows.",
+      "Be sure the collection does just those things that apply across a collection; makes its workers do as much work as they know enough to accomplish.",
+      "Across its workers: enforce business rules that may apply to its participation."
+    ]
+  },
+  {
+    "id": "Str#103",
+    "name": "Service in the Smallest Applicable Container",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "where to put"
+    ],
+    "slug": "where-to-put-a-service-what-i-do",
+    "content": [
+      "Begin with a problem-domain object.",
+      "Identify the smallest problem-domain collection that it's a part of.",
+      "Add the \"service across a collection\" to that object.",
+      "Does the collection include all of the objects you need to work with?",
+      "If yes, you're done.",
+      "If not, do it again, letting the collection be the problem-domain object for the next pass."
+    ]
+  },
+  {
+    "id": "Str#104",
+    "name": "Worker in a Collection",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "where to put"
+    ],
+    "slug": "where-to-put-a-service-what-i-do",
+    "content": [
+      "Service in a worker object? Let it do something of value!",
+      "Answer a question.",
+      "Calculate. Calculate a result, given input parameters.",
+      "Get a custom value OR a default value for objects in that collection (which would require sending a message from the worker to its collection object).",
+      "In other words, add some value--endeavor to let each object be more than just a data holder."
+    ]
+  },
+  {
+    "id": "Str#105",
+    "name": "Programmable Action",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "where to put"
+    ],
+    "slug": "where-to-put-a-service-what-i-do",
+    "content": [
+      "Service which is actually a programmable action?",
+      "Add an attribute called something like \"programmable action.\"",
+      "Add a service called something like \"execute action.\""
+    ]
+  },
+  {
+    "id": "Str#106",
+    "name": "Real Time: Timeliness",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "real time"
+    ],
+    "slug": "real-time-what-i-do",
+    "content": [
+      "Timeliness: must be \"on time\"",
+      "Put performance constraints on your scenarios (on services, too, as needed--although allocating performance constraints to individual services often takes more guesswork than most engineers feel comfortable with)."
+    ]
+  },
+  {
+    "id": "Str#107",
+    "name": "Real Time: Dynamic Internal Structure",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "real time"
+    ],
+    "slug": "real-time-what-i-do",
+    "content": [
+      "Dynamic internal structure: dynamic creation and destruction of software components",
+      "How: show dynamic creation and deletion of objects in scenarios.",
+      "Every class knows how to create new objects in that class.",
+      "Every collection knows how to add and remove objects in that collection.",
+      "Every object knows how to delete itself.",
+      "In addition, you can selectively place additional creation and deletion constraints."
+    ]
+  },
+  {
+    "id": "Str#108",
+    "name": "Real Time: Reactiveness",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "real time"
+    ],
+    "slug": "real-time-what-i-do",
+    "content": [
+      "Reactiveness: continuously responds to different events in its environment, detected by data acquisition and control devices, or by interacting systems",
+      "Use a specific \"maintain\" or \"monitor\" service, for ongoing capabilities.",
+      "Use the \"activate, monitor, deactivate\" triad."
+    ]
+  },
+  {
+    "id": "Str#109",
+    "name": "Real Time: State-Dependency",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "real time"
+    ],
+    "slug": "real-time-what-i-do",
+    "content": [
+      "State-dependency: responds differently, depending upon the state of a system",
+      "Attributes: state, state-dependent, state-independent",
+      "In its description, include: applicable states.",
+      "Services: state-dependent, state-independent",
+      "In its description, you may need to include:",
+      ". precondition: <indicate what you assert to be true, before this service can run>",
+      ". postcondition: <indicate what you assert to be true, before this service can go to completion>",
+      ". trigger condition: <indicate what state transitions activate this service>",
+      ". terminate condition: <indicate what state transitions terminate this service>",
+      ". exception: <indicate object.service to invoke, upon detecting an exception>."
+    ]
+  },
+  {
+    "id": "Str#110",
+    "name": "Real Time: Concurrency",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "real time"
+    ],
+    "slug": "real-time-what-i-do",
+    "content": [
+      "Concurrency: multiple simultaneous activities can be taking place.",
+      "Objects can do more than one thing at once -- they are multitasking creatures.",
+      "Objects encapsulate real-time tasks.",
+      "Activation / deactivation",
+      ". Trigger condition: <request, state change, value change, time lapse>",
+      ". Terminate condition: <request, state change, value change, time lapse>",
+      "Communication, coordination",
+      "Communication between objects is by synchronous messaging.",
+      "Communication within objects is by synchronous and asynchronous messaging, as needed.",
+      "Note: this encapsulation is made possible with effective object modeling (not with data objects and controller objects)."
+    ]
+  },
+  {
+    "id": "Str#111",
+    "name": "Real Time: Multiple Device Abstractions",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "real time"
+    ],
+    "slug": "real-time-what-i-do",
+    "content": [
+      "Multiple device abstractions: needs both physical and logical abstractions.",
+      "Physical abstraction -- express with an object in the system interaction component.",
+      "Logical abstractions -- express with:",
+      "a domain-based object (a problem-domain object)",
+      "an object which shows \"this is how we'll work with it\" (a human interaction object)",
+      "an object which persists from one program invocation to the next (a data management object)."
+    ]
+  },
+  {
+    "id": "Str#112",
+    "name": "Real Time: Distribution",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "real time"
+    ],
+    "slug": "real-time-what-i-do",
+    "content": [
+      "Distribution: multiple computing sites",
+      "Across multiple computing systems",
+      "Use software that supports distributed objects.",
+      "Or do it yourself (inevitable, at least for systems that you must interact with and cannot change).",
+      ". Allocate objects, not mere functionality.",
+      ". Add \"pack and ship; receive and route\" infrastructure.",
+      "Within an existing system",
+      "Use an object model to understand what's really going on.",
+      "Tag each service with its location; tag each attribute with who is using it."
+    ]
+  },
+  {
+    "id": "Str#113",
+    "name": "Batch Up Immediate Results",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "message traffic"
+    ],
+    "slug": "message-traffic-what-i-do",
+    "content": [
+      "Excess message traffic can make an object model harder to understand and harder to implement, too.",
+      "Here's what to do about it: \"Batch up\" immediate results. Add attributes that hold intermediate results, to reduce message traffic. In effect, you are moving a repeated calculation \"outside of the (iteration) loop.\" A classic example: adding a \"total\" attribute along with a \"calcTotal\" service."
+    ]
+  },
+  {
+    "id": "Str#114",
+    "name": "Traveling Object",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "message traffic"
+    ],
+    "slug": "message-traffic-what-i-do",
+    "content": [
+      "Pass an object (or object ID) as a parameter, allowing it to travel along a series of message sends. At the end of the series, the last object can send the result directly to the originator (a short cut, rather than waiting for all the message sends to work back to the originator. (The [caller - dispatcher - caller-back pattern](/30-caller-dispatcher-caller-back-pattern-interaction-patterns.html) is a good example of this.)"
+    ]
+  },
+  {
+    "id": "Str#115",
+    "name": "Sender, Intermediary, Receiver",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "message traffic"
+    ],
+    "slug": "message-traffic-what-i-do",
+    "content": [
+      "To loosely couple a sender, use a \"pass-through\" intermediary.",
+      "To simplify an intermediary, use a \"lookup\" intermediary.",
+      "(Refer to the [\"sender-pass through-receiver\"](/28-sender-pass-through-receiver-pattern-interaction-patterns.html) and [\"sender-lookup-receiver\"](/29-sender-lookup-receiver-pattern-interaction-patterns.html) patterns.)"
+    ]
+  },
+  {
+    "id": "Str#116",
+    "name": "Describe Services with a Template",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "descriptions"
+    ],
+    "slug": "descriptions-what-i-do",
+    "content": [
+      "Describe each service, using a template as your guide.",
+      "input, output parameters",
+      "description (including pseudo-code or actual code, detailing the algorithm to be applied)",
+      "traceability codes to preceding documentation, if any",
+      "visibility: public, protected, private."
+    ]
+  },
+  {
+    "id": "Str#117",
+    "name": "Describe Real-Time Services",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "descriptions"
+    ],
+    "slug": "descriptions-what-i-do",
+    "content": [
+      "For each state-dependent service, specify:",
+      "precondition <condition(s) for activation>",
+      "postcondition <condition(s) for termination>",
+      "trigger condition <request, state change, value change, time lapse>",
+      "terminate condition <request, state change, value change, time lapse>",
+      "exception action <object.service to invoke, upon detecting an exception>",
+      "performance constraints (in addition to scenario performance constraints, when needed)."
+    ]
+  },
+  {
+    "id": "Str#118",
+    "name": "Watch Out for Control Objects and Data Objects",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-what-i-do-responsibilities",
+    "content": [
+      "Watch out for grouping by control objects and data objects.",
+      "Keep data and the actions on that data -- together.",
+      "Distribute the work, using Str#86 (action upon becomes action on) and Patt#1 (collection-worker).",
+      "Why: better encapsulation, stronger cohesion, lower coupling, fewer objects, and fewer object interactions."
+    ]
+  },
+  {
+    "id": "Str#119",
+    "name": "Watch Out for Excessive Behavior",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-what-i-do-responsibilities",
+    "content": [
+      "Watch out for objects that interact with nearly all other objects in the model.",
+      "Try adjusting responsibilities (what I know, who I know, what I do).",
+      "Apply the collection-worker pattern, too."
+    ]
+  },
+  {
+    "id": "Str#119a",
+    "name": "Watch Out for 'Workaholic - Data Holder'",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-what-i-do-responsibilities",
+    "content": [
+      "\"Workaholic - Data Holder\" is a pattern that points to trouble.",
+      "The workaholic makes all the decisions and does all of the work.",
+      "The data holder just holds values -- and provides \"gets\" and \"sets\" for working with those values.",
+      "Corrective action: instead of asking the data holder for a value, ask it a question or ask it to calculate a result, based upon what it knows, who it knows, and arguments you might pass to it. Then reduce the workaholic's workload, accordingly."
+    ]
+  },
+  {
+    "id": "Str#120",
+    "name": "Common Services",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-what-i-do-gen-spec-with-services",
+    "content": [
+      "Classes with common services?",
+      "If the services have the same name and meaning, and if you can find a generalization- specialization that makes good sense, then add a generalization class and factor out whatever commonality you discovered.",
+      "If the service name is the same, yet the details of the service are different, then show the service name in both the generalization and the specialization."
+    ]
+  },
+  {
+    "id": "Str#121",
+    "name": "Partially Applicable Service",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-what-i-do-gen-spec-with-services",
+    "content": [
+      "Do you have a service that applies only to certain objects in a class?",
+      "Do you have a service that applies only to certain kinds of objects?",
+      "Do you have a service which tests for what kind it is, and then acts accordingly?",
+      "If so, factor out the specialized service into a specialization class."
+    ]
+  },
+  {
+    "id": "Str#122",
+    "name": "Meaningful Gen-Spec",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-what-i-do-gen-spec-with-services",
+    "content": [
+      "What if \"specialization is a kind of generalization\" doesn't make sense? Get rid of that gen-spec.",
+      "Insist upon domain-based generalization-specialization, for understandability and greater likelihood of factoring which facilitates reuse.",
+      "Exception: generalization class is from another team, insufficiently factored out, yet you must use it as-is. In that case, mark aspects of a new specialization with \"does not apply.\"",
+      "Precede an inherited but unneeded attribute name with an \"x.\"",
+      "Precede an inherited but unneeded object connection (expressed in text) with an \"x.\"",
+      "Precede an inherited but unneeded service name with an \"x.\""
+    ]
+  },
+  {
+    "id": "Str#123",
+    "name": "Specialization Redundancies",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-what-i-do-gen-spec-with-services",
+    "content": [
+      "An entire specialization level with an attribute or service name repeated throughout?",
+      "If there is a variation in the descriptions behind the repeated name, that's fine.",
+      "Yet if the attribute or service is indeed the same for each specialization, move it to a generalization."
+    ]
+  },
+  {
+    "id": "Str#124",
+    "name": "No Level of Empty Specializations",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-what-i-do-gen-spec-with-services",
+    "content": [
+      "An entire level of specializations -- without attributes, object connections, or services?",
+      "What's happened: a graphical enumeration of values (not a very efficient representation of an enumeration of values).",
+      "What to do: replace all of those empty specializations with an attribute in the generalization class, plus a description that includes an enumeration of values."
+    ]
+  },
+  {
+    "id": "Str#125",
+    "name": "Abundant Specializations",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-what-i-do-gen-spec-with-services",
+    "content": [
+      "Where to begin?",
+      "Divide and conquer: model a simple one; model a complex one.",
+      "Model an initial gen-spec, showing \"what's the same, what's different.\"",
+      "Then work on additional specializations, based upon \"what I know, who I know, what I do.\"",
+      "An incredible number of specializations, and you aren't sure which to apply?",
+      "Consider the system's responsibilities.",
+      "Model generalization-specialization based upon what the system knows and does regarding its specializations.",
+      "Use gen-spec to capture similarity and differences in system responsibility (not as a classification system of all classification systems).",
+      "Lots of specializations, resulting from multiple inheritance?",
+      "Use the [actor-participant pattern](/2-actor-participant-pattern-transaction-patterns.html), to express an actor and the many ways it acts as a participant.",
+      "Example: person (actor) and participant (customer, cashier, head cashier, order clerk)."
+    ]
+  },
+  {
+    "id": "Str#126",
+    "name": "Class Name in a Service Name",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-what-i-do-names",
+    "content": [
+      "Service name includes the name of another class?",
+      "Let the objects in that class provide that service -- or at least let them help out in a meaningful way."
+    ]
+  },
+  {
+    "id": "Str#127",
+    "name": "Select Key Scenarios",
+    "tags": [
+      "working out dynamics with scenarios"
+    ],
+    "slug": "the-basics-scenarios",
+    "content": [
+      "Work out and demonstrate the satisfaction of a system feature.",
+      "Include scenarios that get you to work through the object interactions that are required to deliver a feature of the system under consideration.",
+      "Consider using subscenarios, to make a scenario easier to work with and easier to understand.",
+      "Stretch the model, examining it for completeness.",
+      "Include scenarios that really stretch your object model; use them to check out the overall completeness of your model.",
+      "Examine key object interactions within your model.",
+      "Include scenarios that let you investigate dynamics for important services in your model."
+    ]
+  },
+  {
+    "id": "Str#128",
+    "name": "Where to Begin a Scenario",
+    "tags": [
+      "working out dynamics with scenarios"
+    ],
+    "slug": "the-basics-scenarios",
+    "content": [
+      "Begin with a PD object's service, an HI object's service, or an SI object's service."
+    ]
+  },
+  {
+    "id": "Str#129",
+    "name": "Act It Out",
+    "tags": [
+      "working out dynamics with scenarios"
+    ],
+    "slug": "the-basics-scenarios",
+    "content": [
+      "Act out the interactions.",
+      "Each person plays a role.",
+      "Each object does its job -- no more, no less.",
+      ". \"What I know; who I know; what I do.\"",
+      ". \"I know enough; I have the arguments I need; I know to whom to send messages; and I send messages to other objects, to get work done on my behalf.\"",
+      "Discover and refine both objects and responsibilities, all along the way.",
+      "Check it out.",
+      "Look at what arguments each object needs to know enough to get its job done.",
+      "Look at who creates and who eventually deletes the objects.",
+      "Look at objects that dominate the overall functionality; apply patterns to help you better distribute responsibility.",
+      "Look at objects that ask other objects for values, yet insist on doing all of the work; again, apply patterns to help you better distribute responsibility."
+    ]
+  },
+  {
+    "id": "Str#130",
+    "name": "Two-Pass Scenario Development",
+    "tags": [
+      "working out dynamics with scenarios"
+    ],
+    "slug": "the-basics-scenarios",
+    "content": [
+      "Once you have an initial object model in place, use a two-pass approach to developing scenarios.",
+      "Why: this two-pass strategy supports making an explicit decision regarding how much detail you need or want in a specific scenario.",
+      "First pass: work out a scenario using the objects in your model, adding no new objects (or very few new objects).",
+      "Second pass (when you need additional understanding of dynamics and the additional detail that goes with it): consider each participating service; look for what other objects it needs to call upon, to get that service accomplished. Add objects, responsibilities, and interactions, as needed."
+    ]
+  },
+  {
+    "id": "Str#131",
+    "name": "Describe Scenarios with a Scenario View",
+    "tags": [
+      "working out dynamics with scenarios"
+    ],
+    "slug": "description-scenarios",
+    "content": [
+      "Describe each scenario with a scenario view. A scenario view portrays:",
+      "recognizer",
+      "end-to-end performance constraint (as needed)",
+      "a time-ordered sequence of:",
+      ". sender and sending service",
+      ". receiver and receiving service (with arguments).",
+      "For starting and stopping a real-time task, use:",
+      "START\\_TASK (service name) and STOP\\_TASK (service name)."
+    ]
+  },
+  {
+    "id": "Str#132",
+    "name": "Don't Ask 'What Kind?'",
+    "tags": [
+      "working out dynamics with scenarios",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-scenarios",
+    "content": [
+      "Don't ask \"What kind of object are you?\"--and then follow-up with a second message, telling that object what you want it to do.",
+      "Just say \"do it\" -- and let it get the job done.",
+      "If you discover that the receiving object needs a case statement, then specialize the classes of those objects, so an object already knows what kind it is. Then send one message and let that object do its thing."
+    ]
+  },
+  {
+    "id": "Str#132a",
+    "name": "More Than 'Get A Value'",
+    "tags": [
+      "working out dynamics with scenarios",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-scenarios",
+    "content": [
+      "Don't send \"get value\" without first considering:",
+      "What question do I really want answered?",
+      "What calculation result do I need?",
+      "Can I pass an argument to that object and have it do something useful for me?",
+      "Why: this strategy helps you distribute both attributes and services, using problem-domain classes as a more stable, more understandable organizational framework."
+    ]
+  },
+  {
+    "id": "Str#133",
+    "name": "Search then Interact",
+    "tags": [
+      "working out dynamics with scenarios",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-scenarios",
+    "content": [
+      "If you need to traverse multiple object connections in search for an object you want to interact with:",
+      "search for it",
+      "then interact with it.",
+      "Reason: simpler objects in between."
+    ]
+  },
+  {
+    "id": "Str#134",
+    "name": "Act, Rather than Poll",
+    "tags": [
+      "working out dynamics with scenarios",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-scenarios",
+    "content": [
+      "For each object that recognizes that something needs to be done, let it initiate that work.",
+      "Don't let a manager poll that object, asking for a status change. Reason: no need for that extra managing activity (adds complexity, weakens encapsulation)."
+    ]
+  },
+  {
+    "id": "Str#135",
+    "name": "Get Values Only When You Need Them",
+    "tags": [
+      "working out dynamics with scenarios",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-scenarios",
+    "content": [
+      "Pass an object as a parameter. Get values from that object only at the point you are ready to use those values.",
+      "Why: better encapsulation; better localization of interface details."
+    ]
+  },
+  {
+    "id": "Str#136",
+    "name": "Take Extra Work Out of the Loop",
+    "tags": [
+      "working out dynamics with scenarios",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-scenarios",
+    "content": [
+      "Check each loop within a scenario. Pull work outside of a loop, whenever you can.",
+      "Why: easier to understand (and ultimately, better performance)."
+    ]
+  },
+  {
+    "id": "Str#137",
+    "name": "Consistent Object Model and Scenario Views",
+    "tags": [
+      "working out dynamics with scenarios",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-scenarios",
+    "content": [
+      "Services in a scenario view should correspond with services in the object model.",
+      "Note: some services in a scenario view are not normally shown in a object model, namely: get, set, add, remove, delete, and create.",
+      "An object in a scenario view needs to know 'to whom to send a message\" -- either directly (an object connection in an object model) or indirectly (passed as a parameter to a specific service)."
+    ]
+  },
+  {
+    "id": "Str#138",
+    "name": "Reduce Interactions",
+    "tags": [
+      "working out dynamics with scenarios",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-scenarios",
+    "content": [
+      "Look at interactions that require a lot of messaging--or interactions that require going through many \"middle men\" to get what you want done, done.",
+      "Consider adding object connections to reduce traffic--and simplify your model.",
+      "Consider the cost: the extra overhead of establishing and maintaining additional object connections."
+    ]
+  },
+  {
+    "id": "Str#139",
+    "name": "Reduce Cascading Messages",
+    "tags": [
+      "working out dynamics with scenarios",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-scenarios",
+    "content": [
+      "If you send a message to an object, and it sends a message to its collection of objects, whose objects in turn sends a message to its collection of objects: send the message directly to the last object in the cascading message sequence (you might need to add another object connection, so you know to whom to send the message).",
+      "Why: fewer messages makes it easier to understand (and more efficient to implement, too).",
+      "(If the object connections continually change, check out the dynamics of those object connections with scenarios. Then, apply this strategy only if you can keep the object connections in-sync. Sometimes, a few extra object interactions might be simpler after all.)"
+    ]
+  },
+  {
+    "id": "Str#139a",
+    "name": "Watch Out For Double Dipping",
+    "tags": [
+      "working out dynamics with scenarios",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-scenarios",
+    "content": [
+      "Watch out for this shape:",
+      "Likely problem:",
+      "Better approach:",
+      "In this way, an object, once it qualifies itself, simply carries out the appropriate action.",
+      "Benefits: reduced object interactions; simpler interface (1 service, rather than 2); stronger cohesion (from decreased distance between recognition and action); better overall performance.",
+      "Related strategy: Str#132 \"Don't Ask Why\""
+    ]
+  },
+  {
+    "id": "Str#140",
+    "name": "Object Creation and Deletion",
+    "tags": [
+      "working out dynamics with scenarios",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-scenarios",
+    "content": [
+      "Look at scenarios that create (and initialize) and delete the objects you work with.",
+      "Ask, \"Who is responsible for creating (and initializing) that object? Who is responsible for deleting it?\""
+    ]
+  },
+  {
+    "id": "Str#141",
+    "name": "Responsive Data Acquisition and Control Objects",
+    "tags": [
+      "working out dynamics with scenarios",
+      "consider and challenge"
+    ],
+    "slug": "what-to-consider-and-challenge-scenarios",
+    "content": [
+      "If data acquisition and control are done by one actual object, then model them with one object.",
+      "Otherwise:",
+      "For each control object:",
+      ". Add a collection of data acquisition objects.",
+      ". The control object takes care of itself -- and behavior across the collection.",
+      "For each data acquisition object:",
+      ". Each data acquisition object takes care of itself, as much it can do with what it knows (for example, reading values and detecting something from those values)."
+    ]
+  },
+  {
+    "id": "Str#142",
+    "name": "Discovering New Strategies",
+    "tags": [
+      "discovery",
+      "strategies"
+    ],
+    "slug": "discovering-new-strategies-and-patterns",
+    "content": [
+      "Introspectively look at each small step you take in building some part of an object model. What advice could you give to others, so they could get that same task accomplished (in fewer steps, in less time, with more regularity)?",
+      "Introspectively consider each correction you make to your model. What advice could you offer to help others avoid that same pitfall in the future?"
+    ]
+  },
+  {
+    "id": "Str#143",
+    "name": "Refining Strategies",
+    "tags": [
+      "discovery",
+      "strategies"
+    ],
+    "slug": "discovering-new-strategies-and-patterns",
+    "content": [
+      "Describe what you did -- your strategy.",
+      "Apply it several more times (in multiple problem domains, if possible).",
+      "Name it. Categorize it.",
+      "Share it with others -- and learn from their response."
+    ]
+  },
+  {
+    "id": "Str#144",
+    "name": "Describing Strategies",
+    "tags": [
+      "discovery",
+      "strategies"
+    ],
+    "slug": "discovering-new-strategies-and-patterns",
+    "content": [
+      "Include the following:",
+      "name (the immediate goal) and category",
+      "the strategy itself -- using practical, \"how to\" words",
+      "examples"
+    ]
+  },
+  {
+    "id": "Str#145",
+    "name": "Discovering New Patterns",
+    "tags": [
+      "discovery",
+      "patterns"
+    ],
+    "slug": "discovering-new-strategies-and-patterns",
+    "content": [
+      "Look at each pair, triple, quadruple (etc.) grouping of interacting objects.",
+      "Generalize the names of each player.",
+      "Relate it, by analogy, to other domains. See if it can be used again and again."
+    ]
+  },
+  {
+    "id": "Str#146",
+    "name": "Naming New Patterns",
+    "tags": [
+      "discovery",
+      "patterns"
+    ],
+    "slug": "discovering-new-strategies-and-patterns",
+    "content": [
+      "Look for a name that gives a clue about the players in the interaction, suggesting what these interacting objects stereotypically know and do.",
+      "Name the pattern in honor of the players in the pattern.",
+      "Consider synonyms.",
+      "Consider a more general name, using \"is a kind of.\"",
+      "Consider metaphors (corresponding objects) within analogous systems (a system that has an analogous purpose)."
+    ]
+  },
+  {
+    "id": "Str#147",
+    "name": "Refining Patterns",
+    "tags": [
+      "discovery",
+      "patterns"
+    ],
+    "slug": "discovering-new-strategies-and-patterns",
+    "content": [
+      "Describe it -- your pattern.",
+      "Apply it several times (in multiple problem domains, if possible).",
+      "Categorize it: transactions, aggregate, device, interaction, combination -- or some other category.",
+      "Share it with others -- and learn from their response."
+    ]
+  },
+  {
+    "id": "Str#148",
+    "name": "Describing Patterns",
+    "tags": [
+      "discovery",
+      "patterns"
+    ],
+    "slug": "discovering-new-strategies-and-patterns",
+    "content": [
+      "Include the following:",
+      "name (the players, with analogy-provoking names) and category",
+      "the pattern itself -- an object-model template",
+      ". include stereotypical responsibilities for the pattern players",
+      ". - common, specific responsibilities",
+      ". - a few more general responsibilities (to encourage readers to think about the responsibilities in broader terms, too)",
+      "typical object interactions",
+      "examples",
+      "combinations."
+    ]
+  }
+]
