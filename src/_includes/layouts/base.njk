@@ -17,7 +17,9 @@
     <section class="section">
       <div class="container">
         <header class="content has-text-centered">
-          <h1 class="title is-3"><a href="./">Strategies and Patterns Handbook</a></h1>
+          <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand"><a class="navbar-item" href="/">Strategies and Patterns Handbook</a></div>
+          </nav>
           <div id="search"></div>
           <script>
             window.addEventListener('DOMContentLoaded', () =>
@@ -26,6 +28,7 @@
         </header>
 
         <main class="content" data-pagefind-body>
+          <h1>{{ title }}</h1>
           {{ content | safe }}
         </main>
 
