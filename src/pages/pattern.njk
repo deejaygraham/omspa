@@ -12,40 +12,41 @@ eleventyComputed:
 
 <p><img src="{{ ('/img/' + pattern.image) | url }}" alt="{{ pattern.image }}"></p>
 
+{% if pattern.typicalInteractions %}
 <h3>Typical object interactions</h3>
-
 <ul>
 {% for item in pattern.typicalInteractions %}
 <li>{{ item }}</li>
 {% endfor %}
 </ul>
+{% endif %}
 
-
+{% if pattern.examples %}
 <h3>Examples</h3>
-
 <ul>
 {% for item in pattern.examples %}
 <li>{{ item }}</li>
 {% endfor %}
 </ul>
+{% endif %}
 
-
+{% if pattern.combinations %}
 <h3>Combinations</h3>
-
 <ul>
 {% for combo in pattern.combinations %}
 <li><a href="{{ ('/' + combo.slug + '.html') | url }}">{{ combo.id }}.</a> &quot;{{ combo.name }}&quot;</li>
 {% endfor %}
 </ul>
+{% endif %}
 
-
+{% if pattern.relatedStrategies %}
 <h3>Related strategies:</h3>
-
 <ul>
 {% for strategy in pattern.relatedStrategies %}
 <li><a href="{{ ('/' + strategy.slug + '.html') | url }}">{{ strategy.id }}.</a> &quot;{{ strategy.name }}&quot; Strategy</li>
 {% endfor %}
 </ul>
+{% endif %}
 
 <p><a href="{{ ('/' + (pattern.tags[0] | slug) + '.html') | url }}">{{ pattern.tags[0] | capitalize }}</a></p>
 
