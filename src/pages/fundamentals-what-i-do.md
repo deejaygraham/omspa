@@ -34,7 +34,7 @@ _Str#88. "Why, Why, Why" Strategy // establishing responsibilities / what I do (
 
 . What is done to an actual object, something that this object could do itself?
 
-_Str#89. "Basic Services" Strategy / establishing responsibilities / what I do (fundamentals)_
+_Str#89. "Basic Services" Strategy // establishing responsibilities / what I do (fundamentals)_
 
 \- The basic service, done by all, are not shown in an object model, except within specific scenario views that might use them.
 
