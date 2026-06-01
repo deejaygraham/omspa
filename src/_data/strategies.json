@@ -494,7 +494,18 @@
     "content": [
       "What if you need a collection of objects, yet such a collection has no special name?",
       "Add a collection, using a plural form of the worker name. Example: authorization systems.",
-      "Add a collection, using the worker name, followed by the word \"collection\" or \"server.\" Example: authorization server.",
+      "Add a collection, using the worker name, followed by the word \"collection\" or \"server.\" Example: authorization server."
+    ]
+  },
+  {
+    "id": "Str#24",
+    "name": "Select the Smallest Applicable Collection",
+    "tags": [
+      "selecting objects",
+      "pattern players"
+    ],
+    "slug": "selecting-objects-pattern-players",
+    "content": [
       "Use the smallest domain collection within the system's responsibility, to express responsibility across that collection--expressing appropriate scope.",
       "Examples: bin, aisle, warehouse; city, county, state, country; team, department, organization, company, industry."
     ]
@@ -1664,7 +1675,19 @@
       "Add value by asking \"why, why, why?\"",
       "Why, why, does the system need this object anyway?",
       "What useful questions can it answer? What useful actions can it perform?",
-      "What is done to an actual object, something that this object could do itself?",
+      "What is done to an actual object, something that this object could do itself?"
+    ]
+  },
+  {
+    "id": "Str#89",
+    "name": "Basic Services",
+    "tags": [
+      "establishing responsibilities",
+      "what I do",
+      "fundamentals"
+    ],
+    "slug": "fundamentals-what-i-do",
+    "content": [
       "The basic service, done by all, are not shown in an object model, except within specific scenario views that might use them.",
       "The basics: get, set; add (a connecting object), remove (a connecting object); create (something a class does) and initialize, delete.",
       "Note: attributes are private, by convention. In scenarios, use \"get <attribute name>\" and \"set <attribute name>\" services to access attribute values.",
