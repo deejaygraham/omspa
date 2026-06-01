@@ -1,0 +1,41 @@
+---
+pagination:
+  data: patterns
+  size: 1
+  alias: pattern
+permalink: "/{{ pattern.number }}-{{ pattern.name | slug }}-pattern-{{ pattern.tags[0] | slug }}.html"
+eleventyComputed:
+  title: '#{{ pattern.number }}. "{{ pattern.name }}" Pattern // {{ pattern.tags[0] }}'
+---
+
+<h2>{{ pattern.id }}. &quot;{{ pattern.name }}&quot; Pattern // {{ pattern.tags[0] }}</h2>
+
+<p><img src="{{ ('/img/' + pattern.image) | url }}" alt="{{ pattern.image }}"></p>
+
+<p><strong>Typical object interactions</strong></p>
+
+{% for item in pattern.typicalInteractions %}
+<p>\- {{ item }}</p>
+{% endfor %}
+
+<p><strong>Examples</strong></p>
+
+{% for item in pattern.examples %}
+<p>\- {{ item }}</p>
+{% endfor %}
+
+<p><strong>Combinations</strong></p>
+
+{% for combo in pattern.combinations %}
+<p><a href="{{ ('/' + combo.slug + '.html') | url }}">{{ combo.id }}.</a> &quot;{{ combo.name }}&quot;</p>
+{% endfor %}
+
+<p>Related strategies:</p>
+
+{% for strategy in pattern.relatedStrategies %}
+<p><a href="{{ ('/' + strategy.slug + '.html') | url }}">{{ strategy.id }}.</a> &quot;{{ strategy.name }}&quot; Strategy</p>
+{% endfor %}
+
+<p><a href="{{ ('/' + (pattern.tags[0] | slug) + '.html') | url }}">{{ pattern.tags[0] | capitalize }}</a></p>
+
+<p><a href="{{ '/patterns-for-building-object-models.html' | url }}">Patterns for building object models</a></p>
