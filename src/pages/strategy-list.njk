@@ -19,11 +19,11 @@ eleventyComputed:
 <ul>
 {% for strategy in strategies %}
 {% if strategy.tags[0] == cat.tag %}
-<ul><a href="/strategy/{{ strategy.id | lower | replace('#', '-') }}.html">{{ strategy.id }}.</a> {{ strategy.name }}</ul>
+<li><a href="/strategy/{{ strategy.id | lower | replace('#', '-') }}.html">{{ strategy.id }}.</a> {{ strategy.name }}</li>
 {% endif %}
 {% endfor %}
 </ul>
 
 {% endfor %}
 
-<p><a href="/list-of-patterns.html">List of patterns</a></p>
+<p><a href="/pattern/index.html">List of patterns</a></p>
