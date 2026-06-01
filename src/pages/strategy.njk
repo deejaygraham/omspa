@@ -1,0 +1,27 @@
+---
+pagination:
+  data: strategies
+  size: 1
+  alias: strategy
+permalink: "/strategy/{{ strategy.id | lower | replace('#', '-') }}.html"
+eleventyComputed:
+  title: '{{ strategy.id }}. "{{ strategy.name }}" Strategy'
+---
+
+<h2>{{ strategy.id }}. &quot;{{ strategy.name }}&quot; Strategy</h2>
+
+<p><em>{{ strategy.tags | join(' / ') }}</em></p>
+
+{% if strategy.content.length %}
+<ul>
+{% for item in strategy.content %}
+  <li>{{ item }}</li>
+{% endfor %}
+</ul>
+{% endif %}
+
+<hr />
+
+<p><a href="/{{ strategy.slug }}.html">{{ strategy.tags[0] | capitalize }}</a></p>
+
+<p><a href="/list-of-strategies.html">Strategies for building object models</a></p>
