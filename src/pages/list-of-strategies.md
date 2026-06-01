@@ -198,7 +198,7 @@ Establishing responsibilities
 
 [Str#67a.](/what-to-consider-and-challenge-gen-spec-with-attributes-what-i-know.html) Collapse Whole-Part When Same Attributes Apply
 
-Str#68. Partially Applicable Attribute
+[Str#68.](/what-to-consider-and-challenge-gen-spec-with-attributes-what-i-know.html) Partially Applicable Attribute
 
 [Str#69.](/what-to-consider-and-challenge-gen-spec-with-attributes-what-i-know.html) No Attributes
 
