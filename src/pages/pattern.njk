@@ -10,7 +10,7 @@ eleventyComputed:
 
 <h2>{{ pattern.id }}. &quot;{{ pattern.name }}&quot; Pattern // {{ pattern.tags[0] }}</h2>
 
-<p><img src="{{ ('/img/' + pattern.image) | url }}" alt="{{ pattern.image }}"></p>
+<p><img src="/img/{{ pattern.image }}" alt="{{ pattern.image }}"></p>
 
 {% if pattern.typicalInteractions.length %}
 <h3>Typical object interactions</h3>
@@ -34,7 +34,7 @@ eleventyComputed:
 <h3>Combinations</h3>
 <ul>
 {% for combo in pattern.combinations %}
-<li><a href="{{ ('/' + combo.slug + '.html') | url }}">{{ combo.id }}.</a> &quot;{{ combo.name }}&quot;</li>
+<li><a href="/{{ combo.slug }}.html">{{ combo.id }}.</a> &quot;{{ combo.name }}&quot;</li>
 {% endfor %}
 </ul>
 {% endif %}
@@ -43,11 +43,14 @@ eleventyComputed:
 <h3>Related strategies:</h3>
 <ul>
 {% for strategy in pattern.relatedStrategies %}
-<li><a href="{{ ('/' + strategy.slug + '.html') | url }}">{{ strategy.id }}.</a> &quot;{{ strategy.name }}&quot; Strategy</li>
+<li><a href="/{{ strategy.slug }}.html">{{ strategy.id }}.</a> &quot;{{ strategy.name }}&quot; Strategy</li>
 {% endfor %}
 </ul>
 {% endif %}
 
-<p><a href="{{ ('/' + (pattern.tags[0] | slug) + '.html') | url }}">{{ pattern.tags[0] | capitalize }}</a></p>
+<hr />
 
-<p><a href="{{ '/patterns-for-building-object-models.html' | url }}">Patterns for building object models</a></p>
+<p><a href="/{{ pattern.tags[0] | slug }}.html">{{ pattern.tags[0] | capitalize }}</a></p>
+
+<p><a href="/patterns-for-building-object-models.html">Patterns for building object models</a></p>
+
