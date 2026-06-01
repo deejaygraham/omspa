@@ -6,6 +6,10 @@
     <title>{{ title or "Strategies and Patterns Handbook" }}</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
     <link rel="stylesheet" href="{{ '/assets/styles.css' | url }}" />
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
   </head>
   <body>
     <section class="section">
