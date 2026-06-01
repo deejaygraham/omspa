@@ -8,8 +8,6 @@ eleventyComputed:
   title: '#{{ pattern.number }}. "{{ pattern.name }}" Pattern // {{ pattern.tags[0] }}'
 ---
 
-<h2>{{ pattern.id }}. &quot;{{ pattern.name }}&quot; Pattern // {{ pattern.tags[0] }}</h2>
-
 <p><img src="/img/{{ pattern.image }}" alt="{{ pattern.image }}"></p>
 
 {% if pattern.typicalInteractions.length %}
