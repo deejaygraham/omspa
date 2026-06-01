@@ -176,7 +176,7 @@ _Str#23. "Select a Collection" Strategy // selecting objects (pattern players)_
 
 . Add a collection, using the worker name, followed by the word "collection" or "server." Example: authorization server.
 
-_Str#24. "Select the Smallest Applicable Collection "Strategy // selecting objects (pattern players)_
+_Str#24. "Select the Smallest Applicable Collection" Strategy // selecting objects (pattern players)_
 
 \- Use the smallest domain collection within the system's responsibility, to express responsibility across that collection--expressing appropriate scope.
 
