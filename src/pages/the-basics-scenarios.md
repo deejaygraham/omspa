@@ -1,12 +1,6 @@
 ---
-title: 'The basics (scenarios)'
+title: The basics (scenarios)
 ---
-
-**
-
-The basics (scenarios)
-
-**
 
 _Str#127. "Select Key Scenarios" Strategy // working out dynamics with scenarios_
 
