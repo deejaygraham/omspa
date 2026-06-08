@@ -1,12 +1,6 @@
 ---
-title: 'What to consider and challenge (what I do): responsibilities'
+title: What to consider and challenge (what I do) - responsibilities
 ---
-
-**
-
-What to consider and challenge (what I do): responsibilities
-
-**
 
 _Str#118. "Watch Out for Control Objects and Data Objects" Strategy // establishing responsibilities / what I do (consider and challenge)_
 
