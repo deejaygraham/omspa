@@ -2,11 +2,6 @@
 title: 'Model components--HI, DM (what I do)'
 ---
 
-**
-
-Model components--HI, DM, SI (what I do)
-
-**
 
 _Str#99. "Establish HI Services" Strategy // establishing responsibilities / what I do (model component)_
 
