@@ -1,12 +1,6 @@
 ---
-title: 'Identifying system purpose and features'
+title: Identifying system purpose and features
 ---
-
-**
-
-Identifying system purpose and features
-
-**
 
 A purpose is an overall desired result, the aim of one's actions. Features are specific capabilities for the system under consideration.
 
