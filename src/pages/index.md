@@ -6,7 +6,7 @@ permalink: '/index.html'
 Version 2.1  
 Peter Coad  
 with David North and Mark Mayfield  
-![Strpat20000000.gif](/img/Strpat20000000.gif)1997 Object International, Inc. All rights reserved.  
+&copy; 1997 Object International, Inc. All rights reserved.  
 [www.pcoad.com](http://www.pcoad.com)
 
 Welcome to the "Strategies and Patterns Handbook: Hypertext Edition" -- a practical, how-to guide for building better object models.
