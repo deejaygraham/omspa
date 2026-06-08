@@ -1,12 +1,7 @@
 ---
-title: 'Fundamentals (what I know)'
+title: Fundamentals (what I know)
 ---
 
-**
-
-Fundamentals (what I know)
-
-**
 
 _Str#50. "Select Attributes from Actual Ones" Strategy // establishing responsibilities / what I know (fundamentals)_
 
