@@ -1,12 +1,6 @@
 ---
-title: 'Discovering new strategies and patterns'
+title: Discovering new strategies and patterns
 ---
-
-**
-
-Discovering new strategies and patterns
-
-**
 
 This section presents strategies for discovering new strategies and patterns.
 
