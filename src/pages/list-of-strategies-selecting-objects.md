@@ -2,12 +2,6 @@
 title: 'List of strategies: Selecting Objects'
 ---
 
-**
-
-List of strategies: Selecting objects
-
-**
-
 **[](/selecting-objects-pattern-players.html)**[Str#13.](/selecting-objects-pattern-players.html) Select Actors
 
 [Str#14.](/selecting-objects-pattern-players.html) Select Participants
