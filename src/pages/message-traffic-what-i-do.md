@@ -2,11 +2,6 @@
 title: 'Message traffic (what I do)'
 ---
 
-**
-
-Message traffic (what I do)
-
-**
 
 _Str#113. "Batch Up Immediate Results" Strategy // establishing responsibilities /what I do (message traffic)_
 
