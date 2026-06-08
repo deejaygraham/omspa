@@ -1,12 +1,6 @@
 ---
-title: 'Interaction patterns'
+title: Interaction patterns
 ---
-
-**
-
-Interaction patterns
-
-**
 
 Interaction patterns are patterns of how objects work with each other. Overlay these patterns on players in other patterns.
 
