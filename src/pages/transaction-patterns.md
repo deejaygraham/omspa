@@ -1,12 +1,6 @@
 ---
-title: 'Transaction patterns'
+title: Transaction patterns
 ---
-
-**
-
-Transaction Patterns
-
-**
 
 Transaction patterns are those patterns that have a transaction player -- or have players that commonly play with a transaction player.
 
