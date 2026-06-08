@@ -1,12 +1,6 @@
 ---
-title: 'What to consider and challenge (what I do): names'
+title: What to consider and challenge (what I do) - names
 ---
-
-**
-
-What to consider and challenge (what I do): names
-
-**
 
 _Str#126. "Class Name in a Service Name" Strategy // establishing responsibilities / what I do (consider and challenge)_
 
