@@ -2,12 +2,6 @@
 title: 'List of strategies: Discovering new strategies and patterns'
 ---
 
-**
-
-List of strategies: Discovering new strategies and patterns
-
-**
-
 **[](/discovering-new-strategies-and-patterns.html)**[Str#142.](/discovering-new-strategies-and-patterns.html) Discovering New Strategies
 
 [Str#143.](/discovering-new-strategies-and-patterns.html) Refining Strategies
