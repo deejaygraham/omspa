@@ -1,12 +1,6 @@
 ---
-title: 'What to consider and challenge (who I know)'
+title: What to consider and challenge (who I know)
 ---
-
-**
-
-What to consider and challenge (who I know)
-
-**
 
 _Str#80a. "ABC" Strategy // establishing responsibilities / who I know (consider and challenge)_
 
