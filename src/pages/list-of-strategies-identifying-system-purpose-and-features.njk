@@ -1,0 +1,13 @@
+---
+title: 'List of strategies: Identifying system purpose and features'
+---
+
+<ul>
+{% for strategy in strategies %}
+{% if strategy.tags[0] == "identifying purpose and features" %}
+<li><a href="/strategy/{{ strategy.id | lower | replace('#', '-') }}.html">{{ strategy.id }}.</a> {{ strategy.name }}</li>
+{% endif %}
+{% endfor %}
+</ul>
+
+<p><a href="/strategy/index.html">List of all strategies</a></p>
