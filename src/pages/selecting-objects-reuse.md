@@ -1,12 +1,6 @@
 ---
-title: 'Selecting objects--reuse'
+title: Selecting objects--reuse
 ---
-
-**
-
-Selecting objects--reuse
-
-**
 
 _Str#36. "Select and Reuse an Analogous Class" Strategy // selecting objects (reuse)_
 
