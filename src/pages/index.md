@@ -1,5 +1,5 @@
 ---
-title: Strategies and Patterns Handbook: Hypertext Edition
+title: Strategies and Patterns Handbook - Hypertext Edition
 permalink: '/index.html'
 ---
 
