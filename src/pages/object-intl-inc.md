@@ -2,13 +2,7 @@
 title: 'Object Intl., Inc.'
 ---
 
-**
-
-Object Intl., Inc.
-
 ![Strpat00000002.gif](/img/Strpat00000002.gif)
-
-**
 
 Education - Tools - Consulting
 
