@@ -1,12 +1,7 @@
 ---
-title: 'Working out dynamics with scenarios'
+title: Working out dynamics with scenarios
 ---
 
-**
-
-Working out dynamics with scenarios
-
-**
 
 A scenario is a time-ordered sequence of object interactions. A scenario details the object interactions that are needed to provide a specific feature for a system under consideration.
 
