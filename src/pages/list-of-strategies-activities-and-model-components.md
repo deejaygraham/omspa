@@ -2,12 +2,6 @@
 title: 'List of Strategies: Activities and model components'
 ---
 
-**
-
-List of strategies: Activities and model components
-
-**
-
 **[](/guiding-the-effort-with-major-activities-and-components.html)**[Str#1.](/guiding-the-effort-with-major-activities-and-components.html) Four Major Activities, Four Major Components
 
 [Str#1a.](/guiding-the-effort-with-major-activities-and-components.html) Build an Initial Object Model, then Proceed Feature-by-Feature
