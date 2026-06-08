@@ -1,8 +1,6 @@
 ---
-title: 'Descriptions (what I know)'
+title: Descriptions (what I know)
 ---
-
-## Descriptions (what I know)
 
 
 _Str#58. "Describe Attributes with a Template" Strategy // establishing responsibilities / what I know (descriptions)_
