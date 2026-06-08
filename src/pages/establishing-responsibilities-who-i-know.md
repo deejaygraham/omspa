@@ -1,8 +1,6 @@
 ---
-title: 'Establishing responsibilities / who I know'
+title: Establishing responsibilities / who I know
 ---
-
-## Establishing responsibilities / who I know
 
 
 Object connections represent "who I know."
