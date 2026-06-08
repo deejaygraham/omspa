@@ -1,0 +1,13 @@
+---
+title: 'List of Strategies: Activities and model components'
+---
+
+<ul>
+{% for strategy in strategies %}
+{% if strategy.tags[0] == "activities and model components" %}
+<li><a href="/strategy/{{ strategy.id | lower | replace('#', '-') }}.html">{{ strategy.id }}.</a> {{ strategy.name }}</li>
+{% endif %}
+{% endfor %}
+</ul>
+
+[List of all strategies]("/strategy/index.html")
