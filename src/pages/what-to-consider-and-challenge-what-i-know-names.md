@@ -1,12 +1,6 @@
 ---
-title: 'What to consider and challenge (what I know): names'
+title: What to consider and challenge (what I know) - names
 ---
-
-**
-
-What to consider and challenge (what I know): names
-
-**
 
 _Str#70. "Embedded Value in an Attribute Name" Strategy // establishing responsibilities / what I know (consider and challenge)_
 
