@@ -2,12 +2,6 @@
 title: 'List of strategies: Identifying system purpose and features'
 ---
 
-**
-
-List of strategies: Identifying system purpose and features
-
-**
-
 **[](/identifying-system-purpose-and-features.html)**[Str#2.](/identifying-system-purpose-and-features.html) System Purpose
 
 [Str#3.](/identifying-system-purpose-and-features.html) Field Trips, Pictures, and Examples
