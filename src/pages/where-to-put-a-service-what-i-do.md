@@ -1,12 +1,6 @@
 ---
-title: 'Where to put a service (what I do)'
+title: Where to put a service (what I do)
 ---
-
-**
-
-Where to put a service (what I do)
-
-**
 
 _Str#101. "Placing Services" Strategy // establishing responsibilities / what I do (where to put)_
 
