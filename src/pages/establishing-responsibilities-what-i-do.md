@@ -1,8 +1,6 @@
 ---
-title: 'Establishing responsibilities / what I do'
+title: Establishing responsibilities / what I do
 ---
-
-## Establishing responsibilities / what I do
 
 
 Services represent "what I do."
