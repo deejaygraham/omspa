@@ -2,11 +2,6 @@
 title: 'List of Strategies'
 ---
 
-**
-
-List of strategies
-
-**
 
 **[](/list-of-strategies-activities-and-model-components.html)**[Activities and Model Components](/list-of-strategies-activities-and-model-components.html)
 
