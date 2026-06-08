@@ -1,12 +1,7 @@
 ---
-title: 'Fundamentals (who I know)'
+title: Fundamentals (who I know)
 ---
 
-**
-
-Fundamentals (who I know)
-
-**
 
 _Str#72. "Establish PD Object Connections" Strategy // establishing responsibilities / who I know (fundamentals)_
 
