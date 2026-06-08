@@ -2,12 +2,6 @@
 title: 'Model components -- HI, DM (who I know)'
 ---
 
-**
-
-Model components -- HI, DM (who I know)
-
-**
-
 _Str#79. "Establish HI Object Connections" Strategy // establishing responsibilities / who I know (model components)_
 
 \- For a window or report, include an object connection (expressed as an attribute) to: the contents of the window, the objects it knows directly, to get the content it needs to do its job (note that a window can use those objects to get to other objects, indirectly).
