@@ -2,12 +2,6 @@
 title: 'List of strategies: Establishing responsibilities'
 ---
 
-**
-
-List of strategies: Establishing responsibilities
-
-**
-
 **[](/fundamentals-what-i-know.html)**[Str#50.](/fundamentals-what-i-know.html) Select Attributes from Actual Ones
 
 [Str#51.](/fundamentals-what-i-know.html) Establish Usual Attributes
