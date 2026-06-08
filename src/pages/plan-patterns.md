@@ -1,12 +1,6 @@
 ---
-title: 'Plan patterns'
+title: Plan patterns
 ---
-
-**
-
-Plan patterns
-
-**
 
 The plan patterns are:
 
