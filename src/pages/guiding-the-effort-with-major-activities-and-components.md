@@ -1,12 +1,9 @@
 ---
-title: 'Guiding the effort with major activities and components'
+title: Guiding the effort with major activities and components
 ---
 
-**
+## Activities and model components
 
-Activities and model components
-
-**
 
 _Str#1. "Four Major Activities, Four Major Components" Strategy // activities and model components_
 
