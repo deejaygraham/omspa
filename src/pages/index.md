@@ -1,9 +1,7 @@
 ---
-title: 'Contents'
+title: Strategies and Patterns Handbook: Hypertext Edition
 permalink: '/index.html'
 ---
-
-# Strategies and Patterns Handbook: Hypertext Edition
 
 Version 2.1  
 Peter Coad  
