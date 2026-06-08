@@ -1,8 +1,6 @@
 ---
-title: 'A helpful path for getting started'
+title: A helpful path for getting started
 ---
-
-## A helpful path for getting started
 
 Here is a helpful path for getting started with the strategies and patterns in this handbook.
 
