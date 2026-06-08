@@ -1,12 +1,6 @@
 ---
-title: 'What to consider and challenge (what I know): values'
+title: What to consider and challenge (what I know) - values
 ---
-
-**
-
-What to consider and challenge (what I know): values
-
-**
 
 _Str#60. "Closely Related Values as One" Strategy // establishing responsibilities / what I know (consider and challenge)_
 
