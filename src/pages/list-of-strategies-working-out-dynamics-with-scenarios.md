@@ -2,12 +2,6 @@
 title: 'List of strategies: Working out dynamics with scenarios'
 ---
 
-**
-
-List of strategies: Working out dynamics with scenarios
-
-**
-
 **[](/the-basics-scenarios.html)**[Str#127.](/the-basics-scenarios.html) Select Key Scenarios
 
 [Str#128.](/the-basics-scenarios.html) Where to Begin a Scenario
