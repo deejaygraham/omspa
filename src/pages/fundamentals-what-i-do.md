@@ -1,9 +1,6 @@
 ---
-title: 'Fundamentals (what I do)'
+title: Fundamentals (what I do)
 ---
-
-## Fundamentals (what I do)
-
 
 _Str#86. "Do It Myself" Strategy // establishing responsibilities / what I do (fundamentals)_
 
