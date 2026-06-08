@@ -2,8 +2,6 @@
 title: 'Object Models: Strategies, Patterns, and Applications'
 ---
 
-## Object Models: Strategies, Patterns, and Applications
-
 by Peter Coad, with David North and Mark Mayfield
 
 Prentice Hall, 1997. ISBN 0-13-840177-9.
