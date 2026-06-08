@@ -1,12 +1,7 @@
 ---
-title: 'List of Patterns'
+title: List of Patterns
 ---
 
-**
-
-List of patterns
-
-**
 
 The fundamental pattern
 
