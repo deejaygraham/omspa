@@ -19,7 +19,7 @@ eleventyComputed:
 <ul>
 {% for pattern in patterns %}
 {% if pattern.tags[0] == cat.tag %}
-<li><a href="/{{ pattern.number }}-{{ pattern.name | slug }}-pattern-{{ pattern.tags[0] | slug }}.html">{{ pattern.id }}.</a> {{ pattern.name }}</li>
+<li><a href="/pattern/{{ pattern.id | lower | replace('#', '-') }}.html">{{ pattern.id }}.</a> {{ pattern.name }}</li>
 {% endif %}
 {% endfor %}
 </ul>
