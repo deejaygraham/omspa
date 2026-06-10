@@ -23,4 +23,4 @@ This handbook is based upon a chapter in the new book, [Object Models: Strategie
 
 [List of patterns](/pattern/index.html)
 
-[A helpful path for getting started](/a-helpfull-path-for-getting-started.html)
+[A helpful path for getting started](/a-helpful-path-for-getting-started.html)
