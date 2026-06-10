@@ -2,12 +2,6 @@
 title: 'Pattern players (what I do)'
 ---
 
-**
-
-Pattern players (what I do)
-
-**
-
 _Str#94. "Establish Actor and Participant Services" Strategy // establishing responsibilities / what I do (pattern players)_
 
 \- For an actor or participant, include: calculate for me, rate me, is &ltvalue>.
