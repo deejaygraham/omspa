@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fundamentals (what I do)</title>
+  </head>
+
+  <body>
+    <h1>Fundamentals (what I do)</h1>
+
+    <h2>
+      Str#86. "Do It Myself" Strategy // establishing responsibilities / what I do (fundamentals)
+    </h2>
+
+    <ul>
+      <li>
+        This is an aspect of a software object coming to life: "I do those things that are normally
+        done to the actual object that I'm an abstraction of."
+      </li>
+      <li>
+        Here's why. "Doing it myself" encapsulates attributes with the services that work on those
+        attributes. That results in lower coupling and stronger cohesion.
+      </li>
+      <li>
+        If you are building a simulation system, then a software object will mimic what an actual
+        object does. In most systems, this is not so. Software objects do those things that the
+        system is responsible to do with regard to that object.
+      </li>
+    </ul>
+
+    <h2>
+      Str#87. "Put Services with the Attributes They Work On" Strategy // establishing
+      responsibilities / what I do (fundamentals)
+    </h2>
+
+    <ul>
+      <li>Put the services with the attributes they work on.</li>
+      <li>
+        The result? Sensor objects that monitor themselves, customer objects that qualify
+        themselves, target objects that destroy themselves.
+      </li>
+      <li>
+        Why: better encapsulation, stronger cohesion, lower coupling, increased likelihood of reuse.
+      </li>
+    </ul>
+
+    <h2>
+      Str#88. "Why, Why, Why" Strategy // establishing responsibilities / what I do (fundamentals)
+    </h2>
+
+    <ul>
+      <li>
+        Add value by asking "why, why, why?"
+
+        <ul>
+          <li>Why, why, does the system need this object anyway?</li>
+          <li>What useful questions can it answer? What useful actions can it perform?</li>
+          <li>What is done to an actual object, something that this object could do itself?</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>
+      Str#89. "Basic Services" Strategy / establishing responsibilities / what I do (fundamentals)
+    </h2>
+
+    <ul>
+      <li>
+        The basic service, done by all, are not shown in an object model, except within specific
+        scenario views that might use them.
+      </li>
+      <li>
+        The basics: get, set; add (a connecting object), remove (a connecting object); create
+        (something a class does) and initialize, delete.
+      </li>
+      <li>
+        Note: attributes are private, by convention. In scenarios, use "get &amp;ltattribute
+        name&gt;" and "set &amp;ltattribute name&gt;" services to access attribute values.
+      </li>
+      <li>The basic DM services -- for data management objects -- are: search, load, and save.</li>
+    </ul>
+
+    <h2>
+      Str#90. "Service as a Question" Strategy // establishing responsibilities / what I do
+      (fundamentals)
+    </h2>
+
+    <ul>
+      <li>Ask: what questions can an object answer?</li>
+      <li>
+        Some good starting words to choose from: has &amp;ltconnecting object&gt;, how many, how
+        much, includes &amp;ltconnecting object&gt;, is &amp;ltstatus value&gt;.
+      </li>
+      <li>
+        Why: stronger encapsulation, better partitioning of services; fewer objects that are mere
+        data holders.
+      </li>
+    </ul>
+
+    <h2>
+      Str#91. "Service as a Verb" Strategy // establishing responsibilities / what I do
+      (fundamentals)
+    </h2>
+
+    <ul>
+      <li>
+        Some good service name verbs to choose from:
+
+        <ul>
+          <li>activate (initialize, initiate, open, start)</li>
+          <li>answer (reply, respond)</li>
+          <li>assess (appraise, assay, evaluate, value)</li>
+          <li>calculate (compute, count, estimate, rate, tally)</li>
+          <li>deactivate (close, end, shut down, terminate)</li>
+          <li>determine (decide, figure out, observe, resolve)</li>
+          <li>find (get, look for, pinpoint)</li>
+          <li>measure (bound, gauge, limit)</li>
+          <li>monitor (conduct, direct, manage, observe, operate, supervise, watch)</li>
+          <li>qualify (characterize, differentiate, discriminate, distinguish, mark)</li>
+          <li>select (choose, cull, elect, opt for, pick).</li>
+        </ul>
+      </li>
+      <li>Append "over interval" for services that apply to different time intervals.</li>
+    </ul>
+
+    <h2>
+      Str#92. "What Can I Do for You" Strategy // establishing responsibilities / what I do
+      (fundamentals)
+    </h2>
+
+    <ul>
+      <li>Ask, "What can I do for you, based on what I know?"</li>
+      <li>Ask, "What can I do for you, based on whom I know?"</li>
+    </ul>
+
+    <h2>
+      Str#93. "Question, Calculation, Selection" Strategy // establishing responsibilities / what I
+      do (fundamentals)
+    </h2>
+
+    <ul>
+      <li>
+        For an object, consider:
+
+        <ul>
+          <li>What <i>questions </i>can I answer?</li>
+          <li>
+            What <i>calculations</i> can I do? What ongoing monitoring could I do? What calculations
+            across a collection could I make (letting each worker do its part)?
+          </li>
+          <li>
+            What <i>selections</i> across a collection could I make (letting each worker do its
+            part)?
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <p><a href="Strpat00000039.html">Establishing responsibilities / what I do</a></p>
+
+    <p><a href="Strpat00000015.html">Strategies for building object models</a></p>
+  </body>
+</html>

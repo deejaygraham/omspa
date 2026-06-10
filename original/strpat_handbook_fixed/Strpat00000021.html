@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Selecting objects -- kinds of objects</title>
+  </head>
+
+  <body>
+    <h1>Selecting objects -- kinds of objects</h1>
+
+    <h2>Str#34. "Select Kinds of Objects" Strategy // selecting objects (kinds of objects)</h2>
+
+    <ul>
+      <li>
+        Use generalization-specialization (gen-spec) to find additional classes.
+
+        <ul>
+          <li>
+            Look at each class as a generalization. Name its specializations, ones that fit with
+            system objectives.
+          </li>
+          <li>
+            Look at each specialization. Name its generalizations, ones that fit within system
+            objectives.
+          </li>
+        </ul>
+      </li>
+      <li>
+        Use gen-spec for domain-based reuse within an application; use configuration management for
+        reuse across multiple applications, even multiple problem domains.
+      </li>
+      <li>
+        Use gen-spec to show domain-based "what's the same, what's different," within an
+        application.
+      </li>
+      <li>
+        Examples: equipment, kinds of equipment; participants, kinds of participants; transactions,
+        kinds of transactions.
+      </li>
+    </ul>
+
+    <p>Related pattern: <a href="Strpat00000061.html">Patt#3.</a> "Participant-Transaction"</p>
+
+    <h2>
+      Str#34a. " Fits within a Specialization Class -- Forever" Strategy // selecting objects (kinds
+      of objects)
+    </h2>
+
+    <ul>
+      <li>
+        Use generalization-specialization (gen-spec) whenever you can classify an object as being
+        within a specialization class -- and you know that it will stay in that class.
+      </li>
+      <li>
+        Otherwise, use Patt#3 "Actor-Participant" instead (referred to as "composition, instead of
+        inheritance").
+      </li>
+    </ul>
+
+    <p><a href="Strpat00000015.html">Strategies for building object models</a></p>
+  </body>
+</html>

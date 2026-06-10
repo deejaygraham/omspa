@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>#30. "Caller - Dispatcher - Caller Back" Pattern // interaction patterns</title>
+  </head>
+
+  <body>
+    <h1>Patt#30. "Caller - Dispatcher - Caller Back" Pattern // interaction patterns</h1>
+
+    <p><img src="Strpat00000035.gif" alt="Strpat00000035.gif" width="458" height="106" /></p>
+
+    <h2>Typical object interactions</h2>
+
+    <ul>
+      <li>
+        caller.requestCallBack --&gt; dispatcher.selectCallerBack --&gt; rateMe, followed by . . .
+      </li>
+      <li>
+        dispatcher.activateCallerBack --&gt; callerBack.makeCallBack --&gt; caller.receiveCallBack
+      </li>
+    </ul>
+
+    <h2>Examples</h2>
+
+    <ul>
+      <li>customer - taxi dispatcher - taxi (in a simulation system)</li>
+      <li>inbound call - call back server - call back unit</li>
+      <li>requester - job shop - contractor (in a simulation system).</li>
+    </ul>
+
+    <h2>Combinations</h2>
+
+    <ul>
+      <li>Superimpose upon three (or more) interacting pattern players.</li>
+    </ul>
+
+    <p><a href="Strpat00000085.html">Interaction patterns</a></p>
+
+    <p><a href="Strpat00000056.html">Patterns for building object models</a></p>
+  </body>
+</html>

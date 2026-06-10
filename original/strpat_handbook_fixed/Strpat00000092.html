@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>#31. "Gatekeeper-Request-Resource" Pattern // device patterns</title>
+  </head>
+
+  <body>
+    <h1>Patt#31. "Gatekeeper-Request-Resource" Pattern // interaction patterns</h1>
+
+    <p><img src="Strpat00000036.gif" alt="Strpat00000036.gif" width="422" height="428" /></p>
+
+    <h2>Typical object interactions</h2>
+
+    <ul>
+      <li>
+        for gatekeeper and request
+
+        <ul>
+          <li>addRequest --&gt; create</li>
+          <li>selectRequest --&gt; rateMe</li>
+          <li>rankRequests --&gt; rateMe</li>
+        </ul>
+      </li>
+      <li>
+        for gatekeeper and resource
+
+        <ul>
+          <li>sendRequestToResource --&gt; executeRequest</li>
+          <li>selectResource --&gt; rateMe</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Examples</h2>
+
+    <ul>
+      <li>comm line gatekeeper - comm line request - comm line.</li>
+    </ul>
+
+    <h2>Combinations</h2>
+    <p><a href="Strpat00000060.html">Patt#2.</a> "Actor-Participant" (participant = gatekeeper)</p>
+
+    <p>
+      <a href="Strpat00000061.html">Patt#3.</a> "Participant-Transaction" (participant = gatekeeper)
+    </p>
+
+    <p>
+      <a href="Strpat00000063.html">Patt#5.</a> "Specific Item - Transaction" (specific item =
+      resource).
+    </p>
+
+    <p><a href="Strpat00000085.html">Interaction patterns</a></p>
+
+    <p><a href="Strpat00000056.html">Patterns for building object models</a></p>
+  </body>
+</html>

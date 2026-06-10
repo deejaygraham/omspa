@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>What to consider and challenge (what I know): values</title>
+  </head>
+
+  <body>
+    <h1>What to consider and challenge (what I know): values</h1>
+
+    <h2>
+      Str#60. "Closely Related Values as One" Strategy // establishing responsibilities / what I
+      know (consider and challenge)
+    </h2>
+
+    <ul>
+      <li>A collection of closely related values, commonly referred to as one?</li>
+      <li>Use one attribute (e.g., name) and describe its parts in text.</li>
+      <li>
+        Example: name. In the description for that attribute, include something like "name consists
+        of title, first name, middle initial, last name (and if applicable, maiden name.)"
+      </li>
+    </ul>
+
+    <h2>
+      Str#61. "Yes/No Attribute" Strategy // establishing responsibilities / what I know (consider
+      and challenge)
+    </h2>
+
+    <ul>
+      <li>
+        Attribute has values "yes or no?"
+
+        <ul>
+          <li>The attribute name itself may be a value for some other attribute name</li>
+          <li>Example: taxable (yes or no); change to tax status (taxable, tax-exempt, resale).</li>
+          <li>Why bother: added detail now, added ease of change in the future.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>
+      Str#62. "Values Over Time" Strategy // establishing responsibilities / what I know (consider
+      and challenge)
+    </h2>
+
+    <ul>
+      <li>An attribute value that varies over time, and you need to know that variation?</li>
+      <li>Add an additional object, with an effective date and value.</li>
+      <li>
+        Example: item and its price. If you need to keep track of multiple prices, applicable over
+        different time periods, then add price objects, ones that know effective date and price, and
+        do things like "is applicable for date" and "get price."
+      </li>
+    </ul>
+
+    <h2>
+      Str#62a. "You? Me? Or Something Between Us?" Strategy // establishing responsibilities / what
+      I know (consider and challenge)
+    </h2>
+
+    <ul>
+      <li>
+        For each attribute, ask:
+
+        <ul>
+          <li>Does it describe me? (If so, add it to the corresponding class.)</li>
+          <li>
+            Does it describe an object I know? (If so, add it to that other corresponding class.)
+          </li>
+          <li>
+            Does it describe something in-between us? (If so, add a transaction object in between,
+            and add
+
+            <ul>
+              <li>the attribute to that class.)</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        Example:
+
+        <ul>
+          <li>
+            Consider a "user."
+
+            <ul>
+              <li>Q. Does "password" describe a user?</li>
+              <li>
+                A. Yes, in a single-system context.
+
+                <ul>
+                  <li>Looks like this: User, with a password attribute</li>
+                </ul>
+              </li>
+              <li>
+                No, in a multisystem context. In this case, a "password" describes neither a user
+                nor a system. Instead, it describes something in-between them, a transaction object
+                called something like "Access Authorization."
+
+                <ul>
+                  <li>Looks like this: User -- Access Authorization -- System</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>
+      Str#63. "Embedded Meaning in a Number" Strategy // establishing responsibilities / what I know
+      (consider and challenge)
+    </h2>
+
+    <ul>
+      <li>Attribute is a number, with encoded meanings?</li>
+      <li>Add an attribute for each meaning.</li>
+      <li>
+        Most often, include a number attribute, too (a sequence number, no longer a source of
+        encoded meaning).
+      </li>
+    </ul>
+
+    <h2>
+      Str#64. "Attribute with Repeating Values" Strategy // establishing responsibilities / what I
+      know (consider and challenge)
+    </h2>
+
+    <ul>
+      <li>An attribute that may have a number of values?</li>
+      <li>
+        Add a new class to your model. Add an object connection. Look for additional attributes that
+        may apply.
+
+        <ul>
+          <li>Add a new class, even if it has only one attribute for now.</li>
+          <li>
+            Why: make the most of problem-domain partitioning; pave the way for accommodating future
+            change gracefully.
+          </li>
+        </ul>
+      </li>
+      <li>
+        Example: Item with the attribute UPCs (universal product codes). Add a UPC class. Add an
+        object connection between an item and its UPCs.
+      </li>
+    </ul>
+
+    <h2>
+      Str#65. "Attribute Value Granularity" Strategy // establishing responsibilities / what I know
+      (consider and challenge)
+    </h2>
+
+    <ul>
+      <li>
+        Check the granularity for each attribute that applies across a collection:
+
+        <ul>
+          <li>Does the same value apply across the entire collection?</li>
+          <li>
+            If not, move the attribute to the worker class, so each object in the collection can
+            have its own value.
+          </li>
+        </ul>
+      </li>
+      <li>Example: rental (checkout date and time), rental line item (return date and time).</li>
+    </ul>
+
+    <h2>
+      Str#66. "Calculable Result" Strategy // establishing responsibilities / what I know (consider
+      and challenge)
+    </h2>
+
+    <ul>
+      <li>
+        An attribute for holding a calculable result? At first, don't show it in the object model.
+      </li>
+      <li>
+        At some point, you may want to add the attribute. Here's how:
+
+        <ul>
+          <li>Add an explicit "get &amp;ltattribute&gt;" service for it.</li>
+          <li>
+            Specify that service so it:
+
+            <ul>
+              <li>
+                checks for an attribute value -- and returns it, if it has one . . otherwise,
+                invokes a calculate service, saves the result, and returns the result to the sender.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Add an explicit "calculate &amp;ltattribute&gt;" service, too--so you can tell the
+            object to do the calculation you want it to do.
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <p><a href="Strpat00000026.html">Establishing responsibilities / what I know</a></p>
+
+    <p><a href="Strpat00000015.html">Strategies for building object models</a></p>
+  </body>
+</html>

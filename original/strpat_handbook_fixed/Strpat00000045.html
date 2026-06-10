@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Message traffic (what I do)</title>
+  </head>
+
+  <body>
+    <h1>Message traffic (what I do)</h1>
+
+    <h2>
+      Str#113. "Batch Up Immediate Results" Strategy // establishing responsibilities /what I do
+      (message traffic)
+    </h2>
+
+    <ul>
+      <li>
+        Excess message traffic can make an object model harder to understand and harder to
+        implement, too.
+      </li>
+      <li>
+        Here's what to do about it: "Batch up" immediate results. Add attributes that hold
+        intermediate results, to reduce message traffic. In effect, you are moving a repeated
+        calculation "outside of the (iteration) loop." A classic example: adding a "total" attribute
+        along with a "calcTotal" service.
+      </li>
+    </ul>
+
+    <h2>
+      Str#114. "Traveling Object" Strategy // establishing responsibilities / what I do (message
+      traffic)
+    </h2>
+
+    <ul>
+      <li>
+        Pass an object (or object ID) as a parameter, allowing it to travel along a series of
+        message sends. At the end of the series, the last object can send the result directly to the
+        originator (a short cut, rather than waiting for all the message sends to work back to the
+        originator. (The
+        <a href="Strpat00000091.html">caller - dispatcher - caller-back pattern</a> is a good
+        example of this.)
+      </li>
+    </ul>
+
+    <h2>
+      Str#115. "Sender, Intermediary, Receiver" Strategy // establishing responsibilities / what I
+      do (message traffic)
+    </h2>
+
+    <ul>
+      <li>To loosely couple a sender, use a "pass-through" intermediary.</li>
+      <li>To simplify an intermediary, use a "lookup" intermediary.</li>
+      <li>
+        (Refer to the <a href="Strpat00000089.html">"sender-pass through-receiver"</a> and
+        <a href="Strpat00000090.html">"sender-lookup-receiver"</a> patterns.)
+      </li>
+    </ul>
+
+    <p><a href="Strpat00000039.html">Establishing responsibilities / what I do</a></p>
+
+    <p><a href="Strpat00000015.html">Strategies for building object models</a></p>
+  </body>
+</html>

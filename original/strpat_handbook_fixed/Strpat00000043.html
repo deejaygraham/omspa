@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Where to put a service (what I do)</title>
+  </head>
+
+  <body>
+    <h1>Where to put a service (what I do)</h1>
+
+    <h2>
+      Str#101. "Placing Services" Strategy // establishing responsibilities / what I do (where to
+      put)
+    </h2>
+
+    <ul>
+      <li>
+        Use the key principles for placing a service.
+
+        <ul>
+          <li>act on something in the domain -&gt; the object does it itself</li>
+          <li>
+            collection-worker pattern
+
+            <ul>
+              <li>collection object works on its own attributes</li>
+              <li>
+                collection object asks workers to do something useful (rarely just "get a value for
+                me")
+              </li>
+            </ul>
+          </li>
+          <li>encapsulation (more than a value holder; it acts upon what it knows)</li>
+          <li>generally useful in subsequent reuse</li>
+          <li>messaging simplicity (more understandable, more efficient).</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>
+      Str#102. "Service across a Collection" Strategy // establishing responsibilities / what I do
+      (where to put)
+    </h2>
+
+    <ul>
+      <li>
+        Service across a collection of objects?
+
+        <ul>
+          <li>
+            Add a service to a collection object, an object that knows and does things across that
+            collection.
+          </li>
+          <li>
+            Let each worker within a collection do its fair share--as much as it can, based upon
+            what it knows.
+          </li>
+        </ul>
+      </li>
+      <li>
+        Be sure the collection does just those things that apply across a collection; makes its
+        workers do as much work as they know enough to accomplish.
+      </li>
+      <li>Across its workers: enforce business rules that may apply to its participation.</li>
+    </ul>
+
+    <h2>
+      Str#103. "Service in the Smallest Applicable Container" Strategy // establishing
+      responsibilities / what I do (where to put)
+    </h2>
+
+    <ul>
+      <li>Begin with a problem-domain object.</li>
+      <li>Identify the smallest problem-domain collection that it's a part of.</li>
+      <li>Add the "service across a collection" to that object.</li>
+      <li>
+        Does the collection include all of the objects you need to work with?
+
+        <ul>
+          <li>If yes, you're done.</li>
+          <li>
+            If not, do it again, letting the collection be the problem-domain object for the next
+            pass.
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <p>Related patterns:</p>
+
+    <p><a href="Strpat00000073.html">Patt#14.</a> "Container-Content"</p>
+
+    <p><a href="Strpat00000074.html">Patt#15.</a> "Container - Container Line Item"</p>
+
+    <h2>
+      Str#104. "Worker in a Collection" Strategy // establishing responsibilities / what I do (where
+      to put)
+    </h2>
+
+    <ul>
+      <li>
+        Service in a worker object? Let it do something of value!
+
+        <ul>
+          <li>Answer a question.</li>
+          <li>Calculate. Calculate a result, given input parameters.</li>
+          <li>
+            Get a custom value OR a default value for objects in that collection (which would
+            require sending a message from the worker to its collection object).
+          </li>
+        </ul>
+      </li>
+      <li>
+        In other words, add some value--endeavor to let each object be more than just a data holder.
+      </li>
+    </ul>
+
+    <h2>
+      Str#105. "Programmable Action" Strategy // establishing responsibilities / what I do (where to
+      put)
+    </h2>
+
+    <ul>
+      <li>
+        Service which is actually a programmable action?
+
+        <ul>
+          <li>Add an attribute called something like "programmable action."</li>
+          <li>Add a service called something like "execute action."</li>
+        </ul>
+      </li>
+    </ul>
+
+    <p><a href="Strpat00000039.html">Establishing responsibilities / what I do</a></p>
+
+    <p><a href="Strpat00000015.html">Strategies for building object models</a></p>
+  </body>
+</html>

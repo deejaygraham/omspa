@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>What to consider and challenge: gen-spec with attributes (what I know)</title>
+  </head>
+
+  <body>
+    <h1>What to consider and challenge: gen-spec with attributes (what I know)</h1>
+
+    <h2>
+      Str#67. "Common Attributes" Strategy // establishing responsibilities / what I know (consider
+      and challenge)
+    </h2>
+
+    <ul>
+      <li>Classes with common attributes?</li>
+      <li>
+        If the attributes have the same name and meaning, and if you can find a
+        generalization-specialization that makes good sense, then add a generalization class and
+        factor out the commonality.
+      </li>
+    </ul>
+
+    <h2>
+      Str#67a. "Collapse Whole-Part When Same Attributes Apply" Strategy // establishing
+      responsibilities / what I know (consider and challenge)
+    </h2>
+
+    <ul>
+      <li>
+        When you find a whole-part -- and the same attributes apply to the whole and the part:
+
+        <ul>
+          <li>Collapse the whole and part into "class with objects" symbol.</li>
+          <li>Add a whole-part object connection to that one symbol.</li>
+          <li>
+            Add "super" and "sub" attributes, showing that each object knows the objects above it
+            and below it.
+          </li>
+          <li>Why: Fewer symbols. Less redundancy. And more resilient to change.</li>
+          <li>
+            Example: Company - Division - Section - Team Collapse to "Organization" or "OrgUnit."
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>
+      Str#68. "Partially Applicable Attribute" Strategy // establishing responsibilities / what I
+      know (consider and challenge)
+    </h2>
+
+    <ul>
+      <li>Attribute that applies only to certain objects in a class?</li>
+      <li>Do you have an attribute which applies only to certain kinds of objects?</li>
+      <li>Do you have an attribute that may have the value "not applicable"?</li>
+      <li>If so, factor out the specialized attribute into a specialization class.</li>
+    </ul>
+
+    <h2>
+      Str#69. "No Attributes" Strategy // establishing responsibilities / what I know (consider and
+      challenge)
+    </h2>
+
+    <ul>
+      <li>
+        An object with no attributes? When this happens, one of two things is going on.
+
+        <ul>
+          <li>
+            Either it's a narrow "need to know" and just one object in that class.
+
+            <ul>
+              <li>Check: there really is just one object in that class.</li>
+              <li>
+                Check: attributes really could apply, yet all potential attributes are outside of
+                the system's responsibilities.
+              </li>
+              <li>Fine!</li>
+            </ul>
+          </li>
+          <li>Or it's got object connections (an attribute, show graphically). That's fine!</li>
+          <li>
+            Or it's a nasty "function blob," with services better done by other objects themselves.
+
+            <ul>
+              <li>
+                Centralized control is troublesome; here's why:
+
+                <ul>
+                  <li>
+                    It fails to use problem domain classes to partition both attributes and
+                    services.
+                  </li>
+                  <li>Encapsulation goes down (higher coupling and weaker cohesion).</li>
+                </ul>
+              </li>
+              <li>
+                Here's what to do about it.
+
+                <ul>
+                  <li>Get rid of the "function blob."</li>
+                  <li>
+                    Applying the "what I do" strategies as a guide, put each service in the object
+                    that the old function blob was acting on.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <p><a href="Strpat00000026.html">Establishing responsibilities / what I know</a></p>
+
+    <p><a href="Strpat00000015.html">Strategies for building object models</a></p>
+  </body>
+</html>

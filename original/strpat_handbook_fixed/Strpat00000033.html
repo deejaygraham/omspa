@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>What to consider and challenge (what I know): names</title>
+  </head>
+
+  <body>
+    <h1>What to consider and challenge (what I know): names</h1>
+
+    <h2>
+      Str#70. "Embedded Value in an Attribute Name" Strategy // establishing responsibilities / what
+      I know (consider and challenge)
+    </h2>
+
+    <ul>
+      <li>Attribute name includes the name of another object?</li>
+      <li>Add that object to your model. Let that object know its own attribute(s).</li>
+      <li>
+        Note: an object connection, expressed in text rather than with graphics, names another
+        object (as it should).
+      </li>
+    </ul>
+
+    <h2>
+      Str#71. "Type Attribute" Strategy // establishing responsibilities / what I know (consider and
+      challenge)
+    </h2>
+
+    <ul>
+      <li>Attribute expressing type, kind, or category?</li>
+      <li>If it's needed solely for display or report, that's fine.</li>
+      <li>
+        If it's a redundant expression of what gen-spec already portrays, get rid of it (it's not
+        needed).
+      </li>
+      <li>
+        If it's needed to decide what to do in a service, use gen-spec so that each object can just
+        do its thing--without needing to determine "what kind am I?" before taking appropriate
+        action. Why: take advantage of an opportunity to apply polymorphism--and, as a result,
+        increase resiliency to change.
+      </li>
+    </ul>
+
+    <p><a href="Strpat00000026.html">Establishing responsibilities / what I know</a></p>
+
+    <p><a href="Strpat00000015.html">Strategies for building object models</a></p>
+  </body>
+</html>

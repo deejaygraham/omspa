@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Pattern players (who I know)</title>
+  </head>
+
+  <body>
+    <h1>Pattern players (who I know)</h1>
+
+    <h2>
+      Str#74. "Establish Actor and Participant Object Connections" Strategy // establishing
+      responsibilities / who I know (pattern players)
+    </h2>
+
+    <ul>
+      <li>For an actor, include an object connection to: its participants.</li>
+      <li>For a participant, include an object connection to: its actor, its transactions.</li>
+    </ul>
+
+    <p>Related patterns:</p>
+
+    <p><a href="Strpat00000060.html">Patt#2.</a> "Actor-Participant"</p>
+
+    <p><a href="Strpat00000061.html">Patt#3.</a> "Participant-Transaction"</p>
+
+    <h2>
+      Str#75. "Establish Place Object Connections" Strategy // establishing responsibilities / who I
+      know (pattern players)
+    </h2>
+
+    <ul>
+      <li>
+        For a location, include object connections to objects which come to rest at a location . . .
+        or are contained by a location.
+      </li>
+      <li>
+        For a location, include object connections to transaction objects, to show that location's
+        participation in that transaction.
+      </li>
+    </ul>
+
+    <p>
+      Related pattern: Patt#4._4_Place_Transaction_Pattern_transaction_patterns "Place-Transaction"
+    </p>
+
+    <h2>
+      Str#76. "Establish Transaction Object Connections" Strategy // establishing responsibilities /
+      who I know (pattern players)
+    </h2>
+
+    <ul>
+      <li>
+        For a transaction, include object connections to: participants, transaction line items, a
+        companion transaction, one that occurs at the same moment in time.
+      </li>
+      <li>
+        For a transaction line item, include object connections to: the transaction, a companion
+        "item description" object, a subsequent transaction line item.
+      </li>
+    </ul>
+
+    <p>Related patterns:</p>
+
+    <p><a href="Strpat00000061.html">Patt#3.</a> "Participant-Transaction"</p>
+
+    <p><a href="Strpat00000062.html">Patt#4.</a> "Place-Transaction"</p>
+
+    <p><a href="Strpat00000063.html">Patt#5.</a> "Specific Item - Transaction"</p>
+
+    <p><a href="Strpat00000064.html">Patt#6.</a> "Transaction - Transaction Line Item"</p>
+
+    <p><a href="Strpat00000065.html">Patt#7.</a> "Transaction - Subsequent Transaction"</p>
+
+    <p>
+      <a href="Strpat00000066.html">Patt#8.</a> "Transaction Line Item - Subsequent Transaction Line
+      Item"
+    </p>
+
+    <h2>
+      Str#77. "Establish Item and Specific Item Object Connections" Strategy // establishing
+      responsibilities / who I know (pattern players)
+    </h2>
+
+    <ul>
+      <li>
+        For an item, include object connections to: specific item, transaction line item (if
+        specific item is not needed in the model), container line item (if specific item is not
+        needed in the model).
+      </li>
+      <li>
+        For a specific item, include object connections to: item, transaction line item, container
+        line item.
+      </li>
+    </ul>
+
+    <p>Related patterns:</p>
+
+    <p><a href="Strpat00000067.html">Patt#9.</a> "Item - Line Item"</p>
+
+    <p><a href="Strpat00000068.html">Patt#10.</a> "Specific Item - Line Item"</p>
+
+    <p><a href="Strpat00000069.html">Patt#11.</a> "Item - Specific Item"</p>
+
+    <h2>
+      Str#78. "Establish Interacting System or Device Object Connections" Strategy // establishing
+      responsibilities / who I know (pattern players)
+    </h2>
+
+    <ul>
+      <li>
+        For an interacting system or device:
+
+        <ul>
+          <li>
+            Include an object connection (expressed as attributes) between a PD object and is
+            corresponding system interaction (SI) object.
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <p><a href="Strpat00000034.html">Establishing responsibilities / who I know</a></p>
+
+    <p><a href="Strpat00000015.html">Strategies for building object models</a></p>
+  </body>
+</html>

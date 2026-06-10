@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>#7. "Transaction - Subsequent Transaction" Pattern // transaction patterns</title>
+  </head>
+
+  <body>
+    <h1>Patt#7. "Transaction - Subsequent Transaction" Pattern // transaction patterns</h1>
+
+    <p><img src="Strpat00000010.gif" alt="Strpat00000010.gif" width="471" height="216" /></p>
+
+    <h2>Typical object interactions</h2>
+
+    <ul>
+      <li>howMany --&gt; calcForMe</li>
+      <li>howMuch --&gt; calcForMe</li>
+      <li>calcOverSubsequentTransactions --&gt; calcForMe</li>
+      <li>rankSubsequentTransactions --&gt; rateMe</li>
+    </ul>
+
+    <h2>Examples</h2>
+
+    <ul>
+      <li>
+        Transaction: agreement, assignment, authorization, contract, delivery, deposit, incident,
+        inquiry, order, payment, problem, report, purchase, refund, registration, rental,
+        reservation, sale, shift, shipment, subscription, time charge, title, withdrawal.
+      </li>
+      <li>
+        Transaction - subsequent transaction: application-issue; intermediate result - final result;
+        order-shipment; purchase-payment; reservation-sale; traffic citation - payment.
+      </li>
+    </ul>
+
+    <h2>Combinations</h2>
+    <p><a href="Strpat00000061.html">Patt#3.</a> "Participant-Transaction"</p>
+
+    <p><a href="Strpat00000062.html">Patt#4.</a> "Place-Transaction"</p>
+
+    <p><a href="Strpat00000063.html">Patt#5.</a> "Specific Item - Transaction"</p>
+
+    <p><a href="Strpat00000064.html">Patt#6.</a> "Transaction - Transaction Line Item."</p>
+
+    <h2>Notes</h2>
+
+    <ul>
+      <li>Work out transactions in time sequence (the order they usually occur in).</li>
+      <li>
+        If subsequent transaction and its line item objects correspond 1-to-1 with transaction and
+        its line item objects, combine them.
+      </li>
+    </ul>
+
+    <p>Related strategies:</p>
+
+    <p><a href="Strpat00000019.html">Str#17.</a> "Select Transactions" Strategy</p>
+
+    <p><a href="Strpat00000028.html">Str#54.</a> "Establish Transaction Attributes" Strategy</p>
+
+    <p>
+      <a href="Strpat00000036.html">Str#76.</a> "Establish Transaction Object Connections" Strategy
+    </p>
+
+    <p><a href="Strpat00000041.html">Str#96.</a> "Establish Transaction Services" Strategy</p>
+
+    <p><a href="Strpat00000059.html">Transaction patterns</a></p>
+
+    <p><a href="Strpat00000056.html">Patterns for building object models</a></p>
+  </body>
+</html>

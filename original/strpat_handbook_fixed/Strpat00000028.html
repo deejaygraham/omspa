@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Pattern players (what I know)</title>
+  </head>
+
+  <body>
+    <h1>Pattern players (what I know)</h1>
+
+    <h2>
+      Str#52. "Establish Actor and Participant Attributes" Strategy // establishing responsibilities
+      / what I know (pattern players)
+    </h2>
+
+    <ul>
+      <li>For actor, consider: name, address, phone.</li>
+      <li>
+        For participants, include: number, date and time (perhaps an ending date and time),
+        password, authorization level.
+      </li>
+    </ul>
+
+    <p>Related patterns:</p>
+
+    <p><a href="Strpat00000060.html">Patt#2.</a> "Actor-Participant"</p>
+
+    <p><a href="Strpat00000061.html">Patt#3.</a> "Participant-Transaction"</p>
+
+    <h2>
+      Str#53. "Establish Place Attributes" Strategy // establishing responsibilities / what I know
+      (pattern players)
+    </h2>
+
+    <ul>
+      <li>For location, include: number, name, address (perhaps latitude, longitude, altitude).</li>
+    </ul>
+
+    <p>
+      Related pattern: Patt#4._4_Place_Transaction_Pattern_transaction_patterns "Place-Transaction"
+    </p>
+
+    <h2>
+      Str#54. "Establish Transaction Attributes" Strategy // establishing responsibilities / what I
+      know (pattern players)
+    </h2>
+
+    <ul>
+      <li>For transactions, include: number, date, time, status.</li>
+      <li>
+        For line items, include: quantity (if it knows an item, rather than a specific item),
+        status.
+      </li>
+    </ul>
+
+    <p>Related patterns:</p>
+
+    <p><a href="Strpat00000061.html">Patt#3. </a>"Participant-Transaction"</p>
+
+    <p><a href="Strpat00000062.html">Patt#4. </a>"Place-Transaction"</p>
+
+    <p><a href="Strpat00000063.html">Patt#5. </a>"Specific Item - Transaction"</p>
+
+    <p><a href="Strpat00000064.html">Patt#6. </a>"Transaction - Transaction Line Item"</p>
+
+    <p><a href="Strpat00000065.html">Patt#7. </a>"Transaction - Subsequent Transaction"</p>
+
+    <p>
+      <a href="Strpat00000066.html">Patt#8. </a>"Transaction Line Item - Subsequent Transaction Line
+      Item"
+    </p>
+
+    <h2>Str#54a. "Transaction Times" Strategy // establishing responsibilities / what I know</h2>
+
+    <ul>
+      <li>
+        A transaction object corresponds to a moment in time (e.g., sale) or an interval of time
+        (e.g., rental).
+      </li>
+      <li>
+        A moment in time (dateTime, dateTimeOfBirth, dateTimeOfManufacture, effectiveDateTime,
+        plannedDateTime, actualDateTime)
+      </li>
+      <li>An interval of time (interval, effectiveInterval, dateTime + duration)</li>
+      <li>
+        An interval of time, expressed as a start/stop combination (dateTimeStart, dateTimeEnd;
+        dateTimeIn, dateTimeOut; dateTimeOut, dateTimeBack; effectiveDateTime, expirationDateTime).
+        Fine detail: the second attribute in these pairs belongs in a transaction line item, when
+        different values may apply to each line item.
+      </li>
+    </ul>
+
+    <h2>
+      Str#54b. "An Attribute? Or Something More?" Strategy // establishing responsibilities / what I
+      know
+    </h2>
+
+    <ul>
+      <li>Is a person's hobby (or hobbies) just an attribute? Or something more?</li>
+      <li>
+        Value. Just need a current value, based upon an enumeration of values? Add an attribute.
+        Describe the enumeration of values in text. Example: Hobbyist, with a "hobbies" attribute
+      </li>
+      <li>
+        Standard Catalog Description. Need standard catalog descriptions you can choose from? Add a
+        "standard catalog description" class with whatever descriptive attributes you need. Each
+        "standard catalog description" object captures attribute values which may apply again and
+        again. Example: Hobbyist -- Hobby (attributes: type, name, description)
+      </li>
+      <li>
+        History. Need history? Add a transaction object, to remember intervals of activity. Example:
+        Hobbyist – Hobby Activity – Hobby
+      </li>
+    </ul>
+
+    <h2>
+      Str#55. "Establish Item and Specific Item Attributes" Strategy // establishing
+      responsibilities / what I know (pattern players)
+    </h2>
+
+    <ul>
+      <li>
+        For items, include: name, description, dimensions, size, universal product code (UPC),
+        weight.
+      </li>
+      <li>
+        For specific items, include: serial number, purchase date. (It might know a custom value,
+        while an item might know a default value.)
+      </li>
+    </ul>
+
+    <p>Related patterns:</p>
+
+    <p><a href="Strpat00000067.html">Patt#9.</a> "Item - Line Item"</p>
+
+    <p><a href="Strpat00000068.html">Patt#10.</a> "Specific Item - Line Item"</p>
+
+    <p><a href="Strpat00000069.html">Patt#11.</a> "Item - Specific Item"</p>
+
+    <h2>
+      Str#56. "Establish Interacting System and Device Attributes" Strategy // establishing
+      responsibilities /what I know (pattern players)
+    </h2>
+
+    <ul>
+      <li>For another system or device, include: number, name, operational state.</li>
+      <li>
+        For its companion object, in the system interaction component, include: logon name,
+        password, phone numbers, address.
+      </li>
+    </ul>
+
+    <p><a href="Strpat00000026.html">Establishing responsibilities / what I know</a></p>
+
+    <p><a href="Strpat00000015.html">Strategies for building object models</a></p>
+  </body>
+</html>

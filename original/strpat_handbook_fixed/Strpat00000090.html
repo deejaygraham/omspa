@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>#29. "Sender-Lookup-Receiver" Pattern // interaction patterns</title>
+  </head>
+
+  <body>
+    <h1>Patt#29. "Sender-Lookup-Receiver" Pattern // interaction patterns</h1>
+
+    <p><img src="Strpat00000034.gif" alt="Strpat00000034.gif" width="438" height="101" /></p>
+
+    <h2>Typical object interactions</h2>
+
+    <ul>
+      <li>sender.selectNextReceiver --&gt; lookup.selectReceiver, followed by . . .</li>
+      <li>sender.invokeReceiver --&gt; receiver.executeRequest</li>
+    </ul>
+
+    <h2>Examples</h2>
+
+    <ul>
+      <li>saleAnalysisWindow.lookupLineItem --&gt; sale.lookupLineItem, followed by . . .</li>
+      <li>saleAnalysisWindow.calcLineItemProfit --&gt; sale.calcProfit</li>
+    </ul>
+
+    <h2>Combinations</h2>
+
+    <ul>
+      <li>Superimpose upon participant - transaction - transaction line item.</li>
+      <li>Superimpose upon three (or more) interacting pattern players.</li>
+    </ul>
+
+    <h2>Note</h2>
+
+    <ul>
+      <li>This approach keeps lookup object simpler.</li>
+    </ul>
+
+    <p><a href="Strpat00000085.html">Interaction patterns</a></p>
+
+    <p><a href="Strpat00000056.html">Patterns for building object models</a></p>
+  </body>
+</html>

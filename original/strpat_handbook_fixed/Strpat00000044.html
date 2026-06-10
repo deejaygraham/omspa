@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Real-time (what I do)</title>
+  </head>
+
+  <body>
+    <h1>Real-time (what I do)</h1>
+
+    <h2>
+      Str#106. "Real Time: Timeliness" Strategy // establishing responsibilities / what I do (real
+      time)
+    </h2>
+
+    <ul>
+      <li>Timeliness: must be "on time"</li>
+      <li>
+        Put performance constraints on your scenarios (on services, too, as needed--although
+        allocating performance constraints to individual services often takes more guesswork than
+        most engineers feel comfortable with).
+      </li>
+    </ul>
+
+    <h2>
+      Str#107. "Real Time: Dynamic Internal Structure" Strategy // establishing responsibilities /
+      what I do (real time)
+    </h2>
+
+    <ul>
+      <li>Dynamic internal structure: dynamic creation and destruction of software components</li>
+      <li>
+        How: show dynamic creation and deletion of objects in scenarios.
+
+        <ul>
+          <li>Every class knows how to create new objects in that class.</li>
+          <li>Every collection knows how to add and remove objects in that collection.</li>
+          <li>Every object knows how to delete itself.</li>
+          <li>
+            In addition, you can selectively place additional creation and deletion constraints.
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>
+      Str#108. "Real Time: Reactiveness" Strategy // establishing responsibilities / what I do (real
+      time)
+    </h2>
+
+    <ul>
+      <li>
+        Reactiveness: continuously responds to different events in its environment, detected by data
+        acquisition and control devices, or by interacting systems
+      </li>
+      <li>Use a specific "maintain" or "monitor" service, for ongoing capabilities.</li>
+      <li>Use the "activate, monitor, deactivate" triad.</li>
+    </ul>
+
+    <h2>
+      Str#109. "Real Time: State-Dependency" Strategy // establishing responsibilities / what I do
+      (real time)
+    </h2>
+
+    <ul>
+      <li>State-dependency: responds differently, depending upon the state of a system</li>
+      <li>
+        Attributes: state, state-dependent, state-independent
+
+        <ul>
+          <li>In its description, include: applicable states.</li>
+        </ul>
+      </li>
+      <li>
+        Services: state-dependent, state-independent
+
+        <ul>
+          <li>
+            In its description, you may need to include:
+
+            <ul>
+              <li>
+                precondition: &amp;ltindicate what you assert to be true, before this service can
+                run&gt;
+              </li>
+              <li>
+                postcondition: &amp;ltindicate what you assert to be true, before this service can
+                go to completion&gt;
+              </li>
+              <li>
+                trigger condition: &amp;ltindicate what state transitions activate this service&gt;
+              </li>
+              <li>
+                terminate condition: &amp;ltindicate what state transitions terminate this
+                service&gt;
+              </li>
+              <li>
+                exception: &amp;ltindicate object.service to invoke, upon detecting an
+                exception&gt;.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>
+      Str#110. "Real Time: Concurrency" Strategy // establishing responsibilities / what I do (real
+      time)
+    </h2>
+
+    <ul>
+      <li>Concurrency: multiple simultaneous activities can be taking place.</li>
+      <li>Objects can do more than one thing at once -- they are multitasking creatures.</li>
+      <li>
+        Objects encapsulate real-time tasks.
+
+        <ul>
+          <li>
+            Activation / deactivation
+
+            <ul>
+              <li>Trigger condition: &amp;ltrequest, state change, value change, time lapse&gt;</li>
+              <li>
+                Terminate condition: &amp;ltrequest, state change, value change, time lapse&gt;
+              </li>
+            </ul>
+          </li>
+          <li>Communication, coordination</li>
+          <li>Communication between objects is by synchronous messaging.</li>
+          <li>
+            Communication within objects is by synchronous and asynchronous messaging, as needed.
+          </li>
+        </ul>
+      </li>
+      <li>
+        Note: this encapsulation is made possible with effective object modeling (not with data
+        objects and controller objects).
+      </li>
+    </ul>
+
+    <h2>
+      Str#111. "Real Time: Multiple Device Abstractions" Strategy // establishing responsibilities /
+      what I do (real time)
+    </h2>
+
+    <ul>
+      <li>Multiple device abstractions: needs both physical and logical abstractions.</li>
+      <li>Physical abstraction -- express with an object in the system interaction component.</li>
+      <li>
+        Logical abstractions -- express with:
+
+        <ul>
+          <li>a domain-based object (a problem-domain object)</li>
+          <li>
+            an object which shows "this is how we'll work with it" (a human interaction object)
+          </li>
+          <li>
+            an object which persists from one program invocation to the next (a data management
+            object).
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>
+      Str#112. "Real Time: Distribution" Strategy // establishing responsibilities / what I do (real
+      time)
+    </h2>
+
+    <ul>
+      <li>Distribution: multiple computing sites</li>
+      <li>
+        Across multiple computing systems
+
+        <ul>
+          <li>Use software that supports distributed objects.</li>
+          <li>
+            Or do it yourself (inevitable, at least for systems that you must interact with and
+            cannot change).
+
+            <ul>
+              <li>Allocate objects, not mere functionality.</li>
+              <li>Add "pack and ship; receive and route" infrastructure.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        Within an existing system
+
+        <ul>
+          <li>Use an object model to understand what's really going on.</li>
+          <li>Tag each service with its location; tag each attribute with who is using it.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <p><a href="Strpat00000039.html">Establishing responsibilities / what I do</a></p>
+
+    <p><a href="Strpat00000015.html">Strategies for building object models</a></p>
+  </body>
+</html>

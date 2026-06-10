@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>What to consider and challenge (scenarios)</title>
+  </head>
+
+  <body>
+    <h1>What to consider and challenge (scenarios)</h1>
+
+    <h2>
+      Str#132. "Don't Ask 'What Kind?'" Strategy // working out dynamics with scenarios (consider
+      and challenge)
+    </h2>
+
+    <ul>
+      <li>
+        Don't ask "What kind of object are you?"--and then follow-up with a second message, telling
+        that object what you want it to do.
+      </li>
+      <li>Just say "do it" -- and let it get the job done.</li>
+      <li>
+        If you discover that the receiving object needs a case statement, then specialize the
+        classes of those objects, so an object already knows what kind it is. Then send one message
+        and let that object do its thing.
+      </li>
+    </ul>
+
+    <h2>
+      Str#132a. "More Than 'Get A Value'" Strategy // working out dynamics with scenarios (consider
+      and challenge)
+    </h2>
+
+    <ul>
+      <li>
+        Don't send "get value" without first considering:
+
+        <ul>
+          <li>What question do I really want answered?</li>
+          <li>What calculation result do I need?</li>
+          <li>Can I pass an argument to that object and have it do something useful for me?</li>
+        </ul>
+      </li>
+      <li>
+        Why: this strategy helps you distribute both attributes and services, using problem-domain
+        classes as a more stable, more understandable organizational framework.
+      </li>
+    </ul>
+
+    <h2>
+      Str#133. "Search then Interact" Strategy // working out dynamics with scenarios (consider and
+      challenge)
+    </h2>
+
+    <ul>
+      <li>
+        If you need to traverse multiple object connections in search for an object you want to
+        interact with:
+
+        <ul>
+          <li>search for it</li>
+          <li>then interact with it.</li>
+        </ul>
+      </li>
+      <li>Reason: simpler objects in between.</li>
+    </ul>
+
+    <h2>
+      Str#134. "Act, Rather than Poll" Strategy // working out dynamics with scenarios (consider and
+      challenge)
+    </h2>
+
+    <ul>
+      <li>
+        For each object that recognizes that something needs to be done, let it initiate that work.
+      </li>
+      <li>
+        Don't let a manager poll that object, asking for a status change. Reason: no need for that
+        extra managing activity (adds complexity, weakens encapsulation).
+      </li>
+    </ul>
+
+    <h2>
+      Str#135. "Get Values Only When You Need Them" Strategy // working out dynamics with scenarios
+      (consider and challenge)
+    </h2>
+
+    <ul>
+      <li>
+        Pass an object as a parameter. Get values from that object only at the point you are ready
+        to use those values.
+      </li>
+      <li>Why: better encapsulation; better localization of interface details.</li>
+    </ul>
+
+    <h2>
+      Str#136. "Take Extra Work Out of the Loop" Strategy // working out dynamics with scenarios
+      (consider and challenge)
+    </h2>
+
+    <ul>
+      <li>Check each loop within a scenario. Pull work outside of a loop, whenever you can.</li>
+      <li>Why: easier to understand (and ultimately, better performance).</li>
+    </ul>
+
+    <h2>
+      Str#137. "Consistent Object Model and Scenario Views" Strategy // working out dynamics with
+      scenarios (consider and challenge)
+    </h2>
+
+    <ul>
+      <li>
+        Services in a scenario view should correspond with services in the object model.
+
+        <ul>
+          <li>
+            Note: some services in a scenario view are not normally shown in a object model, namely:
+            get, set, add, remove, delete, and create.
+          </li>
+        </ul>
+      </li>
+      <li>
+        An object in a scenario view needs to know 'to whom to send a message" -- either directly
+        (an object connection in an object model) or indirectly (passed as a parameter to a specific
+        service).
+      </li>
+    </ul>
+
+    <h2>
+      Str#138. "Reduce Interactions" Strategy // working out dynamics with scenarios (consider and
+      challenge)
+    </h2>
+
+    <ul>
+      <li>
+        Look at interactions that require a lot of messaging--or interactions that require going
+        through many "middle men" to get what you want done, done.
+      </li>
+      <li>Consider adding object connections to reduce traffic--and simplify your model.</li>
+      <li>
+        Consider the cost: the extra overhead of establishing and maintaining additional object
+        connections.
+      </li>
+    </ul>
+
+    <h2>
+      Str#139. "Reduce Cascading Messages" Strategy // working out dynamics with scenarios (consider
+      and challenge)
+    </h2>
+
+    <ul>
+      <li>
+        If you send a message to an object, and it sends a message to its collection of objects,
+        whose objects in turn sends a message to its collection of objects: send the message
+        directly to the last object in the cascading message sequence (you might need to add another
+        object connection, so you know to whom to send the message).
+      </li>
+      <li>
+        Why: fewer messages makes it easier to understand (and more efficient to implement, too).
+      </li>
+      <li>
+        (If the object connections continually change, check out the dynamics of those object
+        connections with scenarios. Then, apply this strategy only if you can keep the object
+        connections in-sync. Sometimes, a few extra object interactions might be simpler after all.)
+      </li>
+    </ul>
+
+    <h2>
+      Str#139a. "Watch Out For Double Dipping" Strategy // working out dynamics with scenarios
+      (consider and challenge)
+    </h2>
+
+    <ul>
+      <li>Watch out for this shape:</li>
+    </ul>
+
+    <p>---n---&gt;</p>
+
+    <p>---n---&gt;</p>
+
+    <ul>
+      <li>Likely problem:</li>
+    </ul>
+
+    <p>---n---&gt; qualify</p>
+
+    <p>---n---&gt; do the qualified action</p>
+
+    <ul>
+      <li>Better approach:</li>
+    </ul>
+
+    <p>---n---&gt; do it (qualify myself -- and if qualified, take action)</p>
+
+    <ul>
+      <li>
+        In this way, an object, once it qualifies itself, simply carries out the appropriate action.
+
+        <ul>
+          <li>
+            Benefits: reduced object interactions; simpler interface (1 service, rather than 2);
+            stronger cohesion (from decreased distance between recognition and action); better
+            overall performance.
+          </li>
+        </ul>
+      </li>
+      <li>Related strategy: Str#132 "Don't Ask Why"</li>
+    </ul>
+
+    <h2>
+      Str#140. "Object Creation and Deletion" Strategy // working out dynamics with scenarios
+      (consider and challenge)
+    </h2>
+
+    <ul>
+      <li>Look at scenarios that create (and initialize) and delete the objects you work with.</li>
+      <li>
+        Ask, "Who is responsible for creating (and initializing) that object? Who is responsible for
+        deleting it?"
+      </li>
+    </ul>
+
+    <h2>
+      Str#141. "Responsive Data Acquisition and Control Objects" Strategy // working out dynamics
+      with scenarios (consider and challenge)
+    </h2>
+
+    <ul>
+      <li>
+        If data acquisition and control are done by one actual object, then model them with one
+        object.
+      </li>
+      <li>
+        Otherwise:
+
+        <ul>
+          <li>
+            For each control object:
+
+            <ul>
+              <li>Add a collection of data acquisition objects.</li>
+              <li>
+                The control object takes care of itself -- and behavior across the collection.
+              </li>
+            </ul>
+          </li>
+          <li>
+            For each data acquisition object:
+
+            <ul>
+              <li>
+                Each data acquisition object takes care of itself, as much it can do with what it
+                knows (for example, reading values and detecting something from those values).
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <p><a href="Strpat00000050.html">Working out dynamics with scenarios</a></p>
+
+    <p><a href="Strpat00000015.html">Strategies for building object models</a></p>
+  </body>
+</html>

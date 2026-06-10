@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Model components--HI, DM (what I do)</title>
+  </head>
+
+  <body>
+    <h1>Model components--HI, DM, SI (what I do)</h1>
+
+    <h2>
+      Str#99. "Establish HI Services" Strategy // establishing responsibilities / what I do (model
+      component)
+    </h2>
+
+    <ul>
+      <li>
+        For a window: include the actions for that window, actions that can be carried out by an
+        object that window knows. For a report: "generate" is a good service.
+      </li>
+      <li>
+        Add action-initiating services. Let the PD objects do all the real work. (Why: so you can
+        change the HI objects and not lose application smarts.)
+      </li>
+      <li>Examples: activate, commit, delete, initiate, log, total, save, send, terminate.</li>
+    </ul>
+
+    <h2>
+      Str#100. "Establish DM Services" Strategy // establishing responsibilities / what I do (model
+      component)
+    </h2>
+
+    <ul>
+      <li>For data management objects, include these services: search, save, load.</li>
+    </ul>
+
+    <h2>
+      Str#100a. "Add System Interaction (SI) Responsibilities" Strategy // establishing
+      responsibilities / what I do
+    </h2>
+
+    <ul>
+      <li>
+        Include a "logical" representation, expressing the role the other system plays, in the
+        problem domain component. Typical services: actions that name the desired result. Example:
+        AuthorizationSystem, with an "authorize" service.
+      </li>
+      <li>
+        Include a "physical" representation, expressing the interaction details, in the SI
+        component. Typical services: logon, connect, exchange, disconnect, logoff. Example:
+        AuthorizationSystemSI, with "logon, sendRequest, receiveResponse, logoff" services.
+      </li>
+      <li>
+        Consider various activation paths, too.
+
+        <ul>
+          <li>On demand by a user: HI to PD to SI.</li>
+          <li>On demand from another system: SI to PD to SI.</li>
+          <li>On a schedule: PD to SI.</li>
+          <li>
+            Or by "sneaker net:" such interaction is outside the scope of your object model; no SI
+            object needed for this.
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <p><a href="Strpat00000039.html">Establishing responsibilities / what I do</a></p>
+
+    <p><a href="Strpat00000015.html">Strategies for building object models</a></p>
+  </body>
+</html>

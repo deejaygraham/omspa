@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fundamentals (who I know)</title>
+  </head>
+
+  <body>
+    <h1>Fundamentals (who I know)</h1>
+
+    <h2>
+      Str#72. "Establish PD Object Connections" Strategy // establishing responsibilities / who I
+      know (fundamentals)
+    </h2>
+
+    <ul>
+      <li>
+        This is an aspect of a software object coming to life: "I know other objects, ones that are
+        related to the actual object that I'm an abstraction of."
+      </li>
+      <li>
+        Select connecting objects to satisfy these two purposes:
+
+        <ul>
+          <li>To directly know "to whom to send a message" (within one or more scenarios).</li>
+          <li>To answer a query about objects that are directly related to it.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>
+      Str#73. "Show Who I Know" Strategy // establishing responsibilities / who I know
+      (fundamentals)
+    </h2>
+
+    <ul>
+      <li>
+        Show "who I know" graphically, with an object connection.
+
+        <ul>
+          <li>
+            Include constraints, placed next to each object being constrained: 1 0-1 n 1-n . .
+            &amp;ltblank&gt; ordered n [XOR A] 1 [OR B] 2 [C] ordered n all
+
+            <ul>
+              <li>"n" is the same thing as "0-n" (it's just easier to write it as "n").</li>
+              <li>
+                A &amp;ltblank&gt; constraint indicates that an object has no need to know the other
+                objects (this may occur, notably for a part in an aggregate).
+              </li>
+              <li>
+                "ordered n" is an ordered collection of some number of connections . . "[XOR A] 1"
+                indicates an exclusive or, pertaining to all object connections labeled with the
+                same tag (in this example the tag is "A"). Place whatever constraint applies to the
+                right of the brackets, e.g., "[XOR A] 1."
+              </li>
+              <li>
+                "[OR B] 2" indicates two connections, selected from the connections labeled "B."
+              </li>
+              <li>
+                "[C] ordered n" indicates an ordered collection of some number of connections (any
+                connection from that object that is labeled "C").
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        Or show "who I know" in text, with an attribute.
+
+        <ul>
+          <li>
+            Use this format whenever an object connection spans across model components -- or any
+            other time that an object connection would be cumbersome, visually.
+          </li>
+          <li>
+            For a textual representation, use this format:
+
+            <ul>
+              <li>"&amp;ltclass name, beginning with a lowercase letter&gt;"</li>
+              <li>
+                Make it singular or plural, reflecting the number of objects that the object may
+                know.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>
+      Str#73a. "Whole-Part and Existence Dependency: Two Distinct Issues" Strategy // establishing
+      responsibilities / who I know (fundamentals)
+    </h2>
+
+    <ul>
+      <li>
+        Whole-part object connections express: assembly-part or container-content or group-member.
+      </li>
+      <li>
+        Existence dependency shows: one object depends upon another, else it cannot exist. Show
+        existence dependency with an object connection constraint of 1 or more.
+      </li>
+      <li>
+        These are two distinct issues. Whole-part does not imply existence dependency; the
+        connection constraints of any object connection express existence dependency (if any).
+      </li>
+    </ul>
+
+    <p><a href="Strpat00000034.html">Establishing responsibilities / who I know</a></p>
+
+    <p><a href="Strpat00000015.html">Strategies for building object models</a></p>
+  </body>
+</html>

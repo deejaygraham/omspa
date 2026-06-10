@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>#12. "Associate - Other Associate" Pattern // transaction patterns</title>
+  </head>
+
+  <body>
+    <h1>Patt#12. "Associate - Other Associate" Pattern // transaction patterns</h1>
+
+    <p><img src="Strpat00000015.gif" alt="Strpat00000015.gif" width="326" height="168" /></p>
+
+    <h2>Typical object interactions</h2>
+
+    <ul>
+      <li>howMany --&gt; calcForMe</li>
+      <li>calcOverOtherAssociates --&gt; calcForMe</li>
+      <li>rankOtherAssociates --&gt; rateMe</li>
+    </ul>
+
+    <h2>Examples</h2>
+
+    <ul>
+      <li>
+        aileron-gyro; aircraft-runway; building-sensor; driver-vehicle; loading dock - order;
+        order-tote; truck - loading dock.
+      </li>
+    </ul>
+
+    <h2>Combinations</h2>
+
+    <ul>
+      <li>any other pattern.</li>
+    </ul>
+
+    <h2>Notes</h2>
+
+    <ul>
+      <li>
+        Associates are objects that know each other, without a need for information about that
+        association or history about it.
+      </li>
+      <li>
+        In some pattern instances, an "other associate" may need to know some number of associates.
+      </li>
+    </ul>
+
+    <p>Related strategy: <a href="Strpat00000019.html">Str#18.</a> "Select Associates"</p>
+
+    <p><a href="Strpat00000059.html">Transaction patterns</a></p>
+
+    <p><a href="Strpat00000056.html">Patterns for building object models</a></p>
+  </body>
+</html>

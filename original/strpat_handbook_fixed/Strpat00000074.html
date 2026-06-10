@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>#15. "Container - Container Line Item" Pattern // aggregate patterns</title>
+  </head>
+
+  <body>
+    <h1>Patt#15. "Container - Container Line Item" Pattern // aggregate patterns</h1>
+
+    <p><img src="Strpat00000019.gif" alt="Strpat00000019.gif" width="338" height="183" /></p>
+
+    <h2>Typical object interactions</h2>
+
+    <ul>
+      <li>howMany --&gt; calcForMe</li>
+      <li>calcOverLineItems --&gt; calcForMe</li>
+      <li>rankLineItems --&gt; rateMe</li>
+    </ul>
+
+    <h2>Examples</h2>
+
+    <ul>
+      <li>aircraft - aircraft line item; bin - bin line item; warehouse - warehouse line item.</li>
+    </ul>
+
+    <h2>Combinations</h2>
+    <p><a href="Strpat00000067.html">Patt#9.</a> "Item - Line Item"</p>
+
+    <p><a href="Strpat00000068.html">Patt#10.</a> "Specific Item - Line Item."</p>
+
+    <ul>
+      <li>Also, when "container" is a participant, place, or specific item:</li>
+    </ul>
+
+    <p><a href="Strpat00000060.html">Patt#2.</a> "Actor-Participant"</p>
+
+    <p><a href="Strpat00000061.html">Patt#3.</a> "Participant-Transaction"</p>
+
+    <p><a href="Strpat00000062.html">Patt#4.</a> "Place-Transaction"</p>
+
+    <p><a href="Strpat00000063.html">Patt#5.</a> "Specific Item - Transaction"</p>
+
+    <p><a href="Strpat00000069.html">Patt#11.</a> "Item - Specific Item."</p>
+
+    <h2>Notes</h2>
+
+    <ul>
+      <li>
+        When working with containers within containers, apply this pattern to the smallest container
+        in that domain, within your system's responsibilities.
+      </li>
+    </ul>
+
+    <p>Related strategies:</p>
+
+    <p><a href="Strpat00000019.html">Str#22.</a> "Select Container Objects" Strategy</p>
+
+    <p>
+      <a href="Strpat00000043.html">Str#103.</a> "Service in the Smallest Applicable Container"
+      Strategy
+    </p>
+
+    <p><a href="Strpat00000072.html">Aggregate patterns</a></p>
+
+    <p><a href="Strpat00000056.html">Patterns for building object models</a></p>
+  </body>
+</html>

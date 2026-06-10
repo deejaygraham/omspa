@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>#2. "Actor-Participant" Pattern // transaction patterns</title>
+  </head>
+
+  <body>
+    <h1>Patt#2. "Actor-Participant" Pattern // transaction patterns</h1>
+
+    <p><img src="Strpat00000005.gif" alt="Strpat00000005.gif" width="354" height="201" /></p>
+
+    <h2>Typical object interactions</h2>
+
+    <ul>
+      <li>howMany --&gt; calcForMe</li>
+      <li>howMuch --&gt; calcForMe</li>
+      <li>calcOverParticipants --&gt; calcForMe</li>
+      <li>rankParticipants --&gt; rateMe</li>
+      <li>getName&lt; -- getName</li>
+      <li>getAddress &lt;-- getAddress</li>
+    </ul>
+
+    <h2>Examples</h2>
+
+    <ul>
+      <li>Actor: person, organization (agency, company, corporation, foundation)</li>
+      <li>
+        Participant: agent, applicant, buyer, cashier, clerk, client, civilian, customer, dealer,
+        delegate, distributor, donor, employee, investor, manufacturer, member, officer, official,
+        order clerk, owner, participant, policy holder, professional, prospect, recipient, retailer,
+        sales clerk, sales rep, shipper, student, subscriber, supervisor, supplier, suspect,
+        teacher, wholesaler, worker
+      </li>
+      <li>
+        Additional examples: anything used for different missions, such as aircraft-civilian
+        mission, aircraft-military mission.
+      </li>
+    </ul>
+
+    <h2>Combinations</h2>
+    <p><a href="Strpat00000061.html">Patt#3.</a> "Participant-Transaction"</p>
+
+    <p>
+      <a href="Strpat00000060.html">Patt#2.</a> "Actor-Participant", again (for example, customer -
+      gold customer, for a customer who may participate as a gold customer, at least while he
+      qualifies).
+    </p>
+
+    <p>Related strategies:</p>
+
+    <p><a href="Strpat00000019.html">Str#13.</a> "Select Actors" Strategy</p>
+
+    <p><a href="Strpat00000019.html">Str#14.</a> "Select Participants" Strategy</p>
+
+    <p>
+      <a href="Strpat00000028.html">Str#52.</a> "Establish Actor and Participant Attributes"
+      Strategy
+    </p>
+
+    <p>
+      <a href="Strpat00000036.html">Str#74.</a> "Establish Actor and Participant Object Connections"
+      Strategy
+    </p>
+
+    <p>
+      <a href="Strpat00000041.html">Str#94.</a> "Establish Actor and Participant Services" Strategy
+    </p>
+
+    <p><a href="Strpat00000059.html">Transaction patterns</a></p>
+
+    <p><a href="Strpat00000056.html">Patterns for building object models</a></p>
+  </body>
+</html>
