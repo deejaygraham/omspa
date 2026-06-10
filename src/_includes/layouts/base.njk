@@ -16,11 +16,19 @@
   <body>
     <section class="section">
       <div class="container">
-        <header class="content has-text-centered">
+        <header>
           <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand"><a class="navbar-item" href="/">Strategies and Patterns Handbook</a></div>
+            <div class="navbar-brand">
+              <a class="navbar-item has-text-weight-semibold" href="/">Strategies and Patterns Handbook</a>
+            </div>
+            <div class="navbar-menu is-active">
+              <div class="navbar-end">
+                <div class="navbar-item">
+                  <div id="search"></div>
+                </div>
+              </div>
+            </div>
           </nav>
-          <div id="search"></div>
           <script>
             window.addEventListener('DOMContentLoaded', () =>
               new PagefindUI({ element: '#search', showSubResults: true }));
