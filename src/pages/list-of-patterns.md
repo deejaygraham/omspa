@@ -2,11 +2,11 @@
 title: 'List of Patterns'
 ---
 
-The fundamental pattern
+## The fundamental pattern
 
 [Patt#1.](/1-collection-worker-pattern-the-fundamental-pattern.html) Collection-Worker
 
-Transaction patterns
+## Transaction patterns
 
 [Patt#2.](/2-actor-participant-pattern-transaction-patterns.html) Actor-Participant
 
@@ -32,7 +32,7 @@ Transaction patterns
 
 [Patt#13.](/13-specific-item-hierarchical-item-pattern-transaction-patterns.html) Specific Item - Hierarchical Item
 
-Aggregate patterns
+## Aggregate patterns
 
 [Patt#14.](/14-container-content-pattern-aggregate-patterns.html) Container-Content
 
@@ -46,7 +46,7 @@ Aggregate patterns
 
 [Patt#19.](/19-packet-packet-component-pattern-aggregate-patterns.html) Packet - Packet Component
 
-Plan patterns
+## Plan patterns
 
 [Patt#20.](/20-plan-step-pattern-plan-patterns.html) Plan-Step
 
@@ -58,7 +58,7 @@ Plan patterns
 
 [Patt#24.](/24-plan-plan-version-pattern-plan-patterns.html) Plan - Plan Version
 
-Interaction patterns
+## Interaction patterns
 
 [Patt#25.](/25-peer-peer-pattern-interaction-patterns.html) Peer-Peer
 
