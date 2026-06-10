@@ -4,18 +4,20 @@ import { globSync } from "glob";
 import TurndownService from "turndown";
 import { JSDOM } from "jsdom";
 
-const archiveDir = path.resolve("original", "strpat_handbook_from_opsma_2e");
+// Read cleaned HTML from the fixed folder; original folder is only used for images.
+const originalDir = path.resolve("original", "strpat_handbook_from_opsma_2e");
+const fixedDir = path.resolve("original", "strpat_handbook_fixed");
 const outputDir = path.resolve("src", "pages");
 const imgDir = path.resolve("src", "img");
 
-const htmlFiles = globSync("*.htm*", { cwd: archiveDir, absolute: true });
+const htmlFiles = globSync("*.htm*", { cwd: fixedDir, absolute: true });
 await fs.ensureDir(outputDir);
 await fs.ensureDir(imgDir);
 
 function slugify(text) {
   return text
     .normalize("NFKD")
-    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[̀-ͯ]/g, "")
     .toLowerCase()
     .replace(/&[a-z0-9]+;/g, "")
     .replace(/[^a-z0-9]+/g, "-")
@@ -53,7 +55,7 @@ for (const filePath of htmlFiles) {
     title,
     slug: uniqueSlug,
     permalink: `/${uniqueSlug}.html`,
-    outputFile: `${uniqueSlug}.md`
+    outputFile: `${uniqueSlug}.md`,
   });
 }
 
@@ -76,13 +78,16 @@ turndownService.addRule("linkRewrite", {
     const hash = hashParts.length ? `#${hashParts.join("#")}` : "";
     const targetKey = hrefPath.toLowerCase();
 
-    const targetPage = fileMap.get(targetKey) || fileMap.get(`${targetKey}.html`) || fileMap.get(`${targetKey}.htm`);
+    const targetPage =
+      fileMap.get(targetKey) ||
+      fileMap.get(`${targetKey}.html`) ||
+      fileMap.get(`${targetKey}.htm`);
     if (targetPage) {
       return `[${content}](${targetPage.permalink}${hash})`;
     }
 
     return `[${content}](${cleaned})`;
-  }
+  },
 });
 
 turndownService.addRule("imgRewrite", {
@@ -94,22 +99,17 @@ turndownService.addRule("imgRewrite", {
     const filename = path.basename(src);
     const destPath = path.posix.join("/img", filename);
     return `![${alt}](${destPath})`;
-  }
+  },
 });
 
 for (const filePath of htmlFiles) {
   const fileName = path.basename(filePath);
-  if (fileName.startsWith("Strpat") && fileName.endsWith(".gif")) {
-    continue;
-  }
+  const page = pages.find((item) => item.fileName === fileName);
+  if (!page) continue;
 
   const html = await fs.readFile(filePath, "utf8");
   const dom = new JSDOM(html);
   const document = dom.window.document;
-  const page = pages.find((item) => item.fileName === fileName);
-  if (!page) {
-    continue;
-  }
 
   const body = document.querySelector("body");
   if (!body) {
@@ -117,24 +117,24 @@ for (const filePath of htmlFiles) {
     continue;
   }
 
-  const bodyHtml = body.innerHTML
-    .replace(/<br\s*\/?>/gi, "\n")
-    .replace(/<p[^>]*>/gi, "<p>")
-    .replace(/<font[^>]*>/gi, "")
-    .replace(/<\/font>/gi, "")
-    .replace(/<b>/gi, "<strong>")
-    .replace(/<\/b>/gi, "</strong>")
-    .replace(/<i>/gi, "<em>")
-    .replace(/<\/i>/gi, "</em>");
+  // The fixed HTML has <h1> as the first element (the page title). Remove it
+  // before converting — it duplicates the frontmatter title rendered by the layout.
+  const h1 = body.querySelector("h1");
+  if (h1) h1.remove();
 
-  const markdown = turndownService.turndown(bodyHtml).trim();
+  const markdown = turndownService.turndown(body.innerHTML).trim();
   const outputFile = path.join(outputDir, page.outputFile);
 
   const frontmatter = `---\nlayout: base.njk\ntitle: '${page.title}'\npermalink: '${page.permalink}'\n---\n\n`;
   await fs.writeFile(outputFile, frontmatter + markdown + "\n", "utf8");
 }
 
-const imageFiles = globSync("*.{gif,png,jpg,jpeg,svg}", { cwd: archiveDir, absolute: true, nocase: true });
+// Copy images from the original archive (images were not processed by fix-html.js).
+const imageFiles = globSync("*.{gif,png,jpg,jpeg,svg}", {
+  cwd: originalDir,
+  absolute: true,
+  nocase: true,
+});
 for (const imagePath of imageFiles) {
   const basename = path.basename(imagePath);
   const target = path.join(imgDir, basename);
