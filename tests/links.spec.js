@@ -26,15 +26,15 @@ function urlKey(url) {
   return stripped.endsWith(BASE.slice(0, -1)) ? stripped + '/' : stripped;
 }
 
-test('spider: no broken internal links, all deployed pages reachable from home', async ({ page }) => {
+test('no broken internal links, all deployed pages reachable from home', async ({ page }) => {
   test.setTimeout(180_000);
 
   const visited = new Set();
-  const queue = [`${ORIGIN}${BASE}`];
+  const queue = [{ url: `${ORIGIN}${BASE}`, foundOn: null }];
   const broken = [];
 
   while (queue.length > 0) {
-    const url = queue.shift();
+    const { url, foundOn } = queue.shift();
     const key = urlKey(url);
     if (visited.has(key)) continue;
     visited.add(key);
@@ -43,13 +43,13 @@ test('spider: no broken internal links, all deployed pages reachable from home',
     try {
       response = await page.goto(url, { waitUntil: 'domcontentloaded' });
     } catch (err) {
-      broken.push({ url, status: 'error', detail: err.message });
+      broken.push({ url, foundOn, status: 'error', detail: err.message });
       continue;
     }
 
     const status = response?.status() ?? 0;
     if (status >= 400) {
-      broken.push({ url, status });
+      broken.push({ url, foundOn, status });
       continue;
     }
 
@@ -63,7 +63,7 @@ test('spider: no broken internal links, all deployed pages reachable from home',
     for (const href of hrefs) {
       const key = urlKey(href.split('#')[0]);
       if (!key.startsWith(ORIGIN + BASE)) continue;
-      if (!visited.has(key)) queue.push(href.split('#')[0]);
+      if (!visited.has(key)) queue.push({ url: href.split('#')[0], foundOn: currentUrl });
     }
   }
 
@@ -84,7 +84,7 @@ test('spider: no broken internal links, all deployed pages reachable from home',
 
   expect(
     broken,
-    `Broken links found:\n${broken.map(b => `  [${b.status}] ${b.url}`).join('\n')}`
+    `Broken links found:\n${broken.map(b => `  [${b.status}] ${b.url}\n    linked from: ${b.foundOn ?? 'home'}`).join('\n')}`
   ).toHaveLength(0);
 
   expect(
