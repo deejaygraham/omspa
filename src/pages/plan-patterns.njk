@@ -1,0 +1,19 @@
+---
+title: 'Plan patterns'
+---
+
+<p>The plan patterns are:</p>
+
+<ul>
+{% for pattern in patterns %}
+{% if pattern.tags[0] == "plan patterns" %}
+<li><a href="/pattern/{{ pattern.id | lower | replace('#', '-') }}.html">{{ pattern.id }}.</a> {{ pattern.name }}</li>
+{% endif %}
+{% endfor %}
+</ul>
+
+<p>Here's an overview of the plan patterns:</p>
+
+<img src="/img/Strpat00000024.gif" alt="Plan patterns overview">
+
+<p><a href="/patterns-for-building-object-models.html">Patterns for building object models</a></p>
