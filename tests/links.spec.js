@@ -27,7 +27,7 @@ function urlKey(url) {
 }
 
 test('no broken internal links, all deployed pages reachable from home', async ({ page }) => {
-  test.setTimeout(180_000);
+test.setTimeout(180_000);
 
   const visited = new Set();
   const queue = [{ url: `${ORIGIN}${BASE}`, foundOn: null }];
@@ -54,7 +54,8 @@ test('no broken internal links, all deployed pages reachable from home', async (
     }
 
     // Record final URL after any redirect so both spellings count as visited.
-    visited.add(urlKey(page.url()));
+    const currentUrl = page.url();
+    visited.add(urlKey(currentUrl));
 
     const hrefs = await page.locator('a[href]').evaluateAll(
       els => els.map(el => el.href)
