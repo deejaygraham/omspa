@@ -14,7 +14,7 @@ title: 'List of Strategies'
 
 [Discovering new strategies and patterns](/list-of-strategies-discovering-new-strategies-and-patterns.html)
 
-Activities and Model Components
+## Activities and Model Components
 
 [Str#1.](/guiding-the-effort-with-major-activities-and-components.html) Four Major Activities, Four Major Components
 
@@ -30,7 +30,7 @@ Activities and Model Components
 
 [Str#1f.](/guiding-the-effort-with-major-activities-and-components.html) Extract Useful Content From An Existing Data Model
 
-Identifying system purpose and features
+## Identifying system purpose and features
 
 [Str#2.](/identifying-system-purpose-and-features.html) System Purpose
 
@@ -62,7 +62,7 @@ Identifying system purpose and features
 
 [Str#12.](/identifying-system-purpose-and-features.html) The Smarter Devices
 
-Selecting objects
+## Selecting objects
 
 [Str#13.](/selecting-objects-pattern-players.html) Select Actors
 
@@ -146,7 +146,7 @@ Selecting objects
 
 [Str#49.](/selecting-objects-what-to-consider-and-challenge.html) Different Human Interaction
 
-Establishing responsibilities
+## Establishing responsibilities
 
 [Str#50.](/fundamentals-what-i-know.html) Select Attributes from Actual Ones
 
@@ -326,7 +326,7 @@ Str#68. Partially Applicable Attribute
 
 [Str#126.](/what-to-consider-and-challenge-what-i-do-names.html) Class Name in a Service Name
 
-Working out dynamics with scenarios
+## Working out dynamics with scenarios
 
 [Str#127.](/the-basics-scenarios.html) Select Key Scenarios
 
@@ -362,7 +362,7 @@ Working out dynamics with scenarios
 
 [Str#141.](/what-to-consider-and-challenge-scenarios.html) Responsive Data Acquisition and Control Objects
 
-Discovering new strategies and patterns
+## Discovering new strategies and patterns
 
 [Str#142.](/discovering-new-strategies-and-patterns.html) Discovering New Strategies
 
