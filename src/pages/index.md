@@ -1,5 +1,6 @@
 ---
 title: 'Contents'
+permalink: '/index.html'
 ---
 
 Version 2.1  
