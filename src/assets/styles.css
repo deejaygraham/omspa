@@ -18,3 +18,7 @@ img {
 a {
   word-break: break-word;
 }
+
+#search {
+  min-width: 16rem;
+}
