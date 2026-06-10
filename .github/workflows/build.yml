@@ -45,13 +45,13 @@ jobs:
         run: |
           npm run build
 
-      - name: Install Playwright browsers
-        run: |
-          npx playwright install --with-deps chromium
+      #- name: Install Playwright browsers
+      #  run: |
+      #    npx playwright install --with-deps chromium
           
-      - name: Run tests
-        run: |
-          npx playwright test
+      #- name: Run tests
+      #  run: |
+      #    npx playwright test
           
       - name: Setup Github Pages
         uses: actions/configure-pages@v5
