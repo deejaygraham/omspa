@@ -32,7 +32,7 @@ eleventyComputed:
 <h3>Combinations</h3>
 <ul>
 {% for combo in pattern.combinations %}
-<li><a href="/{{ combo.slug }}.html">{{ combo.id }}.</a> &quot;{{ combo.name }}&quot;</li>
+<li><a href="/pattern/{{ combo.id | lower | replace('#', '-') }}.html">{{ combo.id }}.</a> &quot;{{ combo.name }}&quot;</li>
 {% endfor %}
 </ul>
 {% endif %}
@@ -41,7 +41,7 @@ eleventyComputed:
 <h3>Related strategies:</h3>
 <ul>
 {% for strategy in pattern.relatedStrategies %}
-<li><a href="/{{ strategy.slug }}.html">{{ strategy.id }}.</a> &quot;{{ strategy.name }}&quot; Strategy</li>
+<li><a href="/strategy/{{ strategy.id | lower | replace('#', '-') }}.html">{{ strategy.id }}.</a> &quot;{{ strategy.name }}&quot; Strategy</li>
 {% endfor %}
 </ul>
 {% endif %}
