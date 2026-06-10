@@ -1,23 +1,17 @@
 ---
-title: Interaction patterns
+title: 'Interaction patterns'
 ---
 
-Interaction patterns are patterns of how objects work with each other. Overlay these patterns on players in other patterns.
+<p>Interaction patterns are patterns of how objects work with each other. Overlay these patterns on players in other patterns.</p>
 
-The interaction patterns are:
+<p>The interaction patterns are:</p>
 
-[Patt#25.](/25-peer-peer-pattern-interaction-patterns.html) "Peer-Peer" Pattern
+<ul>
+{% for pattern in patterns %}
+{% if pattern.tags[0] == "interaction patterns" or pattern.tags[0] == "device patterns" %}
+<li><a href="/pattern/{{ pattern.id | lower | replace('#', '-') }}.html">{{ pattern.id }}.</a> {{ pattern.name }}</li>
+{% endif %}
+{% endfor %}
+</ul>
 
-[Patt#26.](/26-proxy-specific-item-pattern-interaction-patterns.html) "Proxy - Specific Item" Pattern
-
-[Patt#27.](/27-publisher-subscriber-pattern-interaction-patterns.html) "Publisher-Subscriber" Pattern
-
-[Patt#28.](/28-sender-pass-through-receiver-pattern-interaction-patterns.html) "Sender - Pass Through - Receiver" Pattern
-
-[Patt#29.](/29-sender-lookup-receiver-pattern-interaction-patterns.html) "Sender-Lookup-Receiver" Pattern
-
-[Patt#30.](/30-caller-dispatcher-caller-back-pattern-interaction-patterns.html) "Caller - Dispatcher - Caller Back" Pattern
-
-[Patt#31.](/31-gatekeeper-request-resource-pattern-device-patterns.html) "Gatekeeper-Request-Resource" Pattern
-
-[Patterns for building object models](/patterns-for-building-object-models.html)
+<p><a href="/patterns-for-building-object-models.html">Patterns for building object models</a></p>
