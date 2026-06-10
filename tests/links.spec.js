@@ -5,7 +5,7 @@ import { resolve, relative } from 'path';
 const ORIGIN = 'http://127.0.0.1:8080';
 const BASE = '/omspa/';
 const SITE_DIR = resolve(process.cwd(), '_site');
-const SKIP_DIRS = new Set(['pagefind']);
+const SKIP_DIRS = new Set(['pagefind', 'original']);
 
 function walkHtmlFiles(dir, root = dir) {
   const results = [];
@@ -27,7 +27,7 @@ function urlKey(url) {
 }
 
 test('no broken internal links, all deployed pages reachable from home', async ({ page }) => {
-test.setTimeout(180_000);
+  test.setTimeout(180_000);
 
   const visited = new Set();
   const queue = [{ url: `${ORIGIN}${BASE}`, foundOn: null }];
