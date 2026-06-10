@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Selecting objects -- kinds of objects'
-permalink: '/selecting-objects-kinds-of-objects.html'
 ---
 
 ## Str#34. "Select Kinds of Objects" Strategy // selecting objects (kinds of objects)

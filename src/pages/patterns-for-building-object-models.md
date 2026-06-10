@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Patterns for building object models'
-permalink: '/patterns-for-building-object-models.html'
 ---
 
 This major section presents [patterns](/pattern-for-object-models.html) organized into various pattern families. First you'll encounter the:

@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Pattern players (who I know)'
-permalink: '/pattern-players-who-i-know.html'
 ---
 
 ## Str#74. "Establish Actor and Participant Object Connections" Strategy // establishing responsibilities / who I know (pattern players)

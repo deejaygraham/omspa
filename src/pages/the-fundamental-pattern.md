@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'The fundamental pattern'
-permalink: '/the-fundamental-pattern.html'
 ---
 
 This pattern is the fundamental object-model pattern. It's the template that all other patterns follow.

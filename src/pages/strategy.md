@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'strategy'
-permalink: '/strategy.html'
 ---
 
 A strategy is specific how-to advice for getting something done -- practical, down to earth, ready to apply. Nearly all object model strategies fit into one of four major categories (four major activities):

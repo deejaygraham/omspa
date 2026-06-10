@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Interaction patterns'
-permalink: '/interaction-patterns.html'
 ---
 
 Interaction patterns are patterns of how objects work with each other. Overlay these patterns on players in other patterns.

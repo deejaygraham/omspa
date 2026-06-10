@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: '#27. "Publisher-Subscriber" Pattern // interaction patterns'
-permalink: '/27-publisher-subscriber-pattern-interaction-patterns.html'
 ---
 
 ![Strpat00000032.gif](/img/Strpat00000032.gif)

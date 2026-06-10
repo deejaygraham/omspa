@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Where to put a service (what I do)'
-permalink: '/where-to-put-a-service-what-i-do.html'
 ---
 
 ## Str#101. "Placing Services" Strategy // establishing responsibilities / what I do (where to put)

@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Fundamentals (who I know)'
-permalink: '/fundamentals-who-i-know.html'
 ---
 
 ## Str#72. "Establish PD Object Connections" Strategy // establishing responsibilities / who I know (fundamentals)

@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Transaction patterns'
-permalink: '/transaction-patterns.html'
 ---
 
 Transaction patterns are those patterns that have a transaction player -- or have players that commonly play with a transaction player.

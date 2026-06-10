@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'A helpfull path for getting started'
-permalink: '/a-helpfull-path-for-getting-started.html'
 ---
 
 Here is a helpful path for getting started with the strategies and patterns in this handbook.

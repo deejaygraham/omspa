@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Selecting objects -- pattern players'
-permalink: '/selecting-objects-pattern-players.html'
 ---
 
 ## Str#13. "Select Actors" Strategy // selecting objects (pattern players)

@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Descriptions (what I know)'
-permalink: '/descriptions-what-i-know.html'
 ---
 
 ## Str#58. "Describe Attributes with a Template" Strategy // establishing responsibilities / what I know (descriptions)

@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Selecting objects -- names'
-permalink: '/selecting-objects-names.html'
 ---
 
 ## Str#38. "Use the Domain Vocabulary" Strategy // selecting objects (names)

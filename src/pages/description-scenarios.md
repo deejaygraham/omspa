@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Description (scenarios)'
-permalink: '/description-scenarios.html'
 ---
 
 ## Str#131. "Describe Scenarios with a Scenario View" Strategy // working out dynamics with scenarios

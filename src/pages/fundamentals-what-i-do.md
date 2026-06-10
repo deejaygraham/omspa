@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Fundamentals (what I do)'
-permalink: '/fundamentals-what-i-do.html'
 ---
 
 ## Str#86. "Do It Myself" Strategy // establishing responsibilities / what I do (fundamentals)

@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Selecting objects--reuse'
-permalink: '/selecting-objects-reuse.html'
 ---
 
 ## Str#36. "Select and Reuse an Analogous Class" Strategy // selecting objects (reuse)

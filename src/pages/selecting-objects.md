@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Selecting objects'
-permalink: '/selecting-objects.html'
 ---
 
 An object is a person, place, or thing. (A class is a description applies to each of some number of objects.)

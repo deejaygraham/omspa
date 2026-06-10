@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Establishing responsibilities / who I know'
-permalink: '/establishing-responsibilities-who-i-know.html'
 ---
 
 Object connections represent "who I know."

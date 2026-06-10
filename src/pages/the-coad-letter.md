@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'The Coad Letter'
-permalink: '/the-coad-letter.html'
 ---
 
 The Coad Letter(r) is a continuing series of special reports on new advances in object technology.

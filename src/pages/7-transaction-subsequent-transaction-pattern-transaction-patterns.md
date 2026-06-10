@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: '#7. "Transaction - Subsequent Transaction" Pattern // transaction patterns'
-permalink: '/7-transaction-subsequent-transaction-pattern-transaction-patterns.html'
 ---
 
 ![Strpat00000010.gif](/img/Strpat00000010.gif)

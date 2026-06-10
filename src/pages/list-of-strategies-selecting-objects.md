@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'List of strategies: Selecting Objects'
-permalink: '/list-of-strategies-selecting-objects.html'
 ---
 
 [Str#13.](/selecting-objects-pattern-players.html) Select Actors

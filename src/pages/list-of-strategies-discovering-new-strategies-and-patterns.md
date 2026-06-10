@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'List of strategies: Discovering new strategies and patterns'
-permalink: '/list-of-strategies-discovering-new-strategies-and-patterns.html'
 ---
 
 [Str#142.](/discovering-new-strategies-and-patterns.html) Discovering New Strategies

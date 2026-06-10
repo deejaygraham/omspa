@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: '#19. "Packet - Packet Component" Pattern // aggregate patterns'
-permalink: '/19-packet-packet-component-pattern-aggregate-patterns.html'
 ---
 
 ![Strpat00000023.gif](/img/Strpat00000023.gif)

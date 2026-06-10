@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Working out dynamics with scenarios'
-permalink: '/working-out-dynamics-with-scenarios.html'
 ---
 
 A scenario is a time-ordered sequence of object interactions. A scenario details the object interactions that are needed to provide a specific feature for a system under consideration.

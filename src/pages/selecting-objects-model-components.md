@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Selecting objects -- model components'
-permalink: '/selecting-objects-model-components.html'
 ---
 
 ## Str#25. "Object-Model Components as a Guide" Strategy // selecting objects (model components)

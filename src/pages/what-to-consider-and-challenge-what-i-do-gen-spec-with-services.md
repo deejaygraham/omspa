@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'What to consider and challenge (what I do): gen-spec with services'
-permalink: '/what-to-consider-and-challenge-what-i-do-gen-spec-with-services.html'
 ---
 
 ## Str#120. "Common Services" Strategy // establishing responsibilities / what I do (consider and challenge)

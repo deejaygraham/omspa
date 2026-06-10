@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: '#18. "Compound Part - Part" Pattern // aggregate patterns'
-permalink: '/18-compound-part-part-pattern-aggregate-patterns.html'
 ---
 
 ![Strpat00000022.gif](/img/Strpat00000022.gif)

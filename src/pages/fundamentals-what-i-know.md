@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Fundamentals (what I know)'
-permalink: '/fundamentals-what-i-know.html'
 ---
 
 ## Str#50. "Select Attributes from Actual Ones" Strategy // establishing responsibilities / what I know (fundamentals)

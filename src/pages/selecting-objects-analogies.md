@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Selecting objects--analogies'
-permalink: '/selecting-objects-analogies.html'
 ---
 
 ## Str#35. "Select Corresponding Objects from Analogous Systems" Strategy // selecting objects (analogies)

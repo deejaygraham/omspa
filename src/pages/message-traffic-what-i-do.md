@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Message traffic (what I do)'
-permalink: '/message-traffic-what-i-do.html'
 ---
 
 ## Str#113. "Batch Up Immediate Results" Strategy // establishing responsibilities /what I do (message traffic)

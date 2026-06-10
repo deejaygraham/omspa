@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Object Intl., Inc.'
-permalink: '/object-intl-inc.html'
 ---
 
 ![Strpat00000002.gif](/img/Strpat00000002.gif)

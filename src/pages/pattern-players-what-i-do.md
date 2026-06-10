@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Pattern players (what I do)'
-permalink: '/pattern-players-what-i-do.html'
 ---
 
 ## Str#94. "Establish Actor and Participant Services" Strategy // establishing responsibilities / what I do (pattern players)

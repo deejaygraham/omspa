@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'List of Strategies: Activities and model components'
-permalink: '/list-of-strategies-activities-and-model-components.html'
 ---
 
 [Str#1.](/guiding-the-effort-with-major-activities-and-components.html) Four Major Activities, Four Major Components

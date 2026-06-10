@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Strategies for building object models'
-permalink: '/strategies-for-building-object-models.html'
 ---
 
 This major section presents [strategies](/strategy.html). It begins with an overall strategy:

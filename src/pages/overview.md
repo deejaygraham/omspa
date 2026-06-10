@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Overview'
-permalink: '/overview.html'
 ---
 
 This handbook presents strategies and patterns, ready-to-apply practical advice for building effective object models. These strategies and patterns span these major categories:

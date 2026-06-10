@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: '#20. "Plan-Step" Pattern // plan patterns'
-permalink: '/20-plan-step-pattern-plan-patterns.html'
 ---
 
 ![Strpat00000025.gif](/img/Strpat00000025.gif)

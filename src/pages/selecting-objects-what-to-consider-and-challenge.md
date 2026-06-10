@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Selecting objects--what to consider and challenge'
-permalink: '/selecting-objects-what-to-consider-and-challenge.html'
 ---
 
 ## Str#42. "System Responsibility" Strategy // selecting objects (consider and challenge)

@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: '#30. "Caller - Dispatcher - Caller Back" Pattern // interaction patterns'
-permalink: '/30-caller-dispatcher-caller-back-pattern-interaction-patterns.html'
 ---
 
 ![Strpat00000035.gif](/img/Strpat00000035.gif)

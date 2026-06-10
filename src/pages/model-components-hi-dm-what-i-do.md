@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Model components--HI, DM (what I do)'
-permalink: '/model-components-hi-dm-what-i-do.html'
 ---
 
 ## Str#99. "Establish HI Services" Strategy // establishing responsibilities / what I do (model component)

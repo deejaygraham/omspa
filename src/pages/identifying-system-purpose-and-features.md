@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'Identifying system purpose and features'
-permalink: '/identifying-system-purpose-and-features.html'
 ---
 
 A purpose is an overall desired result, the aim of one's actions. Features are specific capabilities for the system under consideration.

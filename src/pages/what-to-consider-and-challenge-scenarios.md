@@ -1,7 +1,5 @@
 ---
-layout: base.njk
 title: 'What to consider and challenge (scenarios)'
-permalink: '/what-to-consider-and-challenge-scenarios.html'
 ---
 
 ## Str#132. "Don't Ask 'What Kind?'" Strategy // working out dynamics with scenarios (consider and challenge)
