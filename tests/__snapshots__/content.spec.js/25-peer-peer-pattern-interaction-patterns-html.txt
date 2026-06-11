@@ -1,0 +1,20 @@
+
+          #25. "Peer-Peer" Pattern // interaction patterns
+          
+Typical object interactions
+
+calcOverPeers --> calcForMe
+rankPeers--> rateMe
+
+Examples
+
+flight path - crossing flight path; lane - crossing lane; sector-sector (airspace volumes in air traffic control).
+
+Combinations
+
+Superimpose on any pattern player.
+
+Interaction patterns
+Patterns for building object models
+
+        
