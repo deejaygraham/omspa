@@ -50,6 +50,8 @@ title: 'What to consider and challenge (what I do): gen-spec with services'
     *   Use the [actor-participant pattern](/2-actor-participant-pattern-transaction-patterns.html), to express an actor and the many ways it acts as a participant.
     *   Example: person (actor) and participant (customer, cashier, head cashier, order clerk).
 
+----
+
 [Establishing responsibilities / what I do](/establishing-responsibilities-what-i-do.html)
 
 [Strategies for building object models](/strategies-for-building-object-models.html)
