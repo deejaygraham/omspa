@@ -37,6 +37,8 @@ title: 'The basics (scenarios)'
 *   First pass: work out a scenario using the objects in your model, adding no new objects (or very few new objects).
 *   Second pass (when you need additional understanding of dynamics and the additional detail that goes with it): consider each participating service; look for what other objects it needs to call upon, to get that service accomplished. Add objects, responsibilities, and interactions, as needed.
 
+----
+
 [Working out dynamics with scenarios](/working-out-dynamics-with-scenarios.html)
 
 [Strategies for building object models](/strategies-for-building-object-models.html)
