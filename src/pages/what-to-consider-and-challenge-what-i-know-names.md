@@ -15,6 +15,8 @@ title: 'What to consider and challenge (what I know): names'
 *   If it's a redundant expression of what gen-spec already portrays, get rid of it (it's not needed).
 *   If it's needed to decide what to do in a service, use gen-spec so that each object can just do its thing--without needing to determine "what kind am I?" before taking appropriate action. Why: take advantage of an opportunity to apply polymorphism--and, as a result, increase resiliency to change.
 
+----
+
 [Establishing responsibilities / what I know](/establishing-responsibilities-what-i-know.html)
 
 [Strategies for building object models](/strategies-for-building-object-models.html)
