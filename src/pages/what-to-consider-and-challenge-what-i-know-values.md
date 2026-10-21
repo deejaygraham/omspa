@@ -66,6 +66,8 @@ title: 'What to consider and challenge (what I know): values'
         *   checks for an attribute value -- and returns it, if it has one . . otherwise, invokes a calculate service, saves the result, and returns the result to the sender.
     *   Add an explicit "calculate &ltattribute>" service, too--so you can tell the object to do the calculation you want it to do.
 
+----
+
 [Establishing responsibilities / what I know](/establishing-responsibilities-what-i-know.html)
 
 [Strategies for building object models](/strategies-for-building-object-models.html)
