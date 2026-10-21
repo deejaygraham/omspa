@@ -37,6 +37,8 @@ Related strategies:
 
 [Str#94.](/pattern-players-what-i-do.html) "Establish Actor and Participant Services" Strategy
 
+----
+
 [Transaction patterns](/transaction-patterns.html)
 
 [Patterns for building object models](/patterns-for-building-object-models.html)
