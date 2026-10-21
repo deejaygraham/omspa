@@ -34,10 +34,16 @@
           </nav>
         </header>
 
-        <main id="main-content" tabindex="-1"><article class="content" data-pagefind-body>
+        <div class="site-layout">
+          <aside class="sidebar">
+            {% include "components/sidebar-navigation.njk" %}
+          </aside>
+
+          <main id="main-content" tabindex="-1"><article class="content" data-pagefind-body>
           <h1>{{ title }}</h1>
           {{ content | safe }}
         </article></main>
+        </div>
 
         <footer class="footer">
           <div class="content has-text-centered">
@@ -48,6 +54,13 @@
       </div>
     </div>
     <script>
+      const currentNavigationLink = document.querySelector('.handbook-nav [aria-current="page"]');
+      let navigationAncestor = currentNavigationLink?.parentElement;
+      while (navigationAncestor) {
+        if (navigationAncestor instanceof HTMLDetailsElement) navigationAncestor.open = true;
+        navigationAncestor = navigationAncestor.parentElement;
+      }
+
       window.addEventListener('DOMContentLoaded', () =>
         new PagefindUI({ element: '#search', showSubResults: true }));
     </script>
