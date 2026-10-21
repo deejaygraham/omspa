@@ -72,6 +72,8 @@ title: 'Selecting objects -- model components'
     *   With a problem-domain object, and
     *   With a corresponding system-interaction (SI) object, encapsulating low-level communication detail.
 
+----
+
 [Selecting objects](/selecting-objects.html)
 
 [Strategies for building object models](/strategies-for-building-object-models.html)
