@@ -15,6 +15,23 @@ test('single strategy page renders correctly', async ({ page }) => {
   await expect(page.locator('a', { hasText: 'Strategies for building object models' })).toBeVisible();
 });
 
+test('pages expose semantic landmarks and keyboard navigation', async ({ page }) => {
+  await page.goto('index.html');
+
+  await expect(page.locator('header')).toHaveCount(1);
+  await expect(page.getByRole('navigation', { name: 'Primary navigation' })).toHaveCount(1);
+  await expect(page.getByRole('search', { name: 'Site search' })).toHaveCount(1);
+  await expect(page.locator('main > article')).toHaveCount(1);
+  await expect(page.locator('footer')).toHaveCount(1);
+  await expect(page.locator('time[datetime]')).toHaveCount(1);
+
+  const skipLink = page.getByRole('link', { name: 'Skip to main content' });
+  await skipLink.focus();
+  await expect(skipLink).toBeFocused();
+  await skipLink.press('Enter');
+  await expect(page.locator('main')).toBeFocused();
+});
+
 test('single pattern page renders correctly', async ({ page }) => {
   await page.goto('patterns-for-building-object-models.html');
   await expect(page).toHaveTitle(/Patterns for building object models/i);
