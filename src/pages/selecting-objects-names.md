@@ -29,6 +29,8 @@ title: 'Selecting objects -- names'
 *   If an object is a collection, use a singular domain name; the plural of its parts; or the part name plus "collection" or "server."
 *   In an object model, begin each class name with an uppercase letter (begin all other names with a lowercase letter).
 
+----
+
 [Selecting objects](/selecting-objects.html)
 
 [Strategies for building object models](/strategies-for-building-object-models.html)
