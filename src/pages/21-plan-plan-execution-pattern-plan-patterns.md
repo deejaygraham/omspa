@@ -25,6 +25,8 @@ title: '#21. "Plan - Plan Execution" Pattern // plan patterns'
 
 *   This is an actual execution of a plan at a date and time. Use this pattern when a plan may be executed several times. (If the plan is executed only once, the responsibilities for plan execution could be added to a plan.)
 
+----
+
 [Plan patterns](/plan-patterns.html)
 
 [Patterns for building object models](/patterns-for-building-object-models.html)
