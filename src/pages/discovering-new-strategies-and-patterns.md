@@ -56,4 +56,6 @@ This section presents strategies for discovering new strategies and patterns.
     *   examples
     *   combinations.
 
+----
+
 [Strategies for building object models](/strategies-for-building-object-models.html)
