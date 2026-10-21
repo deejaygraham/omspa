@@ -17,6 +17,8 @@ title: '#13. "Specific Item - Hierarchical Item" Pattern // transaction patterns
 
 [Patt#11.](/11-item-specific-item-pattern-transaction-patterns.html) "Item - Specific Item."
 
+----
+
 [Transaction patterns](/transaction-patterns.html)
 
 [Patterns for building object models](/patterns-for-building-object-models.html)
