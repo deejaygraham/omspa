@@ -41,6 +41,8 @@ Related strategies:
 
 [Str#96.](/pattern-players-what-i-do.html) "Establish Transaction Services" Strategy
 
+----
+
 [Transaction patterns](/transaction-patterns.html)
 
 [Patterns for building object models](/patterns-for-building-object-models.html)
