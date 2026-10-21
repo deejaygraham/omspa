@@ -20,6 +20,8 @@ title: '#24. "Plan - Plan Version" Pattern // plan patterns'
 
 [Patt#21.](/21-plan-plan-execution-pattern-plan-patterns.html) "Plan - Plan Execution."
 
+-----
+
 [Plan patterns](/plan-patterns.html)
 
 [Patterns for building object models](/patterns-for-building-object-models.html)
