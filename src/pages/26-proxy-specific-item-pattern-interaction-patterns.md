@@ -24,6 +24,8 @@ title: '#26. "Proxy - Specific Item" Pattern // interaction patterns'
 
 *   You know the proxy. It does no work of its own. It passes all work to its corresponding specific item.
 
+----
+
 [Interaction patterns](/interaction-patterns.html)
 
 [Patterns for building object models](/patterns-for-building-object-models.html)
