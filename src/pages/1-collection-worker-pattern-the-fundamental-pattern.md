@@ -19,4 +19,6 @@ title: '#1. "Collection-Worker" Pattern // the fundamental pattern'
 
 Related strategy: [Str#21.](/selecting-objects-pattern-players.html) "Select Collections of Objects" Strategy
 
+----
+
 [Patterns for building object models](/patterns-for-building-object-models.html)
