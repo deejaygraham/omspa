@@ -30,6 +30,8 @@ title: 'Fundamentals (who I know)'
 *   Existence dependency shows: one object depends upon another, else it cannot exist. Show existence dependency with an object connection constraint of 1 or more.
 *   These are two distinct issues. Whole-part does not imply existence dependency; the connection constraints of any object connection express existence dependency (if any).
 
+----
+
 [Establishing responsibilities / who I know](/establishing-responsibilities-who-i-know.html)
 
 [Strategies for building object models](/strategies-for-building-object-models.html)
