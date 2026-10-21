@@ -93,6 +93,8 @@ title: 'What to consider and challenge (scenarios)'
     *   For each data acquisition object:
         *   Each data acquisition object takes care of itself, as much it can do with what it knows (for example, reading values and detecting something from those values).
 
+----
+
 [Working out dynamics with scenarios](/working-out-dynamics-with-scenarios.html)
 
 [Strategies for building object models](/strategies-for-building-object-models.html)
