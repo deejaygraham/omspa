@@ -18,4 +18,6 @@ Here's an overview of the plan patterns:
 
 ![Strpat00000024.gif](/img/Strpat00000024.gif)
 
+----
+
 [Patterns for building object models](/patterns-for-building-object-models.html)
