@@ -38,6 +38,8 @@ title: '#16. "Group-Member" Pattern // aggregate patterns'
 
 Related strategy: [Str#37.](/selecting-objects-reuse.html) "Select and Reuse a Group of Interacting Objects" Strategy
 
+----
+
 [Aggregate patterns](/aggregate-patterns.html)
 
 [Patterns for building object models](/patterns-for-building-object-models.html)
