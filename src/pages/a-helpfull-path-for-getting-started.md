@@ -4,19 +4,19 @@ title: 'A helpfull path for getting started'
 
 Here is a helpful path for getting started with the strategies and patterns in this handbook.
 
-Activities and Model Components
+## Activities and Model Components
 
 [Str#1.](/guiding-the-effort-with-major-activities-and-components.html) "Four Major Activities, Four Major Components" Strategy
 
 [Str#1a.](/guiding-the-effort-with-major-activities-and-components.html) "Build an Initial Object Model, then Proceed Feature-by-Feature" Strategy
 
-Identifying Purpose and Features
+## Identifying Purpose and Features
 
 [Str#2.](/identifying-system-purpose-and-features.html) "System Purpose" Strategy
 
 [Str#6.](/identifying-system-purpose-and-features.html) "Four Kinds of Features" Strategy
 
-Selecting Objects
+## Selecting Objects
 
 [Str#13.](/selecting-objects-pattern-players.html) "Select Actors" Strategy
 
@@ -34,13 +34,13 @@ Selecting Objects
 
 [Str#32.](/selecting-objects-model-components.html) "Select DM Objects" Strategy
 
-Establishing Responsibilities / what I know
+## Establishing Responsibilities / what I know
 
 [Str#50.](/fundamentals-what-i-know.html) "Select Attributes from Actual Ones" Strategy
 
 [Str#57.](/model-components-hi-what-i-know.html) "Establish HI Attributes" Strategy
 
-Establishing Responsibilities / who I know
+## Establishing Responsibilities / who I know
 
 [Str#72.](/fundamentals-who-i-know.html) "Establish PD Object Connections" Strategy
 
@@ -50,7 +50,7 @@ Establishing Responsibilities / who I know
 
 [Str#80a.](/what-to-consider-and-challenge-who-i-know.html) "ABC" Strategy
 
-Establishing Responsibilities / what I do
+## Establishing Responsibilities / what I do
 
 [Str#87.](/fundamentals-what-i-do.html) "Put the Services with the Attributes They Work On" Strategy
 
@@ -68,7 +68,7 @@ Establishing Responsibilities / what I do
 
 [Str#100.](/model-components-hi-dm-what-i-do.html) "Establish DM Services" Strategy
 
-Working Out Dynamics with Scenarios
+## Working Out Dynamics with Scenarios
 
 [Str#127.](/the-basics-scenarios.html) "Select Key Scenarios" Strategy
 
@@ -76,7 +76,7 @@ Working Out Dynamics with Scenarios
 
 [Str#129.](/the-basics-scenarios.html) "Act It Out" Strategy
 
-Using Transaction Patterns
+## Using Transaction Patterns
 
 [Patt#2.](/2-actor-participant-pattern-transaction-patterns.html) "Actor-Participant" Pattern
 
@@ -92,6 +92,6 @@ Using Transaction Patterns
 
 [Patt#11.](/11-item-specific-item-pattern-transaction-patterns.html) "Item - Specific Item" Pattern
 
-Using Aggregate Patterns
+## Using Aggregate Patterns
 
 [Patt#14.](/14-container-content-pattern-aggregate-patterns.html) "Container-Content" Pattern
