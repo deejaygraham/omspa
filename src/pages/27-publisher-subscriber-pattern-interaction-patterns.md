@@ -18,6 +18,8 @@ title: '#27. "Publisher-Subscriber" Pattern // interaction patterns'
 
 *   Superimpose on a problem-domain pattern player (publisher) and its respective human-interaction, data-management, and system-interaction pattern players (subscribers).
 
+----
+
 [Interaction patterns](/interaction-patterns.html)
 
 [Patterns for building object models](/patterns-for-building-object-models.html)
