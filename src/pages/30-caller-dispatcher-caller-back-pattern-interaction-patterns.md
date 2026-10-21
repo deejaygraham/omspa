@@ -19,6 +19,8 @@ title: '#30. "Caller - Dispatcher - Caller Back" Pattern // interaction patterns
 
 *   Superimpose upon three (or more) interacting pattern players.
 
+----
+
 [Interaction patterns](/interaction-patterns.html)
 
 [Patterns for building object models](/patterns-for-building-object-models.html)
