@@ -14,39 +14,42 @@
     </script>
   </head>
   <body>
-    <section class="section">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="section">
       <div class="container">
         <header>
-          <nav class="navbar" role="navigation" aria-label="main navigation">
+          <nav class="navbar" aria-label="Primary navigation">
             <div class="navbar-brand">
               <a class="navbar-item has-text-weight-semibold" href="/">Strategies and Patterns Handbook</a>
             </div>
             <div class="navbar-menu is-active">
               <div class="navbar-end">
                 <div class="navbar-item">
-                  <div id="search"></div>
+                  <search aria-label="Site search">
+                    <div id="search"></div>
+                  </search>
                 </div>
               </div>
             </div>
           </nav>
-          <script>
-            window.addEventListener('DOMContentLoaded', () =>
-              new PagefindUI({ element: '#search', showSubResults: true }));
-          </script>
         </header>
 
-        <main class="content" data-pagefind-body>
+        <main id="main-content" tabindex="-1"><article class="content" data-pagefind-body>
           <h1>{{ title }}</h1>
           {{ content | safe }}
-        </main>
+        </article></main>
 
         <footer class="footer">
           <div class="content has-text-centered">
-            <p>Converted from the <a href="/original/index.htm" target="_blank" >original 1997 hypertext edition</a>. &copy; 1997 Object International, Inc. All rights reserved.</p>
-            <p><small>Built {{ buildDate }}</small></p>
+            <p>Converted from the <a href="/original/index.htm" target="_blank" rel="noopener">original 1997 hypertext edition</a>. &copy; 1997 Object International, Inc. All rights reserved.</p>
+            <p><small>Built <time datetime="{{ buildDateIso }}">{{ buildDate }}</time></small></p>
           </div>
         </footer>
       </div>
-    </section>
+    </div>
+    <script>
+      window.addEventListener('DOMContentLoaded', () =>
+        new PagefindUI({ element: '#search', showSubResults: true }));
+    </script>
   </body>
 </html>
