@@ -143,6 +143,8 @@ Related patterns:
 *   Use the smallest domain collection within the system's responsibility, to express responsibility across that collection--expressing appropriate scope.
 *   Examples: bin, aisle, warehouse; city, county, state, country; team, department, organization, company, industry.
 
+----
+
 [Selecting objects](/selecting-objects.html)
 
 [Strategies for building object models](/strategies-for-building-object-models.html)
