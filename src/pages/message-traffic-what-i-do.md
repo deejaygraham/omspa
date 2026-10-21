@@ -17,6 +17,8 @@ title: 'Message traffic (what I do)'
 *   To simplify an intermediary, use a "lookup" intermediary.
 *   (Refer to the ["sender-pass through-receiver"](/28-sender-pass-through-receiver-pattern-interaction-patterns.html) and ["sender-lookup-receiver"](/29-sender-lookup-receiver-pattern-interaction-patterns.html) patterns.)
 
+----
+
 [Establishing responsibilities / what I do](/establishing-responsibilities-what-i-do.html)
 
 [Strategies for building object models](/strategies-for-building-object-models.html)
