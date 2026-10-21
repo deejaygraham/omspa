@@ -26,6 +26,8 @@ title: '#31. "Gatekeeper-Request-Resource" Pattern // device patterns'
 
 [Patt#5.](/5-specific-item-transaction-pattern-transaction-patterns.html) "Specific Item - Transaction" (specific item = resource).
 
+----
+
 [Interaction patterns](/interaction-patterns.html)
 
 [Patterns for building object models](/patterns-for-building-object-models.html)
