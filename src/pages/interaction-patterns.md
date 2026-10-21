@@ -20,4 +20,6 @@ The interaction patterns are:
 
 [Patt#31.](/31-gatekeeper-request-resource-pattern-device-patterns.html) "Gatekeeper-Request-Resource" Pattern
 
+---- 
+
 [Patterns for building object models](/patterns-for-building-object-models.html)
