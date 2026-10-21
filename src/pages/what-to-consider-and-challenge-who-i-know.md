@@ -69,6 +69,8 @@ n n n 1-n 1-n 1-n
     *   Consider who it needs to know to get its services done. Anything needed?
     *   Otherwise, it's okay (from a different domain, yet part of the system's responsibilities).
 
+---- 
+
 [Establishing responsibilities / who I know](/establishing-responsibilities-who-i-know.html)
 
 [Strategies for building object models](/strategies-for-building-object-models.html)
