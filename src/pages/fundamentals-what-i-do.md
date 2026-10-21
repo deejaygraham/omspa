@@ -62,6 +62,8 @@ title: 'Fundamentals (what I do)'
     *   What _calculations_ can I do? What ongoing monitoring could I do? What calculations across a collection could I make (letting each worker do its part)?
     *   What _selections_ across a collection could I make (letting each worker do its part)?
 
+----
+
 [Establishing responsibilities / what I do](/establishing-responsibilities-what-i-do.html)
 
 [Strategies for building object models](/strategies-for-building-object-models.html)
