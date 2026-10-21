@@ -21,6 +21,8 @@ title: 'Model components -- HI, DM (who I know)'
 
 *   For a data management object, include an object connection (expressed as an attribute) to the problem-domain objects (all of the objects in some problem-domain class) that it is responsible for.
 
+----
+
 [Establishing responsibilities / who I know](/establishing-responsibilities-who-i-know.html)
 
 [Strategies for building object models](/strategies-for-building-object-models.html)
