@@ -22,4 +22,6 @@ Here's an overview of aggregate patterns:
 
 ![Strpat00000017.gif](/img/Strpat00000017.gif)
 
+---- 
+
 [Patterns for building object models](/patterns-for-building-object-models.html)
