@@ -57,6 +57,8 @@ Related patterns:
 *   For an interacting system or device:
     *   Include an object connection (expressed as attributes) between a PD object and is corresponding system interaction (SI) object.
 
+----
+
 [Establishing responsibilities / who I know](/establishing-responsibilities-who-i-know.html)
 
 [Strategies for building object models](/strategies-for-building-object-models.html)
