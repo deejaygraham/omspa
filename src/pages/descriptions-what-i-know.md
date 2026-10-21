@@ -24,6 +24,8 @@ title: 'Descriptions (what I know)'
     *   state-dependent attributes: value, reading
     *   state-independent attributes: name, serial number.
 
+---- 
+
 [Establishing responsibilities / what I know](/establishing-responsibilities-what-i-know.html)
 
 [Strategies for building object models](/strategies-for-building-object-models.html)
