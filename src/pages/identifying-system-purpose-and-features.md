@@ -98,4 +98,6 @@ This section presents &quotpurpose and features" strategies.
 *   Look for opportunities to use smarter devices, simplifying your object model and reducing software development schedule and costs.
 *   When building an object model in a field with rapidly changing data acquisition and control technology, be sure to take a systems perspective, spanning both hardware and software.
 
+----
+
 [Strategies for building object models](/strategies-for-building-object-models.html)
