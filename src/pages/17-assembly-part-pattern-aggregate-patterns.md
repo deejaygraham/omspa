@@ -35,6 +35,8 @@ title: '#17. "Assembly-Part" Pattern // aggregate patterns'
 
 Related strategy: [Str#21.](/selecting-objects-pattern-players.html) "Select Collections of Objects" Strategy
 
+----
+
 [Aggregate patterns](/aggregate-patterns.html)
 
 [Patterns for building object models](/patterns-for-building-object-models.html)
