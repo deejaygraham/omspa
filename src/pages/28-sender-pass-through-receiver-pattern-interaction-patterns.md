@@ -21,6 +21,8 @@ title: '#28. "Sender - Pass Through - Receiver" Pattern // interaction patterns'
 
 *   Sender is loosely coupled to the other two.
 
+----
+
 [Interaction patterns](/interaction-patterns.html)
 
 [Patterns for building object models](/patterns-for-building-object-models.html)
