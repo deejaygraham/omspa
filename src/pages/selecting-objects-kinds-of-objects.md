@@ -18,4 +18,6 @@ Related pattern: [Patt#3.](/3-participant-transaction-pattern-transaction-patter
 *   Use generalization-specialization (gen-spec) whenever you can classify an object as being within a specialization class -- and you know that it will stay in that class.
 *   Otherwise, use Patt#3 "Actor-Participant" instead (referred to as "composition, instead of inheritance").
 
+----
+
 [Strategies for building object models](/strategies-for-building-object-models.html)
