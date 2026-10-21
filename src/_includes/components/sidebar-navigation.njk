@@ -1,0 +1,21 @@
+{% macro renderNavigationItems(items) %}
+  <ul>
+    {% for item in items %}
+      <li>
+        {% if item.children %}
+          <details>
+            <summary>{{ item.label }}</summary>
+            {{ renderNavigationItems(item.children) }}
+          </details>
+        {% else %}
+          <a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endmacro %}
+
+<nav class="handbook-nav" aria-labelledby="handbook-nav-heading">
+  <h2 id="handbook-nav-heading">Handbook contents</h2>
+  {{ renderNavigationItems(navigation) }}
+</nav>
