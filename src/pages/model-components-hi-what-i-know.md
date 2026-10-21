@@ -6,4 +6,6 @@ title: 'Model components -- HI (what I know)'
 
 *   For windows or reports, include: search fields, data entry fields, or both.
 
+----
+
 [Establishing responsibilities / what I know](/establishing-responsibilities-what-i-know.html)
