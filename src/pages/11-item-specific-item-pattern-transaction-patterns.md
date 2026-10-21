@@ -34,6 +34,8 @@ Related strategies:
 
 [Str#97.](/pattern-players-what-i-do.html) "Establish Item & Specific Item Services" Strategy
 
+----
+
 [Transaction patterns](/transaction-patterns.html)
 
 [Patterns for building object models](/patterns-for-building-object-models.html)
