@@ -22,6 +22,8 @@ title: 'Model components--HI, DM (what I do)'
     *   On a schedule: PD to SI.
     *   Or by "sneaker net:" such interaction is outside the scope of your object model; no SI object needed for this.
 
+---- 
+
 [Establishing responsibilities / what I do](/establishing-responsibilities-what-i-do.html)
 
 [Strategies for building object models](/strategies-for-building-object-models.html)
