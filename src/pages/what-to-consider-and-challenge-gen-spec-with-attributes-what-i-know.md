@@ -39,6 +39,8 @@ title: 'What to consider and challenge: gen-spec with attributes (what I know)'
             *   Get rid of the "function blob."
             *   Applying the "what I do" strategies as a guide, put each service in the object that the old function blob was acting on.
 
+----
+
 [Establishing responsibilities / what I know](/establishing-responsibilities-what-i-know.html)
 
 [Strategies for building object models](/strategies-for-building-object-models.html)
