@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import os from 'os';
 
 // Pages containing strategy or pattern content — snapshot their <main> text
 // so any migration that changes visible content is caught immediately.
@@ -88,7 +89,7 @@ const CONTENT_PAGES = [
 for (const pagePath of CONTENT_PAGES) {
   test(`content: ${pagePath}`, async ({ page }) => {
     await page.goto(pagePath);
-    const content = await page.locator('main').textContent();
+    const content = (await page.locator('main').textContent())?.replace(/\n/g, os.EOL);
     expect(content).toMatchSnapshot(`${pagePath}.txt`);
   });
 }
