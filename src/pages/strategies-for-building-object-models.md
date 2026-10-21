@@ -24,4 +24,6 @@ Finally, it presents some discovery strategies:
 
 [Discovering new strategies and patterns](/discovering-new-strategies-and-patterns.html)
 
+----
+
 [List of strategies](/list-of-strategies.html)
