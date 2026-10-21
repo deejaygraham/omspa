@@ -61,6 +61,8 @@ Related patterns:
 *   For an interacting system or device as a collection, include: how many, how much, rank parts, calculate over parts.
 *   Add a corresponding object in the system interaction (SI) component, to isolate specific interaction needs (examples: connect, logon, query, logoff, disconnect).
 
+----
+
 [Establishing responsibilities / what I do](/establishing-responsibilities-what-i-do.html)
 
 [Strategies for building object models](/strategies-for-building-object-models.html)
