@@ -17,6 +17,8 @@ title: '#25. "Peer-Peer" Pattern // interaction patterns'
 
 *   Superimpose on any pattern player.
 
+----
+
 [Interaction patterns](/interaction-patterns.html)
 
 [Patterns for building object models](/patterns-for-building-object-models.html)
