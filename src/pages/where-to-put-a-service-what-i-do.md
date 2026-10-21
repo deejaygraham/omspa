@@ -50,6 +50,8 @@ Related patterns:
     *   Add an attribute called something like "programmable action."
     *   Add a service called something like "execute action."
 
+----
+
 [Establishing responsibilities / what I do](/establishing-responsibilities-what-i-do.html)
 
 [Strategies for building object models](/strategies-for-building-object-models.html)
