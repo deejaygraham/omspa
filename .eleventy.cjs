@@ -5,6 +5,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary("md", new MarkdownIt({ html: true }));
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
   eleventyConfig.addGlobalData("buildDate", () => new Date().toUTCString());
+  eleventyConfig.addGlobalData("buildDateIso", () => new Date().toISOString());
   eleventyConfig.addPassthroughCopy({ "src/img": "img" });
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "original/strpat_handbook_from_opsma_2e": "original" });
