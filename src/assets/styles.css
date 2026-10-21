@@ -37,3 +37,7 @@ a {
 .skip-link:focus {
   transform: translateY(0);
 }
+
+.footer {
+  margin-top: 2em;
+}
