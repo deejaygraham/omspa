@@ -14,6 +14,8 @@ title: 'Fundamentals (what I know)'
 *   Criteria: the system needs to know a given attribute value; the system has some way to get that value.
 *   Examples: number, name, address, date, time, operational state, phone, status, threshold, type.
 
+---- 
+
 [Establishing responsibilities / what I know](/establishing-responsibilities-what-i-know.html)
 
 [Strategies for building object models](/strategies-for-building-object-models.html)
