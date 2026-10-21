@@ -26,6 +26,8 @@ Related pattern: [Patt#1](/1-collection-worker-pattern-the-fundamental-pattern.h
     *   The data holder just holds values -- and provides "gets" and "sets" for working with those values.
 *   Corrective action: instead of asking the data holder for a value, ask it a question or ask it to calculate a result, based upon what it knows, who it knows, and arguments you might pass to it. Then reduce the workaholic's workload, accordingly.
 
+----
+
 [Establishing responsibilities / what I do](/establishing-responsibilities-what-i-do.html)
 
 [Strategies for building object models](/strategies-for-building-object-models.html)
