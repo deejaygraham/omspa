@@ -42,6 +42,8 @@ Related strategies:
 
 [Str#103.](/where-to-put-a-service-what-i-do.html) "Service in the Smallest Applicable Container" Strategy
 
+----
+
 [Aggregate patterns](/aggregate-patterns.html)
 
 [Patterns for building object models](/patterns-for-building-object-models.html)
