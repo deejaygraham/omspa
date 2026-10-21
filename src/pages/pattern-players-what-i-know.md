@@ -70,6 +70,8 @@ Related patterns:
 *   For another system or device, include: number, name, operational state.
 *   For its companion object, in the system interaction component, include: logon name, password, phone numbers, address.
 
+----
+
 [Establishing responsibilities / what I know](/establishing-responsibilities-what-i-know.html)
 
 [Strategies for building object models](/strategies-for-building-object-models.html)
