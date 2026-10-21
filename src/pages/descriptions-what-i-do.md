@@ -20,6 +20,8 @@ title: 'Descriptions (what I do)'
     *   exception action &ltobject.service to invoke, upon detecting an exception>
     *   performance constraints (in addition to scenario performance constraints, when needed).
 
+---- 
+
 [Establishing responsibilities / what I do](/establishing-responsibilities-what-i-do.html)
 
 [Strategies for building object models](/strategies-for-building-object-models.html)
