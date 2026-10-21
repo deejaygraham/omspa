@@ -23,6 +23,8 @@ title: '#29. "Sender-Lookup-Receiver" Pattern // interaction patterns'
 
 *   This approach keeps lookup object simpler.
 
+----
+
 [Interaction patterns](/interaction-patterns.html)
 
 [Patterns for building object models](/patterns-for-building-object-models.html)
