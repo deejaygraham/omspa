@@ -74,6 +74,8 @@ title: 'List of Patterns'
 
 [Patt#31.](/31-gatekeeper-request-resource-pattern-device-patterns.html) Gatekeeper-Request-Resource
 
+---- 
+
 [Patterns for building object models](/patterns-for-building-object-models.html)
 
 [List of strategies](/list-of-strategies.html)
