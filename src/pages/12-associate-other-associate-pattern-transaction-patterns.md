@@ -25,6 +25,8 @@ title: '#12. "Associate - Other Associate" Pattern // transaction patterns'
 
 Related strategy: [Str#18.](/selecting-objects-pattern-players.html) "Select Associates"
 
+----
+
 [Transaction patterns](/transaction-patterns.html)
 
 [Patterns for building object models](/patterns-for-building-object-models.html)
