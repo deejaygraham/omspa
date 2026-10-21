@@ -34,4 +34,6 @@ Here's an overview of transaction patterns, illustrating how they can interconne
 
 ![Strpat00000004.gif](/img/Strpat00000004.gif)
 
+----
+
 [Patterns for building object models](/patterns-for-building-object-models.html)
