@@ -378,6 +378,8 @@ title: 'List of Strategies'
 
 [Str#148.](/discovering-new-strategies-and-patterns.html) Describing Patterns
 
+---- 
+
 [Strategies for building object models](/strategies-for-building-object-models.html)
 
 [List of patterns](/list-of-patterns.html)
