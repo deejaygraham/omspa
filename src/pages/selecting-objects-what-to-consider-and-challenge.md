@@ -49,6 +49,8 @@ title: 'Selecting objects--what to consider and challenge'
 *   Would any of your problem-domain objects change? If so, pay close attention to those objects. Separate presentation from what's really going on in the problem domain.
 *   Examples: vertical-speed indicator (human interaction) and vertical-speed gyro (problem domain), traffic light (human interaction) and traffic lane (problem domain).
 
+----
+
 [Selecting objects](/selecting-objects.html)
 
 [Strategies for building object models](/strategies-for-building-object-models.html)
