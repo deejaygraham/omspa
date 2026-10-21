@@ -20,4 +20,6 @@ In this section, you'll find "selecting objects" strategies, presented in these 
 
 [what to consider and challenge](/selecting-objects-what-to-consider-and-challenge.html)
 
+----
+
 [Strategies for building object models](/strategies-for-building-object-models.html)
