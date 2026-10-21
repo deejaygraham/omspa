@@ -13,4 +13,6 @@ title: 'Selecting objects--analogies'
 *   Examine objects in each analogous system, looking for ones that might correspond by analogy to objects you need in your system.
 *   Add the corresponding objects (grammatically, called "metaphors") to your object model.
 
+----
+
 [Strategies for building object models](/strategies-for-building-object-models.html)
