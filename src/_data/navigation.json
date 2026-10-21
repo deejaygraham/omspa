@@ -1,0 +1,81 @@
+[
+  {
+    "label": "Handbook",
+    "children": [
+      { "label": "Contents", "url": "/index.html" },
+      { "label": "Overview", "url": "/overview.html" },
+      { "label": "Getting started", "url": "/a-helpfull-path-for-getting-started.html" }
+    ]
+  },
+  {
+    "label": "Strategies",
+    "children": [
+      {
+        "label": "Strategy guide",
+        "url": "/strategies-for-building-object-models.html"
+      },
+      { "label": "All strategies", "url": "/list-of-strategies.html" },
+      {
+        "label": "Strategy areas",
+        "children": [
+          {
+            "label": "Activities and model components",
+            "url": "/list-of-strategies-activities-and-model-components.html"
+          },
+          {
+            "label": "System purpose and features",
+            "url": "/list-of-strategies-identifying-system-purpose-and-features.html"
+          },
+          {
+            "label": "Selecting objects",
+            "url": "/list-of-strategies-selecting-objects.html"
+          },
+          {
+            "label": "Establishing responsibilities",
+            "url": "/list-of-strategies-establishing-responsibilities.html"
+          },
+          {
+            "label": "Dynamics with scenarios",
+            "url": "/list-of-strategies-working-out-dynamics-with-scenarios.html"
+          },
+          {
+            "label": "Discovering strategies and patterns",
+            "url": "/list-of-strategies-discovering-new-strategies-and-patterns.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Patterns",
+    "children": [
+      {
+        "label": "Pattern guide",
+        "url": "/patterns-for-building-object-models.html"
+      },
+      { "label": "All patterns", "url": "/list-of-patterns.html" },
+      {
+        "label": "Pattern families",
+        "children": [
+          { "label": "Fundamental pattern", "url": "/the-fundamental-pattern.html" },
+          { "label": "Transaction patterns", "url": "/transaction-patterns.html" },
+          { "label": "Aggregate patterns", "url": "/aggregate-patterns.html" },
+          { "label": "Plan patterns", "url": "/plan-patterns.html" },
+          { "label": "Interaction patterns", "url": "/interaction-patterns.html" }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "About",
+    "children": [
+      {
+        "label": "The original book",
+        "url": "/object-models-strategies-patterns-and-applications.html"
+      },
+      { "label": "Playground", "url": "/playground.html" },
+      { "label": "Acknowledgment", "url": "/acknowledgment.html" },
+      { "label": "The Coad Letter", "url": "/the-coad-letter.html" }
+    ]
+  }
+]
