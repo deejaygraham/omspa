@@ -18,6 +18,8 @@ title: 'Selecting objects--reuse'
 
 Related pattern: [Patt#16.](/16-group-member-pattern-aggregate-patterns.html) "Group-Member"
 
+----
+
 [Selecting objects](/selecting-objects.html)
 
 [Strategies for building object models](/strategies-for-building-object-models.html)
