@@ -6,7 +6,7 @@ body {
   background: white;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.08);
   margin: 1.5rem auto;
-  max-width: 960px;
+  max-width: 1280px;
   padding: 2rem;
 }
 
@@ -17,6 +17,10 @@ img {
 
 a {
   word-break: break-word;
+}
+
+.footer {
+  margin-top: 2em;
 }
 
 #search {
@@ -38,6 +42,93 @@ a {
   transform: translateY(0);
 }
 
-.footer {
-  margin-top: 2em;
+.site-layout {
+  display: grid;
+  grid-template-columns: minmax(14rem, 18rem) minmax(0, 1fr);
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.site-layout main {
+  min-width: 0;
+}
+
+.sidebar {
+  position: sticky;
+  top: 1rem;
+  max-height: calc(100vh - 2rem);
+  overflow-y: auto;
+}
+
+.handbook-nav {
+  border-right: 1px solid #dbdbdb;
+  padding-right: 1.5rem;
+}
+
+.handbook-nav h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.handbook-nav ul {
+  margin: 0;
+  padding-left: 1rem;
+  list-style: none;
+}
+
+.handbook-nav > ul {
+  padding-left: 0;
+}
+
+.handbook-nav li + li {
+  margin-top: 0.35rem;
+}
+
+.handbook-nav summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.handbook-nav details > ul {
+  margin-top: 0.4rem;
+  margin-bottom: 0.75rem;
+  border-left: 1px solid #dbdbdb;
+}
+
+.handbook-nav a {
+  display: block;
+  padding: 0.2rem 0.35rem;
+  line-height: 1.35;
+}
+
+.handbook-nav a[aria-current="page"] {
+  border-radius: 0.25rem;
+  background: #eef6fc;
+  color: #0a4a75;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .site-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+
+  .sidebar {
+    position: static;
+    max-height: none;
+  }
+
+  .handbook-nav {
+    border-right: 0;
+    border-bottom: 1px solid #dbdbdb;
+    padding-right: 0;
+    padding-bottom: 1rem;
+  }
 }
