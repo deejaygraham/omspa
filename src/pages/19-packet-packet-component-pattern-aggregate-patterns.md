@@ -23,6 +23,8 @@ title: '#19. "Packet - Packet Component" Pattern // aggregate patterns'
 
 [Patt#11.](/11-item-specific-item-pattern-transaction-patterns.html) "Item - Specific Item."
 
+----
+
 [Aggregate patterns](/aggregate-patterns.html)
 
 [Patterns for building object models](/patterns-for-building-object-models.html)
