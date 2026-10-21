@@ -69,6 +69,8 @@ title: 'Real-time (what I do)'
     *   Use an object model to understand what's really going on.
     *   Tag each service with its location; tag each attribute with who is using it.
 
+----
+
 [Establishing responsibilities / what I do](/establishing-responsibilities-what-i-do.html)
 
 [Strategies for building object models](/strategies-for-building-object-models.html)
